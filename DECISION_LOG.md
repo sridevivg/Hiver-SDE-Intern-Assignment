@@ -847,11 +847,184 @@
 - **Taxonomy Boundary Disambiguation:** Resolves bidirectional ambiguity across 5 critical operational pairs (e.g., `display_touch_issue` vs `keyboard_typing_issue` for letter I glyphs vs digitizer faults).
 - **Statistical Rigor & Sample Size Disclaimers:** Explicitly labels metric findings as preliminary observed annotation agreement on $N=57$ records (28.5% coverage; 95% CI: $[24.0\%, 48.1\%]$), avoiding overclaiming production model accuracy.
 
-**Trade-off:** Focuses strictly on diagnostic understanding; model prompt/pipeline improvements are deferred to subsequent iteration cycles.
+---
+
+## Decision 57 — Phase 5.10
+
+**Decision:** Implement a Read-Only Annotation Consistency & Taxonomy Boundary Validation Layer with Soft Non-Coercive Guidelines and Controlled Human Adjudication (`annotation_consistency.py`).
+
+**Context:** Following Phase 5.9, the golden benchmark contains 57 human-reviewed annotations and 143 pending records. To protect against subtle annotator drift, inconsistent label assignments across semantically similar customer complaints, and rigid keyword memorization, a read-only semantic consistency layer is needed.
+
+**Why:**
+- **Strict Immutability & Ground-Truth Protection:** Operates in read-only mode with pre- and post-analysis SHA-256 verification (`ed4b504031c5150a6d3509c5eeb446edec30a4d7052bd4e421a200640f594254`). Zero modifications to `annotation_label`, `annotation_status`, or pending records.
+- **Pairwise Semantic Similarity & Candidate Prioritization:** Evaluates all $\binom{57}{2} = 1,596$ record pairs ($269$ same-label, $1,327$ cross-label) using calibrated TF-IDF cosine similarity and n-gram overlap, surfacing 87 cross-label candidate pairs categorized into `HIGH` ($\ge 0.14$), `MEDIUM` ($0.09 - 0.14$), and `LOW` ($0.05 - 0.09$) priority tiers.
+- **Non-Prescriptive Designation:** Flagged pairs are designated as *Possible boundary inconsistencies*, never *Incorrect annotations*, recognizing that distinct operational nuances often justify different labels for semantically adjacent phrasing.
+- **Within-Label Coherence & Outlier Detection:** Measures average intra-class similarity, diversity score ($1.0 - \text{mean\_sim}$), and detects outlier customer messages within each intent class, with explicit sample-size warnings for small categories ($N < 5$).
+- **Non-Coercive Soft Guidelines:** Formulates advisory boundary guidelines for key confusing pairs (`general_device_support` vs `software_update_problem`, `hardware_audio_connection_issue`, `battery_power_issue`, `mac_software_issue`, and `display_touch_issue` vs `keyboard_typing_issue`) using non-prescriptive phrasing (*"usually"*, *"consider"*, *"evidence favoring"*, *"dominant friction"*) and avoiding hard deterministic classifier rules.
+- **Controlled Consistency Review Queue:** Interactive CLI (`analyze_annotation_consistency.py --interactive`) enables reviewers to adjudicate top ambiguous pairs (`[A]–[D]`), logging decisions to an isolated audit artifact (`consistency_review_decisions.json`) without mutating ground-truth labels.
 
 ---
 
-*Phase 5.9 decisions recorded after implementing `backend/app/evaluation/annotation_pattern_analysis.py`, CLI `backend/scripts/analyze_annotation_patterns.py`, comprehensive unit tests (`test_annotation_pattern_analysis.py`), structured JSON reports (`summary.json`, `confusion_matrix.json`, `correction_patterns.json`, `taxonomy_overlap_report.json`), Markdown reports (`annotation_pattern_analysis.md`, `annotation_guidelines.md`), and achieving 250 passing tests.*
+## Decision 58 — Phase 5.11
+
+**Decision:** Implement a Human-Guided Quality Review Workflow, Evidence-Based Taxonomy Guidelines v2.0, Boundary Decision Matrix, and Consolidated Quality Dashboard (`review_annotation_consistency.py`, `annotation_quality_dashboard.py`).
+
+**Context:** Following Phase 5.10 consistency analysis (137 flagged cross-label candidate pairs across 77 reviewed records), an operational mechanism is required to enable human reviewers to adjudicate flagged ambiguity pairs, capture structured boundary feedback without modifying the underlying golden dataset, and provide comprehensive taxonomy guidance.
+
+**Why:**
+- **Strict Immutability & Zero Ground-Truth Mutation:** All consistency conflict reviews and boundary adjudications are saved to an isolated append-only file (`data/golden/annotation_consistency_human_review.csv`). `data/golden/golden_set_human_review.csv` remains strictly read-only and immutable with cryptographic SHA-256 validation (`1d3e9b3b8bdef3750437e59b17ab7c27167fd1548c2bb29de984151296c5b45a`).
+- **Interactive Consistency Review CLI:** Implemented `backend/scripts/review_annotation_consistency.py` supporting priority tiers (`--priority high|medium|low|all`), batch sizes, and structured conflict cards displaying Record A and Record B alongside shared lexical signals, AI suggestions, and ambiguity context.
+- **Granular Human Adjudications:** Review actions distinguish between valid operational distinctions (`VALID_TAXONOMY_BOUNDARY` / `KEEP_BOTH_LABELS`), records requiring future reconsideration (`RECONSIDER_RECORD_A` / `RECONSIDER_RECORD_B`), and taxonomy boundary ambiguities (`FLAG_TAXONOMY_GUIDELINE_UPDATE`).
+- **Evidence-Based Taxonomy Guidelines v2.0 (`reports/annotation_guidelines_v2.md`):** Established the Primary Intent Principle, defined explicit inclusion/exclusion rules to prevent `general_device_support` catch-all overuse, decoupled OS update causality from symptom-specific troubleshooting, clarified screen display vs UI feature distinctions, and required explicit payment context for `billing_purchase_issue`.
+- **Taxonomy Boundary Decision Matrix (`reports/taxonomy_boundary_matrix.md`):** Formulated explicit disambiguation rules and distinguishing signals across 8 major overlapping category pairs.
+- **Consolidated Quality Dashboard (`backend/scripts/annotation_quality_dashboard.py`):** Unified reporting across Phase 5.9 (Pattern Analysis), Phase 5.10 (Consistency Metrics), Phase 5.11 (Human Boundary Adjudications), and cryptographic immutability checks.
+
+**Trade-off:** Focuses on human annotation quality assurance and cognitive calibration; does not retrain or alter production classifier heads.
+
+---
+
+## Decision 59 — Phase 6
+
+**Decision:** Implement an Uncertainty-Aware Intent Routing Engine and Runtime Human-in-the-Loop (HITL) Escalation Decision System (`classifier.py`, `router.py`, `escalation.py`, `routing_evaluator.py`).
+
+**Context:** While Phases 5.9–5.11 provided robust offline dataset QA tools, SupportGraph AI required an operational runtime system to evaluate incoming customer messages, assess model uncertainty across multi-candidate intent predictions, and make deterministic, explainable `AUTO_HANDLE` vs `ESCALATE_TO_HUMAN` decisions.
+
+**Why:**
+- **Top-K Intent Predictions:** Moving beyond single-label prediction, the system predicts Top-K candidates ($K \ge 3$) with normalized probability distributions ($\sum p_i = 1.0$), capturing competing operational hypotheses.
+- **Confidence Margin & Normalized Entropy:** Relying on Top-1 confidence alone is unsafe when two competing intents are nearly tied (e.g. 0.52 vs 0.44). The system computes confidence margin ($\Delta = p_1 - p_2$) and normalized Shannon entropy ($H_{\text{norm}}$) to detect boundary ambiguity.
+- **Deterministic & Explainable Routing Engine:** Implements transparent rules with centralized threshold configuration (`AUTO_HANDLE_CONFIDENCE_THRESHOLD = 0.85`, `MIN_CONFIDENCE_MARGIN = 0.15`, `MAX_UNCERTAINTY_ENTROPY = 0.65`), generating human-readable rationales for every decision.
+- **Separation of Concerns:** Strictly decouples Dataset QA (Phases 5.9–5.11 in `data/golden/`) from Runtime HITL Escalation (Phase 6 in `data/runtime/runtime_escalation_reviews.csv`). The 77-record golden benchmark remains cryptographically immutable (`1d3e9b3b8bdef3750437e59b17ab7c27167fd1548c2bb29de984151296c5b45a`).
+- **Runtime Human Review Experience (CLI & REST API):** Provides operators with message context, candidate predictions with percentages, and routing explanations. Operators can accept Top-1, select Top-2, override with taxonomy intents, or mark unclear, with decisions logged append-only.
+- **Comprehensive Evaluation & High Human Assistance Value:** Evaluation against 77 human ground-truth records demonstrated 50.6% Top-1 accuracy, jumping to **79.2% Top-2 accuracy** and **81.8% Top-3 accuracy**, with **69.2% of escalated cases** having the correct ground truth intent available directly in the Top-2 predictions.
+- **Production REST Endpoints:** Integrated FastAPI routes under `/api/v1/intent` (`/classify-and-route`, `/classify`, `/route`, `/review`, `/config`, `/escalations/stats`).
+
+**Trade-off:** Initial routing thresholds are provisional and can be recalibrated as the golden benchmark expands toward 200 completed human records.
+
+---
+
+## Decision 60 — Phase 6.1
+
+**Decision:** Implement Data-Driven Routing Calibration, Threshold Grid Search Optimization, and Safety-First Ranking Architecture (`routing_calibrator.py`, `calibrate_routing_thresholds.py`).
+
+**Context:** Following Phase 6 evaluation, the provisional thresholds (`conf=0.85, margin=0.15, entropy=0.65`) resulted in an unsafe auto-handle rate of 83.1% with only 53.1% auto-handle precision, allowing 30 out of 38 model errors directly into automatic handling. A systematic data-driven calibration across the 77 completed human ground-truth records was required to optimize safety and error interception.
+
+**Why:**
+- **Safety-First Optimization Hierarchy:** Replaced raw automation maximization with a 4-tier safety hierarchy: (1) Auto-Handle Precision ($\ge 75\%$), (2) Error Interception Rate ($\ge 80\%$), (3) Human Assistance in Escalation ($\ge 80\%$), and (4) Automation Coverage.
+- **Exhaustive Parameter Grid Search ($10 \times 7 \times 7 = 490$ Combinations):** Evaluated confidence thresholds `[0.50..0.95]`, margin thresholds `[0.00..0.30]`, and maximum normalized entropies `[0.40..1.00]`, pre-caching predictions for deterministic, high-speed execution.
+- **Drastic Error Reduction (-83.3% Unsafe Auto-Handles):** Calibrated configuration (`conf=0.95, margin=0.00, entropy=0.40`) reduced unsafe auto-handled errors from 30 down to 5, raising the error interception rate from 21.1% to **86.8%**.
+- **Enhanced Human Review Utility:** In the recommended configuration, **83.1% of escalated cases** contain the correct human ground-truth label directly within the Top-2 predictions (and 84.6% in Top-3), enabling rapid single-click human resolution.
+- **Strict Read-Only Data Governance:** Golden dataset access is strictly read-only with SHA-256 pre- and post-analysis verification (`1d3e9b3b8bdef3750437e59b17ab7c27167fd1548c2bb29de984151296c5b45a`). Production thresholds in `config.py` are preserved under governance and require explicit approval to update.
+- **Structured Artifact Export (`reports/routing_calibration/`):** Generated 6 JSON artifacts detailing summary, grid results, recommended parameters, baseline vs calibrated deltas, safety metrics, and human assistance analysis.
+
+**Trade-off:** Calibrated safety thresholds lower the auto-handle rate from 83.1% to 15.6% on the 77-record benchmark in exchange for an 86.8% error interception rate and 83.3% reduction in customer-facing errors.
+
+---
+
+## Decision 61 — Phase 7
+
+**Decision:** Implement Evidence-Aware Support Resolution, Primary Problem Disambiguation, Ambiguity-Based Human Escalation, and Historical Evidence Ranking (`problem_extractor.py`, `primary_problem_selector.py`, `ambiguity_analyzer.py`, `evidence_ranker.py`, `case_retriever.py`, `support_resolution_engine.py`, `evidence_routing_evaluator.py`).
+
+**Context:** Analysis across previous phases showed that semantic similarity does not equal intent identity, and aggressive auto-handling based purely on classifier confidence scores leads to customer-facing errors. Incoming customer support inquiries often present update mentions as contextual triggers while the primary operational problem is a concrete hardware or software symptom (e.g. battery drain, audio failure). An end-to-end evidence-aware resolution pipeline was required to extract problem structure, disambiguate causes from symptoms, classify ambiguity into clear types, retrieve and operationalize historical AppleSupport evidence, and generate empathetic brand troubleshooting replies or rich decision-support packages for human escalation.
+
+**Why:**
+- **Structured Problem Understanding Layer (`CustomerProblemProfile`, `ProblemExtractor`):** Extracts device models (e.g. iPhone 7, MacBook Pro), software services, primary and secondary symptoms, reported causes, and assesses information sufficiency (`sufficient`, `partial`, `insufficient`).
+- **Primary Problem Selection & Causal Decoupling (`PrimaryProblemSelector`):** Decouples causal triggers (e.g. `software_update_problem`) from core operational symptoms (`battery_power_issue`, `hardware_audio_connection_issue`, `display_touch_issue`), preventing over-attribution of post-update symptoms to generic update categories.
+- **Explainable Ambiguity Analyzer (`AmbiguityAnalyzer`, `AmbiguityType`):** Categorizes inquiry ambiguity into `CLEAR_PRIMARY`, `CAUSE_VS_SYMPTOM`, `GENUINE_AMBIGUITY`, `MULTI_SYMPTOM`, or `UNCLEAR_INSUFFICIENT`, generating human-readable escalation rationales.
+- **Operational Evidence Ranking & Retrieval (`CaseRetriever`, `EvidenceRanker`, `EvidenceMatchTier`):** Explicitly categorizes retrieved historical cases into 4 operational tiers (`DIRECT_PROBLEM_MATCH`, `RELATED_SYMPTOM`, `RELATED_CONTEXT`, `WEAK_SEMANTIC_MATCH`), decoupling raw lexical TF-IDF / vector cosine similarity from true operational problem identity.
+- **Support Resolution Engine (`SupportResolutionEngine`):** Unifies the pipeline to generate brand-grounded, empathetic AppleSupport troubleshooting replies for clear cases (`AUTO_HANDLE`) and structured decision-support escalation packages with candidate workflows for ambiguous cases (`ESCALATE_TO_HUMAN`).
+- **REST API Endpoints & CLI Simulator (`support_resolution.py`, `simulate_support_resolution.py`):** Added FastAPI routes `/api/v1/resolution/resolve`, `/api/v1/resolution/understand`, `/api/v1/resolution/retrieve-evidence`, and interactive CLI simulation suite.
+- **Evaluation & Cryptographic Ground Truth Immutability (`EvidenceRoutingEvaluator`):** Evaluated against 77 human ground truth records, maintaining SHA-256 integrity (`1d3e9b3b8bdef3750437e59b17ab7c27167fd1548c2bb29de984151296c5b45a`) and achieving 314 passed tests in the test suite.
+
+**Trade-off:** Escalating ambiguous queries to human agents with structured candidate packages prioritizes safety, brand trust, and operational correctness over uncalibrated automated volume.
+
+---
+
+## Decision 62 — Phase 7.1
+
+**Decision:** Implement Empirical Multi-Signal Clarity Analysis, Safe Ambiguity Decision Gating, and Strict Veto Rules (`clarity_signals.py`, `ambiguity_decision_gate.py`, `ambiguity_gate_evaluator.py`, `evaluate_ambiguity_gate.py`, `analyze_unsafe_auto_handles.py`, `simulate_safe_routing.py`).
+
+**Context:** The Phase 7 benchmark across 77 human ground-truth records revealed that while Top-3 coverage was 80.5%, the system was overly aggressive in auto-handling cases (Auto-Handle Rate: 84.4%) with low precision (56.9%), allowing 28 incorrect predictions into automated handling. The core failure mode was relying on high model confidence scores or single-signal assumptions to declare cases "CLEAR". An empirical multi-signal gating architecture with hard safety vetoes was required to establish: **CLEAR $\ne$ HIGH CONFIDENCE**.
+
+**Why:**
+- **Multi-Signal Clarity Evaluation (`ClaritySignalEvaluator`, `ClaritySignalsProfile`):** Evaluates 6 independent operational signals:
+  1. *Signal A: Information Sufficiency* (`SUFFICIENT`, `PARTIAL`, `INSUFFICIENT`)
+  2. *Signal B: Primary Problem Strength* (`STRONG`, `MODERATE`, `WEAK`)
+  3. *Signal C: Candidate Conflict* (`NO_CONFLICT`, `CAUSE_VS_SYMPTOM`, `GENUINE_CONFLICT`)
+  4. *Signal D: Operational Evidence Agreement* (`STRONG_AGREEMENT`, `PARTIAL_AGREEMENT`, `NO_AGREEMENT`)
+  5. *Signal E: Retrieval Evidence Quality* (`STRONG_EVIDENCE`, `MODERATE_EVIDENCE`, `WEAK_EVIDENCE`, `NO_EVIDENCE`)
+  6. *Signal F: Multi-Symptom Complexity* (`SINGLE_SYMPTOM`, `RELATED_MULTI_SYMPTOM`, `UNRELATED_MULTI_SYMPTOM`)
+- **Strict Safety Veto Rules (`AmbiguityDecisionGate`):** High model probability ($>90\%$) is strictly prevented from overriding missing information, weak symptoms, symptom-intent contradictions, or unrelated multi-symptom complexity. If any veto condition triggers, the case is immediately redirected to human review.
+- **Enriched Human Escalation Packages:** Generates comprehensive decision support bundles for human reviewers with what the system understood, candidate hypotheses, explicit reasons why AI did not auto-handle, and related historical evidence.
+- **Three-Strategy Comparative Benchmark:** Evaluated against 77 human ground-truth records, Strategy C (Multi-Signal Safe Gate) reduced unsafe auto-handled errors from 28 down to 15 (**-46.4% error reduction**), increased error interception from 17.6% to **55.9% (+38.2% increase in safety)**, and raised auto-handle precision from 56.9% to **63.4%**.
+- **Root-Cause Error Categorization (`analyze_unsafe_auto_handles.py`):** Categorized all remaining false-clarity errors into structured classes (`FALSE_CLARITY_DECISION`, `RETRIEVAL_MISMATCH`, `MODEL_CLASSIFICATION_ERROR`, `MULTIPLE_VALID_INTERPRETATIONS`).
+- **Cryptographic Immutability & Test Coverage:** Maintained SHA-256 integrity on `golden_set_human_review.csv` (`1d3e9b3b8bdef3750437e59b17ab7c27167fd1548c2bb29de984151296c5b45a`) and achieved 325 passing tests in the test suite.
+
+**Trade-off:** Multi-signal gating safely reduces the automated workload from 84.4% to 53.2% in order to intercept nearly half of all previous customer-facing misclassifications.
+
+---
+
+## Decision 63 — Phase 8
+
+**Decision:** Implement Evidence-Grounded Response Generation, Operational Evidence Validation, and Response Grounding Verification (`evidence_validator.py`, `response_generator.py`, `response_verifier.py`, `resolution_auditor.py`, `support_resolution_engine.py`, `evidence_resolution_evaluator.py`, `simulate_evidence_resolution.py`).
+
+**Context:** Following Phase 7.1, empirical evaluation demonstrated that while multi-signal clarity gating reduced unsafe errors from 28 to 15, classifier confidence and clarity signals alone were still insufficient to prevent all customer-facing misclassifications. SupportGraph AI needed to move beyond asking *"Am I confident about this intent?"* to establishing *"Do I have strong enough operational evidence from real historical support cases to safely generate this resolution, and is the generated response verified to be grounded in that evidence without unsupported troubleshooting claims?"*
+
+**Why:**
+- **Semantic Retrieval for Candidate Discovery Only:** Re-established the core principle that dense semantic similarity does not equal operational problem equivalence. Dense retrieval indexes historical cases, but admission as supporting evidence requires multi-dimensional operational validation across Device, OS/Service, Primary Symptom, Intent, and Cause.
+- **Operational Evidence Validation (`ResolutionEvidenceValidator`, `EvidenceVerdict`):** Computes structured verdicts (`STRONG_EVIDENCE`, `MODERATE_EVIDENCE`, `WEAK_EVIDENCE`, `CONFLICTING_EVIDENCE`, `INSUFFICIENT_EVIDENCE`) and evaluates quantitative agreement metrics before auto-resolution is permitted.
+- **Evidence-Grounded Response Generation (`EvidenceGroundedResponseGenerator`):** Synthesizes empathetic, brand-compliant AppleSupport troubleshooting responses grounded in extracted problem profiles, verified operational intents, and historical support response patterns.
+- **Response Grounding Verification (`ResponseGroundingVerifier`):** Enforces a 5-point verification check before response dispatch:
+  1. Addresses customer's actual primary symptom.
+  2. Avoids misleading focus on causal triggers.
+  3. Detects hazardous/unsupported troubleshooting recommendations (e.g. unauthorized disassembly, logic board replacement, jailbreak).
+  4. Requires historical evidence corroboration.
+  5. Includes official AppleSupport DM escalation link.
+- **Multi-Phase Benchmark Safety Gain (-75.0% Unsafe Errors):** Evaluated against the 77 human ground-truth records, Phase 8 reduced unsafe auto-handled errors from 28 (Phase 7) down to **7** (**-75.0% error reduction**), raised error interception to **79.4%**, and achieved a 96.1% response grounding pass rate.
+- **Isolated Runtime Audit Logging (`ResolutionAuditor`):** Persists all runtime decisions to `data/runtime/evidence_resolution_audit.csv` with zero contamination of the benchmark dataset.
+- **Cryptographic Immutability & Test Coverage:** Maintained SHA-256 integrity on `golden_set_human_review.csv` (`1d3e9b3b8bdef3750437e59b17ab7c27167fd1548c2bb29de984151296c5b45a`) and achieved 339 passing tests in the test suite.
+
+**Trade-off:** Requiring verified operational evidence and response grounding lowers the auto-handle rate from 53.2% to 23.4% in exchange for intercepting nearly 80% of all potential customer-facing errors.
+
+---
+
+
+*Phase 8 decisions recorded after implementing `backend/app/resolution/evidence_validator.py`, `backend/app/resolution/response_generator.py`, `backend/app/resolution/response_verifier.py`, `backend/app/resolution/resolution_auditor.py`, `backend/app/evaluation/evidence_resolution_evaluator.py`, CLI tools, benchmark report `reports/phase_8_evidence_grounded_resolution.md`, and achieving 339 passing tests.*
+
+---
+
+## Decision 64 — Phase 9: Escalation Quality Analysis & Selective Automation Optimization
+
+**Decision:** Implement a 7-category escalation quality taxonomy and a safety-gated selective recovery engine to analyze the Phase 8 76.6% escalation rate and determine which escalations, if any, can be safely recovered for automated resolution.
+
+**Context:** Phase 8 achieved a 79.4% error interception rate but escalated 76.6% of customer inquiries to human review. The core architectural question was: *Is the high escalation rate driven by marginal signal noise (fixable by threshold tuning) or by genuine evidence, information, and ambiguity deficiencies (not fixable without corpus expansion)?*
+
+**Why — Escalation Taxonomy:**
+The 7-category taxonomy (GENUINE_AMBIGUITY, MULTI_PROBLEM_COMPLEXITY, INSUFFICIENT_INFORMATION, EVIDENCE_LIMITED, VERIFICATION_VETO, RECOVERABLE_ESCALATION, HUMAN_REQUIRED) classifies escalations by root cause rather than symptom. This provides an actionable diagnostic framework rather than a generic escalation rate number.
+
+**Why — Safety-First Classification Priority:**
+The decision tree evaluates the most restrictive safety violations first (HUMAN_REQUIRED before INSUFFICIENT_INFORMATION before VERIFICATION_VETO, etc.) to guarantee that no safety-sensitive case is ever misclassified as RECOVERABLE. High model confidence alone never qualifies a case for recovery.
+
+**Why — Independent 4-Gate Recovery Engine:**
+The recovery engine re-runs the _full_ Phase 8 pipeline from scratch rather than modifying existing escalation decisions in place. This eliminates the risk of state-dependent errors and ensures all safety gates (evidence validation, grounding verification) are independently re-evaluated for every attempted recovery.
+
+**Empirical Finding:**
+Evaluation on 77 protected human ground-truth records revealed that **72.9% of escalations are EVIDENCE_LIMITED**. The historical AppleSupport corpus does not contain sufficiently strong Tier 1/Tier 2 operational evidence for the customer problem profiles in the test set. Only **1.7% (1 case)** was classified as RECOVERABLE_ESCALATION, and when that case was re-processed through the full pipeline, the recovery was blocked by independent safety gates — confirming the escalation was genuinely warranted.
+
+**Conclusion:** The Phase 8 escalation rate of 76.6% is empirically justified and cannot be safely reduced through routing rule changes or confidence threshold tuning. The correct remedy is corpus expansion — ingesting more historical AppleSupport interaction data to provide stronger operational evidence coverage.
+
+**Trade-off:** Phase 9 does not improve the auto-handle rate in this benchmark (remains 23.4%) because the evidence corpus limitation is the binding constraint. However, Phase 9 provides the diagnostic evidence needed to target the next architectural investment correctly.
+
+---
+
+*Phase 9 decisions recorded after implementing `backend/app/resolution/escalation_quality_analyzer.py`, `backend/app/resolution/escalation_recovery_engine.py`, `backend/app/evaluation/escalation_quality_evaluator.py`, `backend/scripts/evaluate_escalation_quality.py`, Phase 9 unit tests (33 new tests, 372 total), benchmark report `reports/phase_9_escalation_quality_and_selective_recovery.md`, and verifying 100% dataset immutability.*
+
+
+
+
+
+
+
+
 
 
 
