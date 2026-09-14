@@ -1,0 +1,135 @@
+# =============================================================================
+# SupportGraph AI — .gitignore
+# =============================================================================
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+.installed.cfg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.env
+.env.local
+.env.*.local
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ---------------------------------------------------------------------------
+# Node / Frontend
+# ---------------------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+dist/
+.cache/
+*.local
+
+# ---------------------------------------------------------------------------
+# Environment & Secrets
+# ---------------------------------------------------------------------------
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+backend/.env
+frontend/.env
+
+# ---------------------------------------------------------------------------
+# Data — Raw data MUST NOT be committed (too large / proprietary)
+# ---------------------------------------------------------------------------
+data/raw/*.csv
+data/raw/**/*.csv
+Dataset/
+
+# Interim & processed data (generated, reproducible)
+# Commit only if small — comment out these lines to commit interim outputs
+# data/interim/
+# data/processed/
+
+# ---------------------------------------------------------------------------
+# ML Artifacts
+# ---------------------------------------------------------------------------
+artifacts/figures/*.png
+artifacts/figures/*.jpg
+artifacts/figures/*.svg
+artifacts/evaluation/*.json
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+*.onnx
+
+# Keep reports
+!artifacts/reports/
+
+# ---------------------------------------------------------------------------
+# macOS
+# ---------------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ---------------------------------------------------------------------------
+# IDEs
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---------------------------------------------------------------------------
+# Logs
+# ---------------------------------------------------------------------------
+logs/
+*.log
+
+# ---------------------------------------------------------------------------
+# Miscellaneous
+# ---------------------------------------------------------------------------
+*.bak
+*.tmp
+*.temp

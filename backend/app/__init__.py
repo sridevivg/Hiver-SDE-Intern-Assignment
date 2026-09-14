@@ -1,0 +1,3 @@
+"""
+SupportGraph AI — App Package
+"""

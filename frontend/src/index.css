@@ -1,0 +1,70 @@
+/* ==========================================================================
+   SupportGraph AI — Global Styles
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* --------------------------------------------------------------------------
+   CSS Custom Properties (Design Tokens)
+   -------------------------------------------------------------------------- */
+:root {
+  /* Colors */
+  --color-bg:          #0d1117;
+  --color-surface:     #161b22;
+  --color-surface-2:   #21262d;
+  --color-border:      #30363d;
+  --color-primary:     #58a6ff;
+  --color-primary-dim: #1f6feb;
+  --color-accent:      #3fb950;
+  --color-accent-warm: #d29922;
+  --color-text:        #e6edf3;
+  --color-text-muted:  #8b949e;
+  --color-tag-bg:      rgba(56, 139, 253, 0.12);
+  --color-tag-border:  rgba(56, 139, 253, 0.4);
+
+  /* Gradients */
+  --gradient-hero: linear-gradient(135deg, #1a1f2e 0%, #0d1117 50%, #111827 100%);
+  --gradient-glow: radial-gradient(ellipse at 50% 0%, rgba(88, 166, 255, 0.08) 0%, transparent 60%);
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Spacing */
+  --radius-sm:  6px;
+  --radius-md:  10px;
+  --radius-lg:  16px;
+
+  /* Transitions */
+  --transition: 0.2s ease;
+}
+
+/* --------------------------------------------------------------------------
+   Reset & Base
+   -------------------------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,1 @@
+"""SupportGraph AI — Core Package"""
