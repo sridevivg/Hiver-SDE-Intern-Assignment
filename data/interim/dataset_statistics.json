@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-09-09T15:52:18.607820+00:00",
+  "structure": {
+    "row_count": 2811774,
+    "column_count": 7,
+    "duplicate_count": 0,
+    "duplicate_pct": 0.0,
+    "missing_by_column": {
+      "response_tweet_id": {
+        "count": 1040629,
+        "pct": 37.01
+      },
+      "in_response_to_tweet_id": {
+        "count": 794335,
+        "pct": 28.25
+      }
+    }
+  },
+  "cleaning": {
+    "total_null_cells": 1834964,
+    "fully_null_rows": 0,
+    "decisions": [
+      "DECISION: Raw DataFrame is NOT modified by this analysis.",
+      "DECISION: Duplicate rows are identified but NOT removed here; removal (if decided) will produce a new DataFrame in data/interim/.",
+      "DECISION: Null values are reported per-column. Imputation or row-drop decisions are deferred to the processing phase.",
+      "DECISION: Empty strings are distinguished from null values. Both are counted separately to preserve granularity."
+    ]
+  },
+  "message_analysis": {
+    "text_column": "text",
+    "total_messages": 2811774,
+    "empty_messages": 0,
+    "length_stats": {
+      "min": 1.0,
+      "max": 513.0,
+      "mean": 113.89,
+      "median": 115.0,
+      "std": 52.35,
+      "p25": 78.0,
+      "p75": 139.0,
+      "p95": 215.0
+    }
+  },
+  "account_analysis": {
+    "author_column": "author_id",
+    "unique_authors": 702777,
+    "inbound_count": 1537843,
+    "outbound_count": 1273931
+  },
+  "conversation_analysis": {
+    "reply_to_column": "in_response_to_tweet_id",
+    "messages_with_parent": 2017439,
+    "messages_without_parent": 794335,
+    "messages_with_child": 1771145
+  }
+}

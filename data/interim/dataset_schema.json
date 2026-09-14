@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-09-09T15:52:18.607084+00:00",
+  "source_file": "/Users/sridevi/Desktop/SupportGraph-AI/Dataset/Raw/twcs/twcs.csv",
+  "filename": "twcs.csv",
+  "file_size_mb": 492.58,
+  "row_count": 2811774,
+  "column_count": 7,
+  "columns": [
+    "tweet_id",
+    "author_id",
+    "inbound",
+    "created_at",
+    "text",
+    "response_tweet_id",
+    "in_response_to_tweet_id"
+  ],
+  "dtypes": {
+    "tweet_id": "int64",
+    "author_id": "object",
+    "inbound": "bool",
+    "created_at": "object",
+    "text": "object",
+    "response_tweet_id": "object",
+    "in_response_to_tweet_id": "float64"
+  }
+}
