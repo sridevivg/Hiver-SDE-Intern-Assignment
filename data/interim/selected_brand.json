@@ -1,0 +1,59 @@
+{
+  "selected_brand": "AppleSupport",
+  "selection_date": "2026-09-09T17:08:47.227823+00:00",
+  "selection_method": "weighted multi-criteria ranking",
+  "candidate_count": 10,
+  "default_winner": "AppleSupport",
+  "scenario_used": "default",
+  "default_weights": {
+    "interaction_volume": 0.3,
+    "response_coverage": 0.2,
+    "conversation_reconstructability": 0.2,
+    "data_completeness": 0.15,
+    "issue_diversity": 0.15
+  },
+  "top_5_ranking": [
+    {
+      "rank": 1,
+      "brand": "AppleSupport",
+      "score": 0.864478
+    },
+    {
+      "rank": 2,
+      "brand": "British_Airways",
+      "score": 0.618928
+    },
+    {
+      "rank": 3,
+      "brand": "Tesco",
+      "score": 0.610801
+    },
+    {
+      "rank": 4,
+      "brand": "AmazonHelp",
+      "score": 0.553992
+    },
+    {
+      "rank": 5,
+      "brand": "Uber_Support",
+      "score": 0.549584
+    }
+  ],
+  "robustness_summary": "[default] winner=AppleSupport; [volume_focused] winner=AppleSupport; [quality_focused] winner=AppleSupport",
+  "selection_rationale": "'AppleSupport' ranked #1 in the default (balanced) scenario. In sensitivity analysis, 'AppleSupport' won 3/3 scenarios.",
+  "limitations": [
+    "Ranking is relative to the evaluated top-N candidate set \u2014 not all 108 brands.",
+    "Volume metric reused from Phase 1; other metrics computed from full dataset scan.",
+    "Diversity metric uses TF-IDF + KMeans as a proxy, not ground-truth topic modeling.",
+    "Response coverage counts reply-parent presence, not semantic quality of responses.",
+    "Historical Twitter data may not represent current support operations.",
+    "Sensitivity analysis covers 3 pre-defined scenarios; other weight choices may differ."
+  ],
+  "config": {
+    "top_n": 10,
+    "sample_size": 5000,
+    "random_seed": 42,
+    "n_clusters": 10,
+    "tfidf_max_features": 500
+  }
+}
