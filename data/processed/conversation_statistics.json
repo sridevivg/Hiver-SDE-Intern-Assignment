@@ -1,0 +1,28 @@
+{
+  "total_selected_brand_tweets": 106860,
+  "total_candidate_conversations": 80717,
+  "total_valid_conversations": 80717,
+  "total_messages": 238907,
+  "mean_messages_per_conversation": 2.96,
+  "median_messages_per_conversation": 2.0,
+  "maximum_messages_per_conversation": 282,
+  "thread_type_distribution": {
+    "multi_turn": 9662,
+    "branched": 4912,
+    "customer_brand_customer": 4828,
+    "customer_brand_customer_brand": 8585,
+    "customer_brand": 52404,
+    "incomplete": 326
+  },
+  "quality_distribution": {
+    "high": 73959,
+    "medium": 6432,
+    "low": 326
+  },
+  "branched_conversations": 4926,
+  "conversations_with_anomalies": 6758,
+  "orphan_messages": 0,
+  "broken_parent_relationships": 326,
+  "cycles_detected": 0,
+  "timestamp_anomalies": 0
+}

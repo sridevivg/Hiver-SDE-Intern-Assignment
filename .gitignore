@@ -81,9 +81,10 @@ data/raw/**/*.csv
 Dataset/
 
 # Interim & processed data (generated, reproducible)
-# Commit only if small — comment out these lines to commit interim outputs
-# data/interim/
-# data/processed/
+# Exclude large conversation text dumps that exceed GitHub file limits
+data/processed/*.jsonl
+data/processed/conversations.jsonl
+
 
 # ---------------------------------------------------------------------------
 # ML Artifacts
