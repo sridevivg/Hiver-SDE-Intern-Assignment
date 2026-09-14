@@ -1,0 +1,187 @@
+{
+  "metrics": {
+    "total_golden_records": 200,
+    "completed_reviews": 57,
+    "pending_reviews": 143,
+    "agreed_count": 20,
+    "overridden_count": 37,
+    "unclear_count": 3,
+    "observed_agreement_rate": 0.3509,
+    "confidence_interval_95": [
+      0.24,
+      0.4806
+    ],
+    "sample_coverage_pct": 28.5,
+    "scientific_disclaimer": "OBSERVED ANNOTATION AGREEMENT on N=57 completed records (28.5% coverage). This reflects annotator agreement with baseline LLM suggestions during curation and must NOT be interpreted as generalized production model accuracy."
+  },
+  "per_intent_agreement": [
+    {
+      "intent": "general_device_support",
+      "ground_truth_support": 18,
+      "ai_suggested_support": 34,
+      "agreed_matches": 13,
+      "ai_false_positives": 21,
+      "ai_false_negatives": 5,
+      "observed_precision": 0.3824,
+      "observed_recall": 0.7222,
+      "observed_f1": 0.5
+    },
+    {
+      "intent": "software_update_problem",
+      "ground_truth_support": 11,
+      "ai_suggested_support": 3,
+      "agreed_matches": 3,
+      "ai_false_positives": 0,
+      "ai_false_negatives": 8,
+      "observed_precision": 1.0,
+      "observed_recall": 0.2727,
+      "observed_f1": 0.4286
+    },
+    {
+      "intent": "keyboard_typing_issue",
+      "ground_truth_support": 8,
+      "ai_suggested_support": 2,
+      "agreed_matches": 1,
+      "ai_false_positives": 1,
+      "ai_false_negatives": 7,
+      "observed_precision": 0.5,
+      "observed_recall": 0.125,
+      "observed_f1": 0.2
+    },
+    {
+      "intent": "hardware_audio_connection_issue",
+      "ground_truth_support": 6,
+      "ai_suggested_support": 0,
+      "agreed_matches": 0,
+      "ai_false_positives": 0,
+      "ai_false_negatives": 6,
+      "observed_precision": 0.0,
+      "observed_recall": 0.0,
+      "observed_f1": 0.0
+    },
+    {
+      "intent": "battery_power_issue",
+      "ground_truth_support": 4,
+      "ai_suggested_support": 1,
+      "agreed_matches": 1,
+      "ai_false_positives": 0,
+      "ai_false_negatives": 3,
+      "observed_precision": 1.0,
+      "observed_recall": 0.25,
+      "observed_f1": 0.4
+    },
+    {
+      "intent": "mac_software_issue",
+      "ground_truth_support": 4,
+      "ai_suggested_support": 4,
+      "agreed_matches": 0,
+      "ai_false_positives": 4,
+      "ai_false_negatives": 4,
+      "observed_precision": 0.0,
+      "observed_recall": 0.0,
+      "observed_f1": 0.0
+    },
+    {
+      "intent": "display_touch_issue",
+      "ground_truth_support": 3,
+      "ai_suggested_support": 8,
+      "agreed_matches": 1,
+      "ai_false_positives": 7,
+      "ai_false_negatives": 2,
+      "observed_precision": 0.125,
+      "observed_recall": 0.3333,
+      "observed_f1": 0.1818
+    },
+    {
+      "intent": "unclear_needs_review",
+      "ground_truth_support": 3,
+      "ai_suggested_support": 2,
+      "agreed_matches": 1,
+      "ai_false_positives": 1,
+      "ai_false_negatives": 2,
+      "observed_precision": 0.5,
+      "observed_recall": 0.3333,
+      "observed_f1": 0.4
+    },
+    {
+      "intent": "account_access_issue",
+      "ground_truth_support": 0,
+      "ai_suggested_support": 2,
+      "agreed_matches": 0,
+      "ai_false_positives": 2,
+      "ai_false_negatives": 0,
+      "observed_precision": 0.0,
+      "observed_recall": 0.0,
+      "observed_f1": 0.0
+    },
+    {
+      "intent": "billing_purchase_issue",
+      "ground_truth_support": 0,
+      "ai_suggested_support": 1,
+      "agreed_matches": 0,
+      "ai_false_positives": 1,
+      "ai_false_negatives": 0,
+      "observed_precision": 0.0,
+      "observed_recall": 0.0,
+      "observed_f1": 0.0
+    }
+  ],
+  "most_overpredicted_ai_labels": [
+    {
+      "intent": "general_device_support",
+      "ai_suggested_count": 34,
+      "ground_truth_count": 18,
+      "overprediction_delta": 16
+    },
+    {
+      "intent": "display_touch_issue",
+      "ai_suggested_count": 8,
+      "ground_truth_count": 3,
+      "overprediction_delta": 5
+    },
+    {
+      "intent": "account_access_issue",
+      "ai_suggested_count": 2,
+      "ground_truth_count": 0,
+      "overprediction_delta": 2
+    },
+    {
+      "intent": "billing_purchase_issue",
+      "ai_suggested_count": 1,
+      "ground_truth_count": 0,
+      "overprediction_delta": 1
+    }
+  ],
+  "most_underpredicted_human_labels": [
+    {
+      "intent": "software_update_problem",
+      "ai_suggested_count": 3,
+      "ground_truth_count": 11,
+      "underprediction_delta": 8
+    },
+    {
+      "intent": "keyboard_typing_issue",
+      "ai_suggested_count": 2,
+      "ground_truth_count": 8,
+      "underprediction_delta": 6
+    },
+    {
+      "intent": "hardware_audio_connection_issue",
+      "ai_suggested_count": 0,
+      "ground_truth_count": 6,
+      "underprediction_delta": 6
+    },
+    {
+      "intent": "battery_power_issue",
+      "ai_suggested_count": 1,
+      "ground_truth_count": 4,
+      "underprediction_delta": 3
+    },
+    {
+      "intent": "unclear_needs_review",
+      "ai_suggested_count": 2,
+      "ground_truth_count": 3,
+      "underprediction_delta": 1
+    }
+  ]
+}

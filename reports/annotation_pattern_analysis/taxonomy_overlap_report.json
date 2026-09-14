@@ -1,0 +1,123 @@
+{
+  "general_device_support_audit": {
+    "ai_predicted_count": 34,
+    "human_confirmed_count": 13,
+    "human_overridden_count": 21,
+    "override_rate": 0.6176,
+    "confirmed_rate": 0.3824,
+    "top_target_intents": [
+      {
+        "intent": "software_update_problem",
+        "count": 6,
+        "percentage": 28.6
+      },
+      {
+        "intent": "mac_software_issue",
+        "count": 4,
+        "percentage": 19.0
+      },
+      {
+        "intent": "hardware_audio_connection_issue",
+        "count": 3,
+        "percentage": 14.3
+      },
+      {
+        "intent": "battery_power_issue",
+        "count": 3,
+        "percentage": 14.3
+      },
+      {
+        "intent": "keyboard_typing_issue",
+        "count": 2,
+        "percentage": 9.5
+      },
+      {
+        "intent": "display_touch_issue",
+        "count": 2,
+        "percentage": 9.5
+      },
+      {
+        "intent": "unclear_needs_review",
+        "count": 1,
+        "percentage": 4.8
+      }
+    ],
+    "distinguishing_signals_retained": [
+      "115858",
+      "screen",
+      "macbook",
+      "turn",
+      "new"
+    ],
+    "distinguishing_signals_overridden": [
+      "115858",
+      "ios",
+      "iphone",
+      "please",
+      "fix",
+      "high",
+      "sierra",
+      "high sierra"
+    ],
+    "audit_verdict": "OVER-USED AS CATCH-ALL: AI over-predicts general_device_support (61.8% override rate). Human annotators consistently reclassify into concrete operational intents.",
+    "actionable_guidelines": [
+      "DO NOT use general_device_support if a specific subsystem (audio, screen, battery, keyboard, macOS) is named.",
+      "DO NOT use general_device_support if problem onset is attributed to a software update ('since update', 'after updating').",
+      "USE general_device_support strictly for generic assistance, store inquiries, broad operational how-to questions, or when multiple disparate subsystems are mentioned without a dominant root cause."
+    ]
+  },
+  "taxonomy_overlaps": [
+    {
+      "label_a": "general_device_support",
+      "label_b": "software_update_problem",
+      "observed_disagreements": 6,
+      "example_messages": [
+        "@AppleSupport hey guys just curious - why aren\u2019t iOS app updates automatic? Seems pretty clear here, no? Yet I manually have to check and click Update All daily... https://t.co/jFgs9KRl9U",
+        "Can\u2019t turn off WiFi from control center? New @115858 iOS is garbage. Who knows how to roll back to the good one?"
+      ],
+      "ambiguity_source": "Customer reports vague instability or general issue after a software update.",
+      "proposed_boundary_guideline": "If the message explicitly links problem onset to an update ('after update', 'since ios 11'), assign software_update_problem. If it is a generic query without update causality, assign general_device_support."
+    },
+    {
+      "label_a": "general_device_support",
+      "label_b": "hardware_audio_connection_issue",
+      "observed_disagreements": 3,
+      "example_messages": [
+        "My IPhone glitch is that it won\u2019t stay connected to any WiFi. @AppleSupport ?",
+        "@AppleSupport Can I use my wired  printer  having USB on my MacBook pro which has  has c type?..Pls suggest if USB hub and c-type to USB female will work for it?"
+      ],
+      "ambiguity_source": "Customer asks about cables, adapters, printers, or AirPods.",
+      "proposed_boundary_guideline": "Any mention of physical ports (USB, Lightning, 3.5mm jack), peripheral cables, or audio accessories routes to hardware_audio_connection_issue."
+    },
+    {
+      "label_a": "display_touch_issue",
+      "label_b": "keyboard_typing_issue",
+      "observed_disagreements": 2,
+      "example_messages": [
+        "@AppleSupport \ud83d\udde3I am tired of seeing boxes ,with a question mark in the middle , where words are supposed to be. Fix this \ud83d\udca9 NOW !!",
+        "@AppleSupport please fix this letter \u201ceye\u201d problem!! I\ufe0f paid all this money for this phone &amp; I\u2019m still seeing blocks!"
+      ],
+      "ambiguity_source": "Visual rendering glitches affecting autocorrect / letter I glitch.",
+      "proposed_boundary_guideline": "If the glitch specifically affects text input or the letter 'I' box symbol, assign keyboard_typing_issue. If the screen panel itself is flickering, cracked, or unresponsive, assign display_touch_issue."
+    },
+    {
+      "label_a": "mac_software_issue",
+      "label_b": "general_device_support",
+      "observed_disagreements": 4,
+      "example_messages": [
+        "Hey @115858 @AppleSupport we need a lil favour. Safari 11.0.1 &amp; it\u2019s relationship with High Sierra needs to be fixed. Many people are having multiple problems since the High Sierra update, specific sites are not loading. Multiple community posts have not fixed problem. Please help",
+        "@AppleSupport since updating to high sierra I'm seeing lots of notifications from Time Machine, which I don't use. How do I turn off?"
+      ],
+      "ambiguity_source": "Desktop Mac / MacBook troubleshooting vs generic device inquiries.",
+      "proposed_boundary_guideline": "Assign mac_software_issue when macOS-specific features (High Sierra, Finder, Safari, Time Machine, macOS install) are mentioned."
+    },
+    {
+      "label_a": "battery_power_issue",
+      "label_b": "hardware_audio_connection_issue",
+      "observed_disagreements": 0,
+      "example_messages": [],
+      "ambiguity_source": "Charging cable / lead failure vs battery depletion.",
+      "proposed_boundary_guideline": "If the charger or cable is physically defective/broken, assign hardware_audio_connection_issue. If the battery is draining fast or device won't charge/hold power, assign battery_power_issue."
+    }
+  ]
+}

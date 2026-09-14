@@ -1,0 +1,800 @@
+[
+  {
+    "ai_suggested_label": "general_device_support",
+    "human_ground_truth_label": "software_update_problem",
+    "count": 6,
+    "percentage_of_all_overrides": 16.22,
+    "representative_examples": [
+      {
+        "golden_id": "gold_105",
+        "message": "@AppleSupport hey guys just curious - why aren\u2019t iOS app updates automatic? Seems pretty clear here, no? Yet I manually have to check and click Update All daily... https://t.co/jFgs9KRl9U"
+      },
+      {
+        "golden_id": "gold_109",
+        "message": "Can\u2019t turn off WiFi from control center? New @115858 iOS is garbage. Who knows how to roll back to the good one?"
+      },
+      {
+        "golden_id": "gold_025",
+        "message": "Espero que con la actualizacion de correcci\u00f3n de errores y dem\u00e1s mi iPhone mejore... por que el iOs 11 va de pena @115858"
+      }
+    ],
+    "recurring_semantic_signals": [
+      {
+        "signal": "ios",
+        "frequency": 5,
+        "type": "token"
+      },
+      {
+        "signal": "115858",
+        "frequency": 4,
+        "type": "token"
+      },
+      {
+        "signal": "new",
+        "frequency": 3,
+        "type": "token"
+      },
+      {
+        "signal": "update",
+        "frequency": 2,
+        "type": "token"
+      },
+      {
+        "signal": "que",
+        "frequency": 2,
+        "type": "token"
+      }
+    ],
+    "possible_taxonomy_overlap": "AI over-relies on 'general_device_support' when text contains specific cues for 'software_update_problem'.",
+    "recommendation": "Enforce strict priority rules routing messages with 'software_update_problem' operational symptoms away from general fallback 'general_device_support'."
+  },
+  {
+    "ai_suggested_label": "general_device_support",
+    "human_ground_truth_label": "mac_software_issue",
+    "count": 4,
+    "percentage_of_all_overrides": 10.81,
+    "representative_examples": [
+      {
+        "golden_id": "gold_173",
+        "message": "Hey @115858 @AppleSupport we need a lil favour. Safari 11.0.1 &amp; it\u2019s relationship with High Sierra needs to be fixed. Many people are having multiple problems since the High Sierra update, specific sites are not loading. Multiple community posts have not fixed problem. Please help"
+      },
+      {
+        "golden_id": "gold_027",
+        "message": "@AppleSupport since updating to high sierra I'm seeing lots of notifications from Time Machine, which I don't use. How do I turn off?"
+      },
+      {
+        "golden_id": "gold_047",
+        "message": "@AppleSupport photos not syncing properly between OSX high Sierra and iOS.  Same problem in several versions  d was hoping would get fixed. Say an album with 172 pics but only 33 transfer.  Have rebuilt library. Wiped iPhone. Closed and reopened apps. Reset devices. Etc."
+      }
+    ],
+    "recurring_semantic_signals": [
+      {
+        "signal": "high",
+        "frequency": 4,
+        "type": "token"
+      },
+      {
+        "signal": "sierra",
+        "frequency": 4,
+        "type": "token"
+      },
+      {
+        "signal": "high sierra",
+        "frequency": 4,
+        "type": "phrase"
+      },
+      {
+        "signal": "fixed",
+        "frequency": 3,
+        "type": "token"
+      },
+      {
+        "signal": "multiple",
+        "frequency": 2,
+        "type": "token"
+      }
+    ],
+    "possible_taxonomy_overlap": "AI over-relies on 'general_device_support' when text contains specific cues for 'mac_software_issue'.",
+    "recommendation": "Enforce strict priority rules routing messages with 'mac_software_issue' operational symptoms away from general fallback 'general_device_support'."
+  },
+  {
+    "ai_suggested_label": "general_device_support",
+    "human_ground_truth_label": "battery_power_issue",
+    "count": 3,
+    "percentage_of_all_overrides": 8.11,
+    "representative_examples": [
+      {
+        "golden_id": "gold_190",
+        "message": "@115858 there\u2019s been a problem with my sisters iPhone 7 like it won\u2019t turn on or nothing even though it\u2019s  good charged, has not been dropped"
+      },
+      {
+        "golden_id": "gold_191",
+        "message": "Hi @AppleSupport my c3yo iPad Air died. Tried restore as per website, error msg now MacBook can\u2019t detect at all. Any ideas? Take to Store?"
+      },
+      {
+        "golden_id": "gold_074",
+        "message": "@AppleSupport laptop keeps shutting down during startup, tried a bunch of resets but nothing's working PLS HELP."
+      }
+    ],
+    "recurring_semantic_signals": [
+      {
+        "signal": "nothing",
+        "frequency": 2,
+        "type": "token"
+      },
+      {
+        "signal": "tried",
+        "frequency": 2,
+        "type": "token"
+      },
+      {
+        "signal": "115858",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "problem",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "sisters",
+        "frequency": 1,
+        "type": "token"
+      }
+    ],
+    "possible_taxonomy_overlap": "AI over-relies on 'general_device_support' when text contains specific cues for 'battery_power_issue'.",
+    "recommendation": "Enforce strict priority rules routing messages with 'battery_power_issue' operational symptoms away from general fallback 'general_device_support'."
+  },
+  {
+    "ai_suggested_label": "general_device_support",
+    "human_ground_truth_label": "hardware_audio_connection_issue",
+    "count": 3,
+    "percentage_of_all_overrides": 8.11,
+    "representative_examples": [
+      {
+        "golden_id": "gold_177",
+        "message": "My IPhone glitch is that it won\u2019t stay connected to any WiFi. @AppleSupport ?"
+      },
+      {
+        "golden_id": "gold_198",
+        "message": "@AppleSupport Can I use my wired  printer  having USB on my MacBook pro which has  has c type?..Pls suggest if USB hub and c-type to USB female will work for it?"
+      },
+      {
+        "golden_id": "gold_061",
+        "message": "@AppleSupport I don\u2019t want to have to manually lower the volume"
+      }
+    ],
+    "recurring_semantic_signals": [
+      {
+        "signal": "usb",
+        "frequency": 3,
+        "type": "token"
+      },
+      {
+        "signal": "type",
+        "frequency": 2,
+        "type": "token"
+      },
+      {
+        "signal": "iphone",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "glitch",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "won",
+        "frequency": 1,
+        "type": "token"
+      }
+    ],
+    "possible_taxonomy_overlap": "AI over-relies on 'general_device_support' when text contains specific cues for 'hardware_audio_connection_issue'.",
+    "recommendation": "Enforce strict priority rules routing messages with 'hardware_audio_connection_issue' operational symptoms away from general fallback 'general_device_support'."
+  },
+  {
+    "ai_suggested_label": "account_access_issue",
+    "human_ground_truth_label": "general_device_support",
+    "count": 2,
+    "percentage_of_all_overrides": 5.41,
+    "representative_examples": [
+      {
+        "golden_id": "gold_119",
+        "message": "#Siri. Hate new voice seems to works less well. Sounds like a teenager. @115858 @AppleSupport   Options?  Multiple selection."
+      },
+      {
+        "golden_id": "gold_128",
+        "message": "hey @115858 can u fix IOS"
+      }
+    ],
+    "recurring_semantic_signals": [
+      {
+        "signal": "115858",
+        "frequency": 2,
+        "type": "token"
+      },
+      {
+        "signal": "siri",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "hate",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "new",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "voice",
+        "frequency": 1,
+        "type": "token"
+      }
+    ],
+    "possible_taxonomy_overlap": "AI over-relies on 'account_access_issue' when text contains specific cues for 'general_device_support'.",
+    "recommendation": "Retain 'general_device_support' only when no specific subsystem, hardware component, or update causality is mentioned."
+  },
+  {
+    "ai_suggested_label": "display_touch_issue",
+    "human_ground_truth_label": "general_device_support",
+    "count": 2,
+    "percentage_of_all_overrides": 5.41,
+    "representative_examples": [
+      {
+        "golden_id": "gold_165",
+        "message": "@AppleSupport i FaceTimed my mate everyday and now when I go to ft him it won\u2019t connect but it connects with everyone else????"
+      },
+      {
+        "golden_id": "gold_097",
+        "message": "My phone is malfunctioning. My texts are coming in, but I\u2019m not getting the notification and it\u2019s going to the bottom of my messages @AppleSupport"
+      }
+    ],
+    "recurring_semantic_signals": [
+      {
+        "signal": "facetimed",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "mate",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "everyday",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "now",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "won",
+        "frequency": 1,
+        "type": "token"
+      }
+    ],
+    "possible_taxonomy_overlap": "AI over-relies on 'display_touch_issue' when text contains specific cues for 'general_device_support'.",
+    "recommendation": "Retain 'general_device_support' only when no specific subsystem, hardware component, or update causality is mentioned."
+  },
+  {
+    "ai_suggested_label": "display_touch_issue",
+    "human_ground_truth_label": "hardware_audio_connection_issue",
+    "count": 2,
+    "percentage_of_all_overrides": 5.41,
+    "representative_examples": [
+      {
+        "golden_id": "gold_106",
+        "message": "@AppleSupport i can\u2019t turn on my WiFi on my iPhone 7"
+      },
+      {
+        "golden_id": "gold_046",
+        "message": "@115858 @AppleSupport the music app is not producing sound. The other apps produce sound. Can play music but no sound comes out. Help. Thx."
+      }
+    ],
+    "recurring_semantic_signals": [
+      {
+        "signal": "sound",
+        "frequency": 3,
+        "type": "token"
+      },
+      {
+        "signal": "can",
+        "frequency": 2,
+        "type": "token"
+      },
+      {
+        "signal": "music",
+        "frequency": 2,
+        "type": "token"
+      },
+      {
+        "signal": "turn",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "wifi",
+        "frequency": 1,
+        "type": "token"
+      }
+    ],
+    "possible_taxonomy_overlap": "AI over-relies on 'display_touch_issue' when text contains specific cues for 'hardware_audio_connection_issue'.",
+    "recommendation": "Clarify decision boundary between 'display_touch_issue' and 'hardware_audio_connection_issue' in annotation guidelines."
+  },
+  {
+    "ai_suggested_label": "display_touch_issue",
+    "human_ground_truth_label": "keyboard_typing_issue",
+    "count": 2,
+    "percentage_of_all_overrides": 5.41,
+    "representative_examples": [
+      {
+        "golden_id": "gold_135",
+        "message": "@AppleSupport \ud83d\udde3I am tired of seeing boxes ,with a question mark in the middle , where words are supposed to be. Fix this \ud83d\udca9 NOW !!"
+      },
+      {
+        "golden_id": "gold_064",
+        "message": "@AppleSupport please fix this letter \u201ceye\u201d problem!! I\ufe0f paid all this money for this phone &amp; I\u2019m still seeing blocks!"
+      }
+    ],
+    "recurring_semantic_signals": [
+      {
+        "signal": "seeing",
+        "frequency": 2,
+        "type": "token"
+      },
+      {
+        "signal": "fix",
+        "frequency": 2,
+        "type": "token"
+      },
+      {
+        "signal": "fix this",
+        "frequency": 2,
+        "type": "phrase"
+      },
+      {
+        "signal": "tired",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "boxes",
+        "frequency": 1,
+        "type": "token"
+      }
+    ],
+    "possible_taxonomy_overlap": "AI over-relies on 'display_touch_issue' when text contains specific cues for 'keyboard_typing_issue'.",
+    "recommendation": "Clarify decision boundary between 'display_touch_issue' and 'keyboard_typing_issue' in annotation guidelines."
+  },
+  {
+    "ai_suggested_label": "general_device_support",
+    "human_ground_truth_label": "display_touch_issue",
+    "count": 2,
+    "percentage_of_all_overrides": 5.41,
+    "representative_examples": [
+      {
+        "golden_id": "gold_026",
+        "message": "@115858 for the love of #280characters would you please fix this I\ufe0f crap!  It\u2019s annoying AF! Also apps are loading wrong on 6splus, because of X screen size."
+      },
+      {
+        "golden_id": "gold_073",
+        "message": "@AppleSupport how much is it for an iPhone 7 glass screen? Struggling to find anything and I\u2019m not wanting to book in the repair. Had this modern phone two weeks and it\u2019s shattered off one little fall.  \ud83d\ude14 #disappointed"
+      }
+    ],
+    "recurring_semantic_signals": [
+      {
+        "signal": "screen",
+        "frequency": 2,
+        "type": "token"
+      },
+      {
+        "signal": "115858",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "love",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "280characters",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "please",
+        "frequency": 1,
+        "type": "token"
+      }
+    ],
+    "possible_taxonomy_overlap": "AI over-relies on 'general_device_support' when text contains specific cues for 'display_touch_issue'.",
+    "recommendation": "Enforce strict priority rules routing messages with 'display_touch_issue' operational symptoms away from general fallback 'general_device_support'."
+  },
+  {
+    "ai_suggested_label": "general_device_support",
+    "human_ground_truth_label": "keyboard_typing_issue",
+    "count": 2,
+    "percentage_of_all_overrides": 5.41,
+    "representative_examples": [
+      {
+        "golden_id": "gold_124",
+        "message": "What is up @115858 @AppleSupport with the letter I looking like this \ud83d\udc49\ud83c\udffc I\ufe0f  on my IPhone"
+      },
+      {
+        "golden_id": "gold_169",
+        "message": "@115858 fix this fucking question mark exclamation shit before I\ufe0f get a tracfone"
+      }
+    ],
+    "recurring_semantic_signals": [
+      {
+        "signal": "115858",
+        "frequency": 2,
+        "type": "token"
+      },
+      {
+        "signal": "letter",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "looking",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "like",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "iphone",
+        "frequency": 1,
+        "type": "token"
+      }
+    ],
+    "possible_taxonomy_overlap": "AI over-relies on 'general_device_support' when text contains specific cues for 'keyboard_typing_issue'.",
+    "recommendation": "Enforce strict priority rules routing messages with 'keyboard_typing_issue' operational symptoms away from general fallback 'general_device_support'."
+  },
+  {
+    "ai_suggested_label": "mac_software_issue",
+    "human_ground_truth_label": "keyboard_typing_issue",
+    "count": 2,
+    "percentage_of_all_overrides": 5.41,
+    "representative_examples": [
+      {
+        "golden_id": "gold_181",
+        "message": ". @115858 my laptop not letting me use my keyboard or mouse.... y\u2019all need to help me out"
+      },
+      {
+        "golden_id": "gold_084",
+        "message": "Formated and reinstalled MacOS High Sierra by Genius Bar member at Apple Shop but still problem of random key stopped working remains. It's time for Apple to acknowledge issue @AppleSupport even Google search shows many r facing same issue. No solution yet!"
+      }
+    ],
+    "recurring_semantic_signals": [
+      {
+        "signal": "apple",
+        "frequency": 2,
+        "type": "token"
+      },
+      {
+        "signal": "issue",
+        "frequency": 2,
+        "type": "token"
+      },
+      {
+        "signal": "115858",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "laptop",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "letting",
+        "frequency": 1,
+        "type": "token"
+      }
+    ],
+    "possible_taxonomy_overlap": "AI over-relies on 'mac_software_issue' when text contains specific cues for 'keyboard_typing_issue'.",
+    "recommendation": "Clarify decision boundary between 'mac_software_issue' and 'keyboard_typing_issue' in annotation guidelines."
+  },
+  {
+    "ai_suggested_label": "billing_purchase_issue",
+    "human_ground_truth_label": "general_device_support",
+    "count": 1,
+    "percentage_of_all_overrides": 2.7,
+    "representative_examples": [
+      {
+        "golden_id": "gold_104",
+        "message": "@AppleSupport why aren\u2019t my apps downloading??? I\u2019ve tried with and without WiFi..."
+      }
+    ],
+    "recurring_semantic_signals": [
+      {
+        "signal": "aren",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "apps",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "downloading",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "tried",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "without",
+        "frequency": 1,
+        "type": "token"
+      }
+    ],
+    "possible_taxonomy_overlap": "AI over-relies on 'billing_purchase_issue' when text contains specific cues for 'general_device_support'.",
+    "recommendation": "Retain 'general_device_support' only when no specific subsystem, hardware component, or update causality is mentioned."
+  },
+  {
+    "ai_suggested_label": "display_touch_issue",
+    "human_ground_truth_label": "software_update_problem",
+    "count": 1,
+    "percentage_of_all_overrides": 2.7,
+    "representative_examples": [
+      {
+        "golden_id": "gold_102",
+        "message": "Can @115948 or @115858 please fix the music app ...ever since the update .. I can\u2019t pause music without going to app\ud83d\ude44 #sos"
+      }
+    ],
+    "recurring_semantic_signals": [
+      {
+        "signal": "can",
+        "frequency": 2,
+        "type": "token"
+      },
+      {
+        "signal": "music",
+        "frequency": 2,
+        "type": "token"
+      },
+      {
+        "signal": "app",
+        "frequency": 2,
+        "type": "token"
+      },
+      {
+        "signal": "115948",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "115858",
+        "frequency": 1,
+        "type": "token"
+      }
+    ],
+    "possible_taxonomy_overlap": "AI over-relies on 'display_touch_issue' when text contains specific cues for 'software_update_problem'.",
+    "recommendation": "Clarify decision boundary between 'display_touch_issue' and 'software_update_problem' in annotation guidelines."
+  },
+  {
+    "ai_suggested_label": "general_device_support",
+    "human_ground_truth_label": "unclear_needs_review",
+    "count": 1,
+    "percentage_of_all_overrides": 2.7,
+    "representative_examples": [
+      {
+        "golden_id": "gold_041",
+        "message": "@AppleSupport thank u for a great chat and purchase experience"
+      }
+    ],
+    "recurring_semantic_signals": [
+      {
+        "signal": "thank",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "great",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "chat",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "purchase",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "experience",
+        "frequency": 1,
+        "type": "token"
+      }
+    ],
+    "possible_taxonomy_overlap": "AI over-relies on 'general_device_support' when text contains specific cues for 'unclear_needs_review'.",
+    "recommendation": "Enforce strict priority rules routing messages with 'unclear_needs_review' operational symptoms away from general fallback 'general_device_support'."
+  },
+  {
+    "ai_suggested_label": "keyboard_typing_issue",
+    "human_ground_truth_label": "software_update_problem",
+    "count": 1,
+    "percentage_of_all_overrides": 2.7,
+    "representative_examples": [
+      {
+        "golden_id": "gold_115",
+        "message": "@AppleSupport Please for heaven sake, since newest update the voice to text is horrible and texting is horrible"
+      }
+    ],
+    "recurring_semantic_signals": [
+      {
+        "signal": "horrible",
+        "frequency": 2,
+        "type": "token"
+      },
+      {
+        "signal": "please",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "heaven",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "sake",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "since",
+        "frequency": 1,
+        "type": "token"
+      }
+    ],
+    "possible_taxonomy_overlap": "AI over-relies on 'keyboard_typing_issue' when text contains specific cues for 'software_update_problem'.",
+    "recommendation": "Clarify decision boundary between 'keyboard_typing_issue' and 'software_update_problem' in annotation guidelines."
+  },
+  {
+    "ai_suggested_label": "mac_software_issue",
+    "human_ground_truth_label": "hardware_audio_connection_issue",
+    "count": 1,
+    "percentage_of_all_overrides": 2.7,
+    "representative_examples": [
+      {
+        "golden_id": "gold_056",
+        "message": "Und ich dachte mein MacBook bleibt frei von irgendwelchen Problemen.\ud83d\ude11\n\nLiebes @AppleSupport Team, my right speaker made weird sounds once and now the overall volume is lower than the other + there are no more heights in the sound itself anymore. Is it a known problem?"
+      }
+    ],
+    "recurring_semantic_signals": [
+      {
+        "signal": "und",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "ich",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "dachte",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "mein",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "macbook",
+        "frequency": 1,
+        "type": "token"
+      }
+    ],
+    "possible_taxonomy_overlap": "AI over-relies on 'mac_software_issue' when text contains specific cues for 'hardware_audio_connection_issue'.",
+    "recommendation": "Clarify decision boundary between 'mac_software_issue' and 'hardware_audio_connection_issue' in annotation guidelines."
+  },
+  {
+    "ai_suggested_label": "mac_software_issue",
+    "human_ground_truth_label": "unclear_needs_review",
+    "count": 1,
+    "percentage_of_all_overrides": 2.7,
+    "representative_examples": [
+      {
+        "golden_id": "gold_003",
+        "message": "@AppleSupport it works on my phone but not my MacBook"
+      }
+    ],
+    "recurring_semantic_signals": [
+      {
+        "signal": "works",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "phone",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "macbook",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "applesupport works",
+        "frequency": 1,
+        "type": "phrase"
+      },
+      {
+        "signal": "works phone",
+        "frequency": 1,
+        "type": "phrase"
+      }
+    ],
+    "possible_taxonomy_overlap": "AI over-relies on 'mac_software_issue' when text contains specific cues for 'unclear_needs_review'.",
+    "recommendation": "Clarify decision boundary between 'mac_software_issue' and 'unclear_needs_review' in annotation guidelines."
+  },
+  {
+    "ai_suggested_label": "unclear_needs_review",
+    "human_ground_truth_label": "keyboard_typing_issue",
+    "count": 1,
+    "percentage_of_all_overrides": 2.7,
+    "representative_examples": [
+      {
+        "golden_id": "gold_032",
+        "message": "@115858 what are you doing to the letter I pls help"
+      }
+    ],
+    "recurring_semantic_signals": [
+      {
+        "signal": "115858",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "letter",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "pls",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "help",
+        "frequency": 1,
+        "type": "token"
+      },
+      {
+        "signal": "115858 what",
+        "frequency": 1,
+        "type": "phrase"
+      }
+    ],
+    "possible_taxonomy_overlap": "AI over-relies on 'unclear_needs_review' when text contains specific cues for 'keyboard_typing_issue'.",
+    "recommendation": "Clarify decision boundary between 'unclear_needs_review' and 'keyboard_typing_issue' in annotation guidelines."
+  }
+]

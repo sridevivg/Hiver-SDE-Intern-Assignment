@@ -1,0 +1,136 @@
+{
+  "all_intents": [
+    "account_access_issue",
+    "battery_power_issue",
+    "billing_purchase_issue",
+    "display_touch_issue",
+    "general_device_support",
+    "hardware_audio_connection_issue",
+    "keyboard_typing_issue",
+    "mac_software_issue",
+    "software_update_problem",
+    "unclear_needs_review"
+  ],
+  "confusion_matrix": {
+    "account_access_issue": {
+      "account_access_issue": 0,
+      "battery_power_issue": 0,
+      "billing_purchase_issue": 0,
+      "display_touch_issue": 0,
+      "general_device_support": 2,
+      "hardware_audio_connection_issue": 0,
+      "keyboard_typing_issue": 0,
+      "mac_software_issue": 0,
+      "software_update_problem": 0,
+      "unclear_needs_review": 0
+    },
+    "battery_power_issue": {
+      "account_access_issue": 0,
+      "battery_power_issue": 1,
+      "billing_purchase_issue": 0,
+      "display_touch_issue": 0,
+      "general_device_support": 0,
+      "hardware_audio_connection_issue": 0,
+      "keyboard_typing_issue": 0,
+      "mac_software_issue": 0,
+      "software_update_problem": 0,
+      "unclear_needs_review": 0
+    },
+    "billing_purchase_issue": {
+      "account_access_issue": 0,
+      "battery_power_issue": 0,
+      "billing_purchase_issue": 0,
+      "display_touch_issue": 0,
+      "general_device_support": 1,
+      "hardware_audio_connection_issue": 0,
+      "keyboard_typing_issue": 0,
+      "mac_software_issue": 0,
+      "software_update_problem": 0,
+      "unclear_needs_review": 0
+    },
+    "display_touch_issue": {
+      "account_access_issue": 0,
+      "battery_power_issue": 0,
+      "billing_purchase_issue": 0,
+      "display_touch_issue": 1,
+      "general_device_support": 2,
+      "hardware_audio_connection_issue": 2,
+      "keyboard_typing_issue": 2,
+      "mac_software_issue": 0,
+      "software_update_problem": 1,
+      "unclear_needs_review": 0
+    },
+    "general_device_support": {
+      "account_access_issue": 0,
+      "battery_power_issue": 3,
+      "billing_purchase_issue": 0,
+      "display_touch_issue": 2,
+      "general_device_support": 13,
+      "hardware_audio_connection_issue": 3,
+      "keyboard_typing_issue": 2,
+      "mac_software_issue": 4,
+      "software_update_problem": 6,
+      "unclear_needs_review": 1
+    },
+    "hardware_audio_connection_issue": {
+      "account_access_issue": 0,
+      "battery_power_issue": 0,
+      "billing_purchase_issue": 0,
+      "display_touch_issue": 0,
+      "general_device_support": 0,
+      "hardware_audio_connection_issue": 0,
+      "keyboard_typing_issue": 0,
+      "mac_software_issue": 0,
+      "software_update_problem": 0,
+      "unclear_needs_review": 0
+    },
+    "keyboard_typing_issue": {
+      "account_access_issue": 0,
+      "battery_power_issue": 0,
+      "billing_purchase_issue": 0,
+      "display_touch_issue": 0,
+      "general_device_support": 0,
+      "hardware_audio_connection_issue": 0,
+      "keyboard_typing_issue": 1,
+      "mac_software_issue": 0,
+      "software_update_problem": 1,
+      "unclear_needs_review": 0
+    },
+    "mac_software_issue": {
+      "account_access_issue": 0,
+      "battery_power_issue": 0,
+      "billing_purchase_issue": 0,
+      "display_touch_issue": 0,
+      "general_device_support": 0,
+      "hardware_audio_connection_issue": 1,
+      "keyboard_typing_issue": 2,
+      "mac_software_issue": 0,
+      "software_update_problem": 0,
+      "unclear_needs_review": 1
+    },
+    "software_update_problem": {
+      "account_access_issue": 0,
+      "battery_power_issue": 0,
+      "billing_purchase_issue": 0,
+      "display_touch_issue": 0,
+      "general_device_support": 0,
+      "hardware_audio_connection_issue": 0,
+      "keyboard_typing_issue": 0,
+      "mac_software_issue": 0,
+      "software_update_problem": 3,
+      "unclear_needs_review": 0
+    },
+    "unclear_needs_review": {
+      "account_access_issue": 0,
+      "battery_power_issue": 0,
+      "billing_purchase_issue": 0,
+      "display_touch_issue": 0,
+      "general_device_support": 0,
+      "hardware_audio_connection_issue": 0,
+      "keyboard_typing_issue": 1,
+      "mac_software_issue": 0,
+      "software_update_problem": 0,
+      "unclear_needs_review": 1
+    }
+  }
+}
