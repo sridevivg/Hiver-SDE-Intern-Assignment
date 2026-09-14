@@ -1,0 +1,224 @@
+{
+  "status": "PROVISIONAL_HUMAN_REVIEW_REQUIRED",
+  "selected_brand": "AppleSupport",
+  "discovery_method": {
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "dimension_reduction": "PCA",
+    "pca_components": 50,
+    "explained_variance_ratio": 0.646,
+    "clustering_algorithm": "MiniBatchKMeans",
+    "random_seed": 42
+  },
+  "selected_cluster_count": 8,
+  "cluster_review_required": true,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "cluster_size": 3108,
+      "percentage": 15.54,
+      "top_terms": [
+        "fix",
+        "user fix",
+        "letter",
+        "type",
+        "question",
+        "glitch",
+        "shit",
+        "mark",
+        "question mark",
+        "user user"
+      ],
+      "representative_examples": [
+        "<USER> you need to fix this \u201cA\u201d shit when I\ufe0f put mf \u201cI\ufe0f\u201d",
+        "<USER> y\u2019all better fix these question marks that keep popping up whenever I\ufe0f try to use a damn I\ufe0f",
+        "<USER> girl \u201cI\ufe0f\u201d gotta be fixed immediately!!!",
+        "<USER> can you fix the I\ufe0f now?? Sick of this! \ud83d\ude10"
+      ],
+      "proposed_label": "keyboard_typing_glitch",
+      "final_intent_label": null,
+      "review_status": "pending"
+    },
+    {
+      "cluster_id": 1,
+      "cluster_size": 1621,
+      "percentage": 8.11,
+      "top_terms": [
+        "battery",
+        "ios",
+        "iphone",
+        "battery life",
+        "life",
+        "update",
+        "ios11",
+        "draining",
+        "phone",
+        "user battery"
+      ],
+      "representative_examples": [
+        "<USER> the battery drain is a bit much. iOS 11.0.2 on a A1533 iPhone 5S. <URL>",
+        "<USER> I upgraded my iPhone7 to 8 to get rid of the problems iOS11 caused,now Iphone8 is worse,battery runs out in no time...",
+        "Recent updates for <USER> #iphone just suck the battery dry, down to less than 7% 3 Times today not to mention everything is laggy and slow. Give me iOS 9 back!",
+        "<USER> Battery life terrible since downloading IOS 11.1 on my 6S. Even in Low Power mode, battery life dropping 1% every 2 minutes!"
+      ],
+      "proposed_label": "battery_power_issue",
+      "final_intent_label": null,
+      "review_status": "pending"
+    },
+    {
+      "cluster_id": 2,
+      "cluster_size": 3220,
+      "percentage": 16.1,
+      "top_terms": [
+        "phone",
+        "iphone",
+        "user iphone",
+        "new",
+        "user user",
+        "just",
+        "user phone",
+        "fix",
+        "screen",
+        "shit"
+      ],
+      "representative_examples": [
+        "The new iPhone came out and my phone has not stopped acting up (-: <USER> you dirty for this.",
+        "<USER> why is my iPhone 8 going dead within two hours??? Need to swap to team #Samsung",
+        "This is the buggiest my iPhone has ever been. Ever. No bueno, <USER> .",
+        "<USER> <USER> my wife burned her hand while using her IPhone. What should we do? We live in Chile. #Help"
+      ],
+      "proposed_label": "possible_display_hardware_issue",
+      "final_intent_label": null,
+      "review_status": "pending"
+    },
+    {
+      "cluster_id": 3,
+      "cluster_size": 2690,
+      "percentage": 13.45,
+      "top_terms": [
+        "ios",
+        "ios11",
+        "iphone",
+        "update",
+        "user ios",
+        "user user",
+        "phone",
+        "fix",
+        "app",
+        "ios update"
+      ],
+      "representative_examples": [
+        "<USER> since I upgraded to iOS 11.0.3 my phone just giving issues,it just on life support (started with 11.0.1) \ud83d\ude29",
+        "<USER> what is going on with iOS 11 it\u2019s stopped my whatsapp working and has bugs v annoyed",
+        "The latest <USER> IOS 11.0.2 update has caused more bugs on my iPhone 7 than the 10 Plagues of Moses. #apple #buglife #biblicalproportions",
+        "<USER> the new IOS 11.0.2 is a DISASTER. Don't fix what isn't broken. Keep your 10.3.3. ppl #androidsuckstootho #goingbacktolandline"
+      ],
+      "proposed_label": "software_update_issue",
+      "final_intent_label": null,
+      "review_status": "pending"
+    },
+    {
+      "cluster_id": 4,
+      "cluster_size": 2246,
+      "percentage": 11.23,
+      "top_terms": [
+        "store",
+        "iphone",
+        "icloud",
+        "itunes",
+        "user user",
+        "app",
+        "email",
+        "account",
+        "music",
+        "pay"
+      ],
+      "representative_examples": [
+        "<USER> i opened case to Apple regarding my 5s on 16th of September case number is 100307876369.I have been waiting for swap.",
+        "<USER> thank you for wasting my time Im now spending over 30 min on the phone just to try and speak to the store manager @ arden fair",
+        "<USER> I had a very bad experience at Mapple store,Apple authorised store.They are cheating openly.I lost trust on Apple wil never buy again",
+        "<USER> Hi, I study in Thailand and I subscribe for apple music student edition via <USER>. I am notified to verify my student account via unidays but Thailand is not on unidays supporting list. Are there other ways to verify my student status?"
+      ],
+      "proposed_label": "app_store_billing_issue",
+      "final_intent_label": null,
+      "review_status": "pending"
+    },
+    {
+      "cluster_id": 5,
+      "cluster_size": 2903,
+      "percentage": 14.52,
+      "top_terms": [
+        "music",
+        "macbook",
+        "user user",
+        "app",
+        "sierra",
+        "mac",
+        "just",
+        "screen",
+        "fix",
+        "update"
+      ],
+      "representative_examples": [
+        "LEAGUE PASS, YOU'RE FAILING ME AGAIN! <USER> I feel like this one is <USER>'s fault though, some safari pop-up keeps showing.",
+        "<USER> your reportaproblem page just keeps refreshing instead of allowing me to sign in.",
+        "Can anyone else open projects in GarageBand 2.3? Does <USER> know this is a problem? It\u2019s not listed online as a troubleshoot option",
+        "EYE ( <USER> please fix this) was surprised at the number of student musicians that showed up early on a Saturday morning. Kids are committed; school boards, dept of edu on the other hand...\ud83e\udd37\ud83c\udffe\u200d\u2640\ufe0f"
+      ],
+      "proposed_label": "possible_software_update_issue",
+      "final_intent_label": null,
+      "review_status": "pending"
+    },
+    {
+      "cluster_id": 6,
+      "cluster_size": 2210,
+      "percentage": 11.05,
+      "top_terms": [
+        "update",
+        "phone",
+        "new",
+        "updated",
+        "new update",
+        "iphone",
+        "update phone",
+        "user update",
+        "updated phone",
+        "updates"
+      ],
+      "representative_examples": [
+        "The latest update fucks up my phone,thanks <USER>",
+        "Phone non stop messing up since downloading the update, I know your game <USER>",
+        "<USER> Fix your phones. This new update is garbage",
+        "My phone is hardly functional with this update lol <USER>"
+      ],
+      "proposed_label": "software_update_issue",
+      "final_intent_label": null,
+      "review_status": "pending"
+    },
+    {
+      "cluster_id": 7,
+      "cluster_size": 2002,
+      "percentage": 10.01,
+      "top_terms": [
+        "user url",
+        "user user",
+        "fix",
+        "shit",
+        "user fix",
+        "fix url",
+        "wtf",
+        "user help",
+        "email",
+        "need"
+      ],
+      "representative_examples": [
+        "<USER> <USER> dude wassup the Square <URL>",
+        "Guess she didn\u2019t know how to help me thanks <USER> <URL>",
+        "<USER> you\u2019re killing me smalls <URL>",
+        "I feel like we never used to see this from <USER>. Could be just me, but watch how janky the transition is from an arrow to a straight line <URL>"
+      ],
+      "proposed_label": "possible_keyboard_typing_glitch",
+      "final_intent_label": null,
+      "review_status": "pending"
+    }
+  ]
+}
