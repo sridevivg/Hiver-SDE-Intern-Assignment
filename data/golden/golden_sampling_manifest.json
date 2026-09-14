@@ -1,0 +1,31 @@
+{
+  "manifest_version": "1.0",
+  "dataset_source": "Kaggle Customer Support on Twitter (AppleSupport subset)",
+  "brand": "AppleSupport",
+  "sampling_timestamp_utc": "2026-09-10T10:14:50.037053+00:00",
+  "random_seed": 42,
+  "target_sample_size": 200,
+  "actual_sample_size": 200,
+  "taxonomy_version": "v1.0-candidate",
+  "corpus_source_sha256": "b72af388970294052bd749b2da7c0ea976ffa3db56cc225dc0aad0d14224bbd0",
+  "candidates_csv_sha256": "c62cd259dbd58ef1c2eed1ce79af4be23c1c3d9f563c1aa0ec9fa6b77ae14043",
+  "sampling_strategy": "STRATIFIED_RANDOM_WITHOUT_REPLACEMENT",
+  "candidate_class_distribution": {
+    "software_update_problem": 23,
+    "general_device_support": 23,
+    "mac_software_issue": 22,
+    "display_touch_issue": 22,
+    "keyboard_typing_issue": 22,
+    "account_access_issue": 22,
+    "billing_purchase_issue": 22,
+    "hardware_audio_connection_issue": 22,
+    "battery_power_issue": 22
+  },
+  "duplicate_removal_statistics": {
+    "initial_corpus_count": 20000,
+    "duplicate_tweet_ids_removed": 0,
+    "duplicate_texts_removed": 80,
+    "eligible_unique_pool": 19920
+  },
+  "annotation_status": "PENDING_HUMAN_ANNOTATION"
+}
