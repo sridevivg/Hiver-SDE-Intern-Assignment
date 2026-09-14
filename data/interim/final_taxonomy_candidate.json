@@ -1,0 +1,290 @@
+{
+  "status": "candidate_human_review_required",
+  "taxonomy_version": "v1.0-candidate",
+  "selected_brand": "AppleSupport",
+  "intent_count": 9,
+  "intents": [
+    {
+      "intent_id": "intent_01",
+      "intent_name": "software_update_problem",
+      "definition": "Customer experiences failure, device freeze, app incompatibility, or crash during or immediately following an operating system update.",
+      "include_when": [
+        "Device unresponsive, bricked, or stuck on Apple logo during/after update.",
+        "Apps crash, freeze, or fail to launch specifically following an OS upgrade.",
+        "Error messages during update download, verification, or installation."
+      ],
+      "exclude_when": [
+        "Battery drain complaints without installation or operating failure (map to battery_power_issue).",
+        "App Store purchase or billing errors occurring after an update (map to billing_purchase_issue).",
+        "Mac desktop OS installation (map to mac_software_issue)."
+      ],
+      "example_messages": [
+        "<USER> since I upgraded to iOS 11.0.3 my phone just giving issues, it just on life support",
+        "<USER> what is going on with iOS 11 it\u2019s stopped my whatsapp working and has bugs v annoyed",
+        "Phone non stop messing up since downloading the update, I know your game <USER>"
+      ],
+      "source_clusters": [
+        3,
+        6
+      ],
+      "review_status": "candidate_human_review_required",
+      "decision_rationale": "Clusters 3 and 6 both captured software update complaints. They were merged to eliminate redundant intent heads and generalize away from single patch numbers (iOS 11.0.1 vs 11.0.3)."
+    },
+    {
+      "intent_id": "intent_02",
+      "intent_name": "battery_power_issue",
+      "definition": "Customer reports rapid battery drain, unexpected power shutoffs, failure to charge, or overheating power components.",
+      "include_when": [
+        "Battery percentage drops abnormally fast during normal or idle usage.",
+        "Device unexpectedly shuts down while battery indicator shows remaining charge.",
+        "Device fails to charge, charges slowly, or produces accessory not supported errors.",
+        "Device runs unusually hot during charging or battery depletion."
+      ],
+      "exclude_when": [
+        "Physical damage to charging port pin or liquid intrusion (map to hardware_audio_connection_issue).",
+        "Sluggish performance without explicit battery drain complaints (map to general_device_support)."
+      ],
+      "example_messages": [
+        "<USER> the battery drain is a bit much. iOS 11.0.2 on a A1533 iPhone 5S. <URL>",
+        "<USER> I upgraded my iPhone7 to 8 to get rid of the problems iOS11 caused, now Iphone8 is worse, battery runs out in hours",
+        "<USER> my battery percentage was at 45% and then suddenly dropped to 1% and shut off"
+      ],
+      "source_clusters": [
+        1
+      ],
+      "review_status": "candidate_human_review_required",
+      "decision_rationale": "Cluster 1 exhibited high cohesion and tight semantic focus on battery performance. Maintained as a standalone operational intent."
+    },
+    {
+      "intent_id": "intent_03",
+      "intent_name": "display_touch_issue",
+      "definition": "Customer reports physical or functional display malfunctions, including cracked glass, unresponsive touchscreen digitizer, lines, or black screens.",
+      "include_when": [
+        "Touchscreen digitizer fails to respond to finger taps, swipes, or gestures.",
+        "Screen has visible cracks, shattered glass, or dead pixels after an impact.",
+        "Display shows green/colored vertical lines, flickering, or remains completely black."
+      ],
+      "exclude_when": [
+        "Temporary application freeze where physical buttons and other apps work (map to general_device_support).",
+        "Keyboard character rendering bugs (map to keyboard_typing_issue)."
+      ],
+      "example_messages": [
+        "<USER> screen is cracked and touch is not responding at all can you help me",
+        "<USER> half of my screen is black with green vertical lines after waking up",
+        "<USER> my iPhone display froze completely and I cannot swipe to unlock"
+      ],
+      "source_clusters": [
+        2
+      ],
+      "review_status": "candidate_human_review_required",
+      "decision_rationale": "Cluster 2 was split because it mixed physical glass/touch defects with audio and generic device complaints. Display & touch require specific Genius Bar hardware repair procedures."
+    },
+    {
+      "intent_id": "intent_04",
+      "intent_name": "account_access_issue",
+      "definition": "Customer cannot access their Apple ID, iCloud account, or device due to forgotten credentials, locked account status, or authentication code failures.",
+      "include_when": [
+        "Forgotten Apple ID password, passcode, or security questions.",
+        "Account disabled or locked for security reasons.",
+        "Failure to receive two-factor authentication (2FA) SMS or push verification codes.",
+        "iCloud activation lock preventing device setup."
+      ],
+      "exclude_when": [
+        "Disputed charges on credit card or unexpected subscriptions (map to billing_purchase_issue).",
+        "Inability to download a specific free app due to server error (map to billing_purchase_issue)."
+      ],
+      "example_messages": [
+        "<USER> forgot my apple id password and cannot login to my icloud account",
+        "<USER> your reportaproblem page just keeps refreshing instead of allowing me to sign in",
+        "<USER> my account is locked for security reasons and the recovery email never arrives"
+      ],
+      "source_clusters": [
+        4
+      ],
+      "review_status": "candidate_human_review_required",
+      "decision_rationale": "Cluster 4 co-mingled credential authentication with payment billing disputes. Split to enable distinct identity verification routing."
+    },
+    {
+      "intent_id": "intent_05",
+      "intent_name": "billing_purchase_issue",
+      "definition": "Customer reports financial, purchase, or subscription discrepancies, including unauthorized charges, refund requests, or App Store payment declines.",
+      "include_when": [
+        "Customer sees unexpected or recurring charges from iTunes or App Store on bank statement.",
+        "Requests for refund on in-app purchases or accidental downloads.",
+        "Declined credit/debit card errors or payment method verification failures in App Store.",
+        "Subscriptions that were canceled but continue to generate billing notifications."
+      ],
+      "exclude_when": [
+        "Inability to log in to Apple ID to view purchases (map to account_access_issue).",
+        "App crashes immediately after purchase without payment dispute (map to software_update_problem)."
+      ],
+      "example_messages": [
+        "<USER> i was charged twice for my Apple Music subscription this month please refund",
+        "<USER> why is my card being declined in the App Store when funds are available?",
+        "<USER> unauthorized $9.99 in-app purchase charge appeared on my receipt how to dispute"
+      ],
+      "source_clusters": [
+        4
+      ],
+      "review_status": "candidate_human_review_required",
+      "decision_rationale": "Financial disputes require specialized billing workflows, invoice retrieval, and refund tools. Separated from account credential recovery."
+    },
+    {
+      "intent_id": "intent_06",
+      "intent_name": "keyboard_typing_issue",
+      "definition": "Customer reports text input anomalies, predictive text failures, autocorrect loops, or keyboard interface rendering glitches.",
+      "include_when": [
+        "Autocorrect automatically substitutes incorrect symbols or loops characters.",
+        "On-screen keyboard fails to appear, lags severely behind typing, or freezes.",
+        "Glitch where specific letters (e.g. 'I') are rendered as symbols or question marks."
+      ],
+      "exclude_when": [
+        "Physical external Mac keyboard key broken or disconnected (map to mac_software_issue).",
+        "Touchscreen digitizer dead across the entire display (map to display_touch_issue)."
+      ],
+      "example_messages": [
+        "<USER> you need to fix this \u201cA\u201d shit when I put mf \u201cI\u201d",
+        "<USER> y\u2019all better fix these question marks that keep popping up whenever I try to use a damn I",
+        "<USER> FIX YOUR GODDAM \u201cI\u201d glitch. All my friends are thinking I\u2019m a drunk because of typos"
+      ],
+      "source_clusters": [
+        0,
+        7
+      ],
+      "review_status": "candidate_human_review_required",
+      "decision_rationale": "Clusters 0 and 7 represented the same underlying keyboard/typing failure mode, with Cluster 7 being an informal/frustrated expression variant. Merged and generalized beyond the 2017 autocorrect bug."
+    },
+    {
+      "intent_id": "intent_07",
+      "intent_name": "mac_software_issue",
+      "definition": "Customer reports software, operating system, or application failures specific to macOS and Mac desktop/laptop hardware (MacBook, iMac, Mac mini).",
+      "include_when": [
+        "macOS upgrade installation issues (Sierra, High Sierra) or kernel panic crashes.",
+        "Desktop Safari browser memory leaks, pop-up loops, or unresponsive tabs on Mac.",
+        "MacBook trackpad software gesture anomalies or desktop iTunes library corruption."
+      ],
+      "exclude_when": [
+        "General iPhone or iPad iOS problems (map to software_update_problem).",
+        "Apple ID password reset initiated from a Mac web browser (map to account_access_issue)."
+      ],
+      "example_messages": [
+        "lol wtf I swear there is something wrong with the memory of my macbook <USER> <USER>",
+        "LEAGUE PASS, YOU'RE FAILING ME AGAIN! <USER> I feel like this one is <USER>'s fault though, some safari pop-up",
+        "<USER> macOS Sierra installation stuck on 2 minutes remaining for 4 hours on my MacBook Pro"
+      ],
+      "source_clusters": [
+        5
+      ],
+      "review_status": "candidate_human_review_required",
+      "decision_rationale": "Cluster 5 showed clear divergence between desktop Mac software and mobile iOS workflows. Mac desktop troubleshooting requires distinct terminal/Disk Utility/NVRAM reset paths."
+    },
+    {
+      "intent_id": "intent_08",
+      "intent_name": "hardware_audio_connection_issue",
+      "definition": "Customer reports physical hardware defects or wireless connectivity failures related to speakers, microphones, Bluetooth accessories, Wi-Fi, or cellular network hardware.",
+      "include_when": [
+        "Speaker produces distorted, crackling, or zero audio during phone calls or media.",
+        "Microphone does not pick up voice during calls or Siri commands.",
+        "Bluetooth fails to pair or persistently drops connection with headphones/AirPods/car audio.",
+        "Wi-Fi toggle grayed out or cellular hardware displays 'No Service' persistently.",
+        "Physical volume buttons, mute switch, or home button physically stuck or broken."
+      ],
+      "exclude_when": [
+        "Display glass cracks or touchscreen digitizer failures (map to display_touch_issue).",
+        "Charging port failure related to power replenishment (map to battery_power_issue)."
+      ],
+      "example_messages": [
+        "<USER> since upgrading loud speaker no longer works when receiving a call? Please fix!",
+        "<USER> my Bluetooth keeps dropping connection to my AirPods every 30 seconds",
+        "<USER> wifi toggle is greyed out in settings and says no service on my iPhone"
+      ],
+      "source_clusters": [
+        2
+      ],
+      "review_status": "candidate_human_review_required",
+      "decision_rationale": "Split from Cluster 2 to decouple non-display hardware and connectivity defects from screen digitizers."
+    },
+    {
+      "intent_id": "intent_09",
+      "intent_name": "general_device_support",
+      "definition": "Customer submits general how-to questions, store appointment/reservation inquiries, warranty checks, or ambiguous multi-issue complaints requiring initial support triage.",
+      "include_when": [
+        "Inquiries about Apple Store Genius Bar reservations, repair status, or appointment scheduling.",
+        "How-to configuration questions (e.g. how to transfer data, setup new device, adjust ringer volume).",
+        "Warranty coverage or trade-in inquiries.",
+        "Compound or broad complaints that span multiple categories and require agent clarification."
+      ],
+      "exclude_when": [
+        "Clear single-problem complaints covered by specific intents above.",
+        "Incomprehensible, truncated, or non-English messages (classify as unclear_needs_review)."
+      ],
+      "example_messages": [
+        "<USER> I\u2019ve got a screenshot saying my #iPhoneX is reserved for the 3rd then an email saying it\u2019s the 18th... what happened?",
+        "<USER> how do I change my ringer/notifications volume? Using the volume keys on the home screen used to display \u201cringer\u201d",
+        "<USER> do I need an appointment to replace my battery at the Apple Store today?"
+      ],
+      "source_clusters": [
+        2,
+        4,
+        5
+      ],
+      "review_status": "candidate_human_review_required",
+      "decision_rationale": "Provides a calibrated triage class for general setup, store reservations, and complex multi-issue opening messages without contaminating technical troubleshooting categories."
+    }
+  ],
+  "merge_decisions": [
+    {
+      "merged_clusters": [
+        0,
+        7
+      ],
+      "target_intent": "keyboard_typing_issue",
+      "rationale": "Clusters 0 and 7 addressed identical text rendering / typing problems. Cluster 7 represented an informal/frustrated expression variant. Merged to form a timeless category."
+    },
+    {
+      "merged_clusters": [
+        3,
+        6
+      ],
+      "target_intent": "software_update_problem",
+      "rationale": "Clusters 3 and 6 both captured software update installation errors and post-update app glitches. Merged to avoid redundant classification classes."
+    }
+  ],
+  "split_decisions": [
+    {
+      "split_cluster": 4,
+      "resulting_intents": [
+        "account_access_issue",
+        "billing_purchase_issue"
+      ],
+      "rationale": "Cluster 4 co-mingled account authentication (password resets, 2FA, locked Apple ID) with financial disputes (App Store billing, unwanted charges, refunds). Split into distinct operational workflows."
+    },
+    {
+      "split_cluster": 2,
+      "resulting_intents": [
+        "display_touch_issue",
+        "hardware_audio_connection_issue",
+        "general_device_support"
+      ],
+      "rationale": "Cluster 2 lumped display glass cracks, touchscreen unresponsiveness, audio defects, and general device inquiries. Split to enable dedicated screen repair vs connectivity resolution routing."
+    },
+    {
+      "split_cluster": 5,
+      "resulting_intents": [
+        "mac_software_issue",
+        "general_device_support"
+      ],
+      "rationale": "Cluster 5 mixed desktop macOS/MacBook inquiries with cloud media streaming. Desktop Mac issues require distinct troubleshooting tools."
+    }
+  ],
+  "metadata": {
+    "target_intent_range": "7-10",
+    "total_intents": 9,
+    "evidence_sources": [
+      "data/interim/intent_discovery_corpus.csv",
+      "data/interim/intent_taxonomy_human_review.csv",
+      "data/interim/cluster_merge_candidates.csv",
+      "data/interim/cluster_split_candidates.csv"
+    ]
+  }
+}

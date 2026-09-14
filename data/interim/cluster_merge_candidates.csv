@@ -1,0 +1,6 @@
+cluster_a,cluster_b,centroid_similarity,shared_terms,reason,recommendation
+0,7,0.5144,"fix, shit, user fix, user user","Both clusters address the same operational problem (keyboard_typing_glitch & possible_keyboard_typing_glitch) with centroid similarity 0.514 and shared terms: [fix, shit, user fix, user user].",review
+1,3,0.4455,"ios, ios11, iphone, phone, update","High centroid cosine similarity (0.446) indicating semantic proximity in vector space; shared terms: [ios, ios11, iphone, phone, update].",review
+3,6,0.1567,"iphone, phone, update","Both clusters address the same operational problem (software_update_issue & software_update_issue) with centroid similarity 0.157 and shared terms: [iphone, phone, update].",review
+5,6,-0.2449,update,Both clusters address the same operational problem (possible_software_update_issue & software_update_issue) with centroid similarity -0.245 and shared terms: [update].,review
+3,5,-0.3207,"app, fix, update, user user","Both clusters address the same operational problem (software_update_issue & possible_software_update_issue) with centroid similarity -0.321 and shared terms: [app, fix, update, user user].",review
