@@ -1,0 +1,72 @@
+{
+  "battery_power_issue": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 2.0
+  },
+  "billing_purchase_issue": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 0.0
+  },
+  "display_touch_issue": {
+    "precision": 0.2,
+    "recall": 0.3333333333333333,
+    "f1-score": 0.25,
+    "support": 3.0
+  },
+  "general_device_support": {
+    "precision": 0.42857142857142855,
+    "recall": 0.8181818181818182,
+    "f1-score": 0.5625,
+    "support": 11.0
+  },
+  "hardware_audio_connection_issue": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3.0
+  },
+  "keyboard_typing_issue": {
+    "precision": 1.0,
+    "recall": 0.25,
+    "f1-score": 0.4,
+    "support": 4.0
+  },
+  "mac_software_issue": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3.0
+  },
+  "software_update_problem": {
+    "precision": 1.0,
+    "recall": 0.375,
+    "f1-score": 0.5454545454545454,
+    "support": 8.0
+  },
+  "unclear_needs_review": {
+    "precision": 0.5,
+    "recall": 0.3333333333333333,
+    "f1-score": 0.4,
+    "support": 3.0
+  },
+  "accuracy": 0.43243243243243246,
+  "macro avg": {
+    "precision": 0.45873015873015865,
+    "recall": 0.289983164983165,
+    "f1-score": 0.3138468013468013,
+    "support": 37.0
+  },
+  "weighted avg": {
+    "precision": 0.5625482625482626,
+    "recall": 0.43243243243243246,
+    "f1-score": 0.41714782964782965,
+    "support": 37.0
+  },
+  "agreement_count": 16,
+  "total_records": 37,
+  "agreement_percentage": 43.24324324324324
+}
