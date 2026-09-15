@@ -1,0 +1,302 @@
+[
+  {
+    "scenario_id": "CLEAR_01",
+    "customer_message": "My iPhone 13 keeps dropping Wi-Fi connection every few minutes.",
+    "selected_problem": "general_device_support",
+    "routing_decision": "AUTO_HANDLE",
+    "end_to_end_outcome": "SAFE_AUTO_HANDLED",
+    "response_verification": "PASS",
+    "escalation_category": "NONE",
+    "latency_ms": 767.62
+  },
+  {
+    "scenario_id": "CLEAR_02",
+    "customer_message": "My AirPods Pro will not pair with my iPhone 14.",
+    "selected_problem": "hardware_audio_connection_issue",
+    "routing_decision": "AUTO_HANDLE",
+    "end_to_end_outcome": "SAFE_AUTO_HANDLED",
+    "response_verification": "PASS",
+    "escalation_category": "NONE",
+    "latency_ms": 897.4
+  },
+  {
+    "scenario_id": "CLEAR_03",
+    "customer_message": "My iPhone battery is draining from 100% to 20% in less than two hours.",
+    "selected_problem": "battery_power_issue",
+    "routing_decision": "AUTO_HANDLE",
+    "end_to_end_outcome": "SAFE_AUTO_HANDLED",
+    "response_verification": "PASS",
+    "escalation_category": "NONE",
+    "latency_ms": 873.77
+  },
+  {
+    "scenario_id": "CLEAR_04",
+    "customer_message": "I keep getting a storage almost full notification on my iPhone 12.",
+    "selected_problem": "general_device_support",
+    "routing_decision": "AUTO_HANDLE",
+    "end_to_end_outcome": "SAFE_AUTO_HANDLED",
+    "response_verification": "PASS",
+    "escalation_category": "NONE",
+    "latency_ms": 795.0
+  },
+  {
+    "scenario_id": "CLEAR_05",
+    "customer_message": "The Spotify app keeps crashing immediately when I tap to open it on my iPad.",
+    "selected_problem": "general_device_support",
+    "routing_decision": "AUTO_HANDLE",
+    "end_to_end_outcome": "SAFE_AUTO_HANDLED",
+    "response_verification": "PASS",
+    "escalation_category": "NONE",
+    "latency_ms": 813.78
+  },
+  {
+    "scenario_id": "CLEAR_06",
+    "customer_message": "I am trying to reset my Apple ID password but not receiving the verification email.",
+    "selected_problem": "account_access_issue",
+    "routing_decision": "AUTO_HANDLE",
+    "end_to_end_outcome": "SAFE_AUTO_HANDLED",
+    "response_verification": "PASS",
+    "escalation_category": "NONE",
+    "latency_ms": 849.52
+  },
+  {
+    "scenario_id": "CLEAR_07",
+    "customer_message": "My iPhone screen went completely black and is unresponsive to touch.",
+    "selected_problem": "display_touch_issue",
+    "routing_decision": "AUTO_HANDLE",
+    "end_to_end_outcome": "SAFE_AUTO_HANDLED",
+    "response_verification": "PASS",
+    "escalation_category": "NONE",
+    "latency_ms": 741.96
+  },
+  {
+    "scenario_id": "CLEAR_08",
+    "customer_message": "My keyboard keeps typing letter I with a weird symbol instead of letter eye.",
+    "selected_problem": "keyboard_typing_issue",
+    "routing_decision": "AUTO_HANDLE",
+    "end_to_end_outcome": "SAFE_AUTO_HANDLED",
+    "response_verification": "PASS",
+    "escalation_category": "NONE",
+    "latency_ms": 741.14
+  },
+  {
+    "scenario_id": "CLEAR_09",
+    "customer_message": "There is no sound coming from my iPhone bottom speaker during phone calls.",
+    "selected_problem": "hardware_audio_connection_issue",
+    "routing_decision": "AUTO_HANDLE",
+    "end_to_end_outcome": "SAFE_AUTO_HANDLED",
+    "response_verification": "PASS",
+    "escalation_category": "NONE",
+    "latency_ms": 772.45
+  },
+  {
+    "scenario_id": "CLEAR_10",
+    "customer_message": "My MacBook Pro is lagging and showing spinning beach ball on all applications.",
+    "selected_problem": "mac_software_issue",
+    "routing_decision": "AUTO_HANDLE",
+    "end_to_end_outcome": "SAFE_AUTO_HANDLED",
+    "response_verification": "PASS",
+    "escalation_category": "NONE",
+    "latency_ms": 1143.73
+  },
+  {
+    "scenario_id": "AMBIG_01",
+    "customer_message": "my phone isn't working",
+    "selected_problem": "general_device_support",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "end_to_end_outcome": "ESCALATED_AMBIGUOUS",
+    "response_verification": "PASS",
+    "escalation_category": "AMBIGUITY",
+    "latency_ms": 1321.88
+  },
+  {
+    "scenario_id": "AMBIG_02",
+    "customer_message": "something happened after the update",
+    "selected_problem": "software_update_problem",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "end_to_end_outcome": "ESCALATED_HUMAN_REQUIRED",
+    "response_verification": "PASS",
+    "escalation_category": "NONE",
+    "latency_ms": 1072.25
+  },
+  {
+    "scenario_id": "AMBIG_03",
+    "customer_message": "it keeps doing this",
+    "selected_problem": "general_device_support",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "end_to_end_outcome": "ESCALATED_AMBIGUOUS",
+    "response_verification": "PASS",
+    "escalation_category": "AMBIGUITY",
+    "latency_ms": 852.23
+  },
+  {
+    "scenario_id": "AMBIG_04",
+    "customer_message": "why is this happening?",
+    "selected_problem": "general_device_support",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "end_to_end_outcome": "ESCALATED_AMBIGUOUS",
+    "response_verification": "PASS",
+    "escalation_category": "AMBIGUITY",
+    "latency_ms": 700.3
+  },
+  {
+    "scenario_id": "AMBIG_05",
+    "customer_message": "my Mac is acting weird",
+    "selected_problem": "general_device_support",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "end_to_end_outcome": "ESCALATED_EVIDENCE_LIMITED",
+    "response_verification": "PASS",
+    "escalation_category": "EVIDENCE",
+    "latency_ms": 902.3
+  },
+  {
+    "scenario_id": "EVID_LIM_01",
+    "customer_message": "My custom serial oscilloscope DAC adapter won't communicate with my iPad kernel driver.",
+    "selected_problem": "general_device_support",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "end_to_end_outcome": "ESCALATED_HUMAN_REQUIRED",
+    "response_verification": "PASS",
+    "escalation_category": "NONE",
+    "latency_ms": 988.8
+  },
+  {
+    "scenario_id": "EVID_LIM_02",
+    "customer_message": "My legacy Mac kext kernel extension panic code 0x88f2 failed after installing beta build.",
+    "selected_problem": "general_device_support",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "end_to_end_outcome": "ESCALATED_EVIDENCE_LIMITED",
+    "response_verification": "PASS",
+    "escalation_category": "EVIDENCE",
+    "latency_ms": 904.33
+  },
+  {
+    "scenario_id": "EVID_LIM_03",
+    "customer_message": "Our enterprise mobile device management profile payload failed SCEP certificate enrollment on 50 devices.",
+    "selected_problem": "general_device_support",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "end_to_end_outcome": "ESCALATED_EVIDENCE_LIMITED",
+    "response_verification": "PASS",
+    "escalation_category": "EVIDENCE",
+    "latency_ms": 865.1
+  },
+  {
+    "scenario_id": "EVID_LIM_04",
+    "customer_message": "My iPhone modem diagnostic reports Baseband Panic Error Code BB_HW_0x99A87.",
+    "selected_problem": "general_device_support",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "end_to_end_outcome": "ESCALATED_EVIDENCE_LIMITED",
+    "response_verification": "PASS",
+    "escalation_category": "EVIDENCE",
+    "latency_ms": 960.5
+  },
+  {
+    "scenario_id": "EVID_LIM_05",
+    "customer_message": "Phone was dropped in seawater, liquid contact indicator is deep red and motherboard is shorting.",
+    "selected_problem": "general_device_support",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "end_to_end_outcome": "ESCALATED_EVIDENCE_LIMITED",
+    "response_verification": "PASS",
+    "escalation_category": "EVIDENCE",
+    "latency_ms": 1028.67
+  },
+  {
+    "scenario_id": "conv_7ab80375093d",
+    "customer_message": "My iPhone 13 Wi-Fi keeps disconnecting, and I already restarted my phone. | I toggled airplane mode as suggested but it still drops. | That worked! Forgetting and rejoining the network fixed it completely.",
+    "selected_problem": "CONNECTIVITY_WIFI",
+    "routing_decision": "AUTO_HANDLE",
+    "end_to_end_outcome": "SUCCESSFULLY_RESOLVED",
+    "response_verification": "PASS",
+    "escalation_category": "NONE",
+    "latency_ms": 36.13
+  },
+  {
+    "scenario_id": "conv_6fc2d46595c5",
+    "customer_message": "My Bluetooth speaker will not connect to my iPad. | I toggled Bluetooth off and on, but it still fails. | That worked! Unpairing and re-pairing the device resolved it.",
+    "selected_problem": "AUDIO",
+    "routing_decision": "AUTO_HANDLE",
+    "end_to_end_outcome": "SUCCESSFULLY_RESOLVED",
+    "response_verification": "PASS",
+    "escalation_category": "NONE",
+    "latency_ms": 29.77
+  },
+  {
+    "scenario_id": "conv_7cb8faf797ec",
+    "customer_message": "The YouTube app crashes every time I launch it on my iPhone. | I cleared cache and restarted, still crashing. | That worked! Updating the app from the App Store fixed the issue.",
+    "selected_problem": "SOFTWARE_APP",
+    "routing_decision": "AUTO_HANDLE",
+    "end_to_end_outcome": "SUCCESSFULLY_RESOLVED",
+    "response_verification": "PASS",
+    "escalation_category": "NONE",
+    "latency_ms": 30.36
+  },
+  {
+    "scenario_id": "conv_b0fe76316e22",
+    "customer_message": "My iPhone 12 is plugged into charger but not charging. | I cleaned the charging port, still won't charge. | That worked! Testing with another charging cable worked immediately.",
+    "selected_problem": "CHARGING",
+    "routing_decision": "AUTO_HANDLE",
+    "end_to_end_outcome": "SUCCESSFULLY_RESOLVED",
+    "response_verification": "PASS",
+    "escalation_category": "NONE",
+    "latency_ms": 27.94
+  },
+  {
+    "scenario_id": "conv_75fc5ea78ebb",
+    "customer_message": "My cellular data is completely unavailable on iPhone 14 Pro. | I checked airplane mode, still no service. | I toggled cellular data off and on, didn't help. | I restarted the device, still no signal. | I reseated the SIM card, still no service. | I reset network settings, still no cellular reception at all.",
+    "selected_problem": "NETWORK_CELLULAR",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "end_to_end_outcome": "ESCALATED_EVIDENCE_LIMITED",
+    "response_verification": "PASS",
+    "escalation_category": "ALL_TROUBLESHOOTING_ACTIONS_EXHAUSTED",
+    "latency_ms": 67.81
+  },
+  {
+    "scenario_id": "ADVERSARIAL_01",
+    "customer_message": "My Wi-Fi is slow and my battery is swelling up and pushing the screen off.",
+    "selected_problem": "general_device_support",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "end_to_end_outcome": "ESCALATED_VERIFICATION_FAILURE",
+    "response_verification": "FAIL",
+    "escalation_category": "NONE",
+    "latency_ms": 1053.23
+  },
+  {
+    "scenario_id": "conv_acae6443209b",
+    "customer_message": "My iPhone battery is draining quickly. | Now the device is smoking, extremely hot to touch, and the back glass is cracking!",
+    "selected_problem": "POWER_BATTERY",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "end_to_end_outcome": "ESCALATED_HUMAN_REQUIRED",
+    "response_verification": "PASS",
+    "escalation_category": "CUSTOMER_REPORTED_PROBLEM_WORSENING",
+    "latency_ms": 23.34
+  },
+  {
+    "scenario_id": "ADVERSARIAL_03",
+    "customer_message": "I need a refund because I was charged twice for my subscription but cannot enter my billing password.",
+    "selected_problem": "billing_purchase_issue",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "end_to_end_outcome": "ESCALATED_VERIFICATION_FAILURE",
+    "response_verification": "FAIL",
+    "escalation_category": "NONE",
+    "latency_ms": 1039.67
+  },
+  {
+    "scenario_id": "ADVERSARIAL_04",
+    "customer_message": "Ever since I installed the iOS update yesterday my speaker has zero sound.",
+    "selected_problem": "hardware_audio_connection_issue",
+    "routing_decision": "AUTO_HANDLE",
+    "end_to_end_outcome": "SAFE_AUTO_HANDLED",
+    "response_verification": "PASS",
+    "escalation_category": "NONE",
+    "latency_ms": 1022.83
+  },
+  {
+    "scenario_id": "ADVERSARIAL_05",
+    "customer_message": "asdfghjk!??!?!?!",
+    "selected_problem": "unclear_needs_review",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "end_to_end_outcome": "ESCALATED_AMBIGUOUS",
+    "response_verification": "PASS",
+    "escalation_category": "AMBIGUITY",
+    "latency_ms": 952.21
+  }
+]

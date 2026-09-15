@@ -1,0 +1,17 @@
+{
+  "total_evaluated_records": 77,
+  "total_configurations_evaluated": 490,
+  "unsafe_count": 490,
+  "conservative_count": 0,
+  "balanced_count": 0,
+  "recommended_thresholds": {
+    "confidence_threshold": 0.95,
+    "margin_threshold": 0.0,
+    "max_entropy": 0.4
+  },
+  "baseline_thresholds": {
+    "confidence_threshold": 0.85,
+    "margin_threshold": 0.15,
+    "max_entropy": 0.65
+  }
+}

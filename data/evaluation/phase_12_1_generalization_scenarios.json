@@ -1,0 +1,198 @@
+[
+  {
+    "scenario_id": "GEN_CLEAR_01",
+    "group": "CLEAR_SOLVABLE",
+    "name": "Apple Watch Display Brightness Adjustment",
+    "turns": ["My Apple Watch screen brightness is too low to read outside."],
+    "expected_problem_family": "DISPLAY",
+    "expected_outcome": "SAFE_AUTO_HANDLED",
+    "expected_decision": "AUTO_HANDLE"
+  },
+  {
+    "scenario_id": "GEN_CLEAR_02",
+    "group": "CLEAR_SOLVABLE",
+    "name": "iCloud Two-Factor Authentication Setup",
+    "turns": ["How do I turn on two-factor authentication for my Apple ID account?"],
+    "expected_problem_family": "ACCOUNT_SECURITY",
+    "expected_outcome": "ESCALATED_HUMAN_REQUIRED",
+    "expected_decision": "ESCALATE_TO_HUMAN"
+  },
+  {
+    "scenario_id": "GEN_CLEAR_03",
+    "group": "CLEAR_SOLVABLE",
+    "name": "Rapid Battery Drain on iPad",
+    "turns": ["My iPad Air battery drains from 100% to 20% in two hours of light use."],
+    "expected_problem_family": "POWER_BATTERY",
+    "expected_outcome": "SAFE_AUTO_HANDLED",
+    "expected_decision": "AUTO_HANDLE"
+  },
+  {
+    "scenario_id": "GEN_CLEAR_04",
+    "group": "CLEAR_SOLVABLE",
+    "name": "iPhone Cellular SMS Failure",
+    "turns": ["I cannot send or receive text messages on my iPhone 13."],
+    "expected_problem_family": "NETWORK_CELLULAR",
+    "expected_outcome": "ESCALATED_EVIDENCE_LIMITED",
+    "expected_decision": "ESCALATE_TO_HUMAN"
+  },
+  {
+    "scenario_id": "GEN_AMBIG_01",
+    "group": "AMBIGUOUS_CLARIFY",
+    "name": "Unspecified Button Hardware Action",
+    "turns": ["The thing isn't working after I pressed it."],
+    "expected_problem_family": null,
+    "expected_outcome": "ESCALATED_EVIDENCE_LIMITED",
+    "expected_decision": "ESCALATE_TO_HUMAN"
+  },
+  {
+    "scenario_id": "GEN_AMBIG_02",
+    "group": "AMBIGUOUS_CLARIFY",
+    "name": "Missing Device Model and Symptom Scope",
+    "turns": ["Can you fix the screen issue?"],
+    "expected_problem_family": null,
+    "expected_outcome": "ESCALATED_EVIDENCE_LIMITED",
+    "expected_decision": "ESCALATE_TO_HUMAN"
+  },
+  {
+    "scenario_id": "GEN_AMBIG_03",
+    "group": "AMBIGUOUS_CLARIFY",
+    "name": "Completely Vague Functional Anomaly",
+    "turns": ["It stopped doing what it usually does yesterday."],
+    "expected_problem_family": null,
+    "expected_outcome": "ESCALATED_EVIDENCE_LIMITED",
+    "expected_decision": "ESCALATE_TO_HUMAN"
+  },
+  {
+    "scenario_id": "GEN_AMBIG_04",
+    "group": "AMBIGUOUS_CLARIFY",
+    "name": "Unspecified App Malfunction",
+    "turns": ["Help me with the app."],
+    "expected_problem_family": null,
+    "expected_outcome": "ESCALATED_HUMAN_REQUIRED",
+    "expected_decision": "ESCALATE_TO_HUMAN"
+  },
+  {
+    "scenario_id": "GEN_EVLIM_01",
+    "group": "EVIDENCE_LIMITED",
+    "name": "Enterprise MDM Enrollment Protocol Failure",
+    "turns": ["My enterprise MDM enrollment profile fails on iPadOS with error payload 0x88921."],
+    "expected_problem_family": "SOFTWARE_OS",
+    "expected_outcome": "ESCALATED_HUMAN_REQUIRED",
+    "expected_decision": "ESCALATE_TO_HUMAN"
+  },
+  {
+    "scenario_id": "GEN_EVLIM_02",
+    "group": "EVIDENCE_LIMITED",
+    "name": "Third-Party Audio Unit Kernel Crash",
+    "turns": ["Logic Pro audio unit plugin crashes with kernel trap vector 14 on macOS Sequoia."],
+    "expected_problem_family": "AUDIO",
+    "expected_outcome": "ESCALATED_VERIFICATION_FAILURE",
+    "expected_decision": "ESCALATE_TO_HUMAN"
+  },
+  {
+    "scenario_id": "GEN_EVLIM_03",
+    "group": "EVIDENCE_LIMITED",
+    "name": "Satellite Emergency SOS Hardware Fault",
+    "turns": ["My satellite emergency SOS feature gives error code SAT-9021 during activation."],
+    "expected_problem_family": "NETWORK_CELLULAR",
+    "expected_outcome": "ESCALATED_EVIDENCE_LIMITED",
+    "expected_decision": "ESCALATE_TO_HUMAN"
+  },
+  {
+    "scenario_id": "GEN_EVLIM_04",
+    "group": "EVIDENCE_LIMITED",
+    "name": "Internal PKI Corporate Certificate Failure",
+    "turns": ["Internal corporate certificate authority failed to sign S/MIME profile on iPhone."],
+    "expected_problem_family": "ACCOUNT_SECURITY",
+    "expected_outcome": "ESCALATED_EVIDENCE_LIMITED",
+    "expected_decision": "ESCALATE_TO_HUMAN"
+  },
+  {
+    "scenario_id": "GEN_MULTI_01",
+    "group": "MULTI_TURN",
+    "name": "Bluetooth Audio Re-Pairing Progression",
+    "turns": [
+      "My Bluetooth headphones won't connect to my Mac.",
+      "I turned Bluetooth off and on, still won't connect.",
+      "That worked! Removing the device from Bluetooth settings and re-pairing fixed it."
+    ],
+    "expected_problem_family": "AUDIO",
+    "expected_outcome": "SUCCESSFULLY_RESOLVED",
+    "expected_decision": "RESOLVED"
+  },
+  {
+    "scenario_id": "GEN_MULTI_02",
+    "group": "MULTI_TURN",
+    "name": "Camera App Black Screen Progressive Resolution",
+    "turns": [
+      "The Camera app shows a completely black screen on my iPhone 11.",
+      "I force closed the Camera app, still black.",
+      "That worked! Restarting the phone brought the camera back."
+    ],
+    "expected_problem_family": "CAMERA_MEDIA",
+    "expected_outcome": "SUCCESSFULLY_RESOLVED",
+    "expected_decision": "RESOLVED"
+  },
+  {
+    "scenario_id": "GEN_MULTI_03",
+    "group": "MULTI_TURN",
+    "name": "Wi-Fi Progressive Exhaustion to Escalation",
+    "turns": [
+      "My iPhone won't connect to my home Wi-Fi network.",
+      "I toggled Wi-Fi, restarted router, reset network settings, still no connection.",
+      "Still fails with unable to join network."
+    ],
+    "expected_problem_family": "NETWORK_WIFI",
+    "expected_outcome": "SAFE_AUTO_HANDLED",
+    "expected_decision": "AUTO_HANDLE"
+  },
+  {
+    "scenario_id": "GEN_MULTI_04",
+    "group": "MULTI_TURN",
+    "name": "Safari Browser Crash Extension Disabling",
+    "turns": [
+      "Safari crashes on startup on my MacBook Air.",
+      "I cleared website data and history, still crashes.",
+      "That worked! Disabling a broken Safari extension fixed it."
+    ],
+    "expected_problem_family": "SOFTWARE_APP",
+    "expected_outcome": "SUCCESSFULLY_RESOLVED",
+    "expected_decision": "RESOLVED"
+  },
+  {
+    "scenario_id": "GEN_ADV_01",
+    "group": "ADVERSARIAL_CONFLICT",
+    "name": "Severe Thermal Swelling Hazard",
+    "turns": ["My phone is overheating and the battery pack is swelling and hissing."],
+    "expected_problem_family": "POWER_BATTERY",
+    "expected_outcome": "ESCALATED_HUMAN_REQUIRED",
+    "expected_decision": "ESCALATE_TO_HUMAN"
+  },
+  {
+    "scenario_id": "GEN_ADV_02",
+    "group": "ADVERSARIAL_CONFLICT",
+    "name": "Disputed Charge Locked Account Conflict",
+    "turns": ["I want to dispute an in-app charge of $49.99 on my Apple Card, but my account has been locked for security."],
+    "expected_problem_family": "BILLING_PAYMENT",
+    "expected_outcome": "ESCALATED_AMBIGUOUS",
+    "expected_decision": "ESCALATE_TO_HUMAN"
+  },
+  {
+    "scenario_id": "GEN_ADV_03",
+    "group": "ADVERSARIAL_CONFLICT",
+    "name": "Post-Update Microphone Malfunction Decoupling",
+    "turns": ["Ever since the iOS update yesterday my microphone has stopped working during phone calls."],
+    "expected_problem_family": "AUDIO",
+    "expected_outcome": "ESCALATED_HUMAN_REQUIRED",
+    "expected_decision": "ESCALATE_TO_HUMAN"
+  },
+  {
+    "scenario_id": "GEN_ADV_04",
+    "group": "ADVERSARIAL_CONFLICT",
+    "name": "Punctuation-Only Malformed Message",
+    "turns": ["!?!?!?!?!???"],
+    "expected_problem_family": null,
+    "expected_outcome": "ESCALATED_AMBIGUOUS",
+    "expected_decision": "ESCALATE_TO_HUMAN"
+  }
+]

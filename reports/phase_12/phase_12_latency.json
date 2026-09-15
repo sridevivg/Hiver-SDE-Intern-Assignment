@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-09-14T19:36:34.496452",
+  "avg_latency_ms": 122.93,
+  "p50_latency_ms": 80.67,
+  "p95_latency_ms": 414.16,
+  "p99_latency_ms": 526.68,
+  "component_breakdown_ms": {
+    "problem_understanding_ms": 1.8,
+    "intent_classification_ms": 2.4,
+    "evidence_retrieval_ms": 6.5,
+    "evidence_synthesis_ms": 1.2,
+    "response_generation_ms": 1.5,
+    "grounding_verification_ms": 1.9,
+    "state_persistence_ms": 1.1
+  }
+}

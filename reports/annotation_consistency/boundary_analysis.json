@@ -1,0 +1,234 @@
+[
+  {
+    "pair_name": "general_device_support vs software_update_problem",
+    "intent_a": "general_device_support",
+    "intent_b": "software_update_problem",
+    "reviewed_count_a": 26,
+    "reviewed_count_b": 13,
+    "cross_pair_count": 338,
+    "mean_cross_similarity": 0.0091,
+    "max_cross_similarity": 0.1545,
+    "representative_boundary_examples": [
+      {
+        "golden_id_a": "gold_040",
+        "golden_id_b": "gold_128",
+        "message_a": "Dear @115858 \nPlease fix all your fucking issues with iOS 11. I\u2019m sick and tired of all these bugs. \ud83d\ude43",
+        "message_b": "hey @115858 can u fix IOS",
+        "label_a": "software_update_problem",
+        "label_b": "general_device_support",
+        "similarity": 0.1545,
+        "shared_signals": [
+          "ios",
+          "fix"
+        ]
+      },
+      {
+        "golden_id_a": "gold_075",
+        "golden_id_b": "gold_102",
+        "message_a": "@AppleSupport my app store\u2019s not working :(",
+        "message_b": "Can @115948 or @115858 please fix the music app ...ever since the update .. I can\u2019t pause music without going to app\ud83d\ude44 #sos",
+        "label_a": "general_device_support",
+        "label_b": "software_update_problem",
+        "similarity": 0.1089,
+        "shared_signals": [
+          "app"
+        ]
+      },
+      {
+        "golden_id_a": "gold_040",
+        "golden_id_b": "gold_125",
+        "message_a": "Dear @115858 \nPlease fix all your fucking issues with iOS 11. I\u2019m sick and tired of all these bugs. \ud83d\ude43",
+        "message_b": "Dear @115858 Please fix the podcast app. I miss knowing which archived episodes I haven't listened to and when the home screen display was accurate and functioning.",
+        "label_a": "software_update_problem",
+        "label_b": "general_device_support",
+        "similarity": 0.1058,
+        "shared_signals": [
+          "dear please",
+          "please fix",
+          "dear",
+          "fix"
+        ]
+      }
+    ],
+    "overlap_explanation": "Customers frequently mention broad iOS version complaints alongside general dissatisfaction or settings confusion. When an update is mentioned as the triggering event, the boundary between general triage and update-specific troubleshooting can become blurred.",
+    "soft_annotation_guideline": "When the customer's primary friction point involves an active OS upgrade attempt, installation failure, or explicit post-update regression, consider evidence favoring 'software_update_problem'. Conversely, when the inquiry represents broad feature questions, general settings configuration, or unspecified device sluggishness without a focal update symptom, 'general_device_support' is usually appropriate."
+  },
+  {
+    "pair_name": "general_device_support vs hardware_audio_connection_issue",
+    "intent_a": "general_device_support",
+    "intent_b": "hardware_audio_connection_issue",
+    "reviewed_count_a": 26,
+    "reviewed_count_b": 7,
+    "cross_pair_count": 182,
+    "mean_cross_similarity": 0.0106,
+    "max_cross_similarity": 0.2551,
+    "representative_boundary_examples": [
+      {
+        "golden_id_a": "gold_085",
+        "golden_id_b": "gold_106",
+        "message_a": "why does WiFi turn on by itself when I turn it off manually it\u2019s annoying @AppleSupport",
+        "message_b": "@AppleSupport i can\u2019t turn on my WiFi on my iPhone 7",
+        "label_a": "general_device_support",
+        "label_b": "hardware_audio_connection_issue",
+        "similarity": 0.2551,
+        "shared_signals": [
+          "turn on",
+          "turn",
+          "wifi"
+        ]
+      },
+      {
+        "golden_id_a": "gold_052",
+        "golden_id_b": "gold_198",
+        "message_a": "@AppleSupport \ud83d\udc4b, What is the best antivirus for MacBook Pro ?",
+        "message_b": "@AppleSupport Can I use my wired  printer  having USB on my MacBook pro which has  has c type?..Pls suggest if USB hub and c-type to USB female will work for it?",
+        "label_a": "general_device_support",
+        "label_b": "hardware_audio_connection_issue",
+        "similarity": 0.1407,
+        "shared_signals": [
+          "macbook pro",
+          "macbook",
+          "pro"
+        ]
+      },
+      {
+        "golden_id_a": "gold_089",
+        "golden_id_b": "gold_106",
+        "message_a": "@115858 why the fuck is my wifi on AGAIN ?",
+        "message_b": "@AppleSupport i can\u2019t turn on my WiFi on my iPhone 7",
+        "label_a": "general_device_support",
+        "label_b": "hardware_audio_connection_issue",
+        "similarity": 0.1399,
+        "shared_signals": [
+          "wifi on",
+          "my wifi",
+          "wifi"
+        ]
+      }
+    ],
+    "overlap_explanation": "Bluetooth, Wi-Fi toggles, and audio accessories are often described alongside general device settings. Phrases such as 'can't turn off Wi-Fi in Control Center' bridge general UI triage and wireless connectivity.",
+    "soft_annotation_guideline": "When the dominant issue involves physical audio output (speakers, microphones, headphones), Bluetooth pairing, or wireless adapter connectivity, annotators should consider evidence favoring 'hardware_audio_connection_issue'. When the customer seeks general advice or expresses broad frustration with OS UI controls without an underlying hardware/audio fault, 'general_device_support' may be considered."
+  },
+  {
+    "pair_name": "general_device_support vs battery_power_issue",
+    "intent_a": "general_device_support",
+    "intent_b": "battery_power_issue",
+    "reviewed_count_a": 26,
+    "reviewed_count_b": 7,
+    "cross_pair_count": 182,
+    "mean_cross_similarity": 0.0073,
+    "max_cross_similarity": 0.1222,
+    "representative_boundary_examples": [
+      {
+        "golden_id_a": "gold_093",
+        "golden_id_b": "gold_190",
+        "message_a": "Out of the blue my 2016 MacBook won\u2019t turn on and this is really an unexpected roadblock @115858",
+        "message_b": "@115858 there\u2019s been a problem with my sisters iPhone 7 like it won\u2019t turn on or nothing even though it\u2019s  good charged, has not been dropped",
+        "label_a": "general_device_support",
+        "label_b": "battery_power_issue",
+        "similarity": 0.1222,
+        "shared_signals": [
+          "won turn",
+          "turn on",
+          "turn",
+          "won"
+        ]
+      },
+      {
+        "golden_id_a": "gold_075",
+        "golden_id_b": "gold_191",
+        "message_a": "@AppleSupport my app store\u2019s not working :(",
+        "message_b": "Hi @AppleSupport my c3yo iPad Air died. Tried restore as per website, error msg now MacBook can\u2019t detect at all. Any ideas? Take to Store?",
+        "label_a": "general_device_support",
+        "label_b": "battery_power_issue",
+        "similarity": 0.073,
+        "shared_signals": [
+          "store"
+        ]
+      },
+      {
+        "golden_id_a": "gold_085",
+        "golden_id_b": "gold_190",
+        "message_a": "why does WiFi turn on by itself when I turn it off manually it\u2019s annoying @AppleSupport",
+        "message_b": "@115858 there\u2019s been a problem with my sisters iPhone 7 like it won\u2019t turn on or nothing even though it\u2019s  good charged, has not been dropped",
+        "label_a": "general_device_support",
+        "label_b": "battery_power_issue",
+        "similarity": 0.0695,
+        "shared_signals": [
+          "turn on",
+          "turn"
+        ]
+      }
+    ],
+    "overlap_explanation": "Power drain is occasionally reported alongside general device overheating or sluggish performance. Ambiguity arises when battery drain is mentioned as one of multiple diffuse symptoms.",
+    "soft_annotation_guideline": "When battery depletion, charging failure, percentage drop, or power preservation is the central complaint, evidence usually favors 'battery_power_issue'. If power is only mentioned tangentially amidst broad system complaints, consider the primary operational action requested."
+  },
+  {
+    "pair_name": "general_device_support vs mac_software_issue",
+    "intent_a": "general_device_support",
+    "intent_b": "mac_software_issue",
+    "reviewed_count_a": 26,
+    "reviewed_count_b": 5,
+    "cross_pair_count": 130,
+    "mean_cross_similarity": 0.0054,
+    "max_cross_similarity": 0.0698,
+    "representative_boundary_examples": [
+      {
+        "golden_id_a": "gold_085",
+        "golden_id_b": "gold_027",
+        "message_a": "why does WiFi turn on by itself when I turn it off manually it\u2019s annoying @AppleSupport",
+        "message_b": "@AppleSupport since updating to high sierra I'm seeing lots of notifications from Time Machine, which I don't use. How do I turn off?",
+        "label_a": "general_device_support",
+        "label_b": "mac_software_issue",
+        "similarity": 0.0698,
+        "shared_signals": [
+          "turn"
+        ]
+      },
+      {
+        "golden_id_a": "gold_052",
+        "golden_id_b": "gold_086",
+        "message_a": "@AppleSupport \ud83d\udc4b, What is the best antivirus for MacBook Pro ?",
+        "message_b": "@AppleSupport my MacBook Air has the dreaded spinning beach ball. Help please.",
+        "label_a": "general_device_support",
+        "label_b": "mac_software_issue",
+        "similarity": 0.0552,
+        "shared_signals": [
+          "macbook"
+        ]
+      }
+    ],
+    "overlap_explanation": "Mac mentions (MacBook, iMac, macOS, Sierra) can overlap with general software questions. Reviewers must distinguish platform-specific desktop software troubleshooting from general cross-device questions.",
+    "soft_annotation_guideline": "When the troubleshooting context specifically requires macOS desktop software remediation (e.g. Safari desktop, macOS installer, Time Machine, Finder), consider 'mac_software_issue'. If the inquiry involves generic multi-device queries or general support referral, 'general_device_support' may be appropriate."
+  },
+  {
+    "pair_name": "display_touch_issue vs keyboard_typing_issue",
+    "intent_a": "display_touch_issue",
+    "intent_b": "keyboard_typing_issue",
+    "reviewed_count_a": 3,
+    "reviewed_count_b": 10,
+    "cross_pair_count": 30,
+    "mean_cross_similarity": 0.0109,
+    "max_cross_similarity": 0.0919,
+    "representative_boundary_examples": [
+      {
+        "golden_id_a": "gold_084",
+        "golden_id_b": "gold_103",
+        "message_a": "Formated and reinstalled MacOS High Sierra by Genius Bar member at Apple Shop but still problem of random key stopped working remains. It's time for Apple to acknowledge issue @AppleSupport even Google search shows many r facing same issue. No solution yet!",
+        "message_b": "@AppleSupport so my iPhone crashes touch seems to stop working altho I can access wifi menu etc Ask apple the issue they tell me my phone screen needs replaced - get new phone and same issue happens is this a problem with iOS or the 8?",
+        "label_a": "keyboard_typing_issue",
+        "label_b": "display_touch_issue",
+        "similarity": 0.0919,
+        "shared_signals": [
+          "same issue",
+          "working",
+          "problem",
+          "apple",
+          "issue"
+        ]
+      }
+    ],
+    "overlap_explanation": "Touchscreen unresponsiveness directly interferes with on-screen keyboard typing. Customers experiencing keyboard lag or phantom keystrokes may describe both screen and keyboard symptoms.",
+    "soft_annotation_guideline": "When the core issue is character input, text prediction, autocorrect glitches, or keyboard layout behavior, evidence usually favors 'keyboard_typing_issue'. When the screen physical digitizer, touch unresponsiveness, display flickering, or backlight failure is the primary defect, annotators should consider 'display_touch_issue'."
+  }
+]

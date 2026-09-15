@@ -1,0 +1,8 @@
+{
+  "calibrated_escalations_count": 65,
+  "calibrated_top1_ground_truth_in_escalations": 32,
+  "calibrated_top2_ground_truth_in_escalations": 54,
+  "calibrated_top3_ground_truth_in_escalations": 55,
+  "calibrated_top2_assistance_rate": 0.8308,
+  "calibrated_top3_assistance_rate": 0.8462
+}

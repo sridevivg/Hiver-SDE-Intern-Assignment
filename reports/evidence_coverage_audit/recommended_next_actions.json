@@ -1,0 +1,6 @@
+{
+  "primary_bottleneck": "TRUE_KNOWLEDGE_GAP",
+  "recommended_next_phase": "Knowledge Gap Discovery & Human-Validated Knowledge Acquisition \u2014 corpus expansion for uncovered problem types.",
+  "recoverable_failure_rate": 0.0,
+  "true_knowledge_gap_rate": 0.9535
+}

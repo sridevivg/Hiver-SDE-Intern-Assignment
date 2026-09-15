@@ -1,0 +1,78 @@
+{
+  "total_evaluated_records": 77,
+  "pre_eval_sha256": "1d3e9b3b8bdef3750437e59b17ab7c27167fd1548c2bb29de984151296c5b45a",
+  "post_eval_sha256": "1d3e9b3b8bdef3750437e59b17ab7c27167fd1548c2bb29de984151296c5b45a",
+  "dataset_immutability_pass": true,
+  "phase8_auto_handle_count": 18,
+  "phase8_auto_handle_rate": 0.2338,
+  "phase8_auto_handle_accuracy": 0.6111,
+  "phase8_unsafe_auto_handles": 7,
+  "phase8_escalation_count": 59,
+  "phase8_escalation_rate": 0.7662,
+  "phase8_error_interception_rate": 0.7941,
+  "phase8_primary_intent_accuracy": 0.5584,
+  "phase8_macro_f1": 0.4936,
+  "escalation_category_distribution": {
+    "GENUINE_AMBIGUITY": 2,
+    "MULTI_PROBLEM_COMPLEXITY": 1,
+    "INSUFFICIENT_INFORMATION": 0,
+    "EVIDENCE_LIMITED": 43,
+    "VERIFICATION_VETO": 3,
+    "RECOVERABLE_ESCALATION": 1,
+    "HUMAN_REQUIRED": 9
+  },
+  "recoverable_escalation_count": 1,
+  "recoverable_escalation_rate_of_total": 0.013,
+  "recoverable_escalation_rate_of_escalated": 0.0169,
+  "recovery_attempted_count": 1,
+  "recovery_success_count": 0,
+  "recovery_failed_safety_count": 1,
+  "recovery_success_rate": 0.0,
+  "phase9_auto_handle_count": 18,
+  "phase9_auto_handle_rate": 0.2338,
+  "phase9_auto_handle_accuracy": 0.6111,
+  "phase9_unsafe_auto_handles": 7,
+  "phase9_escalation_count": 59,
+  "phase9_escalation_rate": 0.7662,
+  "phase9_error_interception_rate": 0.7941,
+  "auto_handle_rate_delta": 0.0,
+  "auto_handle_accuracy_delta": 0.0,
+  "unsafe_auto_handles_delta": 0,
+  "error_interception_rate_delta": 0.0,
+  "progression_comparison": {
+    "Phase_6_Uncertainty_Baseline": {
+      "auto_handle_rate": 0.831,
+      "auto_handle_precision": 0.531,
+      "unsafe_auto_handles": 30,
+      "error_interception_rate": 0.211
+    },
+    "Phase_6_1_Calibrated_Ranking": {
+      "auto_handle_rate": 0.156,
+      "auto_handle_precision": 0.75,
+      "unsafe_auto_handles": 5,
+      "error_interception_rate": 0.868
+    },
+    "Phase_7_1_Safe_Gate": {
+      "auto_handle_rate": 0.532,
+      "auto_handle_precision": 0.634,
+      "unsafe_auto_handles": 15,
+      "error_interception_rate": 0.559
+    },
+    "Phase_8_Evidence_Grounded_Resolution": {
+      "auto_handle_rate": 0.2338,
+      "auto_handle_precision": 0.6111,
+      "unsafe_auto_handles": 7,
+      "error_interception_rate": 0.7941
+    },
+    "Phase_9_Selective_Recovery": {
+      "auto_handle_rate": 0.2338,
+      "auto_handle_precision": 0.6111,
+      "unsafe_auto_handles": 7,
+      "error_interception_rate": 0.7941,
+      "recoverable_escalations_identified": 1,
+      "recoveries_attempted": 1,
+      "recoveries_succeeded": 0,
+      "recoveries_blocked_by_safety": 1
+    }
+  }
+}

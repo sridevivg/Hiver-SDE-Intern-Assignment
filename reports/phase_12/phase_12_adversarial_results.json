@@ -1,0 +1,4018 @@
+[
+  {
+    "conversation_id": "CLEAR_01",
+    "turn_count": 1,
+    "customer_message": "My iPhone 13 keeps dropping Wi-Fi connection every few minutes.",
+    "problem_profile": "Understood problem for iPhone 13: wireless Wi-Fi or network connectivity failure.",
+    "candidate_intents": [],
+    "selected_problem": "general_device_support",
+    "clarity_signals": {
+      "information_sufficient": true,
+      "problem_strength_valid": true,
+      "candidate_conflict_resolved": true,
+      "symptom_intent_agreed": true,
+      "multi_symptom_manageable": true,
+      "confidence_margin_valid": true,
+      "no_safety_veto": true
+    },
+    "ambiguity_decision": "CLEAR_PRIMARY",
+    "retrieved_evidence": [
+      {
+        "case_id": "conv_AppleSupport_322066",
+        "similarity_score": 0.3956,
+        "operational_similarity": 0.6249,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "Alarm \u00e7al\u0131nca Wi-fi a\u00e7\u0131l\u0131yor muazzam \u00f6zellik #ios1102 @AppleSupport",
+        "historical_brand_response": "@192732 We offer support via Twitter in English. Contact us for help in your preferred language here: https://t.co/IBIY3vMgPj",
+        "historical_intent": "general_device_support",
+        "historical_problem_family": "CONNECTIVITY_WIFI",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'CONNECTIVITY_WIFI' and core functional symptom (wireless Wi-Fi or network connectivity failure)."
+      },
+      {
+        "case_id": "conv_AppleSupport_152984",
+        "similarity_score": 0.3709,
+        "operational_similarity": 0.5965,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "s\u0131rf wi-fi ve bluetooth\u2019a t\u0131klad\u0131\u011f\u0131mda k\u0131sayoldan kapanm\u0131yor diye iphone\u2019u samsung veya pixel 2 ile de\u011fi\u015ftirebilirim",
+        "historical_brand_response": "@151002 We offer support via Twitter in English. Contact us for help in your preferred language here: https://t.co/IBIY3vMgPj",
+        "historical_intent": "general_device_support",
+        "historical_problem_family": "CONNECTIVITY_WIFI",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'CONNECTIVITY_WIFI' and core functional symptom (wireless Wi-Fi or network connectivity failure)."
+      },
+      {
+        "case_id": "conv_AppleSupport_120683",
+        "similarity_score": 0.326,
+        "operational_similarity": 0.5449,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "My Apple Watch is still not connecting to Wi-Fi. Did everything: forgetting &amp; reconnecting iPhone Wi-Fi, shutting-off devices &amp; Bluetooth, repairing... Wi-Fi network is 2,4Ghz and 11b/g/n. Called French @AppleSupport. They were so lost I decided to get another coffee \u2615\ufe0f. Help?",
+        "historical_brand_response": "@142833 We're happy to help. Just to make sure we understand, after trying all these steps, your Apple Watch still won't connect to Wi-Fi at all? What iPhone and iOS version do you have? DM us so we can gather additional information to assist you. https://t.co/GDrqU22YpT",
+        "historical_intent": "general_device_support",
+        "historical_problem_family": "CONNECTIVITY_WIFI",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'CONNECTIVITY_WIFI' and core functional symptom (wireless Wi-Fi or network connectivity failure)."
+      }
+    ],
+    "evidence_tiers": [
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH"
+    ],
+    "evidence_verdict": "STRONG_EVIDENCE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "DIRECT_STRONG_EVIDENCE",
+    "generated_response": "Thanks for reaching out to AppleSupport regarding your iPhone 13. We recommend starting with a standard device restart and ensuring your operating system is up to date. Please verify that your Wi-Fi and cellular connections are stable. Send us a DM with more details about what you're experiencing: https://apple.co/DM",
+    "response_verification": "PASS",
+    "routing_decision": "AUTO_HANDLE",
+    "conversation_state": {
+      "stage": "RESOLVED"
+    },
+    "attempted_actions": [],
+    "resolution_status": "SAFE_AUTO_HANDLED",
+    "escalation_category": "NONE",
+    "escalation_reason": "",
+    "latency_ms": 87.8,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "AUTO_HANDLE",
+      "outcome": "SAFE_AUTO_HANDLED",
+      "summary": "Auto-handling authorized: Problem clearly understood, supported by corroborated historical evidence, and response verified grounded.",
+      "positive_factors": [
+        "\u2713 Problem identified: wireless Wi-Fi or network connectivity failure (CONNECTIVITY_WIFI)",
+        "\u2713 Decision gate passed (AUTO_HANDLE)",
+        "\u2713 Corroborated by 3 direct historical case(s)",
+        "\u2713 Response grounding verification passed (Score: 1.00)",
+        "\u2713 No hazardous or ungrounded actions detected"
+      ],
+      "negative_factors": [],
+      "recommended_human_actions": [],
+      "checklist": {
+        "problem_understood": true,
+        "gate_passed": true,
+        "evidence_authorized": true,
+        "response_grounded": true,
+        "no_unsafe_action": true
+      }
+    },
+    "end_to_end_outcome": "SAFE_AUTO_HANDLED"
+  },
+  {
+    "conversation_id": "CLEAR_02",
+    "turn_count": 1,
+    "customer_message": "My AirPods Pro will not pair with my iPhone 14.",
+    "problem_profile": "Understood problem for iPhone 14: Bluetooth pairing or peripheral connection failure.",
+    "candidate_intents": [
+      {
+        "intent": "hardware_audio_connection_issue",
+        "confidence": 0.8737,
+        "reasoning": "Heuristic pattern match score 1.50"
+      },
+      {
+        "intent": "general_device_support",
+        "confidence": 0.1164,
+        "reasoning": "Heuristic pattern match score 0.20"
+      },
+      {
+        "intent": "account_access_issue",
+        "confidence": 0.0099,
+        "reasoning": "Taxonomy background candidate"
+      }
+    ],
+    "selected_problem": "hardware_audio_connection_issue",
+    "clarity_signals": {
+      "information_sufficient": true,
+      "problem_strength_valid": true,
+      "candidate_conflict_resolved": true,
+      "symptom_intent_agreed": false,
+      "multi_symptom_manageable": true,
+      "confidence_margin_valid": true,
+      "no_safety_veto": false
+    },
+    "ambiguity_decision": "CLEAR_PRIMARY",
+    "retrieved_evidence": [
+      {
+        "case_id": "conv_AppleSupport_1327364",
+        "similarity_score": 0.3331,
+        "operational_similarity": 0.5531,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@232675 @AppleSupport my iphone won\u2019t pair with my BMW bluetooth after upgrade- please supply link to fix",
+        "historical_brand_response": "@366114 Hey there! We'd love to help you with this. First, try the steps in this article and let us know how it goes: https://t.co/v4tvWguwgG",
+        "historical_intent": "hardware_audio_connection_issue",
+        "historical_problem_family": "CONNECTIVITY_BLUETOOTH",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'CONNECTIVITY_BLUETOOTH' and core functional symptom (Bluetooth pairing or peripheral connection failure)."
+      },
+      {
+        "case_id": "conv_AppleSupport_2299165",
+        "similarity_score": 0.3082,
+        "operational_similarity": 0.5244,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@AppleSupport \n\nDears,\nI have an issue with my iphone everytime i unplug my airpods i have to pair them again and again it keeps asking me to pair them with my device.\nCould you help please? https://t.co/lKHBYD5K0Y",
+        "historical_brand_response": "@488596 We'd love to help with this! To be clear, are you turning your AirPods off, is that what you mean by \"unplugging\" them? Let us know in DM. https://t.co/GDrqU22YpT",
+        "historical_intent": "hardware_audio_connection_issue",
+        "historical_problem_family": "AUDIO",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'CONNECTIVITY_BLUETOOTH' and core functional symptom (Bluetooth pairing or peripheral connection failure)."
+      },
+      {
+        "case_id": "conv_AppleSupport_2615251",
+        "similarity_score": 0.2429,
+        "operational_similarity": 0.4493,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@AppleSupport I can\u2019t seem to pair my Airpods with an old iPad Air... is this to be expected ?",
+        "historical_brand_response": "@118106 Your AirPods are compatible with iPad Air, so we're glad to help get them paired up. Have you paired your AirPods with any other devices? If so, are you currently signed into the same iCloud account on each device? Here's a guide to help: https://t.co/1gycpwHngk",
+        "historical_intent": "hardware_audio_connection_issue",
+        "historical_problem_family": "AUDIO",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'CONNECTIVITY_BLUETOOTH' and core functional symptom (Bluetooth pairing or peripheral connection failure)."
+      }
+    ],
+    "evidence_tiers": [
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH"
+    ],
+    "evidence_verdict": "STRONG_EVIDENCE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "DIRECT_STRONG_EVIDENCE",
+    "generated_response": null,
+    "response_verification": "PASS",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "conversation_state": {
+      "stage": "ESCALATED"
+    },
+    "attempted_actions": [],
+    "resolution_status": "ESCALATED_HUMAN_REQUIRED",
+    "escalation_category": "NONE",
+    "escalation_reason": "Escalated to human review: Evidence verdict: STRONG_EVIDENCE [Composite: DIRECT_STRONG_EVIDENCE]. Issues: VETO: Symptom-intent contradiction (Bluetooth pairing or peripheral connection failure vs hardware_audio_connection_issue).; Symptom-intent contradiction: Extracted symptom 'Bluetooth pairing or peripheral connection failure' does not support predicted intent 'hardware_audio_connection_issue'..",
+    "latency_ms": 83.05,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "ESCALATE_TO_HUMAN",
+      "outcome": "ESCALATED_HUMAN_REQUIRED",
+      "summary": "Escalated to human: Multi-signal safety gate required human adjudication: Escalated to human review: VETO: Symptom-intent contradiction (Bluetooth pairing or peripheral connection failure vs hardware_audio_connection_issue). AI confidence (87.4%) does not override operational safety requirements.",
+      "positive_factors": [
+        "\u2713 Operational symptom extracted: Bluetooth pairing or peripheral connection failure",
+        "\u2713 3 direct historical case(s) found"
+      ],
+      "negative_factors": [
+        "VETO: Symptom-intent contradiction (Bluetooth pairing or peripheral connection failure vs hardware_audio_connection_issue).",
+        "Symptom-intent contradiction: Extracted symptom 'Bluetooth pairing or peripheral connection failure' does not support predicted intent 'hardware_audio_connection_issue'."
+      ],
+      "recommended_human_actions": [
+        "Review candidate hypotheses (hardware_audio_connection_issue, general_device_support) and select appropriate troubleshooting path."
+      ],
+      "checklist": {
+        "problem_understood": true,
+        "gate_passed": false,
+        "evidence_authorized": true,
+        "response_grounded": true,
+        "no_unsafe_action": true
+      }
+    },
+    "end_to_end_outcome": "ESCALATED_HUMAN_REQUIRED"
+  },
+  {
+    "conversation_id": "CLEAR_03",
+    "turn_count": 1,
+    "customer_message": "My iPhone battery is draining from 100% to 20% in less than two hours.",
+    "problem_profile": "Understood problem for iPhone: rapid battery drain / power depletion.",
+    "candidate_intents": [],
+    "selected_problem": "battery_power_issue",
+    "clarity_signals": {
+      "information_sufficient": true,
+      "problem_strength_valid": true,
+      "candidate_conflict_resolved": true,
+      "symptom_intent_agreed": true,
+      "multi_symptom_manageable": true,
+      "confidence_margin_valid": true,
+      "no_safety_veto": true
+    },
+    "ambiguity_decision": "CLEAR_PRIMARY",
+    "retrieved_evidence": [
+      {
+        "case_id": "conv_AppleSupport_657206",
+        "similarity_score": 0.4187,
+        "operational_similarity": 0.6515,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@AppleSupport Battery is draining 100% to 0% in less than 10 min. Is this a known issue?",
+        "historical_brand_response": "@276439 DM us please, we'd like to look into this further. https://t.co/GDrqU22YpT",
+        "historical_intent": "battery_power_issue",
+        "historical_problem_family": "POWER_BATTERY",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'POWER_BATTERY' and core functional symptom (rapid battery drain / power depletion)."
+      },
+      {
+        "case_id": "conv_AppleSupport_701573",
+        "similarity_score": 0.3687,
+        "operational_similarity": 0.594,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "Hey @115858 I went from 75% battery to 67% in less than two minutes wtf?!",
+        "historical_brand_response": "@287478 Thanks for reaching out to us for support. We would love to help you. Please DM us so that we can look into this together. https://t.co/GDrqU22YpT",
+        "historical_intent": "battery_power_issue",
+        "historical_problem_family": "POWER_BATTERY",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'POWER_BATTERY' and core functional symptom (rapid battery drain / power depletion)."
+      },
+      {
+        "case_id": "conv_AppleSupport_441085",
+        "similarity_score": 0.3423,
+        "operational_similarity": 0.5636,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "NO!! The #iOS update 11.0.3 is draining the battery life faster than ever!! @AppleSupport 100% to %7 in two hours!",
+        "historical_brand_response": "@219646 Battery life is important, and we can help. As a starting point, try these steps to help: https://t.co/bivpdfBNJ6",
+        "historical_intent": "battery_power_issue",
+        "historical_problem_family": "POWER_BATTERY",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'POWER_BATTERY' and core functional symptom (rapid battery drain / power depletion)."
+      }
+    ],
+    "evidence_tiers": [
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH"
+    ],
+    "evidence_verdict": "STRONG_EVIDENCE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "DIRECT_STRONG_EVIDENCE",
+    "generated_response": "We know how crucial reliable battery life is on your iPhone. Please check Settings > Battery > Battery Health to inspect your maximum capacity, and review Battery Usage to see if specific apps are consuming high power. We recommend disabling Background App Refresh for high-drain apps and verifying your charger. If battery drain continues, DM us so we can run remote diagnostics: https://apple.co/DM",
+    "response_verification": "PASS",
+    "routing_decision": "AUTO_HANDLE",
+    "conversation_state": {
+      "stage": "RESOLVED"
+    },
+    "attempted_actions": [],
+    "resolution_status": "SAFE_AUTO_HANDLED",
+    "escalation_category": "NONE",
+    "escalation_reason": "",
+    "latency_ms": 76.65,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "AUTO_HANDLE",
+      "outcome": "SAFE_AUTO_HANDLED",
+      "summary": "Auto-handling authorized: Problem clearly understood, supported by corroborated historical evidence, and response verified grounded.",
+      "positive_factors": [
+        "\u2713 Problem identified: rapid battery drain / power depletion (POWER_BATTERY)",
+        "\u2713 Decision gate passed (AUTO_HANDLE)",
+        "\u2713 Corroborated by 3 direct historical case(s)",
+        "\u2713 Response grounding verification passed (Score: 1.00)",
+        "\u2713 No hazardous or ungrounded actions detected"
+      ],
+      "negative_factors": [],
+      "recommended_human_actions": [],
+      "checklist": {
+        "problem_understood": true,
+        "gate_passed": true,
+        "evidence_authorized": true,
+        "response_grounded": true,
+        "no_unsafe_action": true
+      }
+    },
+    "end_to_end_outcome": "SAFE_AUTO_HANDLED"
+  },
+  {
+    "conversation_id": "CLEAR_04",
+    "turn_count": 1,
+    "customer_message": "I keep getting a storage almost full notification on my iPhone 12.",
+    "problem_profile": "Understood problem for iPhone 12: device or system storage limitation.",
+    "candidate_intents": [],
+    "selected_problem": "general_device_support",
+    "clarity_signals": {
+      "information_sufficient": true,
+      "problem_strength_valid": true,
+      "candidate_conflict_resolved": true,
+      "symptom_intent_agreed": true,
+      "multi_symptom_manageable": true,
+      "confidence_margin_valid": true,
+      "no_safety_veto": true
+    },
+    "ambiguity_decision": "CLEAR_PRIMARY",
+    "retrieved_evidence": [
+      {
+        "case_id": "conv_AppleSupport_172937",
+        "similarity_score": 0.4942,
+        "operational_similarity": 0.7383,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@115858 IF I GET ANOTHER \"Storage Almost Full\" NOTIFICATION IMMA SNAP",
+        "historical_brand_response": "@156461 Let us help. Can you tell us which device you're using and the software version? That way we can better assist with the storage notification.",
+        "historical_intent": "general_device_support",
+        "historical_problem_family": "STORAGE",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'STORAGE' and core functional symptom (device or system storage limitation)."
+      },
+      {
+        "case_id": "conv_AppleSupport_463104",
+        "similarity_score": 0.4562,
+        "operational_similarity": 0.6946,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@AppleSupport storage almost full message is making me nuts!!!! \ud83d\ude21\ud83d\udcf1",
+        "historical_brand_response": "@225065 Let's see what we can do.  First, let's look at Settings &gt; General &gt; iPhone Storage to check out some ways to optimize storage on your iPhone.",
+        "historical_intent": "general_device_support",
+        "historical_problem_family": "STORAGE",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'STORAGE' and core functional symptom (device or system storage limitation)."
+      },
+      {
+        "case_id": "conv_AppleSupport_1416069",
+        "similarity_score": 0.4202,
+        "operational_similarity": 0.6532,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@AppleSupport HOW THE F*CK DO I TURN OFF \u201cSTORAGE ALMOST FULL\u201d NOTIFICATIONS? IT\u2019S FULL B/C IOS11 IS A POS\ud83d\udca9",
+        "historical_brand_response": "@438228 We want to help with your storage issue. Reach us via DM to continue. https://t.co/GDrqU22YpT",
+        "historical_intent": "general_device_support",
+        "historical_problem_family": "STORAGE",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'STORAGE' and core functional symptom (device or system storage limitation)."
+      }
+    ],
+    "evidence_tiers": [
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH"
+    ],
+    "evidence_verdict": "STRONG_EVIDENCE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "DIRECT_STRONG_EVIDENCE",
+    "generated_response": "Thanks for reaching out to AppleSupport regarding your iPhone 12. We recommend starting with a standard device restart and ensuring your operating system is up to date. Please verify that your Wi-Fi and cellular connections are stable. Send us a DM with more details about what you're experiencing: https://apple.co/DM",
+    "response_verification": "PASS",
+    "routing_decision": "AUTO_HANDLE",
+    "conversation_state": {
+      "stage": "RESOLVED"
+    },
+    "attempted_actions": [],
+    "resolution_status": "SAFE_AUTO_HANDLED",
+    "escalation_category": "NONE",
+    "escalation_reason": "",
+    "latency_ms": 75.62,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "AUTO_HANDLE",
+      "outcome": "SAFE_AUTO_HANDLED",
+      "summary": "Auto-handling authorized: Problem clearly understood, supported by corroborated historical evidence, and response verified grounded.",
+      "positive_factors": [
+        "\u2713 Problem identified: device or system storage limitation (STORAGE)",
+        "\u2713 Decision gate passed (AUTO_HANDLE)",
+        "\u2713 Corroborated by 3 direct historical case(s)",
+        "\u2713 Response grounding verification passed (Score: 1.00)",
+        "\u2713 No hazardous or ungrounded actions detected"
+      ],
+      "negative_factors": [],
+      "recommended_human_actions": [],
+      "checklist": {
+        "problem_understood": true,
+        "gate_passed": true,
+        "evidence_authorized": true,
+        "response_grounded": true,
+        "no_unsafe_action": true
+      }
+    },
+    "end_to_end_outcome": "SAFE_AUTO_HANDLED"
+  },
+  {
+    "conversation_id": "CLEAR_05",
+    "turn_count": 1,
+    "customer_message": "The Spotify app keeps crashing immediately when I tap to open it on my iPad.",
+    "problem_profile": "Understood problem for iPad: system sluggishness, freezing, or app crashes.",
+    "candidate_intents": [],
+    "selected_problem": "general_device_support",
+    "clarity_signals": {
+      "information_sufficient": true,
+      "problem_strength_valid": true,
+      "candidate_conflict_resolved": true,
+      "symptom_intent_agreed": true,
+      "multi_symptom_manageable": true,
+      "confidence_margin_valid": true,
+      "no_safety_veto": true
+    },
+    "ambiguity_decision": "CLEAR_PRIMARY",
+    "retrieved_evidence": [
+      {
+        "case_id": "conv_AppleSupport_1338099",
+        "similarity_score": 0.3638,
+        "operational_similarity": 0.5884,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "Hey @AppleSupport my music app keeps crashing when I open it and I\u2019ve rebooted and everything \ud83d\ude2d\ud83d\ude2d\ud83d\ude2d",
+        "historical_brand_response": "@432110 We want to help. Which iOS device are you using?",
+        "historical_intent": "software_update_problem",
+        "historical_problem_family": "CRASH_FREEZE",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'CRASH_FREEZE' and core functional symptom (system sluggishness, freezing, or app crashes)."
+      },
+      {
+        "case_id": "conv_AppleSupport_2297812",
+        "similarity_score": 0.3425,
+        "operational_similarity": 0.5639,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "my messages app keeps crashing, wtf @115858",
+        "historical_brand_response": "@667030 Thank you for reaching out to us. We're here to help. To start, what device model and software version are you using?",
+        "historical_intent": "software_update_problem",
+        "historical_problem_family": "CRASH_FREEZE",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'CRASH_FREEZE' and core functional symptom (system sluggishness, freezing, or app crashes)."
+      },
+      {
+        "case_id": "conv_AppleSupport_1743627",
+        "similarity_score": 0.301,
+        "operational_similarity": 0.5161,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "My damn message app keeps crashing. Do something plz \ud83d\ude2d @AppleSupport",
+        "historical_brand_response": "@473926 We want to be sure you can access your messages. Which device are you using? Which macOS or iOS are you running?",
+        "historical_intent": "software_update_problem",
+        "historical_problem_family": "CRASH_FREEZE",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'CRASH_FREEZE' and core functional symptom (system sluggishness, freezing, or app crashes)."
+      }
+    ],
+    "evidence_tiers": [
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH"
+    ],
+    "evidence_verdict": "STRONG_EVIDENCE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "DIRECT_STRONG_EVIDENCE",
+    "generated_response": "Thanks for reaching out to AppleSupport regarding your iPad. We recommend starting with a standard device restart and ensuring your operating system is up to date. Please verify that your Wi-Fi and cellular connections are stable. Send us a DM with more details about what you're experiencing: https://apple.co/DM",
+    "response_verification": "PASS",
+    "routing_decision": "AUTO_HANDLE",
+    "conversation_state": {
+      "stage": "RESOLVED"
+    },
+    "attempted_actions": [],
+    "resolution_status": "SAFE_AUTO_HANDLED",
+    "escalation_category": "NONE",
+    "escalation_reason": "",
+    "latency_ms": 83.62,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "AUTO_HANDLE",
+      "outcome": "SAFE_AUTO_HANDLED",
+      "summary": "Auto-handling authorized: Problem clearly understood, supported by corroborated historical evidence, and response verified grounded.",
+      "positive_factors": [
+        "\u2713 Problem identified: system sluggishness, freezing, or app crashes (CRASH_FREEZE)",
+        "\u2713 Decision gate passed (AUTO_HANDLE)",
+        "\u2713 Corroborated by 3 direct historical case(s)",
+        "\u2713 Response grounding verification passed (Score: 1.00)",
+        "\u2713 No hazardous or ungrounded actions detected"
+      ],
+      "negative_factors": [],
+      "recommended_human_actions": [],
+      "checklist": {
+        "problem_understood": true,
+        "gate_passed": true,
+        "evidence_authorized": true,
+        "response_grounded": true,
+        "no_unsafe_action": true
+      }
+    },
+    "end_to_end_outcome": "SAFE_AUTO_HANDLED"
+  },
+  {
+    "conversation_id": "CLEAR_06",
+    "turn_count": 1,
+    "customer_message": "I am trying to reset my Apple ID password but not receiving the verification email.",
+    "problem_profile": "Understood problem for device: account credential lockout or login authentication failure.",
+    "candidate_intents": [],
+    "selected_problem": "account_access_issue",
+    "clarity_signals": {
+      "information_sufficient": true,
+      "problem_strength_valid": true,
+      "candidate_conflict_resolved": true,
+      "symptom_intent_agreed": true,
+      "multi_symptom_manageable": true,
+      "confidence_margin_valid": true,
+      "no_safety_veto": true
+    },
+    "ambiguity_decision": "CLEAR_PRIMARY",
+    "retrieved_evidence": [
+      {
+        "case_id": "conv_AppleSupport_958213",
+        "similarity_score": 0.4954,
+        "operational_similarity": 0.7397,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@AppleSupport how do I reset my Apple ID password?",
+        "historical_brand_response": "@347358 We'd love to help. Take a look at the steps here: https://t.co/pSqXVktNl7",
+        "historical_intent": "account_access_issue",
+        "historical_problem_family": "ACCOUNT_ACCESS",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'ACCOUNT_ACCESS' and core functional symptom (account credential lockout or login authentication failure)."
+      },
+      {
+        "case_id": "conv_AppleSupport_982064",
+        "similarity_score": 0.3916,
+        "operational_similarity": 0.6203,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@AppleSupport hi. Trying to reset my Apple ID password. It doesn\u2019t recognise my trusted phone number. Please help!",
+        "historical_brand_response": "@352846 Thanks for reaching out. DM the country or region where you are currently located to get started. https://t.co/GDrqU22YpT",
+        "historical_intent": "account_access_issue",
+        "historical_problem_family": "ACCOUNT_ACCESS",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'ACCOUNT_ACCESS' and core functional symptom (account credential lockout or login authentication failure)."
+      },
+      {
+        "case_id": "conv_AppleSupport_1445561",
+        "similarity_score": 0.3877,
+        "operational_similarity": 0.6159,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@AppleSupport I've been trying to reset my Apple ID password for about a week now and it won't let me?",
+        "historical_brand_response": "@455443 Thanks for reaching out. DM us more info about your experience and we'll get you to the right spot. https://t.co/GDrqU22YpT",
+        "historical_intent": "account_access_issue",
+        "historical_problem_family": "ACCOUNT_ACCESS",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'ACCOUNT_ACCESS' and core functional symptom (account credential lockout or login authentication failure)."
+      }
+    ],
+    "evidence_tiers": [
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH"
+    ],
+    "evidence_verdict": "STRONG_EVIDENCE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "DIRECT_STRONG_EVIDENCE",
+    "generated_response": "Keeping your Apple ID secure and accessible is a top priority. You can securely reset your password or unlock your account at https://iforgot.apple.com. Ensure you have access to your trusted phone number or trusted Apple devices for two-factor verification. Let us know in DM if you run into any account recovery hurdles: https://apple.co/DM",
+    "response_verification": "PASS",
+    "routing_decision": "AUTO_HANDLE",
+    "conversation_state": {
+      "stage": "RESOLVED"
+    },
+    "attempted_actions": [],
+    "resolution_status": "SAFE_AUTO_HANDLED",
+    "escalation_category": "NONE",
+    "escalation_reason": "",
+    "latency_ms": 81.73,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "AUTO_HANDLE",
+      "outcome": "SAFE_AUTO_HANDLED",
+      "summary": "Auto-handling authorized: Problem clearly understood, supported by corroborated historical evidence, and response verified grounded.",
+      "positive_factors": [
+        "\u2713 Problem identified: account credential lockout or login authentication failure (ACCOUNT_ACCESS)",
+        "\u2713 Decision gate passed (AUTO_HANDLE)",
+        "\u2713 Corroborated by 3 direct historical case(s)",
+        "\u2713 Response grounding verification passed (Score: 1.00)",
+        "\u2713 No hazardous or ungrounded actions detected"
+      ],
+      "negative_factors": [],
+      "recommended_human_actions": [],
+      "checklist": {
+        "problem_understood": true,
+        "gate_passed": true,
+        "evidence_authorized": true,
+        "response_grounded": true,
+        "no_unsafe_action": true
+      }
+    },
+    "end_to_end_outcome": "SAFE_AUTO_HANDLED"
+  },
+  {
+    "conversation_id": "CLEAR_07",
+    "turn_count": 1,
+    "customer_message": "My iPhone screen went completely black and is unresponsive to touch.",
+    "problem_profile": "Understood problem for iPhone: display malfunction or physical screen damage.",
+    "candidate_intents": [],
+    "selected_problem": "display_touch_issue",
+    "clarity_signals": {
+      "information_sufficient": true,
+      "problem_strength_valid": true,
+      "candidate_conflict_resolved": true,
+      "symptom_intent_agreed": true,
+      "multi_symptom_manageable": true,
+      "confidence_margin_valid": true,
+      "no_safety_veto": true
+    },
+    "ambiguity_decision": "CLEAR_PRIMARY",
+    "retrieved_evidence": [
+      {
+        "case_id": "conv_AppleSupport_2123882",
+        "similarity_score": 0.3911,
+        "operational_similarity": 0.6198,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@AppleSupport my iPhone SE is unresponsive to my touch. What should I do?",
+        "historical_brand_response": "@586967 We understand you need the display to respond. Check out this article to start: https://t.co/kQXBriN504 Questions? DM us. https://t.co/GDrqU22YpT",
+        "historical_intent": "display_touch_issue",
+        "historical_problem_family": "DISPLAY",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'DISPLAY' and core functional symptom (display malfunction or physical screen damage)."
+      },
+      {
+        "case_id": "conv_AppleSupport_2113872",
+        "similarity_score": 0.3196,
+        "operational_similarity": 0.5375,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@AppleSupport my iPhone X screen has been unresponsive to touch for nearly 12 hours now. $1,149.99 spent on a phone, that has become paper weight.",
+        "historical_brand_response": "@623255 We want to help you get back to using your new iPhone.  We received your DM and will continue there momentarilly. https://t.co/GDrqU22YpT",
+        "historical_intent": "display_touch_issue",
+        "historical_problem_family": "DISPLAY",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'DISPLAY' and core functional symptom (display malfunction or physical screen damage)."
+      },
+      {
+        "case_id": "conv_AppleSupport_644163",
+        "similarity_score": 0.3122,
+        "operational_similarity": 0.529,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@AppleSupport Why are my Apple devices falling apart with the update. My phone can\u2019t play podcasts anymore and my watch is unresponsive to touch in dock",
+        "historical_brand_response": "Skip a song without skipping a step. Just swipe left to control your music on #AppleWatch in watchOS 4. https://t.co/FO6CMFdkdG",
+        "historical_intent": "display_touch_issue",
+        "historical_problem_family": "DISPLAY",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'DISPLAY' and core functional symptom (display malfunction or physical screen damage)."
+      }
+    ],
+    "evidence_tiers": [
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH"
+    ],
+    "evidence_verdict": "STRONG_EVIDENCE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "DIRECT_STRONG_EVIDENCE",
+    "generated_response": "We'd like to look into your iPhone's display response with you. Try cleaning the screen with a microfiber cloth and remove any thick screen protectors or cases. Perform a force restart on your device to reset the touch controller. If touch is unresponsive or physical glass is cracked, send us a DM to explore service options: https://apple.co/DM",
+    "response_verification": "PASS",
+    "routing_decision": "AUTO_HANDLE",
+    "conversation_state": {
+      "stage": "RESOLVED"
+    },
+    "attempted_actions": [],
+    "resolution_status": "SAFE_AUTO_HANDLED",
+    "escalation_category": "NONE",
+    "escalation_reason": "",
+    "latency_ms": 78.72,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "AUTO_HANDLE",
+      "outcome": "SAFE_AUTO_HANDLED",
+      "summary": "Auto-handling authorized: Problem clearly understood, supported by corroborated historical evidence, and response verified grounded.",
+      "positive_factors": [
+        "\u2713 Problem identified: display malfunction or physical screen damage (DISPLAY)",
+        "\u2713 Decision gate passed (AUTO_HANDLE)",
+        "\u2713 Corroborated by 3 direct historical case(s)",
+        "\u2713 Response grounding verification passed (Score: 1.00)",
+        "\u2713 No hazardous or ungrounded actions detected"
+      ],
+      "negative_factors": [],
+      "recommended_human_actions": [],
+      "checklist": {
+        "problem_understood": true,
+        "gate_passed": true,
+        "evidence_authorized": true,
+        "response_grounded": true,
+        "no_unsafe_action": true
+      }
+    },
+    "end_to_end_outcome": "SAFE_AUTO_HANDLED"
+  },
+  {
+    "conversation_id": "CLEAR_08",
+    "turn_count": 1,
+    "customer_message": "My keyboard keeps typing letter I with a weird symbol instead of letter eye.",
+    "problem_profile": "Understood problem for device: keyboard text input or autocorrect glitch.",
+    "candidate_intents": [],
+    "selected_problem": "keyboard_typing_issue",
+    "clarity_signals": {
+      "information_sufficient": true,
+      "problem_strength_valid": true,
+      "candidate_conflict_resolved": true,
+      "symptom_intent_agreed": true,
+      "multi_symptom_manageable": true,
+      "confidence_margin_valid": true,
+      "no_safety_veto": true
+    },
+    "ambiguity_decision": "CLEAR_PRIMARY",
+    "retrieved_evidence": [
+      {
+        "case_id": "conv_AppleSupport_1524166",
+        "similarity_score": 0.4931,
+        "operational_similarity": 0.7371,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@AppleSupport why exactly is my phone replacing the letter I with weird symbol things ?",
+        "historical_brand_response": "@444375 We'd be happy to check it out. Tell us in DM if your device is updated to iOS 11.1, please. https://t.co/GDrqU22YpT",
+        "historical_intent": "keyboard_typing_issue",
+        "historical_problem_family": "INPUT_KEYBOARD",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'INPUT_KEYBOARD' and core functional symptom (keyboard text input or autocorrect glitch)."
+      },
+      {
+        "case_id": "conv_AppleSupport_1420104",
+        "similarity_score": 0.3897,
+        "operational_similarity": 0.6182,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@AppleSupport My iphone is adding a weird symbol for the letter I (eye, if it changed into a symbol)",
+        "historical_brand_response": "@450132 We'd like to help. Send us a DM. https://t.co/GDrqU22YpT",
+        "historical_intent": "keyboard_typing_issue",
+        "historical_problem_family": "INPUT_KEYBOARD",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'INPUT_KEYBOARD' and core functional symptom (keyboard text input or autocorrect glitch)."
+      },
+      {
+        "case_id": "conv_AppleSupport_52259",
+        "similarity_score": 0.3549,
+        "operational_similarity": 0.5781,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@AppleSupport I have iOS 11.0.3 and my keyboard keeps autocorrecting the letter i to a weird symbol similar to \"A ?\" and it won't change.",
+        "historical_brand_response": "@127752 We want your keyboard to respond correctly.  Please check to see if you have an update under Settings &gt; General &gt; Software Update",
+        "historical_intent": "keyboard_typing_issue",
+        "historical_problem_family": "INPUT_KEYBOARD",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'INPUT_KEYBOARD' and core functional symptom (keyboard text input or autocorrect glitch)."
+      }
+    ],
+    "evidence_tiers": [
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH"
+    ],
+    "evidence_verdict": "STRONG_EVIDENCE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "DIRECT_STRONG_EVIDENCE",
+    "generated_response": "We're here to help you get typing smoothly again on your device. Navigate to Settings > General > Keyboard > Text Replacement to check for autocorrect glitches (such as the letter 'i' replacing with symbols). You can also reset learned typing habits under Settings > General > Reset > Reset Keyboard Dictionary. Reach out in DM if typing issues persist: https://apple.co/DM",
+    "response_verification": "PASS",
+    "routing_decision": "AUTO_HANDLE",
+    "conversation_state": {
+      "stage": "RESOLVED"
+    },
+    "attempted_actions": [],
+    "resolution_status": "SAFE_AUTO_HANDLED",
+    "escalation_category": "NONE",
+    "escalation_reason": "",
+    "latency_ms": 76.97,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "AUTO_HANDLE",
+      "outcome": "SAFE_AUTO_HANDLED",
+      "summary": "Auto-handling authorized: Problem clearly understood, supported by corroborated historical evidence, and response verified grounded.",
+      "positive_factors": [
+        "\u2713 Problem identified: keyboard text input or autocorrect glitch (INPUT_KEYBOARD)",
+        "\u2713 Decision gate passed (AUTO_HANDLE)",
+        "\u2713 Corroborated by 3 direct historical case(s)",
+        "\u2713 Response grounding verification passed (Score: 1.00)",
+        "\u2713 No hazardous or ungrounded actions detected"
+      ],
+      "negative_factors": [],
+      "recommended_human_actions": [],
+      "checklist": {
+        "problem_understood": true,
+        "gate_passed": true,
+        "evidence_authorized": true,
+        "response_grounded": true,
+        "no_unsafe_action": true
+      }
+    },
+    "end_to_end_outcome": "SAFE_AUTO_HANDLED"
+  },
+  {
+    "conversation_id": "CLEAR_09",
+    "turn_count": 1,
+    "customer_message": "There is no sound coming from my iPhone bottom speaker during phone calls.",
+    "problem_profile": "Understood problem for iPhone: speaker or microphone audio failure.",
+    "candidate_intents": [],
+    "selected_problem": "hardware_audio_connection_issue",
+    "clarity_signals": {
+      "information_sufficient": true,
+      "problem_strength_valid": true,
+      "candidate_conflict_resolved": true,
+      "symptom_intent_agreed": true,
+      "multi_symptom_manageable": true,
+      "confidence_margin_valid": true,
+      "no_safety_veto": true
+    },
+    "ambiguity_decision": "CLEAR_PRIMARY",
+    "retrieved_evidence": [
+      {
+        "case_id": "conv_AppleSupport_2278713",
+        "similarity_score": 0.3733,
+        "operational_similarity": 0.5993,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@AppleSupport there is no audio coming from my left ear pod can you help?",
+        "historical_brand_response": "@662548 Thanks for reaching out to us for support. We would love to help you. Can you tell us when you first encountered this issue?",
+        "historical_intent": "hardware_audio_connection_issue",
+        "historical_problem_family": "AUDIO",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'AUDIO' and core functional symptom (speaker or microphone audio failure)."
+      },
+      {
+        "case_id": "conv_AppleSupport_1808936",
+        "similarity_score": 0.3685,
+        "operational_similarity": 0.5938,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@AppleSupport Hi. There is a speaker grille on the left of my IPhone 8 Plus. It appears no sound is coming from it. What should I do?",
+        "historical_brand_response": "@326564 Running into audio issues? Let's get that solved. Start with these steps: https://t.co/4Kux8rhhGX Give us the results in DM. https://t.co/GDrqU22YpT",
+        "historical_intent": "hardware_audio_connection_issue",
+        "historical_problem_family": "AUDIO",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'AUDIO' and core functional symptom (speaker or microphone audio failure)."
+      },
+      {
+        "case_id": "conv_AppleSupport_1269590",
+        "similarity_score": 0.36,
+        "operational_similarity": 0.584,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@AppleSupport hi, since the last update there is no sound for my phone calls and for alarms?",
+        "historical_brand_response": "@417260 Send us a DM and we'll have a look at this together. https://t.co/GDrqU22YpT",
+        "historical_intent": "hardware_audio_connection_issue",
+        "historical_problem_family": "AUDIO",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'AUDIO' and core functional symptom (speaker or microphone audio failure)."
+      }
+    ],
+    "evidence_tiers": [
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH"
+    ],
+    "evidence_verdict": "STRONG_EVIDENCE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "DIRECT_STRONG_EVIDENCE",
+    "generated_response": "Let's make sure the audio is working properly on your iPhone. Check Settings > Sounds & Haptics to ensure volume sliders are up, and inspect your speaker/microphone grilles for debris. For Bluetooth or AirPods issues, go to Settings > Bluetooth, tap the 'i' next to your accessory, select 'Forget This Device', and pair again. DM us if sound still doesn't play so we can troubleshoot together: https://apple.co/DM",
+    "response_verification": "PASS",
+    "routing_decision": "AUTO_HANDLE",
+    "conversation_state": {
+      "stage": "RESOLVED"
+    },
+    "attempted_actions": [],
+    "resolution_status": "SAFE_AUTO_HANDLED",
+    "escalation_category": "NONE",
+    "escalation_reason": "",
+    "latency_ms": 79.58,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "AUTO_HANDLE",
+      "outcome": "SAFE_AUTO_HANDLED",
+      "summary": "Auto-handling authorized: Problem clearly understood, supported by corroborated historical evidence, and response verified grounded.",
+      "positive_factors": [
+        "\u2713 Problem identified: speaker or microphone audio failure (AUDIO)",
+        "\u2713 Decision gate passed (AUTO_HANDLE)",
+        "\u2713 Corroborated by 3 direct historical case(s)",
+        "\u2713 Response grounding verification passed (Score: 1.00)",
+        "\u2713 No hazardous or ungrounded actions detected"
+      ],
+      "negative_factors": [],
+      "recommended_human_actions": [],
+      "checklist": {
+        "problem_understood": true,
+        "gate_passed": true,
+        "evidence_authorized": true,
+        "response_grounded": true,
+        "no_unsafe_action": true
+      }
+    },
+    "end_to_end_outcome": "SAFE_AUTO_HANDLED"
+  },
+  {
+    "conversation_id": "CLEAR_10",
+    "turn_count": 1,
+    "customer_message": "My MacBook Pro is lagging and showing spinning beach ball on all applications.",
+    "problem_profile": "Understood problem for MacBook Pro: system sluggishness, freezing, or app crashes.",
+    "candidate_intents": [],
+    "selected_problem": "mac_software_issue",
+    "clarity_signals": {
+      "information_sufficient": true,
+      "problem_strength_valid": true,
+      "candidate_conflict_resolved": true,
+      "symptom_intent_agreed": true,
+      "multi_symptom_manageable": true,
+      "confidence_margin_valid": true,
+      "no_safety_veto": true
+    },
+    "ambiguity_decision": "CLEAR_PRIMARY",
+    "retrieved_evidence": [
+      {
+        "case_id": "conv_AppleSupport_2285821",
+        "similarity_score": 0.2839,
+        "operational_similarity": 0.4965,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@AppleSupport Why does Final Cut Pro X crash if my Macbook Pro is in clamshell mode?",
+        "historical_brand_response": "@326458 Let us know more about what is happening there. We can continue in DM. https://t.co/GDrqU2kzhr",
+        "historical_intent": "mac_software_issue",
+        "historical_problem_family": "SOFTWARE_APP",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'CRASH_FREEZE' and core functional symptom (system sluggishness, freezing, or app crashes)."
+      },
+      {
+        "case_id": "conv_AppleSupport_2690839",
+        "similarity_score": 0.1812,
+        "operational_similarity": 0.3784,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "This new apple update seriously SUCKS. My phone is lagging and freezing and I cannot install new apps. Get it together Apple. @AppleSupport",
+        "historical_brand_response": "@756464 We want you to have a good experience with the update. Which update is currently on your iPhone? You can find out by following the steps here: https://t.co/ZTw54HL4Rm",
+        "historical_intent": "software_update_problem",
+        "historical_problem_family": "CRASH_FREEZE",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'CRASH_FREEZE' and core functional symptom (system sluggishness, freezing, or app crashes)."
+      },
+      {
+        "case_id": "conv_AppleSupport_2499299",
+        "similarity_score": 0.1739,
+        "operational_similarity": 0.37,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "Help @AppleSupport! My 2011 MacBook Pro is frozen and it shows that it's on, but nothing is working. https://t.co/sYUg7gdWZb",
+        "historical_brand_response": "@713102 We know how important it is for your MacBook Pro to work as expected and we're happy to help. To start, can you tell us if there were any recent changes made to your MacBook Pro? Also, do you know which version of software you're using?",
+        "historical_intent": "software_update_problem",
+        "historical_problem_family": "CRASH_FREEZE",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'CRASH_FREEZE' and core functional symptom (system sluggishness, freezing, or app crashes)."
+      }
+    ],
+    "evidence_tiers": [
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH"
+    ],
+    "evidence_verdict": "STRONG_EVIDENCE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "DIRECT_STRONG_EVIDENCE",
+    "generated_response": "We're here to help with your MacBook Pro macOS software performance. Try restarting your Mac in Safe Mode by holding Shift during startup to clear kernel caches, or run First Aid in Disk Utility. Ensure your macOS is updated to the latest compatible release. DM us with your Mac model and macOS version so we can assist: https://apple.co/DM",
+    "response_verification": "PASS",
+    "routing_decision": "AUTO_HANDLE",
+    "conversation_state": {
+      "stage": "RESOLVED"
+    },
+    "attempted_actions": [],
+    "resolution_status": "SAFE_AUTO_HANDLED",
+    "escalation_category": "NONE",
+    "escalation_reason": "",
+    "latency_ms": 78.04,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "AUTO_HANDLE",
+      "outcome": "SAFE_AUTO_HANDLED",
+      "summary": "Auto-handling authorized: Problem clearly understood, supported by corroborated historical evidence, and response verified grounded.",
+      "positive_factors": [
+        "\u2713 Problem identified: system sluggishness, freezing, or app crashes (CRASH_FREEZE)",
+        "\u2713 Decision gate passed (AUTO_HANDLE)",
+        "\u2713 Corroborated by 3 direct historical case(s)",
+        "\u2713 Response grounding verification passed (Score: 1.00)",
+        "\u2713 No hazardous or ungrounded actions detected"
+      ],
+      "negative_factors": [],
+      "recommended_human_actions": [],
+      "checklist": {
+        "problem_understood": true,
+        "gate_passed": true,
+        "evidence_authorized": true,
+        "response_grounded": true,
+        "no_unsafe_action": true
+      }
+    },
+    "end_to_end_outcome": "SAFE_AUTO_HANDLED"
+  },
+  {
+    "conversation_id": "AMBIG_01",
+    "turn_count": 1,
+    "customer_message": "my phone isn't working",
+    "problem_profile": "Understood problem for iPhone: unspecified_device_issue.",
+    "candidate_intents": [
+      {
+        "intent": "general_device_support",
+        "confidence": 0.9804,
+        "reasoning": "Heuristic pattern match score 1.00"
+      },
+      {
+        "intent": "account_access_issue",
+        "confidence": 0.0098,
+        "reasoning": "Taxonomy background candidate"
+      },
+      {
+        "intent": "battery_power_issue",
+        "confidence": 0.0098,
+        "reasoning": "Taxonomy background candidate"
+      }
+    ],
+    "selected_problem": "general_device_support",
+    "clarity_signals": {
+      "information_sufficient": false,
+      "problem_strength_valid": false,
+      "candidate_conflict_resolved": true,
+      "symptom_intent_agreed": true,
+      "multi_symptom_manageable": true,
+      "confidence_margin_valid": true,
+      "no_safety_veto": false
+    },
+    "ambiguity_decision": "UNCLEAR_INSUFFICIENT",
+    "retrieved_evidence": [
+      {
+        "case_id": "conv_AppleSupport_1483632",
+        "similarity_score": 0.796,
+        "operational_similarity": 0.2786,
+        "match_tier": "WEAK_SEMANTIC_MATCH",
+        "historical_customer_message": "@AppleSupport hi my phone isn't working",
+        "historical_brand_response": "@464528 We've received your DM and will be responding there shortly. https://t.co/GDrqU22YpT",
+        "historical_intent": "general_device_support",
+        "historical_problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+        "retrieval_explanation": "Weak semantic match: shares vocabulary/keywords but addresses a different operational customer problem (Query: 'GENERAL_DEVICE_FUNCTIONALITY', Historical: 'GENERAL_DEVICE_FUNCTIONALITY')."
+      },
+      {
+        "case_id": "conv_AppleSupport_94809",
+        "similarity_score": 0.6687,
+        "operational_similarity": 0.234,
+        "match_tier": "WEAK_SEMANTIC_MATCH",
+        "historical_customer_message": "@AppleSupport my airprint isn\u2019t working \u2639\ufe0f",
+        "historical_brand_response": "@136597 We're here for you!  What device and iOS / OS version are you using? https://t.co/GDrqU22YpT",
+        "historical_intent": "general_device_support",
+        "historical_problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+        "retrieval_explanation": "Weak semantic match: shares vocabulary/keywords but addresses a different operational customer problem (Query: 'GENERAL_DEVICE_FUNCTIONALITY', Historical: 'GENERAL_DEVICE_FUNCTIONALITY')."
+      },
+      {
+        "case_id": "conv_AppleSupport_2625985",
+        "similarity_score": 0.6504,
+        "operational_similarity": 0.2276,
+        "match_tier": "WEAK_SEMANTIC_MATCH",
+        "historical_customer_message": "@AppleSupport my speaker phone isn\u2019t working",
+        "historical_brand_response": "@556276 We're here for you. Send us a DM, and we'll continue together there. https://t.co/GDrqU22YpT",
+        "historical_intent": "hardware_audio_connection_issue",
+        "historical_problem_family": "AUDIO",
+        "retrieval_explanation": "Weak semantic match: shares vocabulary/keywords but addresses a different operational customer problem (Query: 'GENERAL_DEVICE_FUNCTIONALITY', Historical: 'AUDIO')."
+      }
+    ],
+    "evidence_tiers": [
+      "WEAK_SEMANTIC_MATCH",
+      "WEAK_SEMANTIC_MATCH",
+      "WEAK_SEMANTIC_MATCH"
+    ],
+    "evidence_verdict": "WEAK_EVIDENCE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "WEAK_COMPOSITE_EVIDENCE",
+    "generated_response": null,
+    "response_verification": "PASS",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "conversation_state": {
+      "stage": "ESCALATED"
+    },
+    "attempted_actions": [],
+    "resolution_status": "ESCALATED_AMBIGUOUS",
+    "escalation_category": "AMBIGUITY",
+    "escalation_reason": "Escalated to human review: Evidence verdict: WEAK_EVIDENCE [Composite: WEAK_COMPOSITE_EVIDENCE]. Issues: VETO: Insufficient operational information to auto-handle.; VETO: Primary problem is too weak or non-specific..",
+    "latency_ms": 81.91,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "ESCALATE_TO_HUMAN",
+      "outcome": "ESCALATED_AMBIGUOUS",
+      "summary": "Escalated to human: Severe symptom underspecification or operational ambiguity detected.",
+      "positive_factors": [],
+      "negative_factors": [
+        "VETO: Insufficient operational information to auto-handle.",
+        "VETO: Primary problem is too weak or non-specific.",
+        "Insufficient information: Customer message is too brief or lacks operational details to identify a concrete problem.",
+        "Weak primary problem: Primary symptom 'unspecified_device_issue' is non-specific or vague.",
+        "Weak semantic evidence: retrieved historical cases share lexical keywords but fail to match the operational customer problem.",
+        "Composite evidence verdict: WEAK_COMPOSITE_EVIDENCE. Composite verdict: WEAK_COMPOSITE_EVIDENCE. Unique contributing cases: 3. Covered dimensions: intent, resolution_pattern. Missing: symptom, context, device. Composite score: 0.25, intent consistency: 0.67."
+      ],
+      "recommended_human_actions": [
+        "Review candidate hypotheses (general_device_support, account_access_issue) and select appropriate troubleshooting path."
+      ],
+      "checklist": {
+        "problem_understood": false,
+        "gate_passed": false,
+        "evidence_authorized": false,
+        "response_grounded": true,
+        "no_unsafe_action": true
+      }
+    },
+    "end_to_end_outcome": "ESCALATED_AMBIGUOUS"
+  },
+  {
+    "conversation_id": "AMBIG_02",
+    "turn_count": 1,
+    "customer_message": "something happened after the update",
+    "problem_profile": "Understood problem for device: general post-update instability or sluggishness. Contextual cause: recent software update.",
+    "candidate_intents": [
+      {
+        "intent": "software_update_problem",
+        "confidence": 0.8737,
+        "reasoning": "Heuristic pattern match score 1.50"
+      },
+      {
+        "intent": "general_device_support",
+        "confidence": 0.1164,
+        "reasoning": "Heuristic pattern match score 0.20"
+      },
+      {
+        "intent": "account_access_issue",
+        "confidence": 0.0099,
+        "reasoning": "Taxonomy background candidate"
+      }
+    ],
+    "selected_problem": "software_update_problem",
+    "clarity_signals": {
+      "information_sufficient": false,
+      "problem_strength_valid": true,
+      "candidate_conflict_resolved": true,
+      "symptom_intent_agreed": true,
+      "multi_symptom_manageable": true,
+      "confidence_margin_valid": true,
+      "no_safety_veto": true
+    },
+    "ambiguity_decision": "CLEAR_PRIMARY",
+    "retrieved_evidence": [
+      {
+        "case_id": "conv_AppleSupport_1750443",
+        "similarity_score": 0.4105,
+        "operational_similarity": 0.6421,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@AppleSupport my phone keeps auto correcting the letter \u201cI\ufe0f\u201d to a stupid question mark in a box. It\u2019s annoying and happened after the update",
+        "historical_brand_response": "@527517 Here\u2019s what you can do to work around the issue until it\u2019s fixed in a future software update: https://t.co/xXaXeeSRt9",
+        "historical_intent": "software_update_problem",
+        "historical_problem_family": "SYSTEM_UPDATE",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'SYSTEM_UPDATE' and core functional symptom (general post-update instability or sluggishness)."
+      },
+      {
+        "case_id": "conv_AppleSupport_1526151",
+        "similarity_score": 0.3819,
+        "operational_similarity": 0.6092,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@AppleSupport tell me why when I\ufe0f type \u201cI\ufe0f\u201d it becomes \u201cA *cquestion mark in a box*\u201d all happened after the new update",
+        "historical_brand_response": "@290937 Let's work on this together. Reach out to us in a DM to get started. https://t.co/GDrqU22YpT",
+        "historical_intent": "software_update_problem",
+        "historical_problem_family": "SYSTEM_UPDATE",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'SYSTEM_UPDATE' and core functional symptom (general post-update instability or sluggishness)."
+      },
+      {
+        "case_id": "conv_AppleSupport_2573897",
+        "similarity_score": 0.3466,
+        "operational_similarity": 0.5686,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "My phone still lagging @AppleSupport after the update",
+        "historical_brand_response": "@729913 We want to help. Does this seem to happen with any particular apps? Or when you're doing anything in particular?",
+        "historical_intent": "software_update_problem",
+        "historical_problem_family": "SYSTEM_UPDATE",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'SYSTEM_UPDATE' and core functional symptom (general post-update instability or sluggishness)."
+      }
+    ],
+    "evidence_tiers": [
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH"
+    ],
+    "evidence_verdict": "STRONG_EVIDENCE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "DIRECT_STRONG_EVIDENCE",
+    "generated_response": null,
+    "response_verification": "PASS",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "conversation_state": {
+      "stage": "ESCALATED"
+    },
+    "attempted_actions": [],
+    "resolution_status": "ESCALATED_HUMAN_REQUIRED",
+    "escalation_category": "NONE",
+    "escalation_reason": "Escalated to human review: Evidence verdict: STRONG_EVIDENCE [Composite: DIRECT_STRONG_EVIDENCE]. Issues: Insufficient information: Customer message provides partial context but lacks full operational specificity..",
+    "latency_ms": 70.44,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "ESCALATE_TO_HUMAN",
+      "outcome": "ESCALATED_HUMAN_REQUIRED",
+      "summary": "Escalated to human: Multi-signal safety gate required human adjudication: Escalated to human review: Insufficient information: Customer message provides partial context but lacks full operational specificity. AI confidence (87.4%) does not override operational safety requirements.",
+      "positive_factors": [
+        "\u2713 Operational symptom extracted: general post-update instability or sluggishness",
+        "\u2713 3 direct historical case(s) found"
+      ],
+      "negative_factors": [
+        "Insufficient information: Customer message provides partial context but lacks full operational specificity."
+      ],
+      "recommended_human_actions": [
+        "Review candidate hypotheses (software_update_problem, general_device_support) and select appropriate troubleshooting path."
+      ],
+      "checklist": {
+        "problem_understood": true,
+        "gate_passed": false,
+        "evidence_authorized": true,
+        "response_grounded": true,
+        "no_unsafe_action": true
+      }
+    },
+    "end_to_end_outcome": "ESCALATED_HUMAN_REQUIRED"
+  },
+  {
+    "conversation_id": "AMBIG_03",
+    "turn_count": 1,
+    "customer_message": "it keeps doing this",
+    "problem_profile": "Understood problem for device: unspecified_device_issue.",
+    "candidate_intents": [
+      {
+        "intent": "general_device_support",
+        "confidence": 0.9804,
+        "reasoning": "Heuristic pattern match score 1.00"
+      },
+      {
+        "intent": "account_access_issue",
+        "confidence": 0.0098,
+        "reasoning": "Taxonomy background candidate"
+      },
+      {
+        "intent": "battery_power_issue",
+        "confidence": 0.0098,
+        "reasoning": "Taxonomy background candidate"
+      }
+    ],
+    "selected_problem": "general_device_support",
+    "clarity_signals": {
+      "information_sufficient": false,
+      "problem_strength_valid": false,
+      "candidate_conflict_resolved": true,
+      "symptom_intent_agreed": false,
+      "multi_symptom_manageable": true,
+      "confidence_margin_valid": true,
+      "no_safety_veto": false
+    },
+    "ambiguity_decision": "UNCLEAR_INSUFFICIENT",
+    "retrieved_evidence": [
+      {
+        "case_id": "conv_AppleSupport_2008058",
+        "similarity_score": 0.623,
+        "operational_similarity": 0.218,
+        "match_tier": "WEAK_SEMANTIC_MATCH",
+        "historical_customer_message": "@AppleSupport what\u2019s going on with the letter \u201cI\u201d it keeps doing this? https://t.co/Oiep7AnZid",
+        "historical_brand_response": "@593782 We appreciate you reaching out to us. You may find this article helpful: https://t.co/sDSg93LaFu Questions? DM us. https://t.co/GDrqU22YpT",
+        "historical_intent": "general_device_support",
+        "historical_problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+        "retrieval_explanation": "Weak semantic match: shares vocabulary/keywords but addresses a different operational customer problem (Query: 'GENERAL_DEVICE_FUNCTIONALITY', Historical: 'GENERAL_DEVICE_FUNCTIONALITY')."
+      },
+      {
+        "case_id": "conv_AppleSupport_2125010",
+        "similarity_score": 0.6039,
+        "operational_similarity": 0.2114,
+        "match_tier": "WEAK_SEMANTIC_MATCH",
+        "historical_customer_message": "@AppleSupport It keeps doing the I\ufe0f thing",
+        "historical_brand_response": "@625807 We'd like to help with what's going on. What\\s happening with your device?",
+        "historical_intent": "general_device_support",
+        "historical_problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+        "retrieval_explanation": "Weak semantic match: shares vocabulary/keywords but addresses a different operational customer problem (Query: 'GENERAL_DEVICE_FUNCTIONALITY', Historical: 'GENERAL_DEVICE_FUNCTIONALITY')."
+      },
+      {
+        "case_id": "conv_AppleSupport_553532",
+        "similarity_score": 0.5466,
+        "operational_similarity": 0.1913,
+        "match_tier": "WEAK_SEMANTIC_MATCH",
+        "historical_customer_message": "Anyone know why my phone keeps doing this?????? https://t.co/twMT0Af6Bj",
+        "historical_brand_response": "@249099 Thanks for reaching out to us for support. We would love to help you. Please DM us so that we can look into this together. https://t.co/GDrqU22YpT",
+        "historical_intent": "general_device_support",
+        "historical_problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+        "retrieval_explanation": "Weak semantic match: shares vocabulary/keywords but addresses a different operational customer problem (Query: 'GENERAL_DEVICE_FUNCTIONALITY', Historical: 'GENERAL_DEVICE_FUNCTIONALITY')."
+      }
+    ],
+    "evidence_tiers": [
+      "WEAK_SEMANTIC_MATCH",
+      "WEAK_SEMANTIC_MATCH",
+      "WEAK_SEMANTIC_MATCH"
+    ],
+    "evidence_verdict": "WEAK_EVIDENCE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "WEAK_COMPOSITE_EVIDENCE",
+    "generated_response": null,
+    "response_verification": "PASS",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "conversation_state": {
+      "stage": "ESCALATED"
+    },
+    "attempted_actions": [],
+    "resolution_status": "ESCALATED_AMBIGUOUS",
+    "escalation_category": "AMBIGUITY",
+    "escalation_reason": "Escalated to human review: Evidence verdict: WEAK_EVIDENCE [Composite: WEAK_COMPOSITE_EVIDENCE]. Issues: VETO: Insufficient operational information to auto-handle.; VETO: Primary problem is too weak or non-specific..",
+    "latency_ms": 83.57,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "ESCALATE_TO_HUMAN",
+      "outcome": "ESCALATED_AMBIGUOUS",
+      "summary": "Escalated to human: Severe symptom underspecification or operational ambiguity detected.",
+      "positive_factors": [],
+      "negative_factors": [
+        "VETO: Insufficient operational information to auto-handle.",
+        "VETO: Primary problem is too weak or non-specific.",
+        "VETO: Symptom-intent contradiction (unspecified_device_issue vs general_device_support).",
+        "Insufficient information: Customer message is too brief or lacks operational details to identify a concrete problem.",
+        "Weak primary problem: Primary symptom 'unspecified_device_issue' is non-specific or vague.",
+        "Symptom-intent contradiction: Extracted symptom 'unspecified_device_issue' does not support predicted intent 'general_device_support'.",
+        "Weak semantic evidence: retrieved historical cases share lexical keywords but fail to match the operational customer problem.",
+        "Composite evidence verdict: WEAK_COMPOSITE_EVIDENCE. Composite verdict: WEAK_COMPOSITE_EVIDENCE. Unique contributing cases: 3. Covered dimensions: intent, resolution_pattern. Missing: symptom, context, device. Composite score: 0.33, intent consistency: 1.00."
+      ],
+      "recommended_human_actions": [
+        "Review candidate hypotheses (general_device_support, account_access_issue) and select appropriate troubleshooting path."
+      ],
+      "checklist": {
+        "problem_understood": false,
+        "gate_passed": false,
+        "evidence_authorized": false,
+        "response_grounded": true,
+        "no_unsafe_action": true
+      }
+    },
+    "end_to_end_outcome": "ESCALATED_AMBIGUOUS"
+  },
+  {
+    "conversation_id": "AMBIG_04",
+    "turn_count": 1,
+    "customer_message": "why is this happening?",
+    "problem_profile": "Understood problem for device: unspecified_device_issue.",
+    "candidate_intents": [
+      {
+        "intent": "general_device_support",
+        "confidence": 0.9804,
+        "reasoning": "Heuristic pattern match score 1.00"
+      },
+      {
+        "intent": "account_access_issue",
+        "confidence": 0.0098,
+        "reasoning": "Taxonomy background candidate"
+      },
+      {
+        "intent": "battery_power_issue",
+        "confidence": 0.0098,
+        "reasoning": "Taxonomy background candidate"
+      }
+    ],
+    "selected_problem": "general_device_support",
+    "clarity_signals": {
+      "information_sufficient": false,
+      "problem_strength_valid": false,
+      "candidate_conflict_resolved": true,
+      "symptom_intent_agreed": false,
+      "multi_symptom_manageable": true,
+      "confidence_margin_valid": true,
+      "no_safety_veto": false
+    },
+    "ambiguity_decision": "UNCLEAR_INSUFFICIENT",
+    "retrieved_evidence": [
+      {
+        "case_id": "conv_AppleSupport_2020473",
+        "similarity_score": 1.0,
+        "operational_similarity": 0.35,
+        "match_tier": "WEAK_SEMANTIC_MATCH",
+        "historical_customer_message": "Why is this happening I\ufe0f I\ufe0f I\ufe0f I\ufe0f I\ufe0f",
+        "historical_brand_response": "@597519 Let's help. For more information on the behavior, please visit: https://t.co/xU1AGHStV6 DM us with any questions: https://t.co/GDrqU22YpT",
+        "historical_intent": "general_device_support",
+        "historical_problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+        "retrieval_explanation": "Weak semantic match: shares vocabulary/keywords but addresses a different operational customer problem (Query: 'GENERAL_DEVICE_FUNCTIONALITY', Historical: 'GENERAL_DEVICE_FUNCTIONALITY')."
+      },
+      {
+        "case_id": "conv_AppleSupport_2001793",
+        "similarity_score": 1.0,
+        "operational_similarity": 0.35,
+        "match_tier": "WEAK_SEMANTIC_MATCH",
+        "historical_customer_message": "Why is this (I\ufe0f) happening",
+        "historical_brand_response": "@591921 Hi there, let's look into this together. Join us in DM with which device you are using and the iOS version it is running. https://t.co/GDrqU22YpT",
+        "historical_intent": "general_device_support",
+        "historical_problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+        "retrieval_explanation": "Weak semantic match: shares vocabulary/keywords but addresses a different operational customer problem (Query: 'GENERAL_DEVICE_FUNCTIONALITY', Historical: 'GENERAL_DEVICE_FUNCTIONALITY')."
+      },
+      {
+        "case_id": "conv_AppleSupport_1442438",
+        "similarity_score": 0.9373,
+        "operational_similarity": 0.3281,
+        "match_tier": "WEAK_SEMANTIC_MATCH",
+        "historical_customer_message": "@AppleSupport why is this happening? I\ufe0f",
+        "historical_brand_response": "@454690 We are here to help. DM us your iOS version and we can take a look at this. https://t.co/GDrqU22YpT",
+        "historical_intent": "general_device_support",
+        "historical_problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+        "retrieval_explanation": "Weak semantic match: shares vocabulary/keywords but addresses a different operational customer problem (Query: 'GENERAL_DEVICE_FUNCTIONALITY', Historical: 'GENERAL_DEVICE_FUNCTIONALITY')."
+      }
+    ],
+    "evidence_tiers": [
+      "WEAK_SEMANTIC_MATCH",
+      "WEAK_SEMANTIC_MATCH",
+      "WEAK_SEMANTIC_MATCH"
+    ],
+    "evidence_verdict": "WEAK_EVIDENCE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "WEAK_COMPOSITE_EVIDENCE",
+    "generated_response": null,
+    "response_verification": "PASS",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "conversation_state": {
+      "stage": "ESCALATED"
+    },
+    "attempted_actions": [],
+    "resolution_status": "ESCALATED_AMBIGUOUS",
+    "escalation_category": "AMBIGUITY",
+    "escalation_reason": "Escalated to human review: Evidence verdict: WEAK_EVIDENCE [Composite: WEAK_COMPOSITE_EVIDENCE]. Issues: VETO: Insufficient operational information to auto-handle.; VETO: Primary problem is too weak or non-specific..",
+    "latency_ms": 80.61,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "ESCALATE_TO_HUMAN",
+      "outcome": "ESCALATED_AMBIGUOUS",
+      "summary": "Escalated to human: Severe symptom underspecification or operational ambiguity detected.",
+      "positive_factors": [],
+      "negative_factors": [
+        "VETO: Insufficient operational information to auto-handle.",
+        "VETO: Primary problem is too weak or non-specific.",
+        "VETO: Symptom-intent contradiction (unspecified_device_issue vs general_device_support).",
+        "Insufficient information: Customer message is too brief or lacks operational details to identify a concrete problem.",
+        "Weak primary problem: Primary symptom 'unspecified_device_issue' is non-specific or vague.",
+        "Symptom-intent contradiction: Extracted symptom 'unspecified_device_issue' does not support predicted intent 'general_device_support'.",
+        "Weak semantic evidence: retrieved historical cases share lexical keywords but fail to match the operational customer problem.",
+        "Composite evidence verdict: WEAK_COMPOSITE_EVIDENCE. Composite verdict: WEAK_COMPOSITE_EVIDENCE. Unique contributing cases: 2. Deduplicated: 1 near-duplicate(s) excluded. Covered dimensions: intent, resolution_pattern. Missing: symptom, context, device. Composite score: 0.33, intent consistency: 1.00."
+      ],
+      "recommended_human_actions": [
+        "Review candidate hypotheses (general_device_support, account_access_issue) and select appropriate troubleshooting path."
+      ],
+      "checklist": {
+        "problem_understood": false,
+        "gate_passed": false,
+        "evidence_authorized": false,
+        "response_grounded": true,
+        "no_unsafe_action": true
+      }
+    },
+    "end_to_end_outcome": "ESCALATED_AMBIGUOUS"
+  },
+  {
+    "conversation_id": "AMBIG_05",
+    "turn_count": 1,
+    "customer_message": "my Mac is acting weird",
+    "problem_profile": "Understood problem for device: unspecified_device_issue.",
+    "candidate_intents": [
+      {
+        "intent": "general_device_support",
+        "confidence": 0.9804,
+        "reasoning": "Heuristic pattern match score 1.00"
+      },
+      {
+        "intent": "account_access_issue",
+        "confidence": 0.0098,
+        "reasoning": "Taxonomy background candidate"
+      },
+      {
+        "intent": "battery_power_issue",
+        "confidence": 0.0098,
+        "reasoning": "Taxonomy background candidate"
+      }
+    ],
+    "selected_problem": "general_device_support",
+    "clarity_signals": {
+      "information_sufficient": false,
+      "problem_strength_valid": false,
+      "candidate_conflict_resolved": true,
+      "symptom_intent_agreed": false,
+      "multi_symptom_manageable": true,
+      "confidence_margin_valid": true,
+      "no_safety_veto": false
+    },
+    "ambiguity_decision": "CLEAR_PRIMARY",
+    "retrieved_evidence": [
+      {
+        "case_id": "conv_AppleSupport_266086",
+        "similarity_score": 0.4461,
+        "operational_similarity": 0.1561,
+        "match_tier": "WEAK_SEMANTIC_MATCH",
+        "historical_customer_message": "My phone is acting weird since I updated iOS. @115858 needs to fix this shit",
+        "historical_brand_response": "@179388 If you're iPhone isn't operating as expected, we'd like to take a look with you. Can you provide some examples?",
+        "historical_intent": "software_update_problem",
+        "historical_problem_family": "SYSTEM_UPDATE",
+        "retrieval_explanation": "Weak semantic match: shares vocabulary/keywords but addresses a different operational customer problem (Query: 'GENERAL_DEVICE_FUNCTIONALITY', Historical: 'SYSTEM_UPDATE')."
+      },
+      {
+        "case_id": "conv_AppleSupport_549642",
+        "similarity_score": 0.3946,
+        "operational_similarity": 0.1381,
+        "match_tier": "WEAK_SEMANTIC_MATCH",
+        "historical_customer_message": "@115858 my mac is all fcked up with the new update \ud83d\ude2d",
+        "historical_brand_response": "@247990 We can help you. What issue(s) are you experiencing with your Mac after the update? Which macOS version did you update your device to?",
+        "historical_intent": "software_update_problem",
+        "historical_problem_family": "SYSTEM_UPDATE",
+        "retrieval_explanation": "Weak semantic match: shares vocabulary/keywords but addresses a different operational customer problem (Query: 'GENERAL_DEVICE_FUNCTIONALITY', Historical: 'SYSTEM_UPDATE')."
+      },
+      {
+        "case_id": "conv_AppleSupport_2626000",
+        "similarity_score": 0.3857,
+        "operational_similarity": 0.135,
+        "match_tier": "WEAK_SEMANTIC_MATCH",
+        "historical_customer_message": "my mac is making some mad noises rah wtf",
+        "historical_brand_response": "@741752 We'd be happy to see how we can help. When did you first start hearing the fan noise?",
+        "historical_intent": "general_device_support",
+        "historical_problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+        "retrieval_explanation": "Weak semantic match: shares vocabulary/keywords but addresses a different operational customer problem (Query: 'GENERAL_DEVICE_FUNCTIONALITY', Historical: 'GENERAL_DEVICE_FUNCTIONALITY')."
+      }
+    ],
+    "evidence_tiers": [
+      "WEAK_SEMANTIC_MATCH",
+      "WEAK_SEMANTIC_MATCH",
+      "WEAK_SEMANTIC_MATCH"
+    ],
+    "evidence_verdict": "WEAK_EVIDENCE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "WEAK_COMPOSITE_EVIDENCE",
+    "generated_response": null,
+    "response_verification": "PASS",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "conversation_state": {
+      "stage": "ESCALATED"
+    },
+    "attempted_actions": [],
+    "resolution_status": "ESCALATED_EVIDENCE_LIMITED",
+    "escalation_category": "EVIDENCE",
+    "escalation_reason": "Escalated to human review: Evidence verdict: WEAK_EVIDENCE [Composite: WEAK_COMPOSITE_EVIDENCE]. Issues: VETO: Primary problem is too weak or non-specific.; VETO: Symptom-intent contradiction (unspecified_device_issue vs general_device_support)..",
+    "latency_ms": 79.96,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "ESCALATE_TO_HUMAN",
+      "outcome": "ESCALATED_EVIDENCE_LIMITED",
+      "summary": "Escalated to human: Insufficient historical support evidence available in corpus to authorize autonomous handling.",
+      "positive_factors": [],
+      "negative_factors": [
+        "VETO: Primary problem is too weak or non-specific.",
+        "VETO: Symptom-intent contradiction (unspecified_device_issue vs general_device_support).",
+        "Insufficient information: Customer message provides partial context but lacks full operational specificity.",
+        "Weak primary problem: Primary symptom 'unspecified_device_issue' is non-specific or vague.",
+        "Symptom-intent contradiction: Extracted symptom 'unspecified_device_issue' does not support predicted intent 'general_device_support'.",
+        "Weak semantic evidence: retrieved historical cases share lexical keywords but fail to match the operational customer problem.",
+        "Composite evidence verdict: WEAK_COMPOSITE_EVIDENCE. Composite verdict: WEAK_COMPOSITE_EVIDENCE. Unique contributing cases: 3. Covered dimensions: intent, resolution_pattern. Missing: symptom, context, device. Composite score: 0.17, intent consistency: 0.33."
+      ],
+      "recommended_human_actions": [
+        "Review candidate hypotheses (general_device_support, account_access_issue) and select appropriate troubleshooting path."
+      ],
+      "checklist": {
+        "problem_understood": false,
+        "gate_passed": false,
+        "evidence_authorized": false,
+        "response_grounded": true,
+        "no_unsafe_action": true
+      }
+    },
+    "end_to_end_outcome": "ESCALATED_EVIDENCE_LIMITED"
+  },
+  {
+    "conversation_id": "EVID_LIM_01",
+    "turn_count": 1,
+    "customer_message": "My custom serial oscilloscope DAC adapter won't communicate with my iPad kernel driver.",
+    "problem_profile": "Understood problem for iPad: unspecified_device_issue.",
+    "candidate_intents": [
+      {
+        "intent": "general_device_support",
+        "confidence": 0.9804,
+        "reasoning": "Heuristic pattern match score 1.00"
+      },
+      {
+        "intent": "account_access_issue",
+        "confidence": 0.0098,
+        "reasoning": "Taxonomy background candidate"
+      },
+      {
+        "intent": "battery_power_issue",
+        "confidence": 0.0098,
+        "reasoning": "Taxonomy background candidate"
+      }
+    ],
+    "selected_problem": "general_device_support",
+    "clarity_signals": {
+      "information_sufficient": false,
+      "problem_strength_valid": false,
+      "candidate_conflict_resolved": true,
+      "symptom_intent_agreed": true,
+      "multi_symptom_manageable": true,
+      "confidence_margin_valid": true,
+      "no_safety_veto": false
+    },
+    "ambiguity_decision": "CLEAR_PRIMARY",
+    "retrieved_evidence": [
+      {
+        "case_id": "conv_AppleSupport_1002042",
+        "similarity_score": 0.1916,
+        "operational_similarity": 0.3903,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "The adapter stopped working. I know it\u2019s not the earbuds, they work just fine with my iPad. All I hear is static using the adapter @115858 https://t.co/oYxQ5aKMWB",
+        "historical_brand_response": "@357199 We can help! Have you tested the adapater with any other devices? Let us know in DM. https://t.co/GDrqU22YpT",
+        "historical_intent": "general_device_support",
+        "historical_problem_family": "ACCESSORY_PERIPHERAL",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'ACCESSORY_PERIPHERAL' and core functional symptom (unspecified_device_issue)."
+      },
+      {
+        "case_id": "conv_AppleSupport_2740752",
+        "similarity_score": 0.1375,
+        "operational_similarity": 0.3281,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "Hey @AppleSupport my iPad adapter blew up at me last night...correct me if I\u2019m wrong, but that shouldn\u2019t happen, right? https://t.co/Xyzq7vMyjQ",
+        "historical_brand_response": "@511911 We definitely want to look into this with you. Send us a DM letting us know which country you're currently in. https://t.co/GDrqU22YpT",
+        "historical_intent": "general_device_support",
+        "historical_problem_family": "ACCESSORY_PERIPHERAL",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'ACCESSORY_PERIPHERAL' and core functional symptom (unspecified_device_issue)."
+      },
+      {
+        "case_id": "conv_AppleSupport_211189",
+        "similarity_score": 0.126,
+        "operational_similarity": 0.3149,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@AppleSupport Why didn't my IPhone 7 come with a headset adapter?",
+        "historical_brand_response": "@166028 We'd like to help. Let us know which country you're located in via DM. We'll go from there. https://t.co/GDrqU22YpT",
+        "historical_intent": "general_device_support",
+        "historical_problem_family": "ACCESSORY_PERIPHERAL",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'ACCESSORY_PERIPHERAL' and core functional symptom (unspecified_device_issue)."
+      }
+    ],
+    "evidence_tiers": [
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH"
+    ],
+    "evidence_verdict": "STRONG_EVIDENCE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "DIRECT_STRONG_EVIDENCE",
+    "generated_response": null,
+    "response_verification": "PASS",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "conversation_state": {
+      "stage": "ESCALATED"
+    },
+    "attempted_actions": [],
+    "resolution_status": "ESCALATED_HUMAN_REQUIRED",
+    "escalation_category": "NONE",
+    "escalation_reason": "Escalated to human review: Evidence verdict: STRONG_EVIDENCE [Composite: DIRECT_STRONG_EVIDENCE]. Issues: VETO: Primary problem is too weak or non-specific.; Insufficient information: Customer message provides partial context but lacks full operational specificity..",
+    "latency_ms": 69.18,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "ESCALATE_TO_HUMAN",
+      "outcome": "ESCALATED_HUMAN_REQUIRED",
+      "summary": "Escalated to human: Multi-signal safety gate required human adjudication: Escalated to human review: VETO: Primary problem is too weak or non-specific. AI confidence (98.0%) does not override operational safety requirements.",
+      "positive_factors": [
+        "\u2713 3 direct historical case(s) found"
+      ],
+      "negative_factors": [
+        "VETO: Primary problem is too weak or non-specific.",
+        "Insufficient information: Customer message provides partial context but lacks full operational specificity.",
+        "Weak primary problem: Primary symptom 'unspecified_device_issue' is non-specific or vague."
+      ],
+      "recommended_human_actions": [
+        "Review candidate hypotheses (general_device_support, account_access_issue) and select appropriate troubleshooting path."
+      ],
+      "checklist": {
+        "problem_understood": false,
+        "gate_passed": false,
+        "evidence_authorized": true,
+        "response_grounded": true,
+        "no_unsafe_action": true
+      }
+    },
+    "end_to_end_outcome": "ESCALATED_HUMAN_REQUIRED"
+  },
+  {
+    "conversation_id": "EVID_LIM_02",
+    "turn_count": 1,
+    "customer_message": "My legacy Mac kext kernel extension panic code 0x88f2 failed after installing beta build.",
+    "problem_profile": "Understood problem for device: unspecified_device_issue.",
+    "candidate_intents": [
+      {
+        "intent": "general_device_support",
+        "confidence": 0.9804,
+        "reasoning": "Heuristic pattern match score 1.00"
+      },
+      {
+        "intent": "account_access_issue",
+        "confidence": 0.0098,
+        "reasoning": "Taxonomy background candidate"
+      },
+      {
+        "intent": "battery_power_issue",
+        "confidence": 0.0098,
+        "reasoning": "Taxonomy background candidate"
+      }
+    ],
+    "selected_problem": "general_device_support",
+    "clarity_signals": {
+      "information_sufficient": false,
+      "problem_strength_valid": false,
+      "candidate_conflict_resolved": true,
+      "symptom_intent_agreed": false,
+      "multi_symptom_manageable": true,
+      "confidence_margin_valid": true,
+      "no_safety_veto": false
+    },
+    "ambiguity_decision": "CLEAR_PRIMARY",
+    "retrieved_evidence": [
+      {
+        "case_id": "conv_AppleSupport_2305982",
+        "similarity_score": 0.3785,
+        "operational_similarity": 0.1325,
+        "match_tier": "WEAK_SEMANTIC_MATCH",
+        "historical_customer_message": "1. Kernel panic 2. Take comp to Apple store 3. \u201cBad ram\u201d 4. Kernel panic 5. \u201cBad board\u201d 5. Kernel panic 6. \u201cBad WiFi card. 7. Kernel panic 8. Fixed! 9. Kernel panic 10. Uhhh. @applesupport @115858 TEACH YOUR TECHS HOW TO FIX SOMETHING!!! Worst service ever. 3 weeks w/o a machine",
+        "historical_brand_response": "@669016 We'll do everything we can to help out. Kernel panics can also be a sign of software issues. Has any software troubleshooting been done? What Mac model is this and what version of the macOS is it running?",
+        "historical_intent": "general_device_support",
+        "historical_problem_family": "CONNECTIVITY_WIFI",
+        "retrieval_explanation": "Weak semantic match: shares vocabulary/keywords but addresses a different operational customer problem (Query: 'GENERAL_DEVICE_FUNCTIONALITY', Historical: 'CONNECTIVITY_WIFI')."
+      },
+      {
+        "case_id": "conv_AppleSupport_2310226",
+        "similarity_score": 0.2368,
+        "operational_similarity": 0.0829,
+        "match_tier": "WEAK_SEMANTIC_MATCH",
+        "historical_customer_message": "WHY IS MY MAC ACTING SHITTY AFTER INSTALLING THE NEW UPDATE @AppleSupport @115858 @115948",
+        "historical_brand_response": "@670023 What kind of issues are you having? Let us know so we can help out.",
+        "historical_intent": "software_update_problem",
+        "historical_problem_family": "SYSTEM_UPDATE",
+        "retrieval_explanation": "Weak semantic match: shares vocabulary/keywords but addresses a different operational customer problem (Query: 'GENERAL_DEVICE_FUNCTIONALITY', Historical: 'SYSTEM_UPDATE')."
+      },
+      {
+        "case_id": "conv_AppleSupport_617338",
+        "similarity_score": 0.2365,
+        "operational_similarity": 0.0828,
+        "match_tier": "WEAK_SEMANTIC_MATCH",
+        "historical_customer_message": "#mac #macpanic AAHH #Frustration !! Same error almost every day! It just goes downhill for @115858  panic(cpu 4 caller 0xffffff8005788e21): Kernel trap at 0xffffff7f866cf8e8",
+        "historical_brand_response": "@266465 We'd like to hear more about what's going on. Please DM us about this and we'll continue there. https://t.co/GDrqU22YpT",
+        "historical_intent": "general_device_support",
+        "historical_problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+        "retrieval_explanation": "Weak semantic match: shares vocabulary/keywords but addresses a different operational customer problem (Query: 'GENERAL_DEVICE_FUNCTIONALITY', Historical: 'GENERAL_DEVICE_FUNCTIONALITY')."
+      }
+    ],
+    "evidence_tiers": [
+      "WEAK_SEMANTIC_MATCH",
+      "WEAK_SEMANTIC_MATCH",
+      "WEAK_SEMANTIC_MATCH"
+    ],
+    "evidence_verdict": "WEAK_EVIDENCE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "WEAK_COMPOSITE_EVIDENCE",
+    "generated_response": null,
+    "response_verification": "PASS",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "conversation_state": {
+      "stage": "ESCALATED"
+    },
+    "attempted_actions": [],
+    "resolution_status": "ESCALATED_EVIDENCE_LIMITED",
+    "escalation_category": "EVIDENCE",
+    "escalation_reason": "Escalated to human review: Evidence verdict: WEAK_EVIDENCE [Composite: WEAK_COMPOSITE_EVIDENCE]. Issues: VETO: Primary problem is too weak or non-specific.; VETO: Symptom-intent contradiction (unspecified_device_issue vs general_device_support)..",
+    "latency_ms": 80.89,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "ESCALATE_TO_HUMAN",
+      "outcome": "ESCALATED_EVIDENCE_LIMITED",
+      "summary": "Escalated to human: Insufficient historical support evidence available in corpus to authorize autonomous handling.",
+      "positive_factors": [],
+      "negative_factors": [
+        "VETO: Primary problem is too weak or non-specific.",
+        "VETO: Symptom-intent contradiction (unspecified_device_issue vs general_device_support).",
+        "Insufficient information: Customer message provides partial context but lacks full operational specificity.",
+        "Weak primary problem: Primary symptom 'unspecified_device_issue' is non-specific or vague.",
+        "Symptom-intent contradiction: Extracted symptom 'unspecified_device_issue' does not support predicted intent 'general_device_support'.",
+        "Weak semantic evidence: retrieved historical cases share lexical keywords but fail to match the operational customer problem.",
+        "Composite evidence verdict: WEAK_COMPOSITE_EVIDENCE. Composite verdict: WEAK_COMPOSITE_EVIDENCE. Unique contributing cases: 3. Covered dimensions: intent, resolution_pattern. Missing: symptom, context, device. Composite score: 0.25, intent consistency: 0.67."
+      ],
+      "recommended_human_actions": [
+        "Review candidate hypotheses (general_device_support, account_access_issue) and select appropriate troubleshooting path."
+      ],
+      "checklist": {
+        "problem_understood": false,
+        "gate_passed": false,
+        "evidence_authorized": false,
+        "response_grounded": true,
+        "no_unsafe_action": true
+      }
+    },
+    "end_to_end_outcome": "ESCALATED_EVIDENCE_LIMITED"
+  },
+  {
+    "conversation_id": "EVID_LIM_03",
+    "turn_count": 1,
+    "customer_message": "Our enterprise mobile device management profile payload failed SCEP certificate enrollment on 50 devices.",
+    "problem_profile": "Understood problem for iPhone: unspecified_device_issue.",
+    "candidate_intents": [
+      {
+        "intent": "general_device_support",
+        "confidence": 0.9804,
+        "reasoning": "Heuristic pattern match score 1.00"
+      },
+      {
+        "intent": "account_access_issue",
+        "confidence": 0.0098,
+        "reasoning": "Taxonomy background candidate"
+      },
+      {
+        "intent": "battery_power_issue",
+        "confidence": 0.0098,
+        "reasoning": "Taxonomy background candidate"
+      }
+    ],
+    "selected_problem": "general_device_support",
+    "clarity_signals": {
+      "information_sufficient": false,
+      "problem_strength_valid": false,
+      "candidate_conflict_resolved": true,
+      "symptom_intent_agreed": true,
+      "multi_symptom_manageable": true,
+      "confidence_margin_valid": true,
+      "no_safety_veto": false
+    },
+    "ambiguity_decision": "CLEAR_PRIMARY",
+    "retrieved_evidence": [
+      {
+        "case_id": "conv_AppleSupport_2516051",
+        "similarity_score": 0.1602,
+        "operational_similarity": 0.2882,
+        "match_tier": "RELATED_PROBLEM_MATCH",
+        "historical_customer_message": "@AppleSupport How can I remove a beta profile from my iPhone X when there is no \"Profile\" under \"General\" in the settings app? I run currently the latest iOS 11.2 beta but I do not want beta updates on this device any longer.",
+        "historical_brand_response": "@716745 We'd like to help. Check out this page and let us know if you have any questions: https://t.co/wSnoq7YP8L",
+        "historical_intent": "software_update_problem",
+        "historical_problem_family": "SYSTEM_UPDATE",
+        "retrieval_explanation": "Related problem match: addresses operational problem family 'GENERAL_DEVICE_FUNCTIONALITY' (Historical: 'SYSTEM_UPDATE') with context/device variation."
+      },
+      {
+        "case_id": "conv_AppleSupport_701601",
+        "similarity_score": 0.2402,
+        "operational_similarity": 0.0841,
+        "match_tier": "WEAK_SEMANTIC_MATCH",
+        "historical_customer_message": "@AppleSupport please explain to me how an iPhone dies on 50%\ud83d\ude44",
+        "historical_brand_response": "@287489 We'd like to look into this with you. Which iPhone and software version are you using. Join us in DM here: https://t.co/GDrqU22YpT",
+        "historical_intent": "general_device_support",
+        "historical_problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+        "retrieval_explanation": "Weak semantic match: shares vocabulary/keywords but addresses a different operational customer problem (Query: 'GENERAL_DEVICE_FUNCTIONALITY', Historical: 'GENERAL_DEVICE_FUNCTIONALITY')."
+      },
+      {
+        "case_id": "conv_AppleSupport_1682520",
+        "similarity_score": 0.2288,
+        "operational_similarity": 0.0801,
+        "match_tier": "WEAK_SEMANTIC_MATCH",
+        "historical_customer_message": "@AppleSupport how do you remove the beta profile from iPhone X, iOS 11.2? Device management no longer show up in General. https://t.co/dRFmy8C1SN",
+        "historical_brand_response": "@511480 Hey there! Join us in DM so we can look into this with you. We'll be happy to help. https://t.co/GDrqU22YpT",
+        "historical_intent": "software_update_problem",
+        "historical_problem_family": "SYSTEM_UPDATE",
+        "retrieval_explanation": "Weak semantic match: shares vocabulary/keywords but addresses a different operational customer problem (Query: 'GENERAL_DEVICE_FUNCTIONALITY', Historical: 'SYSTEM_UPDATE')."
+      }
+    ],
+    "evidence_tiers": [
+      "RELATED_PROBLEM_MATCH",
+      "WEAK_SEMANTIC_MATCH",
+      "WEAK_SEMANTIC_MATCH"
+    ],
+    "evidence_verdict": "WEAK_EVIDENCE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "COMPOSITE_STRONG_EVIDENCE",
+    "generated_response": null,
+    "response_verification": "PASS",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "conversation_state": {
+      "stage": "ESCALATED"
+    },
+    "attempted_actions": [],
+    "resolution_status": "ESCALATED_EVIDENCE_LIMITED",
+    "escalation_category": "EVIDENCE",
+    "escalation_reason": "Escalated to human review: Evidence verdict: WEAK_EVIDENCE [Composite: COMPOSITE_STRONG_EVIDENCE]. Issues: VETO: Primary problem is too weak or non-specific.; Insufficient information: Customer message provides partial context but lacks full operational specificity..",
+    "latency_ms": 83.62,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "ESCALATE_TO_HUMAN",
+      "outcome": "ESCALATED_EVIDENCE_LIMITED",
+      "summary": "Escalated to human: Insufficient historical support evidence available in corpus to authorize autonomous handling.",
+      "positive_factors": [],
+      "negative_factors": [
+        "VETO: Primary problem is too weak or non-specific.",
+        "Insufficient information: Customer message provides partial context but lacks full operational specificity.",
+        "Weak primary problem: Primary symptom 'unspecified_device_issue' is non-specific or vague."
+      ],
+      "recommended_human_actions": [
+        "Review candidate hypotheses (general_device_support, account_access_issue) and select appropriate troubleshooting path."
+      ],
+      "checklist": {
+        "problem_understood": false,
+        "gate_passed": false,
+        "evidence_authorized": true,
+        "response_grounded": true,
+        "no_unsafe_action": true
+      }
+    },
+    "end_to_end_outcome": "ESCALATED_EVIDENCE_LIMITED"
+  },
+  {
+    "conversation_id": "EVID_LIM_04",
+    "turn_count": 1,
+    "customer_message": "My iPhone modem diagnostic reports Baseband Panic Error Code BB_HW_0x99A87.",
+    "problem_profile": "Understood problem for iPhone: unspecified_device_issue.",
+    "candidate_intents": [
+      {
+        "intent": "general_device_support",
+        "confidence": 0.9804,
+        "reasoning": "Heuristic pattern match score 1.00"
+      },
+      {
+        "intent": "account_access_issue",
+        "confidence": 0.0098,
+        "reasoning": "Taxonomy background candidate"
+      },
+      {
+        "intent": "battery_power_issue",
+        "confidence": 0.0098,
+        "reasoning": "Taxonomy background candidate"
+      }
+    ],
+    "selected_problem": "general_device_support",
+    "clarity_signals": {
+      "information_sufficient": false,
+      "problem_strength_valid": false,
+      "candidate_conflict_resolved": true,
+      "symptom_intent_agreed": true,
+      "multi_symptom_manageable": true,
+      "confidence_margin_valid": true,
+      "no_safety_veto": false
+    },
+    "ambiguity_decision": "CLEAR_PRIMARY",
+    "retrieved_evidence": [
+      {
+        "case_id": "conv_AppleSupport_143505",
+        "similarity_score": 0.283,
+        "operational_similarity": 0.099,
+        "match_tier": "WEAK_SEMANTIC_MATCH",
+        "historical_customer_message": "I\u2019m still trying to repair my iPhone 5s but iTunes give me an Error code 3194 \ud83e\udd1e\ud83c\udffb @AppleSupport https://t.co/qcQBxgTBEA",
+        "historical_brand_response": "@119021 Let's work on this together. Which iTunes version and iOS version are you using? Please also take a look at the following article regarding this error message: https://t.co/YP1YMbkfRk",
+        "historical_intent": "billing_purchase_issue",
+        "historical_problem_family": "BILLING_PAYMENT",
+        "retrieval_explanation": "Weak semantic match: shares vocabulary/keywords but addresses a different operational customer problem (Query: 'GENERAL_DEVICE_FUNCTIONALITY', Historical: 'BILLING_PAYMENT')."
+      },
+      {
+        "case_id": "conv_AppleSupport_1793243",
+        "similarity_score": 0.2589,
+        "operational_similarity": 0.0906,
+        "match_tier": "WEAK_SEMANTIC_MATCH",
+        "historical_customer_message": "@AppleSupport I am trying to get help and I keep getting an error code b8baa9ed-5f93-4c9f-aacd-89e3739a7e84",
+        "historical_brand_response": "@538883 You've reached the right place for support. To start, please DM us with details about what you're doing when you get this error. https://t.co/GDrqU22YpT",
+        "historical_intent": "general_device_support",
+        "historical_problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+        "retrieval_explanation": "Weak semantic match: shares vocabulary/keywords but addresses a different operational customer problem (Query: 'GENERAL_DEVICE_FUNCTIONALITY', Historical: 'GENERAL_DEVICE_FUNCTIONALITY')."
+      },
+      {
+        "case_id": "conv_AppleSupport_2837212",
+        "similarity_score": 0.2446,
+        "operational_similarity": 0.0856,
+        "match_tier": "WEAK_SEMANTIC_MATCH",
+        "historical_customer_message": "@AppleSupport I am disabled out of my iPhone and is telling me to connect to iTunes. I am receiving an error code of 0xE000015. Please help",
+        "historical_brand_response": "@789668 We're happy to help. To start, are you connecting to iTunes on a PC or a Mac? Also, what version of iTunes are you running?",
+        "historical_intent": "general_device_support",
+        "historical_problem_family": "CONNECTIVITY_WIFI",
+        "retrieval_explanation": "Weak semantic match: shares vocabulary/keywords but addresses a different operational customer problem (Query: 'GENERAL_DEVICE_FUNCTIONALITY', Historical: 'CONNECTIVITY_WIFI')."
+      }
+    ],
+    "evidence_tiers": [
+      "WEAK_SEMANTIC_MATCH",
+      "WEAK_SEMANTIC_MATCH",
+      "WEAK_SEMANTIC_MATCH"
+    ],
+    "evidence_verdict": "WEAK_EVIDENCE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "WEAK_COMPOSITE_EVIDENCE",
+    "generated_response": null,
+    "response_verification": "PASS",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "conversation_state": {
+      "stage": "ESCALATED"
+    },
+    "attempted_actions": [],
+    "resolution_status": "ESCALATED_EVIDENCE_LIMITED",
+    "escalation_category": "EVIDENCE",
+    "escalation_reason": "Escalated to human review: Evidence verdict: WEAK_EVIDENCE [Composite: WEAK_COMPOSITE_EVIDENCE]. Issues: VETO: Primary problem is too weak or non-specific.; Insufficient information: Customer message provides partial context but lacks full operational specificity..",
+    "latency_ms": 80.84,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "ESCALATE_TO_HUMAN",
+      "outcome": "ESCALATED_EVIDENCE_LIMITED",
+      "summary": "Escalated to human: Insufficient historical support evidence available in corpus to authorize autonomous handling.",
+      "positive_factors": [],
+      "negative_factors": [
+        "VETO: Primary problem is too weak or non-specific.",
+        "Insufficient information: Customer message provides partial context but lacks full operational specificity.",
+        "Weak primary problem: Primary symptom 'unspecified_device_issue' is non-specific or vague.",
+        "Weak semantic evidence: retrieved historical cases share lexical keywords but fail to match the operational customer problem.",
+        "Composite evidence verdict: WEAK_COMPOSITE_EVIDENCE. Composite verdict: WEAK_COMPOSITE_EVIDENCE. Unique contributing cases: 3. Covered dimensions: device, intent, resolution_pattern. Missing: symptom, context. Composite score: 0.27, intent consistency: 0.67."
+      ],
+      "recommended_human_actions": [
+        "Review candidate hypotheses (general_device_support, account_access_issue) and select appropriate troubleshooting path."
+      ],
+      "checklist": {
+        "problem_understood": false,
+        "gate_passed": false,
+        "evidence_authorized": false,
+        "response_grounded": true,
+        "no_unsafe_action": true
+      }
+    },
+    "end_to_end_outcome": "ESCALATED_EVIDENCE_LIMITED"
+  },
+  {
+    "conversation_id": "EVID_LIM_05",
+    "turn_count": 1,
+    "customer_message": "Phone was dropped in seawater, liquid contact indicator is deep red and motherboard is shorting.",
+    "problem_profile": "Understood problem for iPhone: unspecified_device_issue. Contextual cause: physical drop or impact.",
+    "candidate_intents": [
+      {
+        "intent": "general_device_support",
+        "confidence": 0.9804,
+        "reasoning": "Heuristic pattern match score 1.00"
+      },
+      {
+        "intent": "account_access_issue",
+        "confidence": 0.0098,
+        "reasoning": "Taxonomy background candidate"
+      },
+      {
+        "intent": "battery_power_issue",
+        "confidence": 0.0098,
+        "reasoning": "Taxonomy background candidate"
+      }
+    ],
+    "selected_problem": "general_device_support",
+    "clarity_signals": {
+      "information_sufficient": false,
+      "problem_strength_valid": false,
+      "candidate_conflict_resolved": true,
+      "symptom_intent_agreed": true,
+      "multi_symptom_manageable": true,
+      "confidence_margin_valid": true,
+      "no_safety_veto": false
+    },
+    "ambiguity_decision": "CLEAR_PRIMARY",
+    "retrieved_evidence": [
+      {
+        "case_id": "conv_AppleSupport_1646139",
+        "similarity_score": 0.2245,
+        "operational_similarity": 0.0786,
+        "match_tier": "WEAK_SEMANTIC_MATCH",
+        "historical_customer_message": "My phone was being stupid did I\ufe0f fix it",
+        "historical_brand_response": "@502981 Here\u2019s what you can do to work around the issue until it\u2019s fixed in a future software update: https://t.co/xXaXeeSRt9",
+        "historical_intent": "general_device_support",
+        "historical_problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+        "retrieval_explanation": "Weak semantic match: shares vocabulary/keywords but addresses a different operational customer problem (Query: 'GENERAL_DEVICE_FUNCTIONALITY', Historical: 'GENERAL_DEVICE_FUNCTIONALITY')."
+      },
+      {
+        "case_id": "conv_AppleSupport_2296287",
+        "similarity_score": 0.197,
+        "operational_similarity": 0.0689,
+        "match_tier": "WEAK_SEMANTIC_MATCH",
+        "historical_customer_message": "@666701 is a blessing",
+        "historical_brand_response": "@666701 Thanks for reaching out. This has been resolved in iOS 11.1.1. Be sure to back up and update your device. Let us know how it goes: https://t.co/4f8hwT5to6",
+        "historical_intent": "general_device_support",
+        "historical_problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+        "retrieval_explanation": "Weak semantic match: shares vocabulary/keywords but addresses a different operational customer problem (Query: 'GENERAL_DEVICE_FUNCTIONALITY', Historical: 'GENERAL_DEVICE_FUNCTIONALITY')."
+      },
+      {
+        "case_id": "conv_AppleSupport_951931",
+        "similarity_score": 0.1832,
+        "operational_similarity": 0.0641,
+        "match_tier": "WEAK_SEMANTIC_MATCH",
+        "historical_customer_message": "Did the @115858 iOS update and now my calendar is completely blank. *deep breathes* https://t.co/3ol8LG0n8e",
+        "historical_brand_response": "@345827 Let's look into that. Send us a DM and we'll go from there. https://t.co/GDrqU22YpT",
+        "historical_intent": "software_update_problem",
+        "historical_problem_family": "SYSTEM_UPDATE",
+        "retrieval_explanation": "Weak semantic match: shares vocabulary/keywords but addresses a different operational customer problem (Query: 'GENERAL_DEVICE_FUNCTIONALITY', Historical: 'SYSTEM_UPDATE')."
+      }
+    ],
+    "evidence_tiers": [
+      "WEAK_SEMANTIC_MATCH",
+      "WEAK_SEMANTIC_MATCH",
+      "WEAK_SEMANTIC_MATCH"
+    ],
+    "evidence_verdict": "WEAK_EVIDENCE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "WEAK_COMPOSITE_EVIDENCE",
+    "generated_response": null,
+    "response_verification": "PASS",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "conversation_state": {
+      "stage": "ESCALATED"
+    },
+    "attempted_actions": [],
+    "resolution_status": "ESCALATED_EVIDENCE_LIMITED",
+    "escalation_category": "EVIDENCE",
+    "escalation_reason": "Escalated to human review: Evidence verdict: WEAK_EVIDENCE [Composite: WEAK_COMPOSITE_EVIDENCE]. Issues: VETO: Primary problem is too weak or non-specific.; Insufficient information: Customer message provides partial context but lacks full operational specificity..",
+    "latency_ms": 83.3,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "ESCALATE_TO_HUMAN",
+      "outcome": "ESCALATED_EVIDENCE_LIMITED",
+      "summary": "Escalated to human: Insufficient historical support evidence available in corpus to authorize autonomous handling.",
+      "positive_factors": [],
+      "negative_factors": [
+        "VETO: Primary problem is too weak or non-specific.",
+        "Insufficient information: Customer message provides partial context but lacks full operational specificity.",
+        "Weak primary problem: Primary symptom 'unspecified_device_issue' is non-specific or vague.",
+        "Weak semantic evidence: retrieved historical cases share lexical keywords but fail to match the operational customer problem.",
+        "Composite evidence verdict: WEAK_COMPOSITE_EVIDENCE. Composite verdict: WEAK_COMPOSITE_EVIDENCE. Unique contributing cases: 3. Covered dimensions: context, intent, resolution_pattern. Missing: symptom, device. Composite score: 0.27, intent consistency: 0.67."
+      ],
+      "recommended_human_actions": [
+        "Review candidate hypotheses (general_device_support, account_access_issue) and select appropriate troubleshooting path."
+      ],
+      "checklist": {
+        "problem_understood": false,
+        "gate_passed": false,
+        "evidence_authorized": false,
+        "response_grounded": true,
+        "no_unsafe_action": true
+      }
+    },
+    "end_to_end_outcome": "ESCALATED_EVIDENCE_LIMITED"
+  },
+  {
+    "conversation_id": "conv_bc1fc8f49ac9",
+    "turn_count": 6,
+    "customer_message": "My iPhone 13 Wi-Fi keeps disconnecting, and I already restarted my phone. | I toggled airplane mode as suggested but it still drops. | That worked! Forgetting and rejoining the network fixed it completely.",
+    "problem_profile": {
+      "problem_family": "CONNECTIVITY_WIFI",
+      "confirmed_facts": {
+        "device_model": "Iphone 13"
+      }
+    },
+    "candidate_intents": [],
+    "selected_problem": "CONNECTIVITY_WIFI",
+    "clarity_signals": {
+      "problem_identified": true,
+      "no_duplicate_actions": true,
+      "safe_non_destructive": true,
+      "facts_retained": true
+    },
+    "ambiguity_decision": "RESOLVED",
+    "retrieved_evidence": [],
+    "evidence_tiers": [],
+    "evidence_verdict": "MULTI_TURN_PROGRESSIVE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "PROGRESSIVE_ACTION",
+    "generated_response": "Wonderful! I'm glad to hear that resolved the problem for you. Thank you for contacting Apple Support. If you experience any other issues, don't hesitate to reach back out.",
+    "response_verification": "PASS",
+    "routing_decision": "AUTO_HANDLE",
+    "conversation_state": {
+      "conversation_id": "conv_bc1fc8f49ac9",
+      "created_at": "2026-09-14T19:36:31.814166",
+      "updated_at": "2026-09-14T19:36:33.989630",
+      "status": "RESOLVED",
+      "stage": "RESOLVED",
+      "customer_id": null,
+      "problem_family": "CONNECTIVITY_WIFI",
+      "operational_goal": "wireless Wi-Fi or network connectivity failure",
+      "confirmed_facts": {
+        "device_model": "Iphone 13"
+      },
+      "inferred_facts": {},
+      "missing_information": [],
+      "clarification_questions_asked": [],
+      "attempted_actions": [
+        {
+          "action_id": "act_cc5a5e76",
+          "canonical_name": "restart_device",
+          "description": "Power down device completely, wait 30 seconds, and turn back on.",
+          "prerequisites": [],
+          "expected_outcome": null,
+          "is_destructive": false,
+          "status": "FAILED",
+          "result_notes": "My iPhone 13 Wi-Fi keeps disconnecting, and I already restarted my phone.",
+          "attempted_turn_index": 0
+        },
+        {
+          "action_id": "act_139ebd04",
+          "canonical_name": "check_airplane_mode",
+          "description": "Toggle Airplane Mode on for 15 seconds, then toggle off.",
+          "prerequisites": [],
+          "expected_outcome": null,
+          "is_destructive": false,
+          "status": "FAILED",
+          "result_notes": "I toggled airplane mode as suggested but it still drops.",
+          "attempted_turn_index": 2
+        },
+        {
+          "action_id": "act_d5f9bd63",
+          "canonical_name": "forget_and_reconnect_wifi",
+          "description": "Forget the Wi-Fi network in Settings > Wi-Fi, then rejoin with credentials.",
+          "prerequisites": [],
+          "expected_outcome": null,
+          "is_destructive": false,
+          "status": "SUCCESS",
+          "result_notes": "That worked! Forgetting and rejoining the network fixed it completely.",
+          "attempted_turn_index": 4
+        }
+      ],
+      "recommended_action_history": [
+        "check_airplane_mode",
+        "forget_and_reconnect_wifi"
+      ],
+      "current_action": {
+        "action_id": "act_4a9cecc7",
+        "canonical_name": "forget_and_reconnect_wifi",
+        "description": "Forget the Wi-Fi network in Settings > Wi-Fi, then rejoin with credentials.",
+        "prerequisites": [],
+        "expected_outcome": "Flushes stale DHCP leases and invalid authentication tokens.",
+        "is_destructive": false,
+        "status": "SUCCESS",
+        "result_notes": null,
+        "attempted_turn_index": null
+      },
+      "turns": [
+        {
+          "turn_index": 0,
+          "timestamp": "2026-09-14T19:36:31.820339",
+          "speaker": "customer",
+          "content": "My iPhone 13 Wi-Fi keeps disconnecting, and I already restarted my phone.",
+          "role_type": "ACTION_ATTEMPT_RESULT",
+          "identified_facts": {
+            "device_model": "Iphone 13"
+          },
+          "action_referenced": "restart_device",
+          "action_outcome": null,
+          "evidence_used": [],
+          "confidence_score": null
+        },
+        {
+          "turn_index": 1,
+          "timestamp": "2026-09-14T19:36:33.969498",
+          "speaker": "agent",
+          "content": "Let's try the following troubleshooting step: **Check Airplane Mode**.\n\nToggle Airplane Mode on for 15 seconds, then toggle off.\n\n*Expected result*: Forces cellular and wireless baseband chipsets to re-acquire cell towers and access points.\n\nPlease give that a try and let me know if it resolves the issue or if the problem persists.",
+          "role_type": "ACTION_ATTEMPT_RESULT",
+          "identified_facts": {},
+          "action_referenced": "check_airplane_mode",
+          "action_outcome": null,
+          "evidence_used": [
+            {
+              "case_id": "conv_AppleSupport_322066",
+              "similarity": 0.397,
+              "boosted_similarity": 0.397,
+              "problem_family": "CONNECTIVITY_WIFI"
+            },
+            {
+              "case_id": "conv_AppleSupport_152984",
+              "similarity": 0.372,
+              "boosted_similarity": 0.372,
+              "problem_family": "CONNECTIVITY_WIFI"
+            }
+          ],
+          "confidence_score": 0.92
+        },
+        {
+          "turn_index": 2,
+          "timestamp": "2026-09-14T19:36:33.971231",
+          "speaker": "customer",
+          "content": "I toggled airplane mode as suggested but it still drops.",
+          "role_type": "ACTION_ATTEMPT_RESULT",
+          "identified_facts": {},
+          "action_referenced": "check_airplane_mode",
+          "action_outcome": null,
+          "evidence_used": [],
+          "confidence_score": null
+        },
+        {
+          "turn_index": 3,
+          "timestamp": "2026-09-14T19:36:33.988535",
+          "speaker": "agent",
+          "content": "Let's try the following troubleshooting step: **Forget And Reconnect Wifi**.\n\nForget the Wi-Fi network in Settings > Wi-Fi, then rejoin with credentials.\n\n*Expected result*: Flushes stale DHCP leases and invalid authentication tokens.\n\nPlease give that a try and let me know if it resolves the issue or if the problem persists.",
+          "role_type": "ACTION_ATTEMPT_RESULT",
+          "identified_facts": {},
+          "action_referenced": "forget_and_reconnect_wifi",
+          "action_outcome": null,
+          "evidence_used": [
+            {
+              "case_id": "conv_AppleSupport_2509323",
+              "similarity": 0.365,
+              "boosted_similarity": 0.365,
+              "problem_family": "BILLING_PAYMENT"
+            },
+            {
+              "case_id": "conv_AppleSupport_234409",
+              "similarity": 0.346,
+              "boosted_similarity": 0.346,
+              "problem_family": "CONNECTIVITY_BLUETOOTH"
+            }
+          ],
+          "confidence_score": 0.92
+        },
+        {
+          "turn_index": 4,
+          "timestamp": "2026-09-14T19:36:33.989571",
+          "speaker": "customer",
+          "content": "That worked! Forgetting and rejoining the network fixed it completely.",
+          "role_type": "RESOLUTION_CONFIRMATION",
+          "identified_facts": {},
+          "action_referenced": null,
+          "action_outcome": null,
+          "evidence_used": [],
+          "confidence_score": null
+        },
+        {
+          "turn_index": 5,
+          "timestamp": "2026-09-14T19:36:33.989626",
+          "speaker": "agent",
+          "content": "Wonderful! I'm glad to hear that resolved the problem for you. Thank you for contacting Apple Support. If you experience any other issues, don't hesitate to reach back out.",
+          "role_type": "RESOLUTION_CONFIRMATION",
+          "identified_facts": {},
+          "action_referenced": null,
+          "action_outcome": null,
+          "evidence_used": [],
+          "confidence_score": null
+        }
+      ],
+      "consecutive_unclear_turns": 0,
+      "escalation_package": null,
+      "resolution_summary": {
+        "resolved_at": "2026-09-14T19:36:33.989621",
+        "problem_family": "CONNECTIVITY_WIFI",
+        "total_turns": 5,
+        "summary": "Customer confirmed the issue is successfully resolved.",
+        "resolved_by_action": "forget_and_reconnect_wifi",
+        "attempted_actions_count": 3
+      }
+    },
+    "attempted_actions": [
+      "restart_device",
+      "check_airplane_mode",
+      "forget_and_reconnect_wifi"
+    ],
+    "resolution_status": "RESOLVED",
+    "escalation_category": "NONE",
+    "escalation_reason": "",
+    "latency_ms": 2175.89,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "RESOLVED",
+      "outcome": "SUCCESSFULLY_RESOLVED",
+      "summary": "Conversation successfully resolved through evidence-grounded progressive troubleshooting.",
+      "positive_factors": [
+        "\u2713 Problem identified: CONNECTIVITY_WIFI",
+        "\u2713 Successfully resolved via action: forget_and_reconnect_wifi",
+        "\u2713 Total turns to resolution: 6"
+      ],
+      "negative_factors": [],
+      "recommended_human_actions": [],
+      "checklist": {
+        "problem_identified": true,
+        "no_duplicate_actions": true,
+        "safe_non_destructive": true,
+        "facts_retained": true
+      }
+    },
+    "end_to_end_outcome": "SUCCESSFULLY_RESOLVED"
+  },
+  {
+    "conversation_id": "conv_3187b3172b5d",
+    "turn_count": 6,
+    "customer_message": "My Bluetooth speaker will not connect to my iPad. | I toggled Bluetooth off and on, but it still fails. | That worked! Unpairing and re-pairing the device resolved it.",
+    "problem_profile": {
+      "problem_family": "AUDIO",
+      "confirmed_facts": {
+        "device_model": "Ipad"
+      }
+    },
+    "candidate_intents": [],
+    "selected_problem": "AUDIO",
+    "clarity_signals": {
+      "problem_identified": true,
+      "no_duplicate_actions": true,
+      "safe_non_destructive": true,
+      "facts_retained": true
+    },
+    "ambiguity_decision": "RESOLVED",
+    "retrieved_evidence": [],
+    "evidence_tiers": [],
+    "evidence_verdict": "MULTI_TURN_PROGRESSIVE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "PROGRESSIVE_ACTION",
+    "generated_response": "Wonderful! I'm glad to hear that resolved the problem for you. Thank you for contacting Apple Support. If you experience any other issues, don't hesitate to reach back out.",
+    "response_verification": "PASS",
+    "routing_decision": "AUTO_HANDLE",
+    "conversation_state": {
+      "conversation_id": "conv_3187b3172b5d",
+      "created_at": "2026-09-14T19:36:33.990127",
+      "updated_at": "2026-09-14T19:36:34.030909",
+      "status": "RESOLVED",
+      "stage": "RESOLVED",
+      "customer_id": null,
+      "problem_family": "AUDIO",
+      "operational_goal": "speaker or microphone audio failure",
+      "confirmed_facts": {
+        "device_model": "Ipad"
+      },
+      "inferred_facts": {},
+      "missing_information": [],
+      "clarification_questions_asked": [],
+      "attempted_actions": [
+        {
+          "action_id": "act_c19c8421",
+          "canonical_name": "check_silent_mode",
+          "description": "Check the physical Ring/Silent switch on the side of the device.",
+          "prerequisites": [],
+          "expected_outcome": null,
+          "is_destructive": false,
+          "status": "FAILED",
+          "result_notes": "I toggled Bluetooth off and on, but it still fails.",
+          "attempted_turn_index": 2
+        },
+        {
+          "action_id": "act_181243ff",
+          "canonical_name": "toggle_bluetooth",
+          "description": "Toggle Bluetooth off in Settings > Bluetooth, wait 10 seconds, and turn back on.",
+          "prerequisites": [],
+          "expected_outcome": null,
+          "is_destructive": false,
+          "status": "FAILED",
+          "result_notes": "I toggled Bluetooth off and on, but it still fails.",
+          "attempted_turn_index": 2
+        },
+        {
+          "action_id": "act_de4a2616",
+          "canonical_name": "adjust_volume_settings",
+          "description": "Adjust volume controls in Settings > Sounds & Haptics and Control Center.",
+          "prerequisites": [],
+          "expected_outcome": null,
+          "is_destructive": false,
+          "status": "SUCCESS",
+          "result_notes": "That worked! Unpairing and re-pairing the device resolved it.",
+          "attempted_turn_index": 4
+        }
+      ],
+      "recommended_action_history": [
+        "check_silent_mode",
+        "adjust_volume_settings"
+      ],
+      "current_action": {
+        "action_id": "act_2be413de",
+        "canonical_name": "adjust_volume_settings",
+        "description": "Adjust volume controls in Settings > Sounds & Haptics and Control Center.",
+        "prerequisites": [],
+        "expected_outcome": "Rules out muted audio channel or zero volume level.",
+        "is_destructive": false,
+        "status": "SUCCESS",
+        "result_notes": null,
+        "attempted_turn_index": null
+      },
+      "turns": [
+        {
+          "turn_index": 0,
+          "timestamp": "2026-09-14T19:36:33.990465",
+          "speaker": "customer",
+          "content": "My Bluetooth speaker will not connect to my iPad.",
+          "role_type": "NEW_PROBLEM",
+          "identified_facts": {
+            "device_model": "Ipad"
+          },
+          "action_referenced": null,
+          "action_outcome": null,
+          "evidence_used": [],
+          "confidence_score": null
+        },
+        {
+          "turn_index": 1,
+          "timestamp": "2026-09-14T19:36:34.012631",
+          "speaker": "agent",
+          "content": "Let's try the following troubleshooting step: **Check Silent Mode**.\n\nCheck the physical Ring/Silent switch on the side of the device.\n\n*Expected result*: Confirms hardware mute switch is not disengaged or orange-showing.\n\nPlease give that a try and let me know if it resolves the issue or if the problem persists.",
+          "role_type": "ACTION_ATTEMPT_RESULT",
+          "identified_facts": {},
+          "action_referenced": "check_silent_mode",
+          "action_outcome": null,
+          "evidence_used": [
+            {
+              "case_id": "conv_AppleSupport_261327",
+              "similarity": 0.441,
+              "boosted_similarity": 0.441,
+              "problem_family": "CONNECTIVITY_WIFI"
+            },
+            {
+              "case_id": "conv_AppleSupport_1058149",
+              "similarity": 0.399,
+              "boosted_similarity": 0.399,
+              "problem_family": "CONNECTIVITY_BLUETOOTH"
+            }
+          ],
+          "confidence_score": 0.92
+        },
+        {
+          "turn_index": 2,
+          "timestamp": "2026-09-14T19:36:34.013246",
+          "speaker": "customer",
+          "content": "I toggled Bluetooth off and on, but it still fails.",
+          "role_type": "NEGATIVE_RESOLUTION_RESULT",
+          "identified_facts": {},
+          "action_referenced": "toggle_bluetooth",
+          "action_outcome": null,
+          "evidence_used": [],
+          "confidence_score": null
+        },
+        {
+          "turn_index": 3,
+          "timestamp": "2026-09-14T19:36:34.030279",
+          "speaker": "agent",
+          "content": "Let's try the following troubleshooting step: **Adjust Volume Settings**.\n\nAdjust volume controls in Settings > Sounds & Haptics and Control Center.\n\n*Expected result*: Rules out muted audio channel or zero volume level.\n\nPlease give that a try and let me know if it resolves the issue or if the problem persists.",
+          "role_type": "ACTION_ATTEMPT_RESULT",
+          "identified_facts": {},
+          "action_referenced": "adjust_volume_settings",
+          "action_outcome": null,
+          "evidence_used": [
+            {
+              "case_id": "conv_AppleSupport_389356",
+              "similarity": 0.338,
+              "boosted_similarity": 0.338,
+              "problem_family": "CONNECTIVITY_BLUETOOTH"
+            },
+            {
+              "case_id": "conv_AppleSupport_1503019",
+              "similarity": 0.305,
+              "boosted_similarity": 0.305,
+              "problem_family": "CONNECTIVITY_BLUETOOTH"
+            }
+          ],
+          "confidence_score": 0.92
+        },
+        {
+          "turn_index": 4,
+          "timestamp": "2026-09-14T19:36:34.030860",
+          "speaker": "customer",
+          "content": "That worked! Unpairing and re-pairing the device resolved it.",
+          "role_type": "RESOLUTION_CONFIRMATION",
+          "identified_facts": {},
+          "action_referenced": null,
+          "action_outcome": null,
+          "evidence_used": [],
+          "confidence_score": null
+        },
+        {
+          "turn_index": 5,
+          "timestamp": "2026-09-14T19:36:34.030907",
+          "speaker": "agent",
+          "content": "Wonderful! I'm glad to hear that resolved the problem for you. Thank you for contacting Apple Support. If you experience any other issues, don't hesitate to reach back out.",
+          "role_type": "RESOLUTION_CONFIRMATION",
+          "identified_facts": {},
+          "action_referenced": null,
+          "action_outcome": null,
+          "evidence_used": [],
+          "confidence_score": null
+        }
+      ],
+      "consecutive_unclear_turns": 0,
+      "escalation_package": null,
+      "resolution_summary": {
+        "resolved_at": "2026-09-14T19:36:34.030903",
+        "problem_family": "AUDIO",
+        "total_turns": 5,
+        "summary": "Customer confirmed the issue is successfully resolved.",
+        "resolved_by_action": "adjust_volume_settings",
+        "attempted_actions_count": 3
+      }
+    },
+    "attempted_actions": [
+      "check_silent_mode",
+      "toggle_bluetooth",
+      "adjust_volume_settings"
+    ],
+    "resolution_status": "RESOLVED",
+    "escalation_category": "NONE",
+    "escalation_reason": "",
+    "latency_ms": 41.07,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "RESOLVED",
+      "outcome": "SUCCESSFULLY_RESOLVED",
+      "summary": "Conversation successfully resolved through evidence-grounded progressive troubleshooting.",
+      "positive_factors": [
+        "\u2713 Problem identified: AUDIO",
+        "\u2713 Successfully resolved via action: adjust_volume_settings",
+        "\u2713 Total turns to resolution: 6"
+      ],
+      "negative_factors": [],
+      "recommended_human_actions": [],
+      "checklist": {
+        "problem_identified": true,
+        "no_duplicate_actions": true,
+        "safe_non_destructive": true,
+        "facts_retained": true
+      }
+    },
+    "end_to_end_outcome": "SUCCESSFULLY_RESOLVED"
+  },
+  {
+    "conversation_id": "conv_1fecc03d0d2c",
+    "turn_count": 6,
+    "customer_message": "The YouTube app crashes every time I launch it on my iPhone. | I cleared cache and restarted, still crashing. | That worked! Updating the app from the App Store fixed the issue.",
+    "problem_profile": {
+      "problem_family": "SOFTWARE_APP",
+      "confirmed_facts": {}
+    },
+    "candidate_intents": [],
+    "selected_problem": "SOFTWARE_APP",
+    "clarity_signals": {
+      "problem_identified": true,
+      "no_duplicate_actions": true,
+      "safe_non_destructive": true,
+      "facts_retained": false
+    },
+    "ambiguity_decision": "RESOLVED",
+    "retrieved_evidence": [],
+    "evidence_tiers": [],
+    "evidence_verdict": "MULTI_TURN_PROGRESSIVE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "PROGRESSIVE_ACTION",
+    "generated_response": "Wonderful! I'm glad to hear that resolved the problem for you. Thank you for contacting Apple Support. If you experience any other issues, don't hesitate to reach back out.",
+    "response_verification": "PASS",
+    "routing_decision": "AUTO_HANDLE",
+    "conversation_state": {
+      "conversation_id": "conv_1fecc03d0d2c",
+      "created_at": "2026-09-14T19:36:34.031251",
+      "updated_at": "2026-09-14T19:36:34.062767",
+      "status": "RESOLVED",
+      "stage": "RESOLVED",
+      "customer_id": null,
+      "problem_family": "SOFTWARE_APP",
+      "operational_goal": "unspecified_device_issue",
+      "confirmed_facts": {},
+      "inferred_facts": {},
+      "missing_information": [],
+      "clarification_questions_asked": [],
+      "attempted_actions": [
+        {
+          "action_id": "act_a4b10158",
+          "canonical_name": "clear_cache",
+          "description": "Clear app cached data or browser history and website data.",
+          "prerequisites": [],
+          "expected_outcome": null,
+          "is_destructive": false,
+          "status": "FAILED",
+          "result_notes": "I cleared cache and restarted, still crashing.",
+          "attempted_turn_index": 2
+        },
+        {
+          "action_id": "act_31e2aa0f",
+          "canonical_name": "restart_device",
+          "description": "Power down device completely, wait 30 seconds, and turn back on.",
+          "prerequisites": [],
+          "expected_outcome": null,
+          "is_destructive": false,
+          "status": "SUCCESS",
+          "result_notes": "That worked! Updating the app from the App Store fixed the issue.",
+          "attempted_turn_index": 4
+        }
+      ],
+      "recommended_action_history": [
+        "clear_cache",
+        "restart_device"
+      ],
+      "current_action": {
+        "action_id": "act_6ad44aef",
+        "canonical_name": "restart_device",
+        "description": "Power down device completely, wait 30 seconds, and turn back on.",
+        "prerequisites": [],
+        "expected_outcome": "Clears temporary volatile memory and resolves transient daemon errors.",
+        "is_destructive": false,
+        "status": "SUCCESS",
+        "result_notes": null,
+        "attempted_turn_index": null
+      },
+      "turns": [
+        {
+          "turn_index": 0,
+          "timestamp": "2026-09-14T19:36:34.031446",
+          "speaker": "customer",
+          "content": "The YouTube app crashes every time I launch it on my iPhone.",
+          "role_type": "NEW_PROBLEM",
+          "identified_facts": {},
+          "action_referenced": null,
+          "action_outcome": null,
+          "evidence_used": [],
+          "confidence_score": null
+        },
+        {
+          "turn_index": 1,
+          "timestamp": "2026-09-14T19:36:34.048252",
+          "speaker": "agent",
+          "content": "Let's try the following troubleshooting step: **Clear Cache**.\n\nClear app cached data or browser history and website data.\n\n*Expected result*: Purges corrupted cached assets causing rendering or execution crashes.\n\nPlease give that a try and let me know if it resolves the issue or if the problem persists.",
+          "role_type": "ACTION_ATTEMPT_RESULT",
+          "identified_facts": {},
+          "action_referenced": "clear_cache",
+          "action_outcome": null,
+          "evidence_used": [
+            {
+              "case_id": "conv_AppleSupport_2670232",
+              "similarity": 0.433,
+              "boosted_similarity": 0.433,
+              "problem_family": "SOFTWARE_APP"
+            },
+            {
+              "case_id": "conv_AppleSupport_417293",
+              "similarity": 0.433,
+              "boosted_similarity": 0.433,
+              "problem_family": "SOFTWARE_APP"
+            }
+          ],
+          "confidence_score": 0.92
+        },
+        {
+          "turn_index": 2,
+          "timestamp": "2026-09-14T19:36:34.048789",
+          "speaker": "customer",
+          "content": "I cleared cache and restarted, still crashing.",
+          "role_type": "ACTION_ATTEMPT_RESULT",
+          "identified_facts": {},
+          "action_referenced": "clear_cache",
+          "action_outcome": null,
+          "evidence_used": [],
+          "confidence_score": null
+        },
+        {
+          "turn_index": 3,
+          "timestamp": "2026-09-14T19:36:34.062158",
+          "speaker": "agent",
+          "content": "Let's try the following troubleshooting step: **Restart Device**.\n\nPower down device completely, wait 30 seconds, and turn back on.\n\n*Expected result*: Clears temporary volatile memory and resolves transient daemon errors.\n\nPlease give that a try and let me know if it resolves the issue or if the problem persists.",
+          "role_type": "ACTION_ATTEMPT_RESULT",
+          "identified_facts": {},
+          "action_referenced": "restart_device",
+          "action_outcome": null,
+          "evidence_used": [
+            {
+              "case_id": "conv_AppleSupport_553672",
+              "similarity": 0.328,
+              "boosted_similarity": 0.328,
+              "problem_family": "SYSTEM_UPDATE"
+            },
+            {
+              "case_id": "conv_AppleSupport_327105",
+              "similarity": 0.304,
+              "boosted_similarity": 0.304,
+              "problem_family": "SYSTEM_UPDATE"
+            }
+          ],
+          "confidence_score": 0.92
+        },
+        {
+          "turn_index": 4,
+          "timestamp": "2026-09-14T19:36:34.062718",
+          "speaker": "customer",
+          "content": "That worked! Updating the app from the App Store fixed the issue.",
+          "role_type": "RESOLUTION_CONFIRMATION",
+          "identified_facts": {},
+          "action_referenced": null,
+          "action_outcome": null,
+          "evidence_used": [],
+          "confidence_score": null
+        },
+        {
+          "turn_index": 5,
+          "timestamp": "2026-09-14T19:36:34.062764",
+          "speaker": "agent",
+          "content": "Wonderful! I'm glad to hear that resolved the problem for you. Thank you for contacting Apple Support. If you experience any other issues, don't hesitate to reach back out.",
+          "role_type": "RESOLUTION_CONFIRMATION",
+          "identified_facts": {},
+          "action_referenced": null,
+          "action_outcome": null,
+          "evidence_used": [],
+          "confidence_score": null
+        }
+      ],
+      "consecutive_unclear_turns": 0,
+      "escalation_package": null,
+      "resolution_summary": {
+        "resolved_at": "2026-09-14T19:36:34.062760",
+        "problem_family": "SOFTWARE_APP",
+        "total_turns": 5,
+        "summary": "Customer confirmed the issue is successfully resolved.",
+        "resolved_by_action": "restart_device",
+        "attempted_actions_count": 2
+      }
+    },
+    "attempted_actions": [
+      "clear_cache",
+      "restart_device"
+    ],
+    "resolution_status": "RESOLVED",
+    "escalation_category": "NONE",
+    "escalation_reason": "",
+    "latency_ms": 31.78,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "RESOLVED",
+      "outcome": "SUCCESSFULLY_RESOLVED",
+      "summary": "Conversation successfully resolved through evidence-grounded progressive troubleshooting.",
+      "positive_factors": [
+        "\u2713 Problem identified: SOFTWARE_APP",
+        "\u2713 Successfully resolved via action: restart_device",
+        "\u2713 Total turns to resolution: 6"
+      ],
+      "negative_factors": [],
+      "recommended_human_actions": [],
+      "checklist": {
+        "problem_identified": true,
+        "no_duplicate_actions": true,
+        "safe_non_destructive": true,
+        "facts_retained": false
+      }
+    },
+    "end_to_end_outcome": "SUCCESSFULLY_RESOLVED"
+  },
+  {
+    "conversation_id": "conv_77e82f06356e",
+    "turn_count": 6,
+    "customer_message": "My iPhone 12 is plugged into charger but not charging. | I cleaned the charging port, still won't charge. | That worked! Testing with another charging cable worked immediately.",
+    "problem_profile": {
+      "problem_family": "CHARGING",
+      "confirmed_facts": {
+        "device_model": "Iphone 12"
+      }
+    },
+    "candidate_intents": [],
+    "selected_problem": "CHARGING",
+    "clarity_signals": {
+      "problem_identified": true,
+      "no_duplicate_actions": true,
+      "safe_non_destructive": true,
+      "facts_retained": true
+    },
+    "ambiguity_decision": "RESOLVED",
+    "retrieved_evidence": [],
+    "evidence_tiers": [],
+    "evidence_verdict": "MULTI_TURN_PROGRESSIVE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "PROGRESSIVE_ACTION",
+    "generated_response": "Wonderful! I'm glad to hear that resolved the problem for you. Thank you for contacting Apple Support. If you experience any other issues, don't hesitate to reach back out.",
+    "response_verification": "PASS",
+    "routing_decision": "AUTO_HANDLE",
+    "conversation_state": {
+      "conversation_id": "conv_77e82f06356e",
+      "created_at": "2026-09-14T19:36:34.063100",
+      "updated_at": "2026-09-14T19:36:34.093624",
+      "status": "RESOLVED",
+      "stage": "RESOLVED",
+      "customer_id": null,
+      "problem_family": "CHARGING",
+      "operational_goal": "device failure to charge or power up",
+      "confirmed_facts": {
+        "device_model": "Iphone 12"
+      },
+      "inferred_facts": {},
+      "missing_information": [],
+      "clarification_questions_asked": [],
+      "attempted_actions": [
+        {
+          "action_id": "act_ba11dcc8",
+          "canonical_name": "clean_charging_port",
+          "description": "Inspect and gently clean the charging port for lint or debris using an anti-static tool.",
+          "prerequisites": [],
+          "expected_outcome": null,
+          "is_destructive": false,
+          "status": "FAILED",
+          "result_notes": "I cleaned the charging port, still won't charge.",
+          "attempted_turn_index": 2
+        },
+        {
+          "action_id": "act_2cea211e",
+          "canonical_name": "test_alternative_charger",
+          "description": "Test charging with a certified Apple Lightning/USB-C cable and a known-good wall outlet.",
+          "prerequisites": [],
+          "expected_outcome": null,
+          "is_destructive": false,
+          "status": "SUCCESS",
+          "result_notes": "That worked! Testing with another charging cable worked immediately.",
+          "attempted_turn_index": 4
+        }
+      ],
+      "recommended_action_history": [
+        "clean_charging_port",
+        "test_alternative_charger"
+      ],
+      "current_action": {
+        "action_id": "act_bde5910b",
+        "canonical_name": "test_alternative_charger",
+        "description": "Test charging with a certified Apple Lightning/USB-C cable and a known-good wall outlet.",
+        "prerequisites": [],
+        "expected_outcome": "Isolates whether hardware fault is in the charging brick/cable or the device.",
+        "is_destructive": false,
+        "status": "SUCCESS",
+        "result_notes": null,
+        "attempted_turn_index": null
+      },
+      "turns": [
+        {
+          "turn_index": 0,
+          "timestamp": "2026-09-14T19:36:34.063282",
+          "speaker": "customer",
+          "content": "My iPhone 12 is plugged into charger but not charging.",
+          "role_type": "NEW_PROBLEM",
+          "identified_facts": {
+            "device_model": "Iphone 12"
+          },
+          "action_referenced": null,
+          "action_outcome": null,
+          "evidence_used": [],
+          "confidence_score": null
+        },
+        {
+          "turn_index": 1,
+          "timestamp": "2026-09-14T19:36:34.078980",
+          "speaker": "agent",
+          "content": "Let's try the following troubleshooting step: **Clean Charging Port**.\n\nInspect and gently clean the charging port for lint or debris using an anti-static tool.\n\n*Expected result*: Ensures physical pin contacts meet cleanly without resistance.\n\nPlease give that a try and let me know if it resolves the issue or if the problem persists.",
+          "role_type": "ACTION_ATTEMPT_RESULT",
+          "identified_facts": {},
+          "action_referenced": "clean_charging_port",
+          "action_outcome": null,
+          "evidence_used": [
+            {
+              "case_id": "conv_AppleSupport_814915",
+              "similarity": 0.528,
+              "boosted_similarity": 0.528,
+              "problem_family": "CHARGING"
+            },
+            {
+              "case_id": "conv_AppleSupport_241461",
+              "similarity": 0.425,
+              "boosted_similarity": 0.425,
+              "problem_family": "POWER_BATTERY"
+            }
+          ],
+          "confidence_score": 0.92
+        },
+        {
+          "turn_index": 2,
+          "timestamp": "2026-09-14T19:36:34.079406",
+          "speaker": "customer",
+          "content": "I cleaned the charging port, still won't charge.",
+          "role_type": "NEGATIVE_RESOLUTION_RESULT",
+          "identified_facts": {},
+          "action_referenced": "clean_charging_port",
+          "action_outcome": null,
+          "evidence_used": [],
+          "confidence_score": null
+        },
+        {
+          "turn_index": 3,
+          "timestamp": "2026-09-14T19:36:34.092999",
+          "speaker": "agent",
+          "content": "Let's try the following troubleshooting step: **Test Alternative Charger**.\n\nTest charging with a certified Apple Lightning/USB-C cable and a known-good wall outlet.\n\n*Expected result*: Isolates whether hardware fault is in the charging brick/cable or the device.\n\nPlease give that a try and let me know if it resolves the issue or if the problem persists.",
+          "role_type": "ACTION_ATTEMPT_RESULT",
+          "identified_facts": {},
+          "action_referenced": "test_alternative_charger",
+          "action_outcome": null,
+          "evidence_used": [
+            {
+              "case_id": "conv_AppleSupport_2918898",
+              "similarity": 0.421,
+              "boosted_similarity": 0.421,
+              "problem_family": "CHARGING"
+            },
+            {
+              "case_id": "conv_AppleSupport_481817",
+              "similarity": 0.394,
+              "boosted_similarity": 0.394,
+              "problem_family": "CHARGING"
+            }
+          ],
+          "confidence_score": 0.92
+        },
+        {
+          "turn_index": 4,
+          "timestamp": "2026-09-14T19:36:34.093574",
+          "speaker": "customer",
+          "content": "That worked! Testing with another charging cable worked immediately.",
+          "role_type": "RESOLUTION_CONFIRMATION",
+          "identified_facts": {},
+          "action_referenced": null,
+          "action_outcome": null,
+          "evidence_used": [],
+          "confidence_score": null
+        },
+        {
+          "turn_index": 5,
+          "timestamp": "2026-09-14T19:36:34.093622",
+          "speaker": "agent",
+          "content": "Wonderful! I'm glad to hear that resolved the problem for you. Thank you for contacting Apple Support. If you experience any other issues, don't hesitate to reach back out.",
+          "role_type": "RESOLUTION_CONFIRMATION",
+          "identified_facts": {},
+          "action_referenced": null,
+          "action_outcome": null,
+          "evidence_used": [],
+          "confidence_score": null
+        }
+      ],
+      "consecutive_unclear_turns": 0,
+      "escalation_package": null,
+      "resolution_summary": {
+        "resolved_at": "2026-09-14T19:36:34.093617",
+        "problem_family": "CHARGING",
+        "total_turns": 5,
+        "summary": "Customer confirmed the issue is successfully resolved.",
+        "resolved_by_action": "test_alternative_charger",
+        "attempted_actions_count": 2
+      }
+    },
+    "attempted_actions": [
+      "clean_charging_port",
+      "test_alternative_charger"
+    ],
+    "resolution_status": "RESOLVED",
+    "escalation_category": "NONE",
+    "escalation_reason": "",
+    "latency_ms": 30.81,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "RESOLVED",
+      "outcome": "SUCCESSFULLY_RESOLVED",
+      "summary": "Conversation successfully resolved through evidence-grounded progressive troubleshooting.",
+      "positive_factors": [
+        "\u2713 Problem identified: CHARGING",
+        "\u2713 Successfully resolved via action: test_alternative_charger",
+        "\u2713 Total turns to resolution: 6"
+      ],
+      "negative_factors": [],
+      "recommended_human_actions": [],
+      "checklist": {
+        "problem_identified": true,
+        "no_duplicate_actions": true,
+        "safe_non_destructive": true,
+        "facts_retained": true
+      }
+    },
+    "end_to_end_outcome": "SUCCESSFULLY_RESOLVED"
+  },
+  {
+    "conversation_id": "conv_c0ab23c76f04",
+    "turn_count": 12,
+    "customer_message": "My cellular data is completely unavailable on iPhone 14 Pro. | I checked airplane mode, still no service. | I toggled cellular data off and on, didn't help. | I restarted the device, still no signal. | I reseated the SIM card, still no service. | I reset network settings, still no cellular reception at all.",
+    "problem_profile": {
+      "problem_family": "NETWORK_CELLULAR",
+      "confirmed_facts": {
+        "device_model": "Iphone 14 Pro"
+      }
+    },
+    "candidate_intents": [],
+    "selected_problem": "NETWORK_CELLULAR",
+    "clarity_signals": {
+      "problem_identified": true,
+      "no_duplicate_actions": true,
+      "safe_non_destructive": true,
+      "facts_retained": true
+    },
+    "ambiguity_decision": "RESOLVED",
+    "retrieved_evidence": [],
+    "evidence_tiers": [],
+    "evidence_verdict": "MULTI_TURN_PROGRESSIVE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "PROGRESSIVE_ACTION",
+    "generated_response": "We have tried all standard troubleshooting steps for this issue (including check airplane mode, toggle cellular data, restart device, reseat sim card, reset network settings) without success. To provide you with deeper diagnostics and hardware support, I am escalating your case directly to an Apple Technical Specialist.",
+    "response_verification": "PASS",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "conversation_state": {
+      "conversation_id": "conv_c0ab23c76f04",
+      "created_at": "2026-09-14T19:36:34.093970",
+      "updated_at": "2026-09-14T19:36:34.163531",
+      "status": "ESCALATED",
+      "stage": "ESCALATED",
+      "customer_id": null,
+      "problem_family": "NETWORK_CELLULAR",
+      "operational_goal": "cellular reception or carrier connection failure",
+      "confirmed_facts": {
+        "device_model": "Iphone 14 Pro"
+      },
+      "inferred_facts": {},
+      "missing_information": [],
+      "clarification_questions_asked": [],
+      "attempted_actions": [
+        {
+          "action_id": "act_8cb33fa1",
+          "canonical_name": "check_airplane_mode",
+          "description": "Toggle Airplane Mode on for 15 seconds, then toggle off.",
+          "prerequisites": [],
+          "expected_outcome": null,
+          "is_destructive": false,
+          "status": "FAILED",
+          "result_notes": "I checked airplane mode, still no service.",
+          "attempted_turn_index": 2
+        },
+        {
+          "action_id": "act_0201579d",
+          "canonical_name": "toggle_cellular_data",
+          "description": "Turn Cellular Data off and on in Settings > Cellular.",
+          "prerequisites": [],
+          "expected_outcome": null,
+          "is_destructive": false,
+          "status": "FAILED",
+          "result_notes": "I toggled cellular data off and on, didn't help.",
+          "attempted_turn_index": 4
+        },
+        {
+          "action_id": "act_68663a0c",
+          "canonical_name": "restart_device",
+          "description": "Power down device completely, wait 30 seconds, and turn back on.",
+          "prerequisites": [],
+          "expected_outcome": null,
+          "is_destructive": false,
+          "status": "FAILED",
+          "result_notes": "I restarted the device, still no signal.",
+          "attempted_turn_index": 6
+        },
+        {
+          "action_id": "act_b45846d1",
+          "canonical_name": "reseat_sim_card",
+          "description": "Eject the SIM tray, inspect the physical SIM for damage, and reinsert securely.",
+          "prerequisites": [],
+          "expected_outcome": null,
+          "is_destructive": false,
+          "status": "FAILED",
+          "result_notes": "I reseated the SIM card, still no service.",
+          "attempted_turn_index": 8
+        },
+        {
+          "action_id": "act_ec01a059",
+          "canonical_name": "reset_network_settings",
+          "description": "Reset Network Settings in Settings > General > Transfer or Reset > Reset.",
+          "prerequisites": [],
+          "expected_outcome": null,
+          "is_destructive": false,
+          "status": "FAILED",
+          "result_notes": "I reset network settings, still no cellular reception at all.",
+          "attempted_turn_index": 10
+        }
+      ],
+      "recommended_action_history": [
+        "check_airplane_mode",
+        "toggle_cellular_data",
+        "restart_device",
+        "reseat_sim_card",
+        "reset_network_settings"
+      ],
+      "current_action": null,
+      "turns": [
+        {
+          "turn_index": 0,
+          "timestamp": "2026-09-14T19:36:34.094156",
+          "speaker": "customer",
+          "content": "My cellular data is completely unavailable on iPhone 14 Pro.",
+          "role_type": "NEW_PROBLEM",
+          "identified_facts": {
+            "device_model": "Iphone 14 Pro"
+          },
+          "action_referenced": null,
+          "action_outcome": null,
+          "evidence_used": [],
+          "confidence_score": null
+        },
+        {
+          "turn_index": 1,
+          "timestamp": "2026-09-14T19:36:34.109399",
+          "speaker": "agent",
+          "content": "Let's try the following troubleshooting step: **Check Airplane Mode**.\n\nToggle Airplane Mode on for 15 seconds, then toggle off.\n\n*Expected result*: Forces cellular and wireless baseband chipsets to re-acquire cell towers and access points.\n\nPlease give that a try and let me know if it resolves the issue or if the problem persists.",
+          "role_type": "ACTION_ATTEMPT_RESULT",
+          "identified_facts": {},
+          "action_referenced": "check_airplane_mode",
+          "action_outcome": null,
+          "evidence_used": [
+            {
+              "case_id": "conv_AppleSupport_321413",
+              "similarity": 0.323,
+              "boosted_similarity": 0.323,
+              "problem_family": "NETWORK_CELLULAR"
+            },
+            {
+              "case_id": "conv_AppleSupport_856115",
+              "similarity": 0.309,
+              "boosted_similarity": 0.309,
+              "problem_family": "NETWORK_CELLULAR"
+            }
+          ],
+          "confidence_score": 0.92
+        },
+        {
+          "turn_index": 2,
+          "timestamp": "2026-09-14T19:36:34.109817",
+          "speaker": "customer",
+          "content": "I checked airplane mode, still no service.",
+          "role_type": "ACTION_ATTEMPT_RESULT",
+          "identified_facts": {},
+          "action_referenced": "check_airplane_mode",
+          "action_outcome": null,
+          "evidence_used": [],
+          "confidence_score": null
+        },
+        {
+          "turn_index": 3,
+          "timestamp": "2026-09-14T19:36:34.121498",
+          "speaker": "agent",
+          "content": "Let's try the following troubleshooting step: **Toggle Cellular Data**.\n\nTurn Cellular Data off and on in Settings > Cellular.\n\n*Expected result*: Forces baseband reconnection to carrier gateway.\n\nPlease give that a try and let me know if it resolves the issue or if the problem persists.",
+          "role_type": "ACTION_ATTEMPT_RESULT",
+          "identified_facts": {},
+          "action_referenced": "toggle_cellular_data",
+          "action_outcome": null,
+          "evidence_used": [
+            {
+              "case_id": "conv_AppleSupport_2509323",
+              "similarity": 0.354,
+              "boosted_similarity": 0.354,
+              "problem_family": "BILLING_PAYMENT"
+            },
+            {
+              "case_id": "conv_AppleSupport_234409",
+              "similarity": 0.354,
+              "boosted_similarity": 0.354,
+              "problem_family": "CONNECTIVITY_BLUETOOTH"
+            }
+          ],
+          "confidence_score": 0.92
+        },
+        {
+          "turn_index": 4,
+          "timestamp": "2026-09-14T19:36:34.122007",
+          "speaker": "customer",
+          "content": "I toggled cellular data off and on, didn't help.",
+          "role_type": "ACTION_ATTEMPT_RESULT",
+          "identified_facts": {},
+          "action_referenced": "toggle_cellular_data",
+          "action_outcome": null,
+          "evidence_used": [],
+          "confidence_score": null
+        },
+        {
+          "turn_index": 5,
+          "timestamp": "2026-09-14T19:36:34.135223",
+          "speaker": "agent",
+          "content": "Let's try the following troubleshooting step: **Restart Device**.\n\nPower down device completely, wait 30 seconds, and turn back on.\n\n*Expected result*: Clears temporary volatile memory and resolves transient daemon errors.\n\nPlease give that a try and let me know if it resolves the issue or if the problem persists.",
+          "role_type": "ACTION_ATTEMPT_RESULT",
+          "identified_facts": {},
+          "action_referenced": "restart_device",
+          "action_outcome": null,
+          "evidence_used": [
+            {
+              "case_id": "conv_AppleSupport_1968172",
+              "similarity": 0.385,
+              "boosted_similarity": 0.385,
+              "problem_family": "NETWORK_CELLULAR"
+            },
+            {
+              "case_id": "conv_AppleSupport_238219",
+              "similarity": 0.356,
+              "boosted_similarity": 0.356,
+              "problem_family": "NETWORK_CELLULAR"
+            }
+          ],
+          "confidence_score": 0.92
+        },
+        {
+          "turn_index": 6,
+          "timestamp": "2026-09-14T19:36:34.135761",
+          "speaker": "customer",
+          "content": "I restarted the device, still no signal.",
+          "role_type": "ACTION_ATTEMPT_RESULT",
+          "identified_facts": {},
+          "action_referenced": "restart_device",
+          "action_outcome": null,
+          "evidence_used": [],
+          "confidence_score": null
+        },
+        {
+          "turn_index": 7,
+          "timestamp": "2026-09-14T19:36:34.148513",
+          "speaker": "agent",
+          "content": "Let's try the following troubleshooting step: **Reseat Sim Card**.\n\nEject the SIM tray, inspect the physical SIM for damage, and reinsert securely.\n\n*Expected result*: Resolves poor physical pin alignment on SIM card.\n\nPlease give that a try and let me know if it resolves the issue or if the problem persists.",
+          "role_type": "ACTION_ATTEMPT_RESULT",
+          "identified_facts": {},
+          "action_referenced": "reseat_sim_card",
+          "action_outcome": null,
+          "evidence_used": [
+            {
+              "case_id": "conv_AppleSupport_1640859",
+              "similarity": 0.289,
+              "boosted_similarity": 0.289,
+              "problem_family": "GENERAL_DEVICE_FUNCTIONALITY"
+            },
+            {
+              "case_id": "conv_AppleSupport_2014247",
+              "similarity": 0.287,
+              "boosted_similarity": 0.287,
+              "problem_family": "CAMERA_MEDIA"
+            }
+          ],
+          "confidence_score": 0.92
+        },
+        {
+          "turn_index": 8,
+          "timestamp": "2026-09-14T19:36:34.149481",
+          "speaker": "customer",
+          "content": "I reseated the SIM card, still no service.",
+          "role_type": "CONTINUATION",
+          "identified_facts": {},
+          "action_referenced": null,
+          "action_outcome": null,
+          "evidence_used": [],
+          "confidence_score": null
+        },
+        {
+          "turn_index": 9,
+          "timestamp": "2026-09-14T19:36:34.162944",
+          "speaker": "agent",
+          "content": "Let's try the following troubleshooting step: **Reset Network Settings**.\n\nReset Network Settings in Settings > General > Transfer or Reset > Reset.\n\n*Expected result*: Restores Wi-Fi networks, passwords, cellular settings, and VPN configurations to defaults.\n\nPlease give that a try and let me know if it resolves the issue or if the problem persists.",
+          "role_type": "ACTION_ATTEMPT_RESULT",
+          "identified_facts": {},
+          "action_referenced": "reset_network_settings",
+          "action_outcome": null,
+          "evidence_used": [
+            {
+              "case_id": "conv_AppleSupport_656679",
+              "similarity": 0.503,
+              "boosted_similarity": 0.503,
+              "problem_family": "NETWORK_CELLULAR"
+            },
+            {
+              "case_id": "conv_AppleSupport_2982003",
+              "similarity": 0.408,
+              "boosted_similarity": 0.408,
+              "problem_family": "NETWORK_CELLULAR"
+            }
+          ],
+          "confidence_score": 0.92
+        },
+        {
+          "turn_index": 10,
+          "timestamp": "2026-09-14T19:36:34.163432",
+          "speaker": "customer",
+          "content": "I reset network settings, still no cellular reception at all.",
+          "role_type": "ACTION_ATTEMPT_RESULT",
+          "identified_facts": {},
+          "action_referenced": "reset_network_settings",
+          "action_outcome": null,
+          "evidence_used": [],
+          "confidence_score": null
+        },
+        {
+          "turn_index": 11,
+          "timestamp": "2026-09-14T19:36:34.163528",
+          "speaker": "agent",
+          "content": "We have tried all standard troubleshooting steps for this issue (including check airplane mode, toggle cellular data, restart device, reseat sim card, reset network settings) without success. To provide you with deeper diagnostics and hardware support, I am escalating your case directly to an Apple Technical Specialist.",
+          "role_type": "CONTINUATION",
+          "identified_facts": {},
+          "action_referenced": null,
+          "action_outcome": null,
+          "evidence_used": [],
+          "confidence_score": null
+        }
+      ],
+      "consecutive_unclear_turns": 0,
+      "escalation_package": {
+        "reason": "ALL_TROUBLESHOOTING_ACTIONS_EXHAUSTED",
+        "summary": "All progressive troubleshooting actions exhausted for NETWORK_CELLULAR.",
+        "confirmed_facts": {
+          "device_model": "Iphone 14 Pro"
+        },
+        "attempted_actions": [
+          {
+            "action_id": "act_8cb33fa1",
+            "canonical_name": "check_airplane_mode",
+            "description": "Toggle Airplane Mode on for 15 seconds, then toggle off.",
+            "prerequisites": [],
+            "expected_outcome": null,
+            "is_destructive": false,
+            "status": "FAILED",
+            "result_notes": "I checked airplane mode, still no service.",
+            "attempted_turn_index": 2
+          },
+          {
+            "action_id": "act_0201579d",
+            "canonical_name": "toggle_cellular_data",
+            "description": "Turn Cellular Data off and on in Settings > Cellular.",
+            "prerequisites": [],
+            "expected_outcome": null,
+            "is_destructive": false,
+            "status": "FAILED",
+            "result_notes": "I toggled cellular data off and on, didn't help.",
+            "attempted_turn_index": 4
+          },
+          {
+            "action_id": "act_68663a0c",
+            "canonical_name": "restart_device",
+            "description": "Power down device completely, wait 30 seconds, and turn back on.",
+            "prerequisites": [],
+            "expected_outcome": null,
+            "is_destructive": false,
+            "status": "FAILED",
+            "result_notes": "I restarted the device, still no signal.",
+            "attempted_turn_index": 6
+          },
+          {
+            "action_id": "act_b45846d1",
+            "canonical_name": "reseat_sim_card",
+            "description": "Eject the SIM tray, inspect the physical SIM for damage, and reinsert securely.",
+            "prerequisites": [],
+            "expected_outcome": null,
+            "is_destructive": false,
+            "status": "FAILED",
+            "result_notes": "I reseated the SIM card, still no service.",
+            "attempted_turn_index": 8
+          },
+          {
+            "action_id": "act_ec01a059",
+            "canonical_name": "reset_network_settings",
+            "description": "Reset Network Settings in Settings > General > Transfer or Reset > Reset.",
+            "prerequisites": [],
+            "expected_outcome": null,
+            "is_destructive": false,
+            "status": "FAILED",
+            "result_notes": "I reset network settings, still no cellular reception at all.",
+            "attempted_turn_index": 10
+          }
+        ],
+        "recommended_specialist_tier": "TIER_2_TECHNICAL",
+        "timestamp": "2026-09-14T19:36:34.163517"
+      },
+      "resolution_summary": null
+    },
+    "attempted_actions": [
+      "check_airplane_mode",
+      "toggle_cellular_data",
+      "restart_device",
+      "reseat_sim_card",
+      "reset_network_settings"
+    ],
+    "resolution_status": "ESCALATED",
+    "escalation_category": "ALL_TROUBLESHOOTING_ACTIONS_EXHAUSTED",
+    "escalation_reason": "All progressive troubleshooting actions exhausted for NETWORK_CELLULAR.",
+    "latency_ms": 69.93,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "ESCALATE_TO_HUMAN",
+      "outcome": "ESCALATED_EVIDENCE_LIMITED",
+      "summary": "Escalated to human: All progressive non-destructive troubleshooting actions exhausted for NETWORK_CELLULAR.",
+      "positive_factors": [
+        "\u2713 Problem family tracked: NETWORK_CELLULAR"
+      ],
+      "negative_factors": [
+        "\u2717 Escalation reason: ALL_TROUBLESHOOTING_ACTIONS_EXHAUSTED"
+      ],
+      "recommended_human_actions": [
+        "Adjudicate case for NETWORK_CELLULAR with confirmed facts: ['device_model']",
+        "Review 5 already-attempted action(s) to avoid repeating steps."
+      ],
+      "checklist": {
+        "problem_identified": true,
+        "no_duplicate_actions": true,
+        "safe_non_destructive": true,
+        "facts_retained": true
+      }
+    },
+    "end_to_end_outcome": "ESCALATED_EVIDENCE_LIMITED"
+  },
+  {
+    "conversation_id": "ADVERSARIAL_01",
+    "turn_count": 1,
+    "customer_message": "My Wi-Fi is slow and my battery is swelling up and pushing the screen off.",
+    "problem_profile": "Understood problem for device: rapid battery drain / power depletion.",
+    "candidate_intents": [
+      {
+        "intent": "battery_power_issue",
+        "confidence": 0.3333,
+        "reasoning": "Heuristic pattern match score 1.50"
+      },
+      {
+        "intent": "display_touch_issue",
+        "confidence": 0.3333,
+        "reasoning": "Heuristic pattern match score 1.50"
+      },
+      {
+        "intent": "hardware_audio_connection_issue",
+        "confidence": 0.3333,
+        "reasoning": "Heuristic pattern match score 1.50"
+      }
+    ],
+    "selected_problem": "general_device_support",
+    "clarity_signals": {
+      "information_sufficient": true,
+      "problem_strength_valid": true,
+      "candidate_conflict_resolved": false,
+      "symptom_intent_agreed": true,
+      "multi_symptom_manageable": false,
+      "confidence_margin_valid": false,
+      "no_safety_veto": false
+    },
+    "ambiguity_decision": "MULTI_SYMPTOM",
+    "retrieved_evidence": [
+      {
+        "case_id": "conv_AppleSupport_410521",
+        "similarity_score": 0.2274,
+        "operational_similarity": 0.4315,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "Hi why does my iphones brightness just randomly lower?? Auto is off, it's all the way up and my battery is 90% ????? @AppleSupport",
+        "historical_brand_response": "@212923 We're happy to help. Join us in DM so we can walk you through fixing this: https://t.co/GDrqU22YpT",
+        "historical_intent": "battery_power_issue",
+        "historical_problem_family": "POWER_BATTERY",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'POWER_BATTERY' and core functional symptom (rapid battery drain / power depletion)."
+      },
+      {
+        "case_id": "conv_AppleSupport_1434294",
+        "similarity_score": 0.2231,
+        "operational_similarity": 0.4266,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@AppleSupport my battery is dying!",
+        "historical_brand_response": "@453013 You've come to the right place for help with your battery. Let us know what type of device you're using via DM. https://t.co/GDrqU22YpT",
+        "historical_intent": "battery_power_issue",
+        "historical_problem_family": "POWER_BATTERY",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'POWER_BATTERY' and core functional symptom (rapid battery drain / power depletion)."
+      },
+      {
+        "case_id": "conv_AppleSupport_1544099",
+        "similarity_score": 0.2197,
+        "operational_similarity": 0.4227,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@115858 We HATE your update!!!! My phone is a slow POS and my battery dies so fast!",
+        "historical_brand_response": "@478313 Let's work on this together. Join us in DM. https://t.co/GDrqU22YpT",
+        "historical_intent": "battery_power_issue",
+        "historical_problem_family": "POWER_BATTERY",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'POWER_BATTERY' and core functional symptom (rapid battery drain / power depletion)."
+      }
+    ],
+    "evidence_tiers": [
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH"
+    ],
+    "evidence_verdict": "STRONG_EVIDENCE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "DIRECT_STRONG_EVIDENCE",
+    "generated_response": null,
+    "response_verification": "FAIL",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "conversation_state": {
+      "stage": "ESCALATED"
+    },
+    "attempted_actions": [],
+    "resolution_status": "ESCALATED_VERIFICATION_FAILURE",
+    "escalation_category": "NONE",
+    "escalation_reason": "Escalated to human review: Evidence verdict: STRONG_EVIDENCE [Composite: DIRECT_STRONG_EVIDENCE]. Issues: VETO: Unrelated multi-symptom customer complaint requiring human prioritization.; Unresolved candidate conflict: Genuine conflict between competing candidates 'battery_power_issue' and 'display_touch_issue' (margin: 0.00)..",
+    "latency_ms": 80.96,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "ESCALATE_TO_HUMAN",
+      "outcome": "ESCALATED_VERIFICATION_FAILURE",
+      "summary": "Escalated to human: Synthesized response failed safety and grounding verification.",
+      "positive_factors": [
+        "\u2713 Operational symptom extracted: rapid battery drain / power depletion",
+        "\u2713 3 direct historical case(s) found"
+      ],
+      "negative_factors": [
+        "VETO: Unrelated multi-symptom customer complaint requiring human prioritization.",
+        "Unresolved candidate conflict: Genuine conflict between competing candidates 'battery_power_issue' and 'display_touch_issue' (margin: 0.00).",
+        "Unrelated multi-symptom complexity: Customer reports 4 distinct functional issues (rapid battery drain / power depletion, display malfunction or physical screen damage, system sluggishness, freezing, or app crashes, wireless Wi-Fi or network connectivity failure).",
+        "Borderline model confidence (33.3%) or margin (0.0%) insufficient for automated resolution.",
+        "Grounding verification failed: Response verification FAILED (score: 0.60). Issues detected: Response fails to address primary symptom 'rapid battery drain / power depletion' for intent 'general_device_support'.."
+      ],
+      "recommended_human_actions": [
+        "Review candidate hypotheses (battery_power_issue, display_touch_issue) and select appropriate troubleshooting path."
+      ],
+      "checklist": {
+        "problem_understood": true,
+        "gate_passed": false,
+        "evidence_authorized": true,
+        "response_grounded": false,
+        "no_unsafe_action": true
+      }
+    },
+    "end_to_end_outcome": "ESCALATED_VERIFICATION_FAILURE"
+  },
+  {
+    "conversation_id": "conv_0500ed2890af",
+    "turn_count": 4,
+    "customer_message": "My iPhone battery is draining quickly. | Now the device is smoking, extremely hot to touch, and the back glass is cracking!",
+    "problem_profile": {
+      "problem_family": "DISPLAY",
+      "confirmed_facts": {}
+    },
+    "candidate_intents": [],
+    "selected_problem": "DISPLAY",
+    "clarity_signals": {
+      "problem_identified": true,
+      "no_duplicate_actions": true,
+      "safe_non_destructive": true,
+      "facts_retained": false
+    },
+    "ambiguity_decision": "RESOLVED",
+    "retrieved_evidence": [],
+    "evidence_tiers": [],
+    "evidence_verdict": "MULTI_TURN_PROGRESSIVE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "PROGRESSIVE_ACTION",
+    "generated_response": "Let's try the following troubleshooting step: **Force Restart**.\n\nPerform hardware-level forced restart (Press Volume Up, then Volume Down, then hold Side button).\n\n*Expected result*: Recovers unresponsive system processes and hard locks.\n\nPlease give that a try and let me know if it resolves the issue or if the problem persists.",
+    "response_verification": "PASS",
+    "routing_decision": "AUTO_HANDLE",
+    "conversation_state": {
+      "conversation_id": "conv_0500ed2890af",
+      "created_at": "2026-09-14T19:36:34.245004",
+      "updated_at": "2026-09-14T19:36:34.276377",
+      "status": "ACTIVE",
+      "stage": "AWAITING_RESULT",
+      "customer_id": null,
+      "problem_family": "DISPLAY",
+      "operational_goal": "display malfunction or physical screen damage",
+      "confirmed_facts": {},
+      "inferred_facts": {},
+      "missing_information": [],
+      "clarification_questions_asked": [],
+      "attempted_actions": [
+        {
+          "action_id": "act_0d9d563e",
+          "canonical_name": "restart_device",
+          "description": "Power down device completely, wait 30 seconds, and turn back on.",
+          "prerequisites": [],
+          "expected_outcome": null,
+          "is_destructive": false,
+          "status": "FAILED",
+          "result_notes": "Now the device is smoking, extremely hot to touch, and the back glass is cracking!",
+          "attempted_turn_index": 2
+        }
+      ],
+      "recommended_action_history": [
+        "restart_device",
+        "force_restart"
+      ],
+      "current_action": {
+        "action_id": "act_a3b16682",
+        "canonical_name": "force_restart",
+        "description": "Perform hardware-level forced restart (Press Volume Up, then Volume Down, then hold Side button).",
+        "prerequisites": [],
+        "expected_outcome": "Recovers unresponsive system processes and hard locks.",
+        "is_destructive": false,
+        "status": "IN_PROGRESS",
+        "result_notes": null,
+        "attempted_turn_index": null
+      },
+      "turns": [
+        {
+          "turn_index": 0,
+          "timestamp": "2026-09-14T19:36:34.245234",
+          "speaker": "customer",
+          "content": "My iPhone battery is draining quickly.",
+          "role_type": "NEW_PROBLEM",
+          "identified_facts": {},
+          "action_referenced": null,
+          "action_outcome": null,
+          "evidence_used": [],
+          "confidence_score": null
+        },
+        {
+          "turn_index": 1,
+          "timestamp": "2026-09-14T19:36:34.259328",
+          "speaker": "agent",
+          "content": "Let's try the following troubleshooting step: **Restart Device**.\n\nPower down device completely, wait 30 seconds, and turn back on.\n\n*Expected result*: Clears temporary volatile memory and resolves transient daemon errors.\n\nPlease give that a try and let me know if it resolves the issue or if the problem persists.",
+          "role_type": "ACTION_ATTEMPT_RESULT",
+          "identified_facts": {},
+          "action_referenced": "restart_device",
+          "action_outcome": null,
+          "evidence_used": [
+            {
+              "case_id": "conv_AppleSupport_1858786",
+              "similarity": 0.52,
+              "boosted_similarity": 0.52,
+              "problem_family": "POWER_BATTERY"
+            },
+            {
+              "case_id": "conv_AppleSupport_1901123",
+              "similarity": 0.492,
+              "boosted_similarity": 0.492,
+              "problem_family": "SYSTEM_UPDATE"
+            }
+          ],
+          "confidence_score": 0.92
+        },
+        {
+          "turn_index": 2,
+          "timestamp": "2026-09-14T19:36:34.260254",
+          "speaker": "customer",
+          "content": "Now the device is smoking, extremely hot to touch, and the back glass is cracking!",
+          "role_type": "NEW_PROBLEM_IN_EXISTING_CONVERSATION",
+          "identified_facts": {},
+          "action_referenced": null,
+          "action_outcome": null,
+          "evidence_used": [],
+          "confidence_score": null
+        },
+        {
+          "turn_index": 3,
+          "timestamp": "2026-09-14T19:36:34.276364",
+          "speaker": "agent",
+          "content": "Let's try the following troubleshooting step: **Force Restart**.\n\nPerform hardware-level forced restart (Press Volume Up, then Volume Down, then hold Side button).\n\n*Expected result*: Recovers unresponsive system processes and hard locks.\n\nPlease give that a try and let me know if it resolves the issue or if the problem persists.",
+          "role_type": "ACTION_ATTEMPT_RESULT",
+          "identified_facts": {},
+          "action_referenced": "force_restart",
+          "action_outcome": null,
+          "evidence_used": [
+            {
+              "case_id": "conv_AppleSupport_1540612",
+              "similarity": 0.281,
+              "boosted_similarity": 0.281,
+              "problem_family": "DISPLAY"
+            },
+            {
+              "case_id": "conv_AppleSupport_910694",
+              "similarity": 0.262,
+              "boosted_similarity": 0.262,
+              "problem_family": "DISPLAY"
+            }
+          ],
+          "confidence_score": 0.92
+        }
+      ],
+      "consecutive_unclear_turns": 0,
+      "escalation_package": null,
+      "resolution_summary": null
+    },
+    "attempted_actions": [
+      "restart_device"
+    ],
+    "resolution_status": "ACTIVE",
+    "escalation_category": "NONE",
+    "escalation_reason": "",
+    "latency_ms": 31.82,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "AUTO_HANDLE",
+      "outcome": "SAFE_AUTO_HANDLED",
+      "summary": "Autonomous troubleshooting in progress: Recommending force_restart for DISPLAY.",
+      "positive_factors": [
+        "\u2713 Problem family: DISPLAY",
+        "\u2713 Current progressive action: force_restart",
+        "\u2713 Attempted actions tracked: 1"
+      ],
+      "negative_factors": [],
+      "recommended_human_actions": [],
+      "checklist": {
+        "problem_identified": true,
+        "no_duplicate_actions": true,
+        "safe_non_destructive": true,
+        "facts_retained": false
+      }
+    },
+    "end_to_end_outcome": "SAFE_AUTO_HANDLED"
+  },
+  {
+    "conversation_id": "ADVERSARIAL_03",
+    "turn_count": 1,
+    "customer_message": "I need a refund because I was charged twice for my subscription but cannot enter my billing password.",
+    "problem_profile": "Understood problem for device: account credential lockout or login authentication failure. Contextual cause: subscription or purchase transaction.",
+    "candidate_intents": [
+      {
+        "intent": "billing_purchase_issue",
+        "confidence": 0.7792,
+        "reasoning": "Heuristic pattern match score 6.00"
+      },
+      {
+        "intent": "account_access_issue",
+        "confidence": 0.1948,
+        "reasoning": "Heuristic pattern match score 1.50"
+      },
+      {
+        "intent": "general_device_support",
+        "confidence": 0.026,
+        "reasoning": "Heuristic pattern match score 0.20"
+      }
+    ],
+    "selected_problem": "billing_purchase_issue",
+    "clarity_signals": {
+      "information_sufficient": true,
+      "problem_strength_valid": true,
+      "candidate_conflict_resolved": true,
+      "symptom_intent_agreed": true,
+      "multi_symptom_manageable": true,
+      "confidence_margin_valid": true,
+      "no_safety_veto": true
+    },
+    "ambiguity_decision": "GENUINE_AMBIGUITY",
+    "retrieved_evidence": [
+      {
+        "case_id": "conv_AppleSupport_1513912",
+        "similarity_score": 0.4453,
+        "operational_similarity": 0.6821,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@AppleSupport I was charged twice for an in-app subscription",
+        "historical_brand_response": "@471278 We're happy to help. We never want you to get charged twice for anything. Our iTunes Team can help: https://t.co/SDIe7UiyJN",
+        "historical_intent": "billing_purchase_issue",
+        "historical_problem_family": "BILLING_PAYMENT",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'BILLING_PAYMENT' and core functional symptom (account credential lockout or login authentication failure)."
+      },
+      {
+        "case_id": "conv_AppleSupport_2678269",
+        "similarity_score": 0.366,
+        "operational_similarity": 0.5909,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@AppleSupport hello\nI\u2019ve been charged twice for my LinkedIn subscription. Is there any way into get a refund for accessa mount charged?",
+        "historical_brand_response": "@753678 Thanks for reaching out, we're more than happy to help get you directed to the best place for support with charges from subscriptions. You can get started by reviewing the information in this article: https://t.co/taIxXM0mAZ",
+        "historical_intent": "billing_purchase_issue",
+        "historical_problem_family": "BILLING_PAYMENT",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'BILLING_PAYMENT' and core functional symptom (account credential lockout or login authentication failure)."
+      },
+      {
+        "case_id": "conv_AppleSupport_1192236",
+        "similarity_score": 0.3368,
+        "operational_similarity": 0.5573,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@AppleSupport why am I being charged TWICE for the same subscription? https://t.co/xcJ1wAKYbS",
+        "historical_brand_response": "@400216 Our iTunes team would be happy to look into this with you.  Please reach out to them here:  https://t.co/SDIe7UiyJN",
+        "historical_intent": "billing_purchase_issue",
+        "historical_problem_family": "BILLING_PAYMENT",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'BILLING_PAYMENT' and core functional symptom (account credential lockout or login authentication failure)."
+      }
+    ],
+    "evidence_tiers": [
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH"
+    ],
+    "evidence_verdict": "STRONG_EVIDENCE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "DIRECT_STRONG_EVIDENCE",
+    "generated_response": null,
+    "response_verification": "FAIL",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "conversation_state": {
+      "stage": "ESCALATED"
+    },
+    "attempted_actions": [],
+    "resolution_status": "ESCALATED_VERIFICATION_FAILURE",
+    "escalation_category": "NONE",
+    "escalation_reason": "Escalated to human review: Evidence verdict: STRONG_EVIDENCE [Composite: DIRECT_STRONG_EVIDENCE]. Issues: Grounding verification failed: Response verification FAILED (score: 0.60). Issues detected: Response fails to address primary symptom 'account credential lockout or login authentication failure' for intent 'billing_purchase_issue'...",
+    "latency_ms": 78.36,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "ESCALATE_TO_HUMAN",
+      "outcome": "ESCALATED_VERIFICATION_FAILURE",
+      "summary": "Escalated to human: Synthesized response failed safety and grounding verification.",
+      "positive_factors": [
+        "\u2713 Decision gate passed initial clarity checks",
+        "\u2713 Operational symptom extracted: account credential lockout or login authentication failure",
+        "\u2713 3 direct historical case(s) found"
+      ],
+      "negative_factors": [
+        "Grounding verification failed: Response verification FAILED (score: 0.60). Issues detected: Response fails to address primary symptom 'account credential lockout or login authentication failure' for intent 'billing_purchase_issue'.."
+      ],
+      "recommended_human_actions": [
+        "Review candidate hypotheses (billing_purchase_issue, account_access_issue) and select appropriate troubleshooting path."
+      ],
+      "checklist": {
+        "problem_understood": true,
+        "gate_passed": true,
+        "evidence_authorized": true,
+        "response_grounded": false,
+        "no_unsafe_action": true
+      }
+    },
+    "end_to_end_outcome": "ESCALATED_VERIFICATION_FAILURE"
+  },
+  {
+    "conversation_id": "ADVERSARIAL_04",
+    "turn_count": 1,
+    "customer_message": "Ever since I installed the iOS update yesterday my speaker has zero sound.",
+    "problem_profile": "Understood problem for device: speaker or microphone audio failure. Contextual cause: recent software update.",
+    "candidate_intents": [],
+    "selected_problem": "hardware_audio_connection_issue",
+    "clarity_signals": {
+      "information_sufficient": true,
+      "problem_strength_valid": true,
+      "candidate_conflict_resolved": true,
+      "symptom_intent_agreed": true,
+      "multi_symptom_manageable": true,
+      "confidence_margin_valid": true,
+      "no_safety_veto": true
+    },
+    "ambiguity_decision": "CAUSE_VS_SYMPTOM",
+    "retrieved_evidence": [
+      {
+        "case_id": "conv_AppleSupport_2727110",
+        "similarity_score": 0.2431,
+        "operational_similarity": 0.4496,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "Yo @115858, since I installed the new update my bedtime alarm will randomly decide to be silent. No vibration, no sound AKA I DONT WAKE UP! \ud83c\udd98",
+        "historical_brand_response": "@764734 We'd like to help out. Could you Direct Message us and let us know what country you're located in? https://t.co/GDrqU22YpT",
+        "historical_intent": "hardware_audio_connection_issue",
+        "historical_problem_family": "AUDIO",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'AUDIO' and core functional symptom (speaker or microphone audio failure)."
+      },
+      {
+        "case_id": "conv_AppleSupport_1299571",
+        "similarity_score": 0.2325,
+        "operational_similarity": 0.4374,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "Ever since I got this update my speaker phone doesn\u2019t work during calls \ud83d\ude21 @115858",
+        "historical_brand_response": "@423739 That's definitely not what we want to hear, but we're glad to help. Did this happen after updating to the latest iOS 11.0.3?",
+        "historical_intent": "hardware_audio_connection_issue",
+        "historical_problem_family": "AUDIO",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'AUDIO' and core functional symptom (speaker or microphone audio failure)."
+      },
+      {
+        "case_id": "conv_AppleSupport_2625985",
+        "similarity_score": 0.2201,
+        "operational_similarity": 0.4231,
+        "match_tier": "DIRECT_PROBLEM_MATCH",
+        "historical_customer_message": "@AppleSupport my speaker phone isn\u2019t working",
+        "historical_brand_response": "@556276 We're here for you. Send us a DM, and we'll continue together there. https://t.co/GDrqU22YpT",
+        "historical_intent": "hardware_audio_connection_issue",
+        "historical_problem_family": "AUDIO",
+        "retrieval_explanation": "Direct problem match: shares operational problem family 'AUDIO' and core functional symptom (speaker or microphone audio failure)."
+      }
+    ],
+    "evidence_tiers": [
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH",
+      "DIRECT_PROBLEM_MATCH"
+    ],
+    "evidence_verdict": "STRONG_EVIDENCE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "DIRECT_STRONG_EVIDENCE",
+    "generated_response": "We understand you're noticing speaker or microphone audio failure on your device following the recent update. Check Settings > Sounds & Haptics to ensure volume sliders are up, and inspect your speaker/microphone grilles for debris. For Bluetooth or AirPods issues, go to Settings > Bluetooth, tap the 'i' next to your accessory, select 'Forget This Device', and pair again. DM us if sound still doesn't play so we can troubleshoot together: https://apple.co/DM",
+    "response_verification": "PASS",
+    "routing_decision": "AUTO_HANDLE",
+    "conversation_state": {
+      "stage": "RESOLVED"
+    },
+    "attempted_actions": [],
+    "resolution_status": "SAFE_AUTO_HANDLED",
+    "escalation_category": "NONE",
+    "escalation_reason": "",
+    "latency_ms": 71.58,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "AUTO_HANDLE",
+      "outcome": "SAFE_AUTO_HANDLED",
+      "summary": "Auto-handling authorized: Problem clearly understood, supported by corroborated historical evidence, and response verified grounded.",
+      "positive_factors": [
+        "\u2713 Problem identified: speaker or microphone audio failure (AUDIO)",
+        "\u2713 Decision gate passed (AUTO_HANDLE)",
+        "\u2713 Corroborated by 3 direct historical case(s)",
+        "\u2713 Response grounding verification passed (Score: 1.00)",
+        "\u2713 No hazardous or ungrounded actions detected"
+      ],
+      "negative_factors": [],
+      "recommended_human_actions": [],
+      "checklist": {
+        "problem_understood": true,
+        "gate_passed": true,
+        "evidence_authorized": true,
+        "response_grounded": true,
+        "no_unsafe_action": true
+      }
+    },
+    "end_to_end_outcome": "SAFE_AUTO_HANDLED"
+  },
+  {
+    "conversation_id": "ADVERSARIAL_05",
+    "turn_count": 1,
+    "customer_message": "asdfghjk!??!?!?!",
+    "problem_profile": "Understood problem for device: unspecified_device_issue.",
+    "candidate_intents": [
+      {
+        "intent": "unclear_needs_review",
+        "confidence": 0.9001,
+        "reasoning": "Heuristic pattern match score 2.00"
+      },
+      {
+        "intent": "general_device_support",
+        "confidence": 0.09,
+        "reasoning": "Heuristic pattern match score 0.20"
+      },
+      {
+        "intent": "account_access_issue",
+        "confidence": 0.0099,
+        "reasoning": "Taxonomy background candidate"
+      }
+    ],
+    "selected_problem": "unclear_needs_review",
+    "clarity_signals": {
+      "information_sufficient": false,
+      "problem_strength_valid": false,
+      "candidate_conflict_resolved": true,
+      "symptom_intent_agreed": false,
+      "multi_symptom_manageable": true,
+      "confidence_margin_valid": true,
+      "no_safety_veto": false
+    },
+    "ambiguity_decision": "UNCLEAR_INSUFFICIENT",
+    "retrieved_evidence": [],
+    "evidence_tiers": [],
+    "evidence_verdict": "INSUFFICIENT_EVIDENCE",
+    "conflict_status": "CLEAN",
+    "synthesis_result": "INSUFFICIENT_COMPOSITE_EVIDENCE",
+    "generated_response": null,
+    "response_verification": "PASS",
+    "routing_decision": "ESCALATE_TO_HUMAN",
+    "conversation_state": {
+      "stage": "ESCALATED"
+    },
+    "attempted_actions": [],
+    "resolution_status": "ESCALATED_AMBIGUOUS",
+    "escalation_category": "AMBIGUITY",
+    "escalation_reason": "Escalated to human review: Evidence verdict: INSUFFICIENT_EVIDENCE [Composite: INSUFFICIENT_COMPOSITE_EVIDENCE]. Issues: VETO: Insufficient operational information to auto-handle.; VETO: Primary problem is too weak or non-specific..",
+    "latency_ms": 68.4,
+    "errors": [],
+    "decision_explanation": {
+      "decision": "ESCALATE_TO_HUMAN",
+      "outcome": "ESCALATED_AMBIGUOUS",
+      "summary": "Escalated to human: Severe symptom underspecification or operational ambiguity detected.",
+      "positive_factors": [],
+      "negative_factors": [
+        "VETO: Insufficient operational information to auto-handle.",
+        "VETO: Primary problem is too weak or non-specific.",
+        "VETO: Symptom-intent contradiction (unspecified_device_issue vs unclear_needs_review).",
+        "Insufficient information: Customer message is too brief or lacks operational details to identify a concrete problem.",
+        "Weak primary problem: Primary symptom 'unspecified_device_issue' is non-specific or vague.",
+        "Symptom-intent contradiction: Extracted symptom 'unspecified_device_issue' does not support predicted intent 'unclear_needs_review'.",
+        "No historical support evidence cases were retrieved.",
+        "Composite evidence verdict: INSUFFICIENT_COMPOSITE_EVIDENCE. No historical cases retrieved for synthesis."
+      ],
+      "recommended_human_actions": [
+        "Review candidate hypotheses (unclear_needs_review, general_device_support) and select appropriate troubleshooting path."
+      ],
+      "checklist": {
+        "problem_understood": false,
+        "gate_passed": false,
+        "evidence_authorized": false,
+        "response_grounded": true,
+        "no_unsafe_action": true
+      }
+    },
+    "end_to_end_outcome": "ESCALATED_AMBIGUOUS"
+  }
+]

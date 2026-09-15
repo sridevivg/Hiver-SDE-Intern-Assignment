@@ -80,6 +80,16 @@ class Settings(BaseSettings):
     ollama_model: str = "llama3.2:latest"
 
     # -----------------------------------------------------------------------
+    # Runtime Intent Routing & HITL Escalation Configuration (Phase 6)
+    # -----------------------------------------------------------------------
+    auto_handle_confidence_threshold: float = 0.85
+    min_confidence_margin: float = 0.15
+    max_uncertainty_entropy: float = 0.65
+    top_k_predictions_count: int = 3
+    runtime_data_dir: str = "data/runtime"
+    runtime_escalations_log_file: str = "runtime_escalation_reviews.csv"
+
+    # -----------------------------------------------------------------------
     # Computed properties
     # -----------------------------------------------------------------------
 
@@ -124,6 +134,19 @@ class Settings(BaseSettings):
     def reports_path(self) -> Path:
         """Absolute path to the reports directory."""
         return self.artifacts_path / "reports"
+
+    @property
+    def runtime_data_path(self) -> Path:
+        """Absolute path to the runtime data directory."""
+        p = Path(self.runtime_data_dir)
+        if not p.is_absolute():
+            p = PROJECT_ROOT / p
+        return p
+
+    @property
+    def runtime_escalations_log_path(self) -> Path:
+        """Absolute path to the runtime escalation reviews CSV log file."""
+        return self.runtime_data_path / self.runtime_escalations_log_file
 
 
 # ---------------------------------------------------------------------------

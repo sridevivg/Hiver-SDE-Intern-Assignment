@@ -1,0 +1,286 @@
+{
+  "total_historical_cases": 80487,
+  "golden_conversations_excluded": 200,
+  "leakage_count": 0,
+  "family_breakdown": {
+    "POWER_BATTERY": {
+      "display_name": "Power & Battery",
+      "count": 4281,
+      "percentage": 5.32,
+      "example_patterns": [
+        "\\b(battery\\s*(?:drain|health|life|percentage|dies|dead|draining)|drains?\\s*fast|losing\\s*charge|overheating)\\b",
+        "\\b(battery\\s*status|maximum\\s*capacity|battery\\s*service)\\b"
+      ],
+      "sample_cases": [
+        "@AppleSupport any way to check overall battery health of my iPhone 7?",
+        "@AppleSupport Please. Let the people in charge of the updates to fix the battery issue. Last two iOS updates worsen the ",
+        "@AppleSupport IOS update is a total disaster / phone freezing constantly .... battery draining faster than before."
+      ]
+    },
+    "CHARGING": {
+      "display_name": "Charging & Power Input",
+      "count": 1025,
+      "percentage": 1.27,
+      "example_patterns": [
+        "\\b(won'?t\\s*charge|not\\s*charging|charges?\\s*slowly|unsupported\\s*accessory|lightning\\s*cable|charger|charging\\s*port)\\b",
+        "\\b(magsafe|wireless\\s*charging|plugged\\s*in\\s*not\\s*charging)\\b"
+      ],
+      "sample_cases": [
+        "So I got the iPhone 8 plus with a broke charger ? That\u2019s nice, @115858  I\u2019ll appreciate if y\u2019all give us better chargers",
+        "@AppleSupport y\u2019all need a new update my phones ties quicker then ever , I need a charger everywhere I gon",
+        "@AppleSupport is there any cable to connect my iPad pro to iPhone 6S?"
+      ]
+    },
+    "AUDIO": {
+      "display_name": "Audio & Sound",
+      "count": 1496,
+      "percentage": 1.86,
+      "example_patterns": [
+        "\\b(speaker|microphone|mic\\b|volume|sound|crackling|distortion|no\\s*sound|can'?t\\s*hear|audio\\s*(?:issue|problem|glitch|quality|cutting)|earpiece|headphones?|airpods?\\s*(?:sound|mic|audio))\\b",
+        "\\b(call\\s*volume|speakerphone|ringer|buzzing\\s*sound)\\b"
+      ],
+      "sample_cases": [
+        "@AppleSupport my iPhone 7 Plus doesn\u2019t work properly with 11.0.3 \ud83d\ude21\ud83d\ude21. The speaker doesn\u2019t work on calls, is non responsiv",
+        "@AppleSupport Bluetooth suddenly turns off automatically while streaming on wireless speaker on iPhone 8 plus. Happens s",
+        "So my iPhone is once again back in Headphone mode for absolutely no fucking reason. Thanks @115858."
+      ]
+    },
+    "DISPLAY": {
+      "display_name": "Display & Screen",
+      "count": 3137,
+      "percentage": 3.9,
+      "example_patterns": [
+        "\\b(screen|display|touch\\s*screen|digitizer|cracked\\s*screen|black\\s*screen|blank\\s*screen|flicker|flickering|lines\\s*on\\s*screen|unresponsive\\s*touch)\\b",
+        "\\b(screen\\s*(?:glitch|dim|burn|tint|frozen|freeze))\\b"
+      ],
+      "sample_cases": [
+        "@AppleSupport ios 11.0.3 tons of bugs on my iphone 5s, battery drains while charging, no clock or date on lock screen, v",
+        "@AppleSupport this screen freezing in the horizontal is absolutely unacceptable. Please see the MANY complaints on this.",
+        "Hi @AppleSupport why does the auto timed lock work on iPhone 8+ running 10.0.3   It's enabled to 30s, display never goes"
+      ]
+    },
+    "INPUT_KEYBOARD": {
+      "display_name": "Keyboard & Typing Input",
+      "count": 4796,
+      "percentage": 5.96,
+      "example_patterns": [
+        "\\b(keyboard|typing|autocorrect|autocorrection|predictive\\s*text|letter\\s*i\\b|capital\\s*i\\b|typing\\s*lag|keys?\\s*stuck|virtual\\s*keyboard)\\b",
+        "\\b(question\\s*mark\\s*(?:box|symbol)|weird\\s*symbol\\s*instead\\s*of\\s*i)\\b"
+      ],
+      "sample_cases": [
+        "FUCK YOU @115858 &amp; @123765! NOW I\ufe0f CAN\u2019T TWEET THE LETTER I\ufe0f?!",
+        "Dear @115858, \n\nWTF is going on with my keyboard and this \u201cI\ufe0f\u201d bull-ish \ud83d\ude21",
+        "@AppleSupport pushed 11.0.3 update. Battery drains 1% a minute when typing. WiFi issues, WhatsApp working funny, touch n"
+      ]
+    },
+    "CONNECTIVITY_WIFI": {
+      "display_name": "Wi-Fi Connectivity",
+      "count": 1661,
+      "percentage": 2.06,
+      "example_patterns": [
+        "\\b(wi-?fi|wireless\\s*network|wifi\\s*drops?|wifi\\s*keeps?\\s*disconnecting|can'?t\\s*connect\\s*to\\s*wi-?fi|wi-?fi\\s*turns?\\s*on|wi-?fi\\s*grayed?\\s*out|slow\\s*wi-?fi)\\b",
+        "\\b(control\\s*center\\s*wi-?fi|wifi\\s*toggle|no\\s*internet\\s*connection)\\b"
+      ],
+      "sample_cases": [
+        "@AppleSupport where is personal hotspot in iPhone 7? https://t.co/qh3l74Q2Sl",
+        "@AppleSupport enfia no cu essa atualiza\u00e7\u00e3o maldita que fica ligando o Wi-Fi sozinho",
+        "@115858 @AppleSupport Sigo sin ver los beneficios del nuevo IOS... bater\u00eda se descarga el doble, apps se cuelgan y wifi "
+      ]
+    },
+    "CONNECTIVITY_BLUETOOTH": {
+      "display_name": "Bluetooth Connectivity",
+      "count": 675,
+      "percentage": 0.84,
+      "example_patterns": [
+        "\\b(bluetooth|bt\\s*connection|bluetooth\\s*pairing|pair\\s*(?:with|device)|bluetooth\\s*drops?|carplay|won'?t\\s*pair)\\b",
+        "\\b(bluetooth\\s*(?:connection|audio|not\\s*connecting|issues?|turned\\s*on|toggle|device|disconnects?))\\b"
+      ],
+      "sample_cases": [
+        "@AppleSupport ios 11 ile beraber kamerada live fotolar kendili\u011finden a\u00e7\u0131l\u0131yor, u\u00e7ak modundan yeniden aktive etti\u011fimizde ",
+        "Hey @115858, it would be nice if my #iPhone would #reconnect to my #bluetooth devices when i reenable from the #controlc",
+        "@AppleSupport ... Is there a way that my Bluetooth can automatically stop turning itself on? As this is really starting "
+      ]
+    },
+    "NETWORK_CELLULAR": {
+      "display_name": "Cellular & Carrier Network",
+      "count": 1007,
+      "percentage": 1.25,
+      "example_patterns": [
+        "\\b(no\\s*service|searching\\s*for\\s*signal|cellular\\s*data|mobile\\s*data|dropped\\s*calls?|lte\\b|3g\\b|4g\\b|5g\\b|sim\\s*failure|invalid\\s*sim)\\b",
+        "\\b(group\\s*texts?|sms\\s*not\\s*sending|cannot\\s*make\\s*calls?|carrier\\s*settings)\\b"
+      ],
+      "sample_cases": [
+        "@AppleSupport my iPhone 7 isn't sending or receiving iMessages and I can't make or receive phone calls. Tried doing a re",
+        "@AppleSupport would you please bring back the old signal bar? The latest one looks like Android.",
+        "When you buy a new iPhone, get it home to set up, put the pin in to open the sim bit and a part of it breaks \ud83d\ude29 @AppleSup"
+      ]
+    },
+    "SOFTWARE_APP": {
+      "display_name": "Software & App Issues",
+      "count": 4984,
+      "percentage": 6.19,
+      "example_patterns": [
+        "\\b(app\\s*store|apps?\\s*(?:crashing|won'?t\\s*open|freezes|quits|bugged)|can'?t\\s*download\\s*apps?|update\\s*apps?)\\b",
+        "\\b(safari|apple\\s*music|podcast\\s*app|spotify\\s*on\\s*iphone|mail\\s*app|blank\\s*screen\\s*on\\s*safari|app\\s*closing)\\b"
+      ],
+      "sample_cases": [
+        "Wth @115858, I've been clicking \"download &amp; install\" for almost a week now but the update doesn't want to start down",
+        "@AppleSupport I can\u2019t update or download any apps... when I go to download it just does that flashing circle thing.",
+        "@AppleSupport Help pls - updated Podcasts app v3.0 (1175.223) &amp; now won\u2019t auto play next available ep. Can I change "
+      ]
+    },
+    "SYSTEM_UPDATE": {
+      "display_name": "System & OS Update",
+      "count": 19450,
+      "percentage": 24.17,
+      "example_patterns": [
+        "\\b(after\\s*(?:the\\s*)?update|since\\s*(?:the\\s*)?update|new\\s*update|ios\\s*11|ios11|high\\s*sierra|macos\\s*update|failed\\s*update)\\b",
+        "\\b(update\\s*(?:stuck|bricked|ruined|buggy|glitchy)|can'?t\\s*install\\s*update|verifying\\s*update)\\b"
+      ],
+      "sample_cases": [
+        "@115858 is buggy. My dock is gone on iOS 11 #Appleisdoomed https://t.co/l3tFt7DaPc",
+        "@AppleSupport after updating to iOS 11.0.3, my iPhone 7 will randomly freeze on any app/screen. The buttons won\u2019t even w",
+        "The new iPhone update is a giant dumpster fire that will ruin your phone. It updated while I was sleeping, I didn\u2019t ask "
+      ]
+    },
+    "CRASH_FREEZE": {
+      "display_name": "Crashes, Freezing & Reboot",
+      "count": 1790,
+      "percentage": 2.22,
+      "example_patterns": [
+        "\\b(freeze|freezing|frozen|spinning\\s*beach\\s*ball|beach\\s*ball|boot\\s*loop|restarts?\\s*randomly|stuck\\s*on\\s*apple\\s*logo)\\b",
+        "\\b(device\\s*bricked|force\\s*restart|system\\s*crash|keeps?\\s*crashing|black\\s*screen\\s*spinning\\s*wheel)\\b"
+      ],
+      "sample_cases": [
+        "@AppleSupport updated my phone the other day and it keeps freezing so I have to restart it. Then it\u2019s really slow. Sort ",
+        "@AppleSupport @115858 when is there gonna be an update to fix my phone? Apps freeze every 50 seconds, apps won\u2019t downloa",
+        "@AppleSupport my iPhone got stuck while restoring it via itunes could you please help as your web services is down?"
+      ]
+    },
+    "PERFORMANCE": {
+      "display_name": "Performance & Responsiveness",
+      "count": 590,
+      "percentage": 0.73,
+      "example_patterns": [
+        "\\b(phone\\s*slow|device\\s*slow|lagging|extremely\\s*laggy|so\\s*slow|sluggish|system\\s*delay|delayed\\s*response)\\b",
+        "\\b(takes\\s*forever\\s*to\\s*load|performance\\s*dropped|laggy\\s*interface)\\b"
+      ],
+      "sample_cases": [
+        "@115858 this new phone software is making my phone slow and glitchy!  Not impressed!",
+        "What is this @AppleSupport? since I upgraded with this $hi&amp;*y #macOS my instant click before is now lagging to almos",
+        "@115858 why is my phone lagging after iOS update."
+      ]
+    },
+    "ACCOUNT_ACCESS": {
+      "display_name": "Account, Apple ID & Authentication",
+      "count": 1590,
+      "percentage": 1.98,
+      "example_patterns": [
+        "\\b(apple\\s*id|password|passcode|locked\\s*account|disabled\\s*account|sign\\s*in|login|log\\s*in|two-?factor|2fa|verification\\s*code)\\b",
+        "\\b(iforgot|reset\\s*password|security\\s*questions|account\\s*recovery)\\b"
+      ],
+      "sample_cases": [
+        "@AppleSupport Dear iphone. I would like to help my old friend. She lost her phone but when she found it. The phone was l",
+        "@AppleSupport hello, I just got an email saying that my apple ID has been disabled. Can you confirm that email? I'm afra",
+        "@AppleSupport I\u2019m getting the following error when trying to access my Apple ID - iPhone 6s plus (11.0.3).  HELP!! https"
+      ]
+    },
+    "BILLING_PAYMENT": {
+      "display_name": "Billing, Subscriptions & Purchases",
+      "count": 1922,
+      "percentage": 2.39,
+      "example_patterns": [
+        "\\b(charged|charge|billed|billing|refund|subscription|cancel\\s*subscription|itunes\\s*store\\s*bill|reportaproblem|credit\\s*card)\\b",
+        "\\b(unauthorized\\s*purchase|receipt|accidental\\s*purchase|payment\\s*method)\\b"
+      ],
+      "sample_cases": [
+        "Why is my new @115858 tv 4K endlessly \u201cloading\u201d  when selecting the 4K hdr section of iTunes?rebooted from settings many",
+        "My #iphone6 cannot stay charged since I updated it. Is this a way to force me to upgrade? @6126 @115858 @AppleSupport",
+        "@AppleSupport @AppleSupport I have to charge the battery 2 times a day which is ending very quickly"
+      ]
+    },
+    "SYNC_BACKUP": {
+      "display_name": "iCloud, Sync & Backup",
+      "count": 1826,
+      "percentage": 2.27,
+      "example_patterns": [
+        "\\b(icloud|sync|syncing|synced|photos\\s*not\\s*syncing|time\\s*machine|backup\\s*failed|restore\\s*from\\s*backup)\\b",
+        "\\b(cloud\\s*backup|icloud\\s*storage|sync\\s*between\\s*(?:mac|iphone)|not\\s*backing\\s*up)\\b"
+      ],
+      "sample_cases": [
+        "Sull\u2019iPhone avevo pi\u00f9 di 8gb di \u201caltro\u201d e l\u2019unico modo per eliminarlo \u00e8 backup+ripristino. @115858 vogliamo fare qualcos",
+        "@AppleSupport if I restore a previous itunes backup onto a new device, will all my apps be automatically logged in?",
+        "@AppleSupport whenever I want to share a photo from my iCloud library or even copy, I get an error saying it cannot be d"
+      ]
+    },
+    "STORAGE": {
+      "display_name": "Device & Cloud Storage",
+      "count": 352,
+      "percentage": 0.44,
+      "example_patterns": [
+        "\\b(storage\\s*almost\\s*full|storage\\s*full|not\\s*enough\\s*storage|system\\s*storage|other\\s*storage|free\\s*up\\s*space|disk\\s*space)\\b",
+        "\\b(insufficient\\s*storage|manage\\s*storage)\\b"
+      ],
+      "sample_cases": [
+        "@AppleSupport this is a screenshot from iMessage. I am missing the space bar. Are you aware of this problem? Should I op",
+        "@AppleSupport \niphone 6s too full !!\nthe apple stays on for only 5 sec \ntrying to empty it  but I switched it off and th",
+        "wtf..... how is it almost full?! @115858 https://t.co/EtGI3x6vKW"
+      ]
+    },
+    "CAMERA_MEDIA": {
+      "display_name": "Camera, Photos & Recording",
+      "count": 875,
+      "percentage": 1.09,
+      "example_patterns": [
+        "\\b(camera|photos?\\s*blurry|black\\s*camera|camera\\s*not\\s*working|flash\\s*not\\s*working|face\\s*id|face\\s*recognition|screen\\s*recording)\\b",
+        "\\b(front\\s*camera|rear\\s*camera|shutter|take\\s*photos?)\\b"
+      ],
+      "sample_cases": [
+        "@AppleSupport there is a bug in the new software update, where when on the camera app, I can\u2019t delete photos whilst on t",
+        "I have a great (probably my best) video edited and sorted... For two months! There\u2019s an error in iMovie that won\u2019t let m",
+        "I decided to bite the bullet and try using Apple Photo again. It's collapsing trying to import 15 years of photos. @Appl"
+      ]
+    },
+    "ACCESSORY_PERIPHERAL": {
+      "display_name": "Accessories & Peripherals",
+      "count": 1052,
+      "percentage": 1.31,
+      "example_patterns": [
+        "\\b(apple\\s*watch|iwatch|apple\\s*pencil|airtags?|dongle|adapter|external\\s*monitor|headphone\\s*jack\\s*adapter)\\b",
+        "\\b(watch\\s*sync|watchos|accessory\\s*not\\s*supported)\\b"
+      ],
+      "sample_cases": [
+        "@AppleSupport Hi, Will 3rd party Bluetooth Ear Phones / Head Phones Works with Apple Watch \u231a\ufe0f?",
+        "The adapter stopped working. I know it\u2019s not the earbuds, they work just fine with my iPad. All I hear is static using t",
+        "@AppleSupport is there a way to see in my #applewatch my 5K, 10K, half marathon time after running a 25K race? I cannot "
+      ]
+    },
+    "NOTIFICATION_ALERTS": {
+      "display_name": "Notifications & Alerts",
+      "count": 776,
+      "percentage": 0.96,
+      "example_patterns": [
+        "\\b(notifications?|alerts?|no\\s*notification\\s*sound|badge\\s*count|do\\s*not\\s*disturb|banner\\s*notifications?)\\b",
+        "\\b(missed\\s*notifications?|notification\\s*center)\\b"
+      ],
+      "sample_cases": [
+        "Who else facing #Notifications #Problem @4305 for #iPhone #iOS @AppleSupport New Things won\u2019t show up until you open the",
+        "Thanks @115858 for charging my account without notification and sending me into a full blown panic attack because where ",
+        "Experienced the worst #iOS bug ever last night, an app displayed two dialog alerts for new permissions, I locked the pho"
+      ]
+    },
+    "GENERAL_DEVICE_FUNCTIONALITY": {
+      "display_name": "General Device Functionality",
+      "count": 27202,
+      "percentage": 33.8,
+      "example_patterns": [
+        "\\b(help\\s*with\\s*(?:my\\s*)?device|phone\\s*issue|general\\s*question|how\\s*do\\s*i|settings)\\b"
+      ],
+      "sample_cases": [
+        "@AppleSupport explain yourself. https://t.co/356zUHKRCF",
+        "CANT STAND THOSE DAMN SQUARES, @115858 . Y\u2019all need to fix that shit.",
+        "I\u2019m so tired of these question mark boxes on my TL. Get your shit together  @115858 @AppleSupport"
+      ]
+    }
+  }
+}

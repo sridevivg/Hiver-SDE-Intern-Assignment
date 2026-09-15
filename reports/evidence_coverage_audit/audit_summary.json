@@ -1,0 +1,10 @@
+{
+  "phase": "10.1",
+  "title": "Evidence Coverage Audit",
+  "total_evaluated_records": 77,
+  "evidence_limited_count": 43,
+  "audit_corpus_size": 5000,
+  "golden_immutability": "PASS",
+  "pre_eval_sha256": "1d3e9b3b8bdef3750437e59b17ab7c27167fd1548c2bb29de984151296c5b45a",
+  "post_eval_sha256": "1d3e9b3b8bdef3750437e59b17ab7c27167fd1548c2bb29de984151296c5b45a"
+}

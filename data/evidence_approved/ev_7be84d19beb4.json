@@ -1,0 +1,19 @@
+{
+  "evidence_id": "ev_7be84d19beb4",
+  "version": "1.0.0",
+  "originating_resolution_id": "res_5a66a50213a2",
+  "source_type": "HUMAN_VALIDATED_EVIDENCE",
+  "provenance": "reviewed_human_resolution",
+  "problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+  "primary_intent": "general_device_support",
+  "customer_problem_summary": "Apple Watch Ultra Action button does not open workout app.",
+  "brand_guidance": "Open Settings on Apple Watch Ultra, tap Action Button > Action, and assign Workout.",
+  "operational_actions": [
+    "reassign_action_button"
+  ],
+  "evidence_quality_score": 0.95,
+  "created_at": "2026-09-15T03:52:12.916326",
+  "approved_at": "2026-09-15T03:52:12.919116",
+  "promoted_at": "2026-09-15T03:52:12.919486",
+  "reviewer_id": "qa_lead"
+}

@@ -1,0 +1,2067 @@
+[
+  {
+    "golden_id_a": "gold_085",
+    "golden_id_b": "gold_106",
+    "message_a": "why does WiFi turn on by itself when I turn it off manually it\u2019s annoying @AppleSupport",
+    "message_b": "@AppleSupport i can\u2019t turn on my WiFi on my iPhone 7",
+    "human_label_a": "general_device_support",
+    "human_label_b": "hardware_audio_connection_issue",
+    "similarity_score": 0.2551,
+    "priority": "HIGH",
+    "shared_semantic_signals": [
+      "turn on",
+      "turn",
+      "wifi"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'hardware_audio_connection_issue'. Shared lexical cues ('turn on, turn, wifi') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_025",
+    "golden_id_b": "gold_180",
+    "message_a": "Espero que con la actualizacion de correcci\u00f3n de errores y dem\u00e1s mi iPhone mejore... por que el iOs 11 va de pena @115858",
+    "message_b": ".@115858 battery and velocity of my iPhone 6 really sucks / bater\u00eda y velocidad de mi iPhone 6 con el iOS 11 realmente apestan #iOS11 #fail",
+    "human_label_a": "software_update_problem",
+    "human_label_b": "battery_power_issue",
+    "similarity_score": 0.2337,
+    "priority": "HIGH",
+    "shared_semantic_signals": [
+      "mi iphone",
+      "el ios",
+      "ios 11",
+      "iphone",
+      "con"
+    ],
+    "possible_ambiguity_explanation": "Post-update symptom overlap. Shared terms ('mi iphone, el ios, ios 11, iphone, con') reflect customer attributing battery drain to an OS update. One label captures the root cause (update) while the other captures the symptom (battery)."
+  },
+  {
+    "golden_id_a": "gold_106",
+    "golden_id_b": "gold_109",
+    "message_a": "@AppleSupport i can\u2019t turn on my WiFi on my iPhone 7",
+    "message_b": "Can\u2019t turn off WiFi from control center? New @115858 iOS is garbage. Who knows how to roll back to the good one?",
+    "human_label_a": "hardware_audio_connection_issue",
+    "human_label_b": "software_update_problem",
+    "similarity_score": 0.2173,
+    "priority": "HIGH",
+    "shared_semantic_signals": [
+      "can turn",
+      "turn",
+      "wifi"
+    ],
+    "possible_ambiguity_explanation": "Causality overlap where an audio or connectivity issue arose following an iOS update. Shared signals ('can turn, turn, wifi') suggest one annotator focused on update causality while the other focused on the presenting hardware/audio symptom."
+  },
+  {
+    "golden_id_a": "gold_004",
+    "golden_id_b": "gold_124",
+    "message_a": "@AppleSupport my phone slow as hell after this update cmon now \ud83e\udd26\ud83c\udffb\u200d\u2642\ufe0f lagging like it\u2019s a iPhone 3",
+    "message_b": "What is up @115858 @AppleSupport with the letter I looking like this \ud83d\udc49\ud83c\udffc I\ufe0f  on my IPhone",
+    "human_label_a": "software_update_problem",
+    "human_label_b": "keyboard_typing_issue",
+    "similarity_score": 0.2073,
+    "priority": "HIGH",
+    "shared_semantic_signals": [
+      "iphone",
+      "like"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'software_update_problem' and 'keyboard_typing_issue'. Shared vocabulary ('iphone, like') with cosine similarity 0.21 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_046",
+    "golden_id_b": "gold_102",
+    "message_a": "@115858 @AppleSupport the music app is not producing sound. The other apps produce sound. Can play music but no sound comes out. Help. Thx.",
+    "message_b": "Can @115948 or @115858 please fix the music app ...ever since the update .. I can\u2019t pause music without going to app\ud83d\ude44 #sos",
+    "human_label_a": "hardware_audio_connection_issue",
+    "human_label_b": "software_update_problem",
+    "similarity_score": 0.1914,
+    "priority": "HIGH",
+    "shared_semantic_signals": [
+      "the music",
+      "music app",
+      "music",
+      "app"
+    ],
+    "possible_ambiguity_explanation": "Causality overlap where an audio or connectivity issue arose following an iOS update. Shared signals ('the music, music app, music, app') suggest one annotator focused on update causality while the other focused on the presenting hardware/audio symptom."
+  },
+  {
+    "golden_id_a": "gold_067",
+    "golden_id_b": "gold_128",
+    "message_a": "Hey @115858 I\ufe0f need you to fix this.",
+    "message_b": "hey @115858 can u fix IOS",
+    "human_label_a": "unclear_needs_review",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.1871,
+    "priority": "HIGH",
+    "shared_semantic_signals": [
+      "fix"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'unclear_needs_review'. Shared lexical cues ('fix') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_014",
+    "golden_id_b": "gold_064",
+    "message_a": "Restored this fucking phone &amp; I STILL can\u2019t type to group texts with droid users \ud83d\ude11\ud83d\ude11 wtf @115858",
+    "message_b": "@AppleSupport please fix this letter \u201ceye\u201d problem!! I\ufe0f paid all this money for this phone &amp; I\u2019m still seeing blocks!",
+    "human_label_a": "general_device_support",
+    "human_label_b": "keyboard_typing_issue",
+    "similarity_score": 0.1811,
+    "priority": "HIGH",
+    "shared_semantic_signals": [
+      "amp still",
+      "phone amp",
+      "still",
+      "phone",
+      "amp"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'keyboard_typing_issue'. Shared lexical cues ('amp still, phone amp, still, phone, amp') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_067",
+    "golden_id_b": "gold_181",
+    "message_a": "Hey @115858 I\ufe0f need you to fix this.",
+    "message_b": ". @115858 my laptop not letting me use my keyboard or mouse.... y\u2019all need to help me out",
+    "human_label_a": "unclear_needs_review",
+    "human_label_b": "keyboard_typing_issue",
+    "similarity_score": 0.1614,
+    "priority": "HIGH",
+    "shared_semantic_signals": [
+      "need"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'unclear_needs_review' and 'keyboard_typing_issue'. Shared vocabulary ('need') with cosine similarity 0.16 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_040",
+    "golden_id_b": "gold_128",
+    "message_a": "Dear @115858 \nPlease fix all your fucking issues with iOS 11. I\u2019m sick and tired of all these bugs. \ud83d\ude43",
+    "message_b": "hey @115858 can u fix IOS",
+    "human_label_a": "software_update_problem",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.1545,
+    "priority": "HIGH",
+    "shared_semantic_signals": [
+      "ios",
+      "fix"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'software_update_problem'. Shared lexical cues ('ios, fix') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_040",
+    "golden_id_b": "gold_169",
+    "message_a": "Dear @115858 \nPlease fix all your fucking issues with iOS 11. I\u2019m sick and tired of all these bugs. \ud83d\ude43",
+    "message_b": "@115858 fix this fucking question mark exclamation shit before I\ufe0f get a tracfone",
+    "human_label_a": "software_update_problem",
+    "human_label_b": "keyboard_typing_issue",
+    "similarity_score": 0.1471,
+    "priority": "HIGH",
+    "shared_semantic_signals": [
+      "fucking",
+      "fix"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'software_update_problem' and 'keyboard_typing_issue'. Shared vocabulary ('fucking, fix') with cosine similarity 0.15 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_052",
+    "golden_id_b": "gold_198",
+    "message_a": "@AppleSupport \ud83d\udc4b, What is the best antivirus for MacBook Pro ?",
+    "message_b": "@AppleSupport Can I use my wired  printer  having USB on my MacBook pro which has  has c type?..Pls suggest if USB hub and c-type to USB female will work for it?",
+    "human_label_a": "general_device_support",
+    "human_label_b": "hardware_audio_connection_issue",
+    "similarity_score": 0.1407,
+    "priority": "HIGH",
+    "shared_semantic_signals": [
+      "macbook pro",
+      "macbook",
+      "pro"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'hardware_audio_connection_issue'. Shared lexical cues ('macbook pro, macbook, pro') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_089",
+    "golden_id_b": "gold_106",
+    "message_a": "@115858 why the fuck is my wifi on AGAIN ?",
+    "message_b": "@AppleSupport i can\u2019t turn on my WiFi on my iPhone 7",
+    "human_label_a": "general_device_support",
+    "human_label_b": "hardware_audio_connection_issue",
+    "similarity_score": 0.1399,
+    "priority": "MEDIUM",
+    "shared_semantic_signals": [
+      "wifi on",
+      "my wifi",
+      "wifi"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'hardware_audio_connection_issue'. Shared lexical cues ('wifi on, my wifi, wifi') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_093",
+    "golden_id_b": "gold_190",
+    "message_a": "Out of the blue my 2016 MacBook won\u2019t turn on and this is really an unexpected roadblock @115858",
+    "message_b": "@115858 there\u2019s been a problem with my sisters iPhone 7 like it won\u2019t turn on or nothing even though it\u2019s  good charged, has not been dropped",
+    "human_label_a": "general_device_support",
+    "human_label_b": "battery_power_issue",
+    "similarity_score": 0.1222,
+    "priority": "MEDIUM",
+    "shared_semantic_signals": [
+      "won turn",
+      "turn on",
+      "turn",
+      "won"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'battery_power_issue'. Shared lexical cues ('won turn, turn on, turn, won') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_082",
+    "golden_id_b": "gold_135",
+    "message_a": "@AppleSupport ever since the new update my i7 has been EXTREMELY laggy, when I type the keyboard lags and opening or switching apps, everything lags. Please fix this in a new patch. \nI\u2019m also seeing the question mark box on twitter.",
+    "message_b": "@AppleSupport \ud83d\udde3I am tired of seeing boxes ,with a question mark in the middle , where words are supposed to be. Fix this \ud83d\udca9 NOW !!",
+    "human_label_a": "software_update_problem",
+    "human_label_b": "keyboard_typing_issue",
+    "similarity_score": 0.1202,
+    "priority": "MEDIUM",
+    "shared_semantic_signals": [
+      "question mark",
+      "fix this",
+      "question",
+      "seeing",
+      "mark"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'software_update_problem' and 'keyboard_typing_issue'. Shared vocabulary ('question mark, fix this, question, seeing, mark') with cosine similarity 0.12 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_032",
+    "golden_id_b": "gold_074",
+    "message_a": "@115858 what are you doing to the letter I pls help",
+    "message_b": "@AppleSupport laptop keeps shutting down during startup, tried a bunch of resets but nothing's working PLS HELP.",
+    "human_label_a": "keyboard_typing_issue",
+    "human_label_b": "battery_power_issue",
+    "similarity_score": 0.1136,
+    "priority": "MEDIUM",
+    "shared_semantic_signals": [
+      "pls help",
+      "pls"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'keyboard_typing_issue' and 'battery_power_issue'. Shared vocabulary ('pls help, pls') with cosine similarity 0.11 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_106",
+    "golden_id_b": "gold_190",
+    "message_a": "@AppleSupport i can\u2019t turn on my WiFi on my iPhone 7",
+    "message_b": "@115858 there\u2019s been a problem with my sisters iPhone 7 like it won\u2019t turn on or nothing even though it\u2019s  good charged, has not been dropped",
+    "human_label_a": "hardware_audio_connection_issue",
+    "human_label_b": "battery_power_issue",
+    "similarity_score": 0.1119,
+    "priority": "MEDIUM",
+    "shared_semantic_signals": [
+      "turn on",
+      "iphone",
+      "turn"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'hardware_audio_connection_issue' and 'battery_power_issue'. Shared vocabulary ('turn on, iphone, turn') with cosine similarity 0.11 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_082",
+    "golden_id_b": "gold_169",
+    "message_a": "@AppleSupport ever since the new update my i7 has been EXTREMELY laggy, when I type the keyboard lags and opening or switching apps, everything lags. Please fix this in a new patch. \nI\u2019m also seeing the question mark box on twitter.",
+    "message_b": "@115858 fix this fucking question mark exclamation shit before I\ufe0f get a tracfone",
+    "human_label_a": "software_update_problem",
+    "human_label_b": "keyboard_typing_issue",
+    "similarity_score": 0.1107,
+    "priority": "MEDIUM",
+    "shared_semantic_signals": [
+      "question mark",
+      "fix this",
+      "question",
+      "mark",
+      "fix"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'software_update_problem' and 'keyboard_typing_issue'. Shared vocabulary ('question mark, fix this, question, mark, fix') with cosine similarity 0.11 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_075",
+    "golden_id_b": "gold_102",
+    "message_a": "@AppleSupport my app store\u2019s not working :(",
+    "message_b": "Can @115948 or @115858 please fix the music app ...ever since the update .. I can\u2019t pause music without going to app\ud83d\ude44 #sos",
+    "human_label_a": "general_device_support",
+    "human_label_b": "software_update_problem",
+    "similarity_score": 0.1089,
+    "priority": "MEDIUM",
+    "shared_semantic_signals": [
+      "app"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'software_update_problem'. Shared lexical cues ('app') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_106",
+    "golden_id_b": "gold_117",
+    "message_a": "@AppleSupport i can\u2019t turn on my WiFi on my iPhone 7",
+    "message_b": "If I could turn auto brightness off and also not have my Bluetooth automatically turn on everytime I start my car that would be nice @115858",
+    "human_label_a": "hardware_audio_connection_issue",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.1067,
+    "priority": "MEDIUM",
+    "shared_semantic_signals": [
+      "turn on",
+      "turn"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'hardware_audio_connection_issue'. Shared lexical cues ('turn on, turn') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_137",
+    "golden_id_b": "gold_184",
+    "message_a": "Ok so face recognition isn't always working AND.... maybe something going on with the display.  @115858 here I come !",
+    "message_b": "So, @AppleSupport just isn\u2019t going to fix this \u201cI\ufe0f\u201d glitch, huh?",
+    "human_label_a": "general_device_support",
+    "human_label_b": "keyboard_typing_issue",
+    "similarity_score": 0.1067,
+    "priority": "MEDIUM",
+    "shared_semantic_signals": [
+      "going",
+      "isn"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'keyboard_typing_issue'. Shared lexical cues ('going, isn') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_040",
+    "golden_id_b": "gold_125",
+    "message_a": "Dear @115858 \nPlease fix all your fucking issues with iOS 11. I\u2019m sick and tired of all these bugs. \ud83d\ude43",
+    "message_b": "Dear @115858 Please fix the podcast app. I miss knowing which archived episodes I haven't listened to and when the home screen display was accurate and functioning.",
+    "human_label_a": "software_update_problem",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.1058,
+    "priority": "MEDIUM",
+    "shared_semantic_signals": [
+      "dear please",
+      "please fix",
+      "dear",
+      "fix"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'software_update_problem'. Shared lexical cues ('dear please, please fix, dear, fix') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_066",
+    "golden_id_b": "gold_068",
+    "message_a": "is anyone else\u2019s shit doing this tooo????? https://t.co/AFkraDlPBP",
+    "message_b": "Screen recording is actually useless does anyone have problems with it? @AppleSupport",
+    "human_label_a": "unclear_needs_review",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.1046,
+    "priority": "MEDIUM",
+    "shared_semantic_signals": [
+      "anyone"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'unclear_needs_review'. Shared lexical cues ('anyone') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_085",
+    "golden_id_b": "gold_109",
+    "message_a": "why does WiFi turn on by itself when I turn it off manually it\u2019s annoying @AppleSupport",
+    "message_b": "Can\u2019t turn off WiFi from control center? New @115858 iOS is garbage. Who knows how to roll back to the good one?",
+    "human_label_a": "general_device_support",
+    "human_label_b": "software_update_problem",
+    "similarity_score": 0.1002,
+    "priority": "MEDIUM",
+    "shared_semantic_signals": [
+      "turn",
+      "wifi"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'software_update_problem'. Shared lexical cues ('turn, wifi') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_085",
+    "golden_id_b": "gold_061",
+    "message_a": "why does WiFi turn on by itself when I turn it off manually it\u2019s annoying @AppleSupport",
+    "message_b": "@AppleSupport I don\u2019t want to have to manually lower the volume",
+    "human_label_a": "general_device_support",
+    "human_label_b": "hardware_audio_connection_issue",
+    "similarity_score": 0.0948,
+    "priority": "MEDIUM",
+    "shared_semantic_signals": [
+      "manually"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'hardware_audio_connection_issue'. Shared lexical cues ('manually') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_124",
+    "golden_id_b": "gold_190",
+    "message_a": "What is up @115858 @AppleSupport with the letter I looking like this \ud83d\udc49\ud83c\udffc I\ufe0f  on my IPhone",
+    "message_b": "@115858 there\u2019s been a problem with my sisters iPhone 7 like it won\u2019t turn on or nothing even though it\u2019s  good charged, has not been dropped",
+    "human_label_a": "keyboard_typing_issue",
+    "human_label_b": "battery_power_issue",
+    "similarity_score": 0.093,
+    "priority": "MEDIUM",
+    "shared_semantic_signals": [
+      "iphone",
+      "like"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'keyboard_typing_issue' and 'battery_power_issue'. Shared vocabulary ('iphone, like') with cosine similarity 0.09 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_003",
+    "golden_id_b": "gold_052",
+    "message_a": "@AppleSupport it works on my phone but not my MacBook",
+    "message_b": "@AppleSupport \ud83d\udc4b, What is the best antivirus for MacBook Pro ?",
+    "human_label_a": "unclear_needs_review",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.0927,
+    "priority": "MEDIUM",
+    "shared_semantic_signals": [
+      "macbook"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'unclear_needs_review'. Shared lexical cues ('macbook') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_106",
+    "golden_id_b": "gold_124",
+    "message_a": "@AppleSupport i can\u2019t turn on my WiFi on my iPhone 7",
+    "message_b": "What is up @115858 @AppleSupport with the letter I looking like this \ud83d\udc49\ud83c\udffc I\ufe0f  on my IPhone",
+    "human_label_a": "hardware_audio_connection_issue",
+    "human_label_b": "keyboard_typing_issue",
+    "similarity_score": 0.0925,
+    "priority": "MEDIUM",
+    "shared_semantic_signals": [
+      "my iphone",
+      "iphone"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'hardware_audio_connection_issue' and 'keyboard_typing_issue'. Shared vocabulary ('my iphone, iphone') with cosine similarity 0.09 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_084",
+    "golden_id_b": "gold_103",
+    "message_a": "Formated and reinstalled MacOS High Sierra by Genius Bar member at Apple Shop but still problem of random key stopped working remains. It's time for Apple to acknowledge issue @AppleSupport even Google search shows many r facing same issue. No solution yet!",
+    "message_b": "@AppleSupport so my iPhone crashes touch seems to stop working altho I can access wifi menu etc Ask apple the issue they tell me my phone screen needs replaced - get new phone and same issue happens is this a problem with iOS or the 8?",
+    "human_label_a": "keyboard_typing_issue",
+    "human_label_b": "display_touch_issue",
+    "similarity_score": 0.0919,
+    "priority": "MEDIUM",
+    "shared_semantic_signals": [
+      "same issue",
+      "working",
+      "problem",
+      "apple",
+      "issue"
+    ],
+    "possible_ambiguity_explanation": "Input interface overlap between display/touch behavior and keyboard typing issues. Shared context ('same issue, working, problem, apple, issue') indicates customer may describe on-screen typing unresponsiveness or visual character rendering that spans both modalities."
+  },
+  {
+    "golden_id_a": "gold_184",
+    "golden_id_b": "gold_177",
+    "message_a": "So, @AppleSupport just isn\u2019t going to fix this \u201cI\ufe0f\u201d glitch, huh?",
+    "message_b": "My IPhone glitch is that it won\u2019t stay connected to any WiFi. @AppleSupport ?",
+    "human_label_a": "keyboard_typing_issue",
+    "human_label_b": "hardware_audio_connection_issue",
+    "similarity_score": 0.0909,
+    "priority": "MEDIUM",
+    "shared_semantic_signals": [
+      "glitch"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'keyboard_typing_issue' and 'hardware_audio_connection_issue'. Shared vocabulary ('glitch') with cosine similarity 0.09 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_154",
+    "golden_id_b": "gold_004",
+    "message_a": "I\u2019m so happy the #iPhoneX came out. Now my Fossil of a phone #iPhone7 can start working at an incredibly slow pace and shut off randomly. @115858 at its finest.",
+    "message_b": "@AppleSupport my phone slow as hell after this update cmon now \ud83e\udd26\ud83c\udffb\u200d\u2642\ufe0f lagging like it\u2019s a iPhone 3",
+    "human_label_a": "battery_power_issue",
+    "human_label_b": "software_update_problem",
+    "similarity_score": 0.0907,
+    "priority": "MEDIUM",
+    "shared_semantic_signals": [
+      "phone",
+      "slow",
+      "now"
+    ],
+    "possible_ambiguity_explanation": "Post-update symptom overlap. Shared terms ('phone, slow, now') reflect customer attributing battery drain to an OS update. One label captures the root cause (update) while the other captures the symptom (battery)."
+  },
+  {
+    "golden_id_a": "gold_031",
+    "golden_id_b": "gold_128",
+    "message_a": "@AppleSupport @115858 iOS 11 is a glitched out mess. Not the quality I expect from Apple.",
+    "message_b": "hey @115858 can u fix IOS",
+    "human_label_a": "software_update_problem",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.09,
+    "priority": "MEDIUM",
+    "shared_semantic_signals": [
+      "ios"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'software_update_problem'. Shared lexical cues ('ios') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_184",
+    "golden_id_b": "gold_128",
+    "message_a": "So, @AppleSupport just isn\u2019t going to fix this \u201cI\ufe0f\u201d glitch, huh?",
+    "message_b": "hey @115858 can u fix IOS",
+    "human_label_a": "keyboard_typing_issue",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.0895,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "fix"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'keyboard_typing_issue'. Shared lexical cues ('fix') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_035",
+    "golden_id_b": "gold_004",
+    "message_a": "Fix this update @AppleSupport @115858 why can\u2019t I\ufe0f type the letter \u201cI\ufe0f\u201d why the hell are these special characters in my predictive text?!?",
+    "message_b": "@AppleSupport my phone slow as hell after this update cmon now \ud83e\udd26\ud83c\udffb\u200d\u2642\ufe0f lagging like it\u2019s a iPhone 3",
+    "human_label_a": "keyboard_typing_issue",
+    "human_label_b": "software_update_problem",
+    "similarity_score": 0.0885,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "this update",
+      "update",
+      "hell"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'keyboard_typing_issue' and 'software_update_problem'. Shared vocabulary ('this update, update, hell') with cosine similarity 0.09 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_003",
+    "golden_id_b": "gold_119",
+    "message_a": "@AppleSupport it works on my phone but not my MacBook",
+    "message_b": "#Siri. Hate new voice seems to works less well. Sounds like a teenager. @115858 @AppleSupport   Options?  Multiple selection.",
+    "human_label_a": "unclear_needs_review",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.0871,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "works"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'unclear_needs_review'. Shared lexical cues ('works') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_031",
+    "golden_id_b": "gold_180",
+    "message_a": "@AppleSupport @115858 iOS 11 is a glitched out mess. Not the quality I expect from Apple.",
+    "message_b": ".@115858 battery and velocity of my iPhone 6 really sucks / bater\u00eda y velocidad de mi iPhone 6 con el iOS 11 realmente apestan #iOS11 #fail",
+    "human_label_a": "software_update_problem",
+    "human_label_b": "battery_power_issue",
+    "similarity_score": 0.0871,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "ios 11",
+      "ios"
+    ],
+    "possible_ambiguity_explanation": "Post-update symptom overlap. Shared terms ('ios 11, ios') reflect customer attributing battery drain to an OS update. One label captures the root cause (update) while the other captures the symptom (battery)."
+  },
+  {
+    "golden_id_a": "gold_063",
+    "golden_id_b": "gold_102",
+    "message_a": "@AppleSupport App Store not working for me either",
+    "message_b": "Can @115948 or @115858 please fix the music app ...ever since the update .. I can\u2019t pause music without going to app\ud83d\ude44 #sos",
+    "human_label_a": "general_device_support",
+    "human_label_b": "software_update_problem",
+    "similarity_score": 0.0865,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "app"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'software_update_problem'. Shared lexical cues ('app') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_032",
+    "golden_id_b": "gold_198",
+    "message_a": "@115858 what are you doing to the letter I pls help",
+    "message_b": "@AppleSupport Can I use my wired  printer  having USB on my MacBook pro which has  has c type?..Pls suggest if USB hub and c-type to USB female will work for it?",
+    "human_label_a": "keyboard_typing_issue",
+    "human_label_b": "hardware_audio_connection_issue",
+    "similarity_score": 0.0855,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "pls"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'keyboard_typing_issue' and 'hardware_audio_connection_issue'. Shared vocabulary ('pls') with cosine similarity 0.09 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_067",
+    "golden_id_b": "gold_184",
+    "message_a": "Hey @115858 I\ufe0f need you to fix this.",
+    "message_b": "So, @AppleSupport just isn\u2019t going to fix this \u201cI\ufe0f\u201d glitch, huh?",
+    "human_label_a": "unclear_needs_review",
+    "human_label_b": "keyboard_typing_issue",
+    "similarity_score": 0.0823,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "fix this",
+      "to fix",
+      "fix"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'unclear_needs_review' and 'keyboard_typing_issue'. Shared vocabulary ('fix this, to fix, fix') with cosine similarity 0.08 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_089",
+    "golden_id_b": "gold_177",
+    "message_a": "@115858 why the fuck is my wifi on AGAIN ?",
+    "message_b": "My IPhone glitch is that it won\u2019t stay connected to any WiFi. @AppleSupport ?",
+    "human_label_a": "general_device_support",
+    "human_label_b": "hardware_audio_connection_issue",
+    "similarity_score": 0.0809,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "wifi"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'hardware_audio_connection_issue'. Shared lexical cues ('wifi') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_040",
+    "golden_id_b": "gold_180",
+    "message_a": "Dear @115858 \nPlease fix all your fucking issues with iOS 11. I\u2019m sick and tired of all these bugs. \ud83d\ude43",
+    "message_b": ".@115858 battery and velocity of my iPhone 6 really sucks / bater\u00eda y velocidad de mi iPhone 6 con el iOS 11 realmente apestan #iOS11 #fail",
+    "human_label_a": "software_update_problem",
+    "human_label_b": "battery_power_issue",
+    "similarity_score": 0.0791,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "ios 11",
+      "ios"
+    ],
+    "possible_ambiguity_explanation": "Post-update symptom overlap. Shared terms ('ios 11, ios') reflect customer attributing battery drain to an OS update. One label captures the root cause (update) while the other captures the symptom (battery)."
+  },
+  {
+    "golden_id_a": "gold_140",
+    "golden_id_b": "gold_173",
+    "message_a": "Looks like its a common problem with the @115858 High Sierra download as there are a number of pics posted on the web. \nThis is the same error message which I got today.\nIt doesn't allow you to quit download unless you know your way around computers. Needs fixing asap @116333 https://t.co/PIbCxNlyoc",
+    "message_b": "Hey @115858 @AppleSupport we need a lil favour. Safari 11.0.1 &amp; it\u2019s relationship with High Sierra needs to be fixed. Many people are having multiple problems since the High Sierra update, specific sites are not loading. Multiple community posts have not fixed problem. Please help",
+    "human_label_a": "software_update_problem",
+    "human_label_b": "mac_software_issue",
+    "similarity_score": 0.0784,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "high sierra",
+      "the high",
+      "problem",
+      "sierra",
+      "needs"
+    ],
+    "possible_ambiguity_explanation": "Platform boundary between macOS desktop environment and specific function 'software_update_problem'. Shared cues ('high sierra, the high, problem, sierra, needs') reflect macOS context with specific functional symptoms."
+  },
+  {
+    "golden_id_a": "gold_093",
+    "golden_id_b": "gold_106",
+    "message_a": "Out of the blue my 2016 MacBook won\u2019t turn on and this is really an unexpected roadblock @115858",
+    "message_b": "@AppleSupport i can\u2019t turn on my WiFi on my iPhone 7",
+    "human_label_a": "general_device_support",
+    "human_label_b": "hardware_audio_connection_issue",
+    "similarity_score": 0.0773,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "turn on",
+      "turn"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'hardware_audio_connection_issue'. Shared lexical cues ('turn on, turn') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_128",
+    "golden_id_b": "gold_169",
+    "message_a": "hey @115858 can u fix IOS",
+    "message_b": "@115858 fix this fucking question mark exclamation shit before I\ufe0f get a tracfone",
+    "human_label_a": "general_device_support",
+    "human_label_b": "keyboard_typing_issue",
+    "similarity_score": 0.0769,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "fix"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'keyboard_typing_issue'. Shared lexical cues ('fix') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_035",
+    "golden_id_b": "gold_115",
+    "message_a": "Fix this update @AppleSupport @115858 why can\u2019t I\ufe0f type the letter \u201cI\ufe0f\u201d why the hell are these special characters in my predictive text?!?",
+    "message_b": "@AppleSupport Please for heaven sake, since newest update the voice to text is horrible and texting is horrible",
+    "human_label_a": "keyboard_typing_issue",
+    "human_label_b": "software_update_problem",
+    "similarity_score": 0.0763,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "update",
+      "text"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'keyboard_typing_issue' and 'software_update_problem'. Shared vocabulary ('update, text') with cosine similarity 0.08 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_177",
+    "golden_id_b": "gold_190",
+    "message_a": "My IPhone glitch is that it won\u2019t stay connected to any WiFi. @AppleSupport ?",
+    "message_b": "@115858 there\u2019s been a problem with my sisters iPhone 7 like it won\u2019t turn on or nothing even though it\u2019s  good charged, has not been dropped",
+    "human_label_a": "hardware_audio_connection_issue",
+    "human_label_b": "battery_power_issue",
+    "similarity_score": 0.076,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "it won",
+      "iphone",
+      "won"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'hardware_audio_connection_issue' and 'battery_power_issue'. Shared vocabulary ('it won, iphone, won') with cosine similarity 0.08 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_066",
+    "golden_id_b": "gold_165",
+    "message_a": "is anyone else\u2019s shit doing this tooo????? https://t.co/AFkraDlPBP",
+    "message_b": "@AppleSupport i FaceTimed my mate everyday and now when I go to ft him it won\u2019t connect but it connects with everyone else????",
+    "human_label_a": "unclear_needs_review",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.0752,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "else"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'unclear_needs_review'. Shared lexical cues ('else') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_084",
+    "golden_id_b": "gold_173",
+    "message_a": "Formated and reinstalled MacOS High Sierra by Genius Bar member at Apple Shop but still problem of random key stopped working remains. It's time for Apple to acknowledge issue @AppleSupport even Google search shows many r facing same issue. No solution yet!",
+    "message_b": "Hey @115858 @AppleSupport we need a lil favour. Safari 11.0.1 &amp; it\u2019s relationship with High Sierra needs to be fixed. Many people are having multiple problems since the High Sierra update, specific sites are not loading. Multiple community posts have not fixed problem. Please help",
+    "human_label_a": "keyboard_typing_issue",
+    "human_label_b": "mac_software_issue",
+    "similarity_score": 0.0752,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "high sierra",
+      "problem",
+      "sierra",
+      "high",
+      "many"
+    ],
+    "possible_ambiguity_explanation": "Platform boundary between macOS desktop environment and specific function 'keyboard_typing_issue'. Shared cues ('high sierra, problem, sierra, high, many') reflect macOS context with specific functional symptoms."
+  },
+  {
+    "golden_id_a": "gold_079",
+    "golden_id_b": "gold_158",
+    "message_a": "@AppleSupport What have you guys done with High Sierra? It has completely bugged out a bunch of programs?! Go back! :) Just needing some help. Thanks",
+    "message_b": "@AppleSupport should my laptop charger be hot enough to burn me, because it just completely blistered my skin...?",
+    "human_label_a": "mac_software_issue",
+    "human_label_b": "battery_power_issue",
+    "similarity_score": 0.0744,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "completely",
+      "just"
+    ],
+    "possible_ambiguity_explanation": "Platform boundary between macOS desktop environment and specific function 'battery_power_issue'. Shared cues ('completely, just') reflect macOS context with specific functional symptoms."
+  },
+  {
+    "golden_id_a": "gold_086",
+    "golden_id_b": "gold_191",
+    "message_a": "@AppleSupport my MacBook Air has the dreaded spinning beach ball. Help please.",
+    "message_b": "Hi @AppleSupport my c3yo iPad Air died. Tried restore as per website, error msg now MacBook can\u2019t detect at all. Any ideas? Take to Store?",
+    "human_label_a": "mac_software_issue",
+    "human_label_b": "battery_power_issue",
+    "similarity_score": 0.0734,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "macbook",
+      "air"
+    ],
+    "possible_ambiguity_explanation": "Platform boundary between macOS desktop environment and specific function 'battery_power_issue'. Shared cues ('macbook, air') reflect macOS context with specific functional symptoms."
+  },
+  {
+    "golden_id_a": "gold_066",
+    "golden_id_b": "gold_169",
+    "message_a": "is anyone else\u2019s shit doing this tooo????? https://t.co/AFkraDlPBP",
+    "message_b": "@115858 fix this fucking question mark exclamation shit before I\ufe0f get a tracfone",
+    "human_label_a": "unclear_needs_review",
+    "human_label_b": "keyboard_typing_issue",
+    "similarity_score": 0.0732,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "shit"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'unclear_needs_review' and 'keyboard_typing_issue'. Shared vocabulary ('shit') with cosine similarity 0.07 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_075",
+    "golden_id_b": "gold_191",
+    "message_a": "@AppleSupport my app store\u2019s not working :(",
+    "message_b": "Hi @AppleSupport my c3yo iPad Air died. Tried restore as per website, error msg now MacBook can\u2019t detect at all. Any ideas? Take to Store?",
+    "human_label_a": "general_device_support",
+    "human_label_b": "battery_power_issue",
+    "similarity_score": 0.073,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "store"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'battery_power_issue'. Shared lexical cues ('store') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_040",
+    "golden_id_b": "gold_135",
+    "message_a": "Dear @115858 \nPlease fix all your fucking issues with iOS 11. I\u2019m sick and tired of all these bugs. \ud83d\ude43",
+    "message_b": "@AppleSupport \ud83d\udde3I am tired of seeing boxes ,with a question mark in the middle , where words are supposed to be. Fix this \ud83d\udca9 NOW !!",
+    "human_label_a": "software_update_problem",
+    "human_label_b": "keyboard_typing_issue",
+    "similarity_score": 0.072,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "tired of",
+      "tired",
+      "fix"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'software_update_problem' and 'keyboard_typing_issue'. Shared vocabulary ('tired of, tired, fix') with cosine similarity 0.07 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_067",
+    "golden_id_b": "gold_173",
+    "message_a": "Hey @115858 I\ufe0f need you to fix this.",
+    "message_b": "Hey @115858 @AppleSupport we need a lil favour. Safari 11.0.1 &amp; it\u2019s relationship with High Sierra needs to be fixed. Many people are having multiple problems since the High Sierra update, specific sites are not loading. Multiple community posts have not fixed problem. Please help",
+    "human_label_a": "unclear_needs_review",
+    "human_label_b": "mac_software_issue",
+    "similarity_score": 0.0719,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "need"
+    ],
+    "possible_ambiguity_explanation": "Platform boundary between macOS desktop environment and specific function 'unclear_needs_review'. Shared cues ('need') reflect macOS context with specific functional symptoms."
+  },
+  {
+    "golden_id_a": "gold_034",
+    "golden_id_b": "gold_181",
+    "message_a": "my laptop says 6:40 but my PHONE says 7:40 and is not changing or letting me send tweets snaps texts etc! I thought i was crazy not knowing the time LOL. I tried resetting many times. HELP !!!!!!! @AppleSupport WHat even is this",
+    "message_b": ". @115858 my laptop not letting me use my keyboard or mouse.... y\u2019all need to help me out",
+    "human_label_a": "general_device_support",
+    "human_label_b": "keyboard_typing_issue",
+    "similarity_score": 0.0713,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "letting me",
+      "my laptop",
+      "letting",
+      "laptop"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'keyboard_typing_issue'. Shared lexical cues ('letting me, my laptop, letting, laptop') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_027",
+    "golden_id_b": "gold_084",
+    "message_a": "@AppleSupport since updating to high sierra I'm seeing lots of notifications from Time Machine, which I don't use. How do I turn off?",
+    "message_b": "Formated and reinstalled MacOS High Sierra by Genius Bar member at Apple Shop but still problem of random key stopped working remains. It's time for Apple to acknowledge issue @AppleSupport even Google search shows many r facing same issue. No solution yet!",
+    "human_label_a": "mac_software_issue",
+    "human_label_b": "keyboard_typing_issue",
+    "similarity_score": 0.0709,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "high sierra",
+      "sierra",
+      "high",
+      "time"
+    ],
+    "possible_ambiguity_explanation": "Platform boundary between macOS desktop environment and specific function 'keyboard_typing_issue'. Shared cues ('high sierra, sierra, high, time') reflect macOS context with specific functional symptoms."
+  },
+  {
+    "golden_id_a": "gold_067",
+    "golden_id_b": "gold_169",
+    "message_a": "Hey @115858 I\ufe0f need you to fix this.",
+    "message_b": "@115858 fix this fucking question mark exclamation shit before I\ufe0f get a tracfone",
+    "human_label_a": "unclear_needs_review",
+    "human_label_b": "keyboard_typing_issue",
+    "similarity_score": 0.0707,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "fix this",
+      "fix"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'unclear_needs_review' and 'keyboard_typing_issue'. Shared vocabulary ('fix this, fix') with cosine similarity 0.07 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_035",
+    "golden_id_b": "gold_128",
+    "message_a": "Fix this update @AppleSupport @115858 why can\u2019t I\ufe0f type the letter \u201cI\ufe0f\u201d why the hell are these special characters in my predictive text?!?",
+    "message_b": "hey @115858 can u fix IOS",
+    "human_label_a": "keyboard_typing_issue",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.0703,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "fix"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'keyboard_typing_issue'. Shared lexical cues ('fix') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_003",
+    "golden_id_b": "gold_086",
+    "message_a": "@AppleSupport it works on my phone but not my MacBook",
+    "message_b": "@AppleSupport my MacBook Air has the dreaded spinning beach ball. Help please.",
+    "human_label_a": "unclear_needs_review",
+    "human_label_b": "mac_software_issue",
+    "similarity_score": 0.0702,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "my macbook",
+      "macbook"
+    ],
+    "possible_ambiguity_explanation": "Platform boundary between macOS desktop environment and specific function 'unclear_needs_review'. Shared cues ('my macbook, macbook') reflect macOS context with specific functional symptoms."
+  },
+  {
+    "golden_id_a": "gold_085",
+    "golden_id_b": "gold_027",
+    "message_a": "why does WiFi turn on by itself when I turn it off manually it\u2019s annoying @AppleSupport",
+    "message_b": "@AppleSupport since updating to high sierra I'm seeing lots of notifications from Time Machine, which I don't use. How do I turn off?",
+    "human_label_a": "general_device_support",
+    "human_label_b": "mac_software_issue",
+    "similarity_score": 0.0698,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "turn"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'mac_software_issue'. Shared lexical cues ('turn') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_184",
+    "golden_id_b": "gold_102",
+    "message_a": "So, @AppleSupport just isn\u2019t going to fix this \u201cI\ufe0f\u201d glitch, huh?",
+    "message_b": "Can @115948 or @115858 please fix the music app ...ever since the update .. I can\u2019t pause music without going to app\ud83d\ude44 #sos",
+    "human_label_a": "keyboard_typing_issue",
+    "human_label_b": "software_update_problem",
+    "similarity_score": 0.0695,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "going to",
+      "going",
+      "fix"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'keyboard_typing_issue' and 'software_update_problem'. Shared vocabulary ('going to, going, fix') with cosine similarity 0.07 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_085",
+    "golden_id_b": "gold_190",
+    "message_a": "why does WiFi turn on by itself when I turn it off manually it\u2019s annoying @AppleSupport",
+    "message_b": "@115858 there\u2019s been a problem with my sisters iPhone 7 like it won\u2019t turn on or nothing even though it\u2019s  good charged, has not been dropped",
+    "human_label_a": "general_device_support",
+    "human_label_b": "battery_power_issue",
+    "similarity_score": 0.0695,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "turn on",
+      "turn"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'battery_power_issue'. Shared lexical cues ('turn on, turn') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_098",
+    "golden_id_b": "gold_103",
+    "message_a": "@AppleSupport Hey! What does this mean? It's a new screen for me. https://t.co/0w1NPRJpJc",
+    "message_b": "@AppleSupport so my iPhone crashes touch seems to stop working altho I can access wifi menu etc Ask apple the issue they tell me my phone screen needs replaced - get new phone and same issue happens is this a problem with iOS or the 8?",
+    "human_label_a": "general_device_support",
+    "human_label_b": "display_touch_issue",
+    "similarity_score": 0.0693,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "screen",
+      "new"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'display_touch_issue'. Shared lexical cues ('screen, new') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_082",
+    "golden_id_b": "gold_087",
+    "message_a": "@AppleSupport ever since the new update my i7 has been EXTREMELY laggy, when I type the keyboard lags and opening or switching apps, everything lags. Please fix this in a new patch. \nI\u2019m also seeing the question mark box on twitter.",
+    "message_b": "@115858 bought a MacBook Pro 6 weeks ago. It was faulty straight out of the box. Just had it exchanged and the new one is also faulty. Shit",
+    "human_label_a": "software_update_problem",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.0691,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "the new",
+      "also",
+      "box",
+      "new"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'software_update_problem'. Shared lexical cues ('the new, also, box, new') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_167",
+    "golden_id_b": "gold_003",
+    "message_a": "Neat. My @AppleSupport phone call ended abruptly",
+    "message_b": "@AppleSupport it works on my phone but not my MacBook",
+    "human_label_a": "general_device_support",
+    "human_label_b": "unclear_needs_review",
+    "similarity_score": 0.0686,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "my phone",
+      "phone"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'unclear_needs_review'. Shared lexical cues ('my phone, phone') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_109",
+    "golden_id_b": "gold_128",
+    "message_a": "Can\u2019t turn off WiFi from control center? New @115858 iOS is garbage. Who knows how to roll back to the good one?",
+    "message_b": "hey @115858 can u fix IOS",
+    "human_label_a": "software_update_problem",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.0678,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "ios"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'software_update_problem'. Shared lexical cues ('ios') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_112",
+    "golden_id_b": "gold_061",
+    "message_a": "@AppleSupport if I want to trade in my iPhone which still has AppleCare+ can I get a refund for that or do I have to just give it up?",
+    "message_b": "@AppleSupport I don\u2019t want to have to manually lower the volume",
+    "human_label_a": "billing_purchase_issue",
+    "human_label_b": "hardware_audio_connection_issue",
+    "similarity_score": 0.067,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "want to",
+      "want"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'billing_purchase_issue' and 'hardware_audio_connection_issue'. Shared vocabulary ('want to, want') with cosine similarity 0.07 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_027",
+    "golden_id_b": "gold_061",
+    "message_a": "@AppleSupport since updating to high sierra I'm seeing lots of notifications from Time Machine, which I don't use. How do I turn off?",
+    "message_b": "@AppleSupport I don\u2019t want to have to manually lower the volume",
+    "human_label_a": "mac_software_issue",
+    "human_label_b": "hardware_audio_connection_issue",
+    "similarity_score": 0.0669,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "don"
+    ],
+    "possible_ambiguity_explanation": "Platform boundary between macOS desktop environment and specific function 'hardware_audio_connection_issue'. Shared cues ('don') reflect macOS context with specific functional symptoms."
+  },
+  {
+    "golden_id_a": "gold_067",
+    "golden_id_b": "gold_040",
+    "message_a": "Hey @115858 I\ufe0f need you to fix this.",
+    "message_b": "Dear @115858 \nPlease fix all your fucking issues with iOS 11. I\u2019m sick and tired of all these bugs. \ud83d\ude43",
+    "human_label_a": "unclear_needs_review",
+    "human_label_b": "software_update_problem",
+    "similarity_score": 0.0669,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "fix"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'unclear_needs_review' and 'software_update_problem'. Shared vocabulary ('fix') with cosine similarity 0.07 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_109",
+    "golden_id_b": "gold_190",
+    "message_a": "Can\u2019t turn off WiFi from control center? New @115858 iOS is garbage. Who knows how to roll back to the good one?",
+    "message_b": "@115858 there\u2019s been a problem with my sisters iPhone 7 like it won\u2019t turn on or nothing even though it\u2019s  good charged, has not been dropped",
+    "human_label_a": "software_update_problem",
+    "human_label_b": "battery_power_issue",
+    "similarity_score": 0.0669,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "good",
+      "turn"
+    ],
+    "possible_ambiguity_explanation": "Post-update symptom overlap. Shared terms ('good, turn') reflect customer attributing battery drain to an OS update. One label captures the root cause (update) while the other captures the symptom (battery)."
+  },
+  {
+    "golden_id_a": "gold_128",
+    "golden_id_b": "gold_135",
+    "message_a": "hey @115858 can u fix IOS",
+    "message_b": "@AppleSupport \ud83d\udde3I am tired of seeing boxes ,with a question mark in the middle , where words are supposed to be. Fix this \ud83d\udca9 NOW !!",
+    "human_label_a": "general_device_support",
+    "human_label_b": "keyboard_typing_issue",
+    "similarity_score": 0.0666,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "fix"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'keyboard_typing_issue'. Shared lexical cues ('fix') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_082",
+    "golden_id_b": "gold_098",
+    "message_a": "@AppleSupport ever since the new update my i7 has been EXTREMELY laggy, when I type the keyboard lags and opening or switching apps, everything lags. Please fix this in a new patch. \nI\u2019m also seeing the question mark box on twitter.",
+    "message_b": "@AppleSupport Hey! What does this mean? It's a new screen for me. https://t.co/0w1NPRJpJc",
+    "human_label_a": "software_update_problem",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.0664,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "new"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'software_update_problem'. Shared lexical cues ('new') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_087",
+    "golden_id_b": "gold_198",
+    "message_a": "@115858 bought a MacBook Pro 6 weeks ago. It was faulty straight out of the box. Just had it exchanged and the new one is also faulty. Shit",
+    "message_b": "@AppleSupport Can I use my wired  printer  having USB on my MacBook pro which has  has c type?..Pls suggest if USB hub and c-type to USB female will work for it?",
+    "human_label_a": "general_device_support",
+    "human_label_b": "hardware_audio_connection_issue",
+    "similarity_score": 0.0664,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "macbook pro",
+      "macbook",
+      "pro"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'hardware_audio_connection_issue'. Shared lexical cues ('macbook pro, macbook, pro') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_106",
+    "golden_id_b": "gold_180",
+    "message_a": "@AppleSupport i can\u2019t turn on my WiFi on my iPhone 7",
+    "message_b": ".@115858 battery and velocity of my iPhone 6 really sucks / bater\u00eda y velocidad de mi iPhone 6 con el iOS 11 realmente apestan #iOS11 #fail",
+    "human_label_a": "hardware_audio_connection_issue",
+    "human_label_b": "battery_power_issue",
+    "similarity_score": 0.0657,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "my iphone",
+      "iphone"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'hardware_audio_connection_issue' and 'battery_power_issue'. Shared vocabulary ('my iphone, iphone') with cosine similarity 0.07 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_174",
+    "golden_id_b": "gold_048",
+    "message_a": "The latest iOS update has shrunk my screen, made my WiFi connection go slower, reduced my battery life and memory space. Cheers @115858",
+    "message_b": "@115858 if my screen say poor connection does that mean my wifi is messed up or theres? cause i tired of having this argument erry night \ud83d\ude2d\ud83d\udcaf",
+    "human_label_a": "software_update_problem",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.065,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "my screen",
+      "my wifi",
+      "connection",
+      "screen",
+      "wifi"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'software_update_problem'. Shared lexical cues ('my screen, my wifi, connection, screen, wifi') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_064",
+    "golden_id_b": "gold_128",
+    "message_a": "@AppleSupport please fix this letter \u201ceye\u201d problem!! I\ufe0f paid all this money for this phone &amp; I\u2019m still seeing blocks!",
+    "message_b": "hey @115858 can u fix IOS",
+    "human_label_a": "keyboard_typing_issue",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.0649,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "fix"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'keyboard_typing_issue'. Shared lexical cues ('fix') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_035",
+    "golden_id_b": "gold_067",
+    "message_a": "Fix this update @AppleSupport @115858 why can\u2019t I\ufe0f type the letter \u201cI\ufe0f\u201d why the hell are these special characters in my predictive text?!?",
+    "message_b": "Hey @115858 I\ufe0f need you to fix this.",
+    "human_label_a": "keyboard_typing_issue",
+    "human_label_b": "unclear_needs_review",
+    "similarity_score": 0.0647,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "fix this",
+      "fix"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'keyboard_typing_issue' and 'unclear_needs_review'. Shared vocabulary ('fix this, fix') with cosine similarity 0.06 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_088",
+    "golden_id_b": "gold_198",
+    "message_a": "@AppleSupport my  2 iPhones  will not connect to the internet via WiFi yet my iPad will??",
+    "message_b": "@AppleSupport Can I use my wired  printer  having USB on my MacBook pro which has  has c type?..Pls suggest if USB hub and c-type to USB female will work for it?",
+    "human_label_a": "general_device_support",
+    "human_label_b": "hardware_audio_connection_issue",
+    "similarity_score": 0.0646,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "will"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'hardware_audio_connection_issue'. Shared lexical cues ('will') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_085",
+    "golden_id_b": "gold_026",
+    "message_a": "why does WiFi turn on by itself when I turn it off manually it\u2019s annoying @AppleSupport",
+    "message_b": "@115858 for the love of #280characters would you please fix this I\ufe0f crap!  It\u2019s annoying AF! Also apps are loading wrong on 6splus, because of X screen size.",
+    "human_label_a": "general_device_support",
+    "human_label_b": "display_touch_issue",
+    "similarity_score": 0.0646,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "it annoying",
+      "annoying"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'display_touch_issue'. Shared lexical cues ('it annoying, annoying') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_103",
+    "golden_id_b": "gold_106",
+    "message_a": "@AppleSupport so my iPhone crashes touch seems to stop working altho I can access wifi menu etc Ask apple the issue they tell me my phone screen needs replaced - get new phone and same issue happens is this a problem with iOS or the 8?",
+    "message_b": "@AppleSupport i can\u2019t turn on my WiFi on my iPhone 7",
+    "human_label_a": "display_touch_issue",
+    "human_label_b": "hardware_audio_connection_issue",
+    "similarity_score": 0.0645,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "my iphone",
+      "iphone",
+      "wifi"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'display_touch_issue' and 'hardware_audio_connection_issue'. Shared vocabulary ('my iphone, iphone, wifi') with cosine similarity 0.06 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_075",
+    "golden_id_b": "gold_074",
+    "message_a": "@AppleSupport my app store\u2019s not working :(",
+    "message_b": "@AppleSupport laptop keeps shutting down during startup, tried a bunch of resets but nothing's working PLS HELP.",
+    "human_label_a": "general_device_support",
+    "human_label_b": "battery_power_issue",
+    "similarity_score": 0.0644,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "working"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'battery_power_issue'. Shared lexical cues ('working') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_104",
+    "golden_id_b": "gold_106",
+    "message_a": "@AppleSupport why aren\u2019t my apps downloading??? I\u2019ve tried with and without WiFi...",
+    "message_b": "@AppleSupport i can\u2019t turn on my WiFi on my iPhone 7",
+    "human_label_a": "general_device_support",
+    "human_label_b": "hardware_audio_connection_issue",
+    "similarity_score": 0.0643,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "wifi"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'hardware_audio_connection_issue'. Shared lexical cues ('wifi') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_027",
+    "golden_id_b": "gold_106",
+    "message_a": "@AppleSupport since updating to high sierra I'm seeing lots of notifications from Time Machine, which I don't use. How do I turn off?",
+    "message_b": "@AppleSupport i can\u2019t turn on my WiFi on my iPhone 7",
+    "human_label_a": "mac_software_issue",
+    "human_label_b": "hardware_audio_connection_issue",
+    "similarity_score": 0.0636,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "turn"
+    ],
+    "possible_ambiguity_explanation": "Platform boundary between macOS desktop environment and specific function 'hardware_audio_connection_issue'. Shared cues ('turn') reflect macOS context with specific functional symptoms."
+  },
+  {
+    "golden_id_a": "gold_066",
+    "golden_id_b": "gold_029",
+    "message_a": "is anyone else\u2019s shit doing this tooo????? https://t.co/AFkraDlPBP",
+    "message_b": "@115858 sort your shit out!!! I\u2019m switching to Samsung if my phone doesn\u2019t stop going slower than a turtle \ud83d\ude21\ud83d\ude21\ud83d\ude21\ud83d\udc22",
+    "human_label_a": "unclear_needs_review",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.0624,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "shit"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'unclear_needs_review'. Shared lexical cues ('shit') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_003",
+    "golden_id_b": "gold_132",
+    "message_a": "@AppleSupport it works on my phone but not my MacBook",
+    "message_b": "So I have my shiny brand new @115858 MacBook and I can\u2019t use it because it refuses to connect to my internet \ud83d\ude2d @AppleSupport Help me please",
+    "human_label_a": "unclear_needs_review",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.0624,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "macbook"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'unclear_needs_review'. Shared lexical cues ('macbook') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_003",
+    "golden_id_b": "gold_093",
+    "message_a": "@AppleSupport it works on my phone but not my MacBook",
+    "message_b": "Out of the blue my 2016 MacBook won\u2019t turn on and this is really an unexpected roadblock @115858",
+    "human_label_a": "unclear_needs_review",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.0618,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "macbook"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'unclear_needs_review'. Shared lexical cues ('macbook') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_067",
+    "golden_id_b": "gold_135",
+    "message_a": "Hey @115858 I\ufe0f need you to fix this.",
+    "message_b": "@AppleSupport \ud83d\udde3I am tired of seeing boxes ,with a question mark in the middle , where words are supposed to be. Fix this \ud83d\udca9 NOW !!",
+    "human_label_a": "unclear_needs_review",
+    "human_label_b": "keyboard_typing_issue",
+    "similarity_score": 0.0612,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "fix this",
+      "fix"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'unclear_needs_review' and 'keyboard_typing_issue'. Shared vocabulary ('fix this, fix') with cosine similarity 0.06 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_112",
+    "golden_id_b": "gold_001",
+    "message_a": "@AppleSupport if I want to trade in my iPhone which still has AppleCare+ can I get a refund for that or do I have to just give it up?",
+    "message_b": "@AppleSupport Just updated to latest #ios11. Autocorrect always suggests \"minuet\" when I want \"minute\". Trying to push baroque dances on us?",
+    "human_label_a": "billing_purchase_issue",
+    "human_label_b": "keyboard_typing_issue",
+    "similarity_score": 0.0603,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "just",
+      "want"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'billing_purchase_issue' and 'keyboard_typing_issue'. Shared vocabulary ('just, want') with cosine similarity 0.06 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_075",
+    "golden_id_b": "gold_046",
+    "message_a": "@AppleSupport my app store\u2019s not working :(",
+    "message_b": "@115858 @AppleSupport the music app is not producing sound. The other apps produce sound. Can play music but no sound comes out. Help. Thx.",
+    "human_label_a": "general_device_support",
+    "human_label_b": "hardware_audio_connection_issue",
+    "similarity_score": 0.0603,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "app"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'hardware_audio_connection_issue'. Shared lexical cues ('app') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_102",
+    "golden_id_b": "gold_128",
+    "message_a": "Can @115948 or @115858 please fix the music app ...ever since the update .. I can\u2019t pause music without going to app\ud83d\ude44 #sos",
+    "message_b": "hey @115858 can u fix IOS",
+    "human_label_a": "software_update_problem",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.0601,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "fix"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'software_update_problem'. Shared lexical cues ('fix') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_067",
+    "golden_id_b": "gold_064",
+    "message_a": "Hey @115858 I\ufe0f need you to fix this.",
+    "message_b": "@AppleSupport please fix this letter \u201ceye\u201d problem!! I\ufe0f paid all this money for this phone &amp; I\u2019m still seeing blocks!",
+    "human_label_a": "unclear_needs_review",
+    "human_label_b": "keyboard_typing_issue",
+    "similarity_score": 0.0596,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "fix this",
+      "fix"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'unclear_needs_review' and 'keyboard_typing_issue'. Shared vocabulary ('fix this, fix') with cosine similarity 0.06 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_107",
+    "golden_id_b": "gold_180",
+    "message_a": "@AppleSupport Come on @115858 can\u2019t believe all the issues with .3! Drops WiFi and BT randomly, Battery life sucks &amp; locks up landscape! 7+",
+    "message_b": ".@115858 battery and velocity of my iPhone 6 really sucks / bater\u00eda y velocidad de mi iPhone 6 con el iOS 11 realmente apestan #iOS11 #fail",
+    "human_label_a": "software_update_problem",
+    "human_label_b": "battery_power_issue",
+    "similarity_score": 0.0589,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "battery",
+      "sucks"
+    ],
+    "possible_ambiguity_explanation": "Post-update symptom overlap. Shared terms ('battery, sucks') reflect customer attributing battery drain to an OS update. One label captures the root cause (update) while the other captures the symptom (battery)."
+  },
+  {
+    "golden_id_a": "gold_005",
+    "golden_id_b": "gold_084",
+    "message_a": "@115858 can you explain why the system still records my location when the switch is off, and never shows purple even if icon on screen !!! https://t.co/yWIEtfYens",
+    "message_b": "Formated and reinstalled MacOS High Sierra by Genius Bar member at Apple Shop but still problem of random key stopped working remains. It's time for Apple to acknowledge issue @AppleSupport even Google search shows many r facing same issue. No solution yet!",
+    "human_label_a": "general_device_support",
+    "human_label_b": "keyboard_typing_issue",
+    "similarity_score": 0.0586,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "still",
+      "shows",
+      "even"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'keyboard_typing_issue'. Shared lexical cues ('still, shows, even') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_174",
+    "golden_id_b": "gold_128",
+    "message_a": "The latest iOS update has shrunk my screen, made my WiFi connection go slower, reduced my battery life and memory space. Cheers @115858",
+    "message_b": "hey @115858 can u fix IOS",
+    "human_label_a": "software_update_problem",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.0585,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "ios"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'software_update_problem'. Shared lexical cues ('ios') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_004",
+    "golden_id_b": "gold_190",
+    "message_a": "@AppleSupport my phone slow as hell after this update cmon now \ud83e\udd26\ud83c\udffb\u200d\u2642\ufe0f lagging like it\u2019s a iPhone 3",
+    "message_b": "@115858 there\u2019s been a problem with my sisters iPhone 7 like it won\u2019t turn on or nothing even though it\u2019s  good charged, has not been dropped",
+    "human_label_a": "software_update_problem",
+    "human_label_b": "battery_power_issue",
+    "similarity_score": 0.0584,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "like it",
+      "iphone",
+      "like"
+    ],
+    "possible_ambiguity_explanation": "Post-update symptom overlap. Shared terms ('like it, iphone, like') reflect customer attributing battery drain to an OS update. One label captures the root cause (update) while the other captures the symptom (battery)."
+  },
+  {
+    "golden_id_a": "gold_093",
+    "golden_id_b": "gold_177",
+    "message_a": "Out of the blue my 2016 MacBook won\u2019t turn on and this is really an unexpected roadblock @115858",
+    "message_b": "My IPhone glitch is that it won\u2019t stay connected to any WiFi. @AppleSupport ?",
+    "human_label_a": "general_device_support",
+    "human_label_b": "hardware_audio_connection_issue",
+    "similarity_score": 0.0584,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "won"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'hardware_audio_connection_issue'. Shared lexical cues ('won') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_004",
+    "golden_id_b": "gold_106",
+    "message_a": "@AppleSupport my phone slow as hell after this update cmon now \ud83e\udd26\ud83c\udffb\u200d\u2642\ufe0f lagging like it\u2019s a iPhone 3",
+    "message_b": "@AppleSupport i can\u2019t turn on my WiFi on my iPhone 7",
+    "human_label_a": "software_update_problem",
+    "human_label_b": "hardware_audio_connection_issue",
+    "similarity_score": 0.0581,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "iphone"
+    ],
+    "possible_ambiguity_explanation": "Causality overlap where an audio or connectivity issue arose following an iOS update. Shared signals ('iphone') suggest one annotator focused on update causality while the other focused on the presenting hardware/audio symptom."
+  },
+  {
+    "golden_id_a": "gold_063",
+    "golden_id_b": "gold_191",
+    "message_a": "@AppleSupport App Store not working for me either",
+    "message_b": "Hi @AppleSupport my c3yo iPad Air died. Tried restore as per website, error msg now MacBook can\u2019t detect at all. Any ideas? Take to Store?",
+    "human_label_a": "general_device_support",
+    "human_label_b": "battery_power_issue",
+    "similarity_score": 0.058,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "store"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'battery_power_issue'. Shared lexical cues ('store') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_132",
+    "golden_id_b": "gold_181",
+    "message_a": "So I have my shiny brand new @115858 MacBook and I can\u2019t use it because it refuses to connect to my internet \ud83d\ude2d @AppleSupport Help me please",
+    "message_b": ". @115858 my laptop not letting me use my keyboard or mouse.... y\u2019all need to help me out",
+    "human_label_a": "general_device_support",
+    "human_label_b": "keyboard_typing_issue",
+    "similarity_score": 0.0576,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "use"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'keyboard_typing_issue'. Shared lexical cues ('use') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_035",
+    "golden_id_b": "gold_082",
+    "message_a": "Fix this update @AppleSupport @115858 why can\u2019t I\ufe0f type the letter \u201cI\ufe0f\u201d why the hell are these special characters in my predictive text?!?",
+    "message_b": "@AppleSupport ever since the new update my i7 has been EXTREMELY laggy, when I type the keyboard lags and opening or switching apps, everything lags. Please fix this in a new patch. \nI\u2019m also seeing the question mark box on twitter.",
+    "human_label_a": "keyboard_typing_issue",
+    "human_label_b": "software_update_problem",
+    "similarity_score": 0.0572,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "type the",
+      "fix this",
+      "update",
+      "type",
+      "fix"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'keyboard_typing_issue' and 'software_update_problem'. Shared vocabulary ('type the, fix this, update, type, fix') with cosine similarity 0.06 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_098",
+    "golden_id_b": "gold_109",
+    "message_a": "@AppleSupport Hey! What does this mean? It's a new screen for me. https://t.co/0w1NPRJpJc",
+    "message_b": "Can\u2019t turn off WiFi from control center? New @115858 iOS is garbage. Who knows how to roll back to the good one?",
+    "human_label_a": "general_device_support",
+    "human_label_b": "software_update_problem",
+    "similarity_score": 0.0572,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "new"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'software_update_problem'. Shared lexical cues ('new') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_026",
+    "golden_id_b": "gold_128",
+    "message_a": "@115858 for the love of #280characters would you please fix this I\ufe0f crap!  It\u2019s annoying AF! Also apps are loading wrong on 6splus, because of X screen size.",
+    "message_b": "hey @115858 can u fix IOS",
+    "human_label_a": "display_touch_issue",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.0567,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "fix"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'display_touch_issue'. Shared lexical cues ('fix') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_047",
+    "golden_id_b": "gold_140",
+    "message_a": "@AppleSupport photos not syncing properly between OSX high Sierra and iOS.  Same problem in several versions  d was hoping would get fixed. Say an album with 172 pics but only 33 transfer.  Have rebuilt library. Wiped iPhone. Closed and reopened apps. Reset devices. Etc.",
+    "message_b": "Looks like its a common problem with the @115858 High Sierra download as there are a number of pics posted on the web. \nThis is the same error message which I got today.\nIt doesn't allow you to quit download unless you know your way around computers. Needs fixing asap @116333 https://t.co/PIbCxNlyoc",
+    "human_label_a": "mac_software_issue",
+    "human_label_b": "software_update_problem",
+    "similarity_score": 0.0563,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "high sierra",
+      "problem",
+      "sierra",
+      "high",
+      "pics"
+    ],
+    "possible_ambiguity_explanation": "Platform boundary between macOS desktop environment and specific function 'software_update_problem'. Shared cues ('high sierra, problem, sierra, high, pics') reflect macOS context with specific functional symptoms."
+  },
+  {
+    "golden_id_a": "gold_112",
+    "golden_id_b": "gold_106",
+    "message_a": "@AppleSupport if I want to trade in my iPhone which still has AppleCare+ can I get a refund for that or do I have to just give it up?",
+    "message_b": "@AppleSupport i can\u2019t turn on my WiFi on my iPhone 7",
+    "human_label_a": "billing_purchase_issue",
+    "human_label_b": "hardware_audio_connection_issue",
+    "similarity_score": 0.0563,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "my iphone",
+      "iphone"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'billing_purchase_issue' and 'hardware_audio_connection_issue'. Shared vocabulary ('my iphone, iphone') with cosine similarity 0.06 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_157",
+    "golden_id_b": "gold_073",
+    "message_a": "@AppleSupport where can I find out if my AirPods are still under the warranty?",
+    "message_b": "@AppleSupport how much is it for an iPhone 7 glass screen? Struggling to find anything and I\u2019m not wanting to book in the repair. Had this modern phone two weeks and it\u2019s shattered off one little fall.  \ud83d\ude14 #disappointed",
+    "human_label_a": "hardware_audio_connection_issue",
+    "human_label_b": "display_touch_issue",
+    "similarity_score": 0.0562,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "find"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'hardware_audio_connection_issue' and 'display_touch_issue'. Shared vocabulary ('find') with cosine similarity 0.06 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_105",
+    "golden_id_b": "gold_128",
+    "message_a": "@AppleSupport hey guys just curious - why aren\u2019t iOS app updates automatic? Seems pretty clear here, no? Yet I manually have to check and click Update All daily... https://t.co/jFgs9KRl9U",
+    "message_b": "hey @115858 can u fix IOS",
+    "human_label_a": "software_update_problem",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.0557,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "ios"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'software_update_problem'. Shared lexical cues ('ios') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_112",
+    "golden_id_b": "gold_157",
+    "message_a": "@AppleSupport if I want to trade in my iPhone which still has AppleCare+ can I get a refund for that or do I have to just give it up?",
+    "message_b": "@AppleSupport where can I find out if my AirPods are still under the warranty?",
+    "human_label_a": "billing_purchase_issue",
+    "human_label_b": "hardware_audio_connection_issue",
+    "similarity_score": 0.0553,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "still"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'billing_purchase_issue' and 'hardware_audio_connection_issue'. Shared vocabulary ('still') with cosine similarity 0.06 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_067",
+    "golden_id_b": "gold_102",
+    "message_a": "Hey @115858 I\ufe0f need you to fix this.",
+    "message_b": "Can @115948 or @115858 please fix the music app ...ever since the update .. I can\u2019t pause music without going to app\ud83d\ude44 #sos",
+    "human_label_a": "unclear_needs_review",
+    "human_label_b": "software_update_problem",
+    "similarity_score": 0.0552,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "fix"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'unclear_needs_review' and 'software_update_problem'. Shared vocabulary ('fix') with cosine similarity 0.06 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_102",
+    "golden_id_b": "gold_104",
+    "message_a": "Can @115948 or @115858 please fix the music app ...ever since the update .. I can\u2019t pause music without going to app\ud83d\ude44 #sos",
+    "message_b": "@AppleSupport why aren\u2019t my apps downloading??? I\u2019ve tried with and without WiFi...",
+    "human_label_a": "software_update_problem",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.0552,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "without"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'software_update_problem'. Shared lexical cues ('without') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_052",
+    "golden_id_b": "gold_086",
+    "message_a": "@AppleSupport \ud83d\udc4b, What is the best antivirus for MacBook Pro ?",
+    "message_b": "@AppleSupport my MacBook Air has the dreaded spinning beach ball. Help please.",
+    "human_label_a": "general_device_support",
+    "human_label_b": "mac_software_issue",
+    "similarity_score": 0.0552,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "macbook"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'mac_software_issue'. Shared lexical cues ('macbook') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_089",
+    "golden_id_b": "gold_109",
+    "message_a": "@115858 why the fuck is my wifi on AGAIN ?",
+    "message_b": "Can\u2019t turn off WiFi from control center? New @115858 iOS is garbage. Who knows how to roll back to the good one?",
+    "human_label_a": "general_device_support",
+    "human_label_b": "software_update_problem",
+    "similarity_score": 0.055,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "wifi"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'software_update_problem'. Shared lexical cues ('wifi') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_035",
+    "golden_id_b": "gold_002",
+    "message_a": "Fix this update @AppleSupport @115858 why can\u2019t I\ufe0f type the letter \u201cI\ufe0f\u201d why the hell are these special characters in my predictive text?!?",
+    "message_b": "This update is ruining my life!! @115858",
+    "human_label_a": "keyboard_typing_issue",
+    "human_label_b": "software_update_problem",
+    "similarity_score": 0.0548,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "this update",
+      "update"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'keyboard_typing_issue' and 'software_update_problem'. Shared vocabulary ('this update, update') with cosine similarity 0.05 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_128",
+    "golden_id_b": "gold_180",
+    "message_a": "hey @115858 can u fix IOS",
+    "message_b": ".@115858 battery and velocity of my iPhone 6 really sucks / bater\u00eda y velocidad de mi iPhone 6 con el iOS 11 realmente apestan #iOS11 #fail",
+    "human_label_a": "general_device_support",
+    "human_label_b": "battery_power_issue",
+    "similarity_score": 0.0545,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "ios"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'battery_power_issue'. Shared lexical cues ('ios') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_102",
+    "golden_id_b": "gold_125",
+    "message_a": "Can @115948 or @115858 please fix the music app ...ever since the update .. I can\u2019t pause music without going to app\ud83d\ude44 #sos",
+    "message_b": "Dear @115858 Please fix the podcast app. I miss knowing which archived episodes I haven't listened to and when the home screen display was accurate and functioning.",
+    "human_label_a": "software_update_problem",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.0545,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "please fix",
+      "fix the",
+      "fix",
+      "app"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'software_update_problem'. Shared lexical cues ('please fix, fix the, fix, app') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_088",
+    "golden_id_b": "gold_106",
+    "message_a": "@AppleSupport my  2 iPhones  will not connect to the internet via WiFi yet my iPad will??",
+    "message_b": "@AppleSupport i can\u2019t turn on my WiFi on my iPhone 7",
+    "human_label_a": "general_device_support",
+    "human_label_b": "hardware_audio_connection_issue",
+    "similarity_score": 0.0544,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "wifi"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'hardware_audio_connection_issue'. Shared lexical cues ('wifi') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_079",
+    "golden_id_b": "gold_105",
+    "message_a": "@AppleSupport What have you guys done with High Sierra? It has completely bugged out a bunch of programs?! Go back! :) Just needing some help. Thanks",
+    "message_b": "@AppleSupport hey guys just curious - why aren\u2019t iOS app updates automatic? Seems pretty clear here, no? Yet I manually have to check and click Update All daily... https://t.co/jFgs9KRl9U",
+    "human_label_a": "mac_software_issue",
+    "human_label_b": "software_update_problem",
+    "similarity_score": 0.0543,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "guys",
+      "just"
+    ],
+    "possible_ambiguity_explanation": "Platform boundary between macOS desktop environment and specific function 'software_update_problem'. Shared cues ('guys, just') reflect macOS context with specific functional symptoms."
+  },
+  {
+    "golden_id_a": "gold_132",
+    "golden_id_b": "gold_198",
+    "message_a": "So I have my shiny brand new @115858 MacBook and I can\u2019t use it because it refuses to connect to my internet \ud83d\ude2d @AppleSupport Help me please",
+    "message_b": "@AppleSupport Can I use my wired  printer  having USB on my MacBook pro which has  has c type?..Pls suggest if USB hub and c-type to USB female will work for it?",
+    "human_label_a": "general_device_support",
+    "human_label_b": "hardware_audio_connection_issue",
+    "similarity_score": 0.0542,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "can use",
+      "macbook",
+      "use"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'hardware_audio_connection_issue'. Shared lexical cues ('can use, macbook, use') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_029",
+    "golden_id_b": "gold_103",
+    "message_a": "@115858 sort your shit out!!! I\u2019m switching to Samsung if my phone doesn\u2019t stop going slower than a turtle \ud83d\ude21\ud83d\ude21\ud83d\ude21\ud83d\udc22",
+    "message_b": "@AppleSupport so my iPhone crashes touch seems to stop working altho I can access wifi menu etc Ask apple the issue they tell me my phone screen needs replaced - get new phone and same issue happens is this a problem with iOS or the 8?",
+    "human_label_a": "general_device_support",
+    "human_label_b": "display_touch_issue",
+    "similarity_score": 0.0536,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "my phone",
+      "phone",
+      "stop"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'display_touch_issue'. Shared lexical cues ('my phone, phone, stop') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_124",
+    "golden_id_b": "gold_177",
+    "message_a": "What is up @115858 @AppleSupport with the letter I looking like this \ud83d\udc49\ud83c\udffc I\ufe0f  on my IPhone",
+    "message_b": "My IPhone glitch is that it won\u2019t stay connected to any WiFi. @AppleSupport ?",
+    "human_label_a": "keyboard_typing_issue",
+    "human_label_b": "hardware_audio_connection_issue",
+    "similarity_score": 0.0535,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "my iphone",
+      "iphone"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'keyboard_typing_issue' and 'hardware_audio_connection_issue'. Shared vocabulary ('my iphone, iphone') with cosine similarity 0.05 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_003",
+    "golden_id_b": "gold_004",
+    "message_a": "@AppleSupport it works on my phone but not my MacBook",
+    "message_b": "@AppleSupport my phone slow as hell after this update cmon now \ud83e\udd26\ud83c\udffb\u200d\u2642\ufe0f lagging like it\u2019s a iPhone 3",
+    "human_label_a": "unclear_needs_review",
+    "human_label_b": "software_update_problem",
+    "similarity_score": 0.0535,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "my phone",
+      "phone"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'unclear_needs_review' and 'software_update_problem'. Shared vocabulary ('my phone, phone') with cosine similarity 0.05 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_144",
+    "golden_id_b": "gold_169",
+    "message_a": "Whenever I log into @127550 on Safari, here's what I get: A blank screen. \n@AppleSupport https://t.co/ocpYFMNu4R",
+    "message_b": "@115858 fix this fucking question mark exclamation shit before I\ufe0f get a tracfone",
+    "human_label_a": "general_device_support",
+    "human_label_b": "keyboard_typing_issue",
+    "similarity_score": 0.0531,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "get"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'keyboard_typing_issue'. Shared lexical cues ('get') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_075",
+    "golden_id_b": "gold_105",
+    "message_a": "@AppleSupport my app store\u2019s not working :(",
+    "message_b": "@AppleSupport hey guys just curious - why aren\u2019t iOS app updates automatic? Seems pretty clear here, no? Yet I manually have to check and click Update All daily... https://t.co/jFgs9KRl9U",
+    "human_label_a": "general_device_support",
+    "human_label_b": "software_update_problem",
+    "similarity_score": 0.0531,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "app"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'software_update_problem'. Shared lexical cues ('app') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_087",
+    "golden_id_b": "gold_109",
+    "message_a": "@115858 bought a MacBook Pro 6 weeks ago. It was faulty straight out of the box. Just had it exchanged and the new one is also faulty. Shit",
+    "message_b": "Can\u2019t turn off WiFi from control center? New @115858 iOS is garbage. Who knows how to roll back to the good one?",
+    "human_label_a": "general_device_support",
+    "human_label_b": "software_update_problem",
+    "similarity_score": 0.053,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "new",
+      "one"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'software_update_problem'. Shared lexical cues ('new, one') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_047",
+    "golden_id_b": "gold_103",
+    "message_a": "@AppleSupport photos not syncing properly between OSX high Sierra and iOS.  Same problem in several versions  d was hoping would get fixed. Say an album with 172 pics but only 33 transfer.  Have rebuilt library. Wiped iPhone. Closed and reopened apps. Reset devices. Etc.",
+    "message_b": "@AppleSupport so my iPhone crashes touch seems to stop working altho I can access wifi menu etc Ask apple the issue they tell me my phone screen needs replaced - get new phone and same issue happens is this a problem with iOS or the 8?",
+    "human_label_a": "mac_software_issue",
+    "human_label_b": "display_touch_issue",
+    "similarity_score": 0.0527,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "problem",
+      "iphone",
+      "get",
+      "ios",
+      "etc"
+    ],
+    "possible_ambiguity_explanation": "Platform boundary between macOS desktop environment and specific function 'display_touch_issue'. Shared cues ('problem, iphone, get, ios, etc') reflect macOS context with specific functional symptoms."
+  },
+  {
+    "golden_id_a": "gold_158",
+    "golden_id_b": "gold_181",
+    "message_a": "@AppleSupport should my laptop charger be hot enough to burn me, because it just completely blistered my skin...?",
+    "message_b": ". @115858 my laptop not letting me use my keyboard or mouse.... y\u2019all need to help me out",
+    "human_label_a": "battery_power_issue",
+    "human_label_b": "keyboard_typing_issue",
+    "similarity_score": 0.0522,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "my laptop",
+      "laptop"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'battery_power_issue' and 'keyboard_typing_issue'. Shared vocabulary ('my laptop, laptop') with cosine similarity 0.05 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_067",
+    "golden_id_b": "gold_026",
+    "message_a": "Hey @115858 I\ufe0f need you to fix this.",
+    "message_b": "@115858 for the love of #280characters would you please fix this I\ufe0f crap!  It\u2019s annoying AF! Also apps are loading wrong on 6splus, because of X screen size.",
+    "human_label_a": "unclear_needs_review",
+    "human_label_b": "display_touch_issue",
+    "similarity_score": 0.0522,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "fix this",
+      "fix"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'unclear_needs_review' and 'display_touch_issue'. Shared vocabulary ('fix this, fix') with cosine similarity 0.05 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_035",
+    "golden_id_b": "gold_198",
+    "message_a": "Fix this update @AppleSupport @115858 why can\u2019t I\ufe0f type the letter \u201cI\ufe0f\u201d why the hell are these special characters in my predictive text?!?",
+    "message_b": "@AppleSupport Can I use my wired  printer  having USB on my MacBook pro which has  has c type?..Pls suggest if USB hub and c-type to USB female will work for it?",
+    "human_label_a": "keyboard_typing_issue",
+    "human_label_b": "hardware_audio_connection_issue",
+    "similarity_score": 0.0517,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "type"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'keyboard_typing_issue' and 'hardware_audio_connection_issue'. Shared vocabulary ('type') with cosine similarity 0.05 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_107",
+    "golden_id_b": "gold_089",
+    "message_a": "@AppleSupport Come on @115858 can\u2019t believe all the issues with .3! Drops WiFi and BT randomly, Battery life sucks &amp; locks up landscape! 7+",
+    "message_b": "@115858 why the fuck is my wifi on AGAIN ?",
+    "human_label_a": "software_update_problem",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.0517,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "wifi"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'software_update_problem'. Shared lexical cues ('wifi') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_073",
+    "golden_id_b": "gold_087",
+    "message_a": "@AppleSupport how much is it for an iPhone 7 glass screen? Struggling to find anything and I\u2019m not wanting to book in the repair. Had this modern phone two weeks and it\u2019s shattered off one little fall.  \ud83d\ude14 #disappointed",
+    "message_b": "@115858 bought a MacBook Pro 6 weeks ago. It was faulty straight out of the box. Just had it exchanged and the new one is also faulty. Shit",
+    "human_label_a": "display_touch_issue",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.0516,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "weeks",
+      "one"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'display_touch_issue'. Shared lexical cues ('weeks, one') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_075",
+    "golden_id_b": "gold_154",
+    "message_a": "@AppleSupport my app store\u2019s not working :(",
+    "message_b": "I\u2019m so happy the #iPhoneX came out. Now my Fossil of a phone #iPhone7 can start working at an incredibly slow pace and shut off randomly. @115858 at its finest.",
+    "human_label_a": "general_device_support",
+    "human_label_b": "battery_power_issue",
+    "similarity_score": 0.0515,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "working"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'battery_power_issue'. Shared lexical cues ('working') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_063",
+    "golden_id_b": "gold_074",
+    "message_a": "@AppleSupport App Store not working for me either",
+    "message_b": "@AppleSupport laptop keeps shutting down during startup, tried a bunch of resets but nothing's working PLS HELP.",
+    "human_label_a": "general_device_support",
+    "human_label_b": "battery_power_issue",
+    "similarity_score": 0.0512,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "working"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'battery_power_issue'. Shared lexical cues ('working') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_026",
+    "golden_id_b": "gold_082",
+    "message_a": "@115858 for the love of #280characters would you please fix this I\ufe0f crap!  It\u2019s annoying AF! Also apps are loading wrong on 6splus, because of X screen size.",
+    "message_b": "@AppleSupport ever since the new update my i7 has been EXTREMELY laggy, when I type the keyboard lags and opening or switching apps, everything lags. Please fix this in a new patch. \nI\u2019m also seeing the question mark box on twitter.",
+    "human_label_a": "display_touch_issue",
+    "human_label_b": "software_update_problem",
+    "similarity_score": 0.0512,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "please fix",
+      "fix this",
+      "apps",
+      "also",
+      "fix"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'display_touch_issue' and 'software_update_problem'. Shared vocabulary ('please fix, fix this, apps, also, fix') with cosine similarity 0.05 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_027",
+    "golden_id_b": "gold_140",
+    "message_a": "@AppleSupport since updating to high sierra I'm seeing lots of notifications from Time Machine, which I don't use. How do I turn off?",
+    "message_b": "Looks like its a common problem with the @115858 High Sierra download as there are a number of pics posted on the web. \nThis is the same error message which I got today.\nIt doesn't allow you to quit download unless you know your way around computers. Needs fixing asap @116333 https://t.co/PIbCxNlyoc",
+    "human_label_a": "mac_software_issue",
+    "human_label_b": "software_update_problem",
+    "similarity_score": 0.051,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "high sierra",
+      "sierra",
+      "high"
+    ],
+    "possible_ambiguity_explanation": "Platform boundary between macOS desktop environment and specific function 'software_update_problem'. Shared cues ('high sierra, sierra, high') reflect macOS context with specific functional symptoms."
+  },
+  {
+    "golden_id_a": "gold_157",
+    "golden_id_b": "gold_064",
+    "message_a": "@AppleSupport where can I find out if my AirPods are still under the warranty?",
+    "message_b": "@AppleSupport please fix this letter \u201ceye\u201d problem!! I\ufe0f paid all this money for this phone &amp; I\u2019m still seeing blocks!",
+    "human_label_a": "hardware_audio_connection_issue",
+    "human_label_b": "keyboard_typing_issue",
+    "similarity_score": 0.0509,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "still"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'hardware_audio_connection_issue' and 'keyboard_typing_issue'. Shared vocabulary ('still') with cosine similarity 0.05 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_003",
+    "golden_id_b": "gold_103",
+    "message_a": "@AppleSupport it works on my phone but not my MacBook",
+    "message_b": "@AppleSupport so my iPhone crashes touch seems to stop working altho I can access wifi menu etc Ask apple the issue they tell me my phone screen needs replaced - get new phone and same issue happens is this a problem with iOS or the 8?",
+    "human_label_a": "unclear_needs_review",
+    "human_label_b": "display_touch_issue",
+    "similarity_score": 0.0503,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "my phone",
+      "phone"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'unclear_needs_review' and 'display_touch_issue'. Shared vocabulary ('my phone, phone') with cosine similarity 0.05 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  },
+  {
+    "golden_id_a": "gold_079",
+    "golden_id_b": "gold_140",
+    "message_a": "@AppleSupport What have you guys done with High Sierra? It has completely bugged out a bunch of programs?! Go back! :) Just needing some help. Thanks",
+    "message_b": "Looks like its a common problem with the @115858 High Sierra download as there are a number of pics posted on the web. \nThis is the same error message which I got today.\nIt doesn't allow you to quit download unless you know your way around computers. Needs fixing asap @116333 https://t.co/PIbCxNlyoc",
+    "human_label_a": "mac_software_issue",
+    "human_label_b": "software_update_problem",
+    "similarity_score": 0.0502,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "high sierra",
+      "sierra",
+      "high"
+    ],
+    "possible_ambiguity_explanation": "Platform boundary between macOS desktop environment and specific function 'software_update_problem'. Shared cues ('high sierra, sierra, high') reflect macOS context with specific functional symptoms."
+  },
+  {
+    "golden_id_a": "gold_003",
+    "golden_id_b": "gold_097",
+    "message_a": "@AppleSupport it works on my phone but not my MacBook",
+    "message_b": "My phone is malfunctioning. My texts are coming in, but I\u2019m not getting the notification and it\u2019s going to the bottom of my messages @AppleSupport",
+    "human_label_a": "unclear_needs_review",
+    "human_label_b": "general_device_support",
+    "similarity_score": 0.0502,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "my phone",
+      "phone"
+    ],
+    "possible_ambiguity_explanation": "Cross-boundary between general device triage and specific intent 'unclear_needs_review'. Shared lexical cues ('my phone, phone') may indicate that one message was interpreted as a broad operational friction while the other was assigned to a concrete operational symptom."
+  },
+  {
+    "golden_id_a": "gold_074",
+    "golden_id_b": "gold_181",
+    "message_a": "@AppleSupport laptop keeps shutting down during startup, tried a bunch of resets but nothing's working PLS HELP.",
+    "message_b": ". @115858 my laptop not letting me use my keyboard or mouse.... y\u2019all need to help me out",
+    "human_label_a": "battery_power_issue",
+    "human_label_b": "keyboard_typing_issue",
+    "similarity_score": 0.0501,
+    "priority": "LOW",
+    "shared_semantic_signals": [
+      "laptop"
+    ],
+    "possible_ambiguity_explanation": "Semantic overlap across distinct operational categories 'battery_power_issue' and 'keyboard_typing_issue'. Shared vocabulary ('laptop') with cosine similarity 0.05 suggests multi-symptom customer phrasing or borderline operational interpretation."
+  }
+]

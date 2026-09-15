@@ -1,0 +1,23 @@
+{
+  "root_cause_counts": {
+    "RETRIEVAL_MISS": 0,
+    "RANKING_MISS": 0,
+    "VALIDATION_OVER_REJECTION": 0,
+    "REPRESENTATION_LIMITATION": 0,
+    "TRUE_KNOWLEDGE_GAP": 41,
+    "INSUFFICIENT_INFORMATION": 2
+  },
+  "root_cause_percentages": {
+    "RETRIEVAL_MISS": 0.0,
+    "RANKING_MISS": 0.0,
+    "VALIDATION_OVER_REJECTION": 0.0,
+    "REPRESENTATION_LIMITATION": 0.0,
+    "TRUE_KNOWLEDGE_GAP": 95.3,
+    "INSUFFICIENT_INFORMATION": 4.7
+  },
+  "recoverable_failure_count": 0,
+  "recoverable_failure_rate": 0.0,
+  "true_knowledge_gap_count": 41,
+  "true_knowledge_gap_rate": 0.9535,
+  "primary_bottleneck": "TRUE_KNOWLEDGE_GAP"
+}

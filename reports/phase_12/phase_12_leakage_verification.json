@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-09-14T19:36:34.496452",
+  "golden_dataset_path": "data/golden/golden_set_human_review.csv",
+  "golden_sha256": "1d3e9b3b8bdef3750437e59b17ab7c27167fd1548c2bb29de984151296c5b45a",
+  "golden_records_count": 200,
+  "historical_corpus_overlap_count": 0,
+  "zero_leakage_status": "PASS"
+}

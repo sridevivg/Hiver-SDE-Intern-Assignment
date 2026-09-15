@@ -1,0 +1,19 @@
+{
+  "evidence_id": "ev_8d74297ee496",
+  "version": "1.0.0",
+  "originating_resolution_id": "res_411507e4039b",
+  "source_type": "HUMAN_VALIDATED_EVIDENCE",
+  "provenance": "reviewed_human_resolution",
+  "problem_family": "ACCESSORY_PERIPHERAL",
+  "primary_intent": "general_device_support",
+  "customer_problem_summary": "My Apple Pencil 2nd generation won't magnetically pair with my iPad Pro M2.",
+  "brand_guidance": "Attach Apple Pencil to magnetic connector, go to Settings > Bluetooth, forget device and tap pair.",
+  "operational_actions": [
+    "bluetooth_repair"
+  ],
+  "evidence_quality_score": 0.95,
+  "created_at": "2026-09-15T03:51:50.551066",
+  "approved_at": "2026-09-15T03:51:50.553734",
+  "promoted_at": "2026-09-15T03:51:50.554280",
+  "reviewer_id": "lead_specialist_42"
+}

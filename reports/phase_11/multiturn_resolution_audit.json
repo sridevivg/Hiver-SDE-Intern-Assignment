@@ -1,0 +1,189 @@
+{
+  "timestamp": "2026-09-14T19:06:13.505691",
+  "total_scenarios": 10,
+  "passed_scenarios": 10,
+  "scenario_pass_rate": 1.0,
+  "repeat_prevention_rate": 1.0,
+  "semantic_aliasing_accuracy": 1.0,
+  "clarification_precision": 1.0,
+  "resolution_confirmation_accuracy": 1.0,
+  "safe_escalation_fidelity": 1.0,
+  "context_fact_retention_rate": 1.0,
+  "unsafe_handle_rate": 0.0,
+  "results": [
+    {
+      "scenario_id": "SCENARIO_A",
+      "name": "Customer Already Attempted Action (Prior Attempt Recognition)",
+      "passed": true,
+      "total_turns": 4,
+      "final_status": "ACTIVE",
+      "final_stage": "AWAITING_RESULT",
+      "actions_recommended": [
+        "check_airplane_mode",
+        "forget_and_reconnect_wifi"
+      ],
+      "repeat_violations": [],
+      "facts_retained": {},
+      "escalation_package_present": false,
+      "error_message": null
+    },
+    {
+      "scenario_id": "SCENARIO_B",
+      "name": "Progressive Troubleshooting Progression",
+      "passed": true,
+      "total_turns": 6,
+      "final_status": "ACTIVE",
+      "final_stage": "AWAITING_RESULT",
+      "actions_recommended": [
+        "check_airplane_mode",
+        "restart_device",
+        "forget_and_reconnect_wifi"
+      ],
+      "repeat_violations": [],
+      "facts_retained": {
+        "device_model": "Iphone 14"
+      },
+      "escalation_package_present": false,
+      "error_message": null
+    },
+    {
+      "scenario_id": "SCENARIO_C",
+      "name": "Clarification Loop Prevention & Ambiguity Resolution",
+      "passed": true,
+      "total_turns": 6,
+      "final_status": "ESCALATED",
+      "final_stage": "ESCALATED",
+      "actions_recommended": [
+        "restart_device"
+      ],
+      "repeat_violations": [],
+      "facts_retained": {},
+      "escalation_package_present": true,
+      "error_message": null
+    },
+    {
+      "scenario_id": "SCENARIO_D",
+      "name": "Negative Confirmation / Rejection Handling",
+      "passed": true,
+      "total_turns": 4,
+      "final_status": "ACTIVE",
+      "final_stage": "AWAITING_RESULT",
+      "actions_recommended": [
+        "check_silent_mode",
+        "adjust_volume_settings"
+      ],
+      "repeat_violations": [],
+      "facts_retained": {
+        "device_model": "Airpods"
+      },
+      "escalation_package_present": false,
+      "error_message": null
+    },
+    {
+      "scenario_id": "SCENARIO_E",
+      "name": "Resolution Confirmation & Clean State Closure",
+      "passed": true,
+      "total_turns": 4,
+      "final_status": "RESOLVED",
+      "final_stage": "RESOLVED",
+      "actions_recommended": [
+        "restart_device"
+      ],
+      "repeat_violations": [],
+      "facts_retained": {},
+      "escalation_package_present": false,
+      "error_message": null
+    },
+    {
+      "scenario_id": "SCENARIO_F",
+      "name": "Problem Worsening / Urgent Safety Escalation",
+      "passed": true,
+      "total_turns": 4,
+      "final_status": "ESCALATED",
+      "final_stage": "ESCALATED",
+      "actions_recommended": [
+        "restart_device"
+      ],
+      "repeat_violations": [],
+      "facts_retained": {},
+      "escalation_package_present": true,
+      "error_message": null
+    },
+    {
+      "scenario_id": "SCENARIO_G",
+      "name": "Topic Drift / Multiple Problems in One Conversation",
+      "passed": true,
+      "total_turns": 4,
+      "final_status": "ACTIVE",
+      "final_stage": "AWAITING_RESULT",
+      "actions_recommended": [
+        "check_airplane_mode",
+        "restart_device"
+      ],
+      "repeat_violations": [],
+      "facts_retained": {},
+      "escalation_package_present": false,
+      "error_message": null
+    },
+    {
+      "scenario_id": "SCENARIO_H",
+      "name": "Context Retention Across Long Multi-Turn Dialogue",
+      "passed": true,
+      "total_turns": 8,
+      "final_status": "ACTIVE",
+      "final_stage": "AWAITING_RESULT",
+      "actions_recommended": [
+        "check_airplane_mode",
+        "restart_device",
+        "reseat_sim_card",
+        "reset_network_settings"
+      ],
+      "repeat_violations": [],
+      "facts_retained": {
+        "device_model": "Iphone 13 Pro",
+        "os_version": "IOS 17.2",
+        "carrier": "Verizon"
+      },
+      "escalation_package_present": false,
+      "error_message": null
+    },
+    {
+      "scenario_id": "SCENARIO_I",
+      "name": "Semantic Equivalence Repeat Prevention",
+      "passed": true,
+      "total_turns": 4,
+      "final_status": "ACTIVE",
+      "final_stage": "AWAITING_RESULT",
+      "actions_recommended": [
+        "check_airplane_mode",
+        "forget_and_reconnect_wifi"
+      ],
+      "repeat_violations": [],
+      "facts_retained": {},
+      "escalation_package_present": false,
+      "error_message": null
+    },
+    {
+      "scenario_id": "SCENARIO_J",
+      "name": "Safe Human Escalation with Full Context Transfer",
+      "passed": true,
+      "total_turns": 10,
+      "final_status": "ESCALATED",
+      "final_stage": "ESCALATED",
+      "actions_recommended": [
+        "check_airplane_mode",
+        "restart_device",
+        "forget_and_reconnect_wifi",
+        "reset_network_settings"
+      ],
+      "repeat_violations": [],
+      "facts_retained": {
+        "device_model": "Iphone 14 Pro",
+        "os_version": "IOS 16.5"
+      },
+      "escalation_package_present": true,
+      "error_message": null
+    }
+  ],
+  "golden_sha256_verified": "1d3e9b3b8bdef3750437e59b17ab7c27167fd1548c2bb29de984151296c5b45a"
+}

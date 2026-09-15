@@ -74,17 +74,19 @@ backend/.env
 frontend/.env
 
 # ---------------------------------------------------------------------------
-# Data — Raw data MUST NOT be committed (too large / proprietary)
+# Data — Raw, Interim, Runtime, and Large Processed Dumps
 # ---------------------------------------------------------------------------
-data/raw/*.csv
-data/raw/**/*.csv
+data/raw/
 Dataset/
-
-# Interim & processed data (generated, reproducible)
-# Exclude large conversation text dumps that exceed GitHub file limits
+data/interim/
 data/processed/*.jsonl
-data/processed/conversations.jsonl
-
+data/processed/*.parquet
+data/processed/*.csv
+data/processed/*.joblib
+data/runtime/*
+!data/runtime/.gitkeep
+data/conversations/*
+!data/conversations/.gitkeep
 
 # ---------------------------------------------------------------------------
 # ML Artifacts
@@ -95,13 +97,17 @@ artifacts/figures/*.svg
 artifacts/evaluation/*.json
 *.pkl
 *.joblib
+*.parquet
 *.h5
 *.pt
 *.pth
 *.onnx
 
-# Keep reports
+# Keep reports & evaluation
 !artifacts/reports/
+!data/evaluation/
+!data/evidence_approved/
+!data/evidence_candidates/
 
 # ---------------------------------------------------------------------------
 # macOS

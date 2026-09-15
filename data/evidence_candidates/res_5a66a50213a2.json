@@ -1,0 +1,73 @@
+{
+  "resolution_id": "res_5a66a50213a2",
+  "conversation_id": "conv_ultra_action_button",
+  "case_id": null,
+  "customer_problem": "Apple Watch Ultra Action button does not open workout app.",
+  "confirmed_facts": {},
+  "problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+  "primary_intent": "general_device_support",
+  "actions_attempted": [
+    "reassign_action_button"
+  ],
+  "actions_that_worked": [
+    "reassign_action_button"
+  ],
+  "final_resolution": "Open Settings on Apple Watch Ultra, tap Action Button > Action, and assign Workout.",
+  "resolution_status": "RESOLVED",
+  "specialist_notes": "",
+  "evidence_sources": [
+    "https://support.apple.com/en-us/HT213426"
+  ],
+  "specialist_confidence": 1.0,
+  "created_at": "2026-09-15T03:52:12.916326",
+  "reviewed_at": "2026-09-15T03:52:12.919116",
+  "reviewer_id": "qa_lead",
+  "review_status": "APPROVED",
+  "rejection_reason": null,
+  "validation_result": {
+    "decision": "APPROVE",
+    "is_valid": true,
+    "checks": {
+      "completeness": "PASS",
+      "problem_family_consistency": "PASS",
+      "fact_consistency": "PASS",
+      "action_result_consistency": "PASS",
+      "provenance": "PASS",
+      "contradiction": "PASS",
+      "safety": "PASS",
+      "plausibility": "PASS",
+      "unsupported_claims": "PASS",
+      "golden_isolation": "PASS"
+    },
+    "rejection_reasons": [],
+    "quality_evaluation": {
+      "overall_score": 0.95,
+      "verdict": "HIGH_QUALITY",
+      "dimension_scores": {
+        "problem_alignment": 1.0,
+        "fact_alignment": 0.8,
+        "action_validity": 1.0,
+        "resolution_completeness": 0.8,
+        "provenance_credibility": 1.0,
+        "internal_consistency": 1.0,
+        "safety_compliance": 1.0,
+        "reproducibility": 1.0
+      },
+      "positive_factors": [
+        "Strong problem alignment with customer inquiry keywords.",
+        "Clear verified working actions identified: reassign_action_button.",
+        "External or internal documentation sources cited.",
+        "Logical coherence between problem family and resolution state.",
+        "Full compliance with safety and brand standards.",
+        "Clear actionable navigation steps ensuring reproducibility."
+      ],
+      "blocking_factors": [],
+      "vetoed": false
+    },
+    "reviewer_id": "automated_review_gate",
+    "timestamp": "2026-09-15T03:52:12.918581"
+  },
+  "promotion_status": "PROMOTED",
+  "evidence_quality_score": 0.95,
+  "version": "1.0.0"
+}

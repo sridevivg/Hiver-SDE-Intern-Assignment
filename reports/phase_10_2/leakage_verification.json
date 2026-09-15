@@ -1,0 +1,9 @@
+{
+  "is_leakage_free": true,
+  "overlap_count": 0,
+  "overlapping_case_ids": [],
+  "total_indexed_cases": 80487,
+  "golden_sha256_pre": "1d3e9b3b8bdef3750437e59b17ab7c27167fd1548c2bb29de984151296c5b45a",
+  "golden_sha256_post": "1d3e9b3b8bdef3750437e59b17ab7c27167fd1548c2bb29de984151296c5b45a",
+  "golden_dataset_immutable": true
+}

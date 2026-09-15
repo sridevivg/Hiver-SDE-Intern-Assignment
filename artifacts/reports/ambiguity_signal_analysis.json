@@ -1,0 +1,44 @@
+[
+  {
+    "signal_name": "SIGNAL_A_INSUFFICIENT_INFO",
+    "records_triggered": 31,
+    "errors_intercepted": 15,
+    "correct_escalated": 16,
+    "interception_precision": 0.4839
+  },
+  {
+    "signal_name": "SIGNAL_B_WEAK_PROBLEM",
+    "records_triggered": 29,
+    "errors_intercepted": 15,
+    "correct_escalated": 14,
+    "interception_precision": 0.5172
+  },
+  {
+    "signal_name": "SIGNAL_C_GENUINE_CONFLICT",
+    "records_triggered": 4,
+    "errors_intercepted": 3,
+    "correct_escalated": 1,
+    "interception_precision": 0.75
+  },
+  {
+    "signal_name": "SIGNAL_D_EVIDENCE_DISAGREEMENT",
+    "records_triggered": 14,
+    "errors_intercepted": 7,
+    "correct_escalated": 7,
+    "interception_precision": 0.5
+  },
+  {
+    "signal_name": "SIGNAL_F_MULTI_SYMPTOM_COMPLEXITY",
+    "records_triggered": 1,
+    "errors_intercepted": 1,
+    "correct_escalated": 0,
+    "interception_precision": 1.0
+  },
+  {
+    "signal_name": "SAFETY_VETO_COMBINED",
+    "records_triggered": 32,
+    "errors_intercepted": 17,
+    "correct_escalated": 15,
+    "interception_precision": 0.5312
+  }
+]

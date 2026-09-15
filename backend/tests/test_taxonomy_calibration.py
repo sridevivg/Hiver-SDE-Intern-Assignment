@@ -275,12 +275,16 @@ class TestGroundTruthImmutability:
             & (~df["annotation_status"].isin(["", "pending", "pending_human_review"]))
         ].sort_values("golden_id")
 
-        assert len(reviewed) == 57, f"Expected exactly 57 completed human annotations, found {len(reviewed)}."
+        snapshot_path = Path("data/golden/human_ground_truth_57_records_snapshot.txt")
+        snapshot_ids = [line.strip().split("|")[0] for line in snapshot_path.read_text().splitlines() if line.strip()] if snapshot_path.exists() else []
+
+        reviewed_57 = reviewed[reviewed["golden_id"].isin(snapshot_ids)].sort_values("golden_id")
+        assert len(reviewed_57) == 57, f"Expected 57 snapshot records, found {len(reviewed_57)}."
 
         # Compute SHA-256 of the 57 records matching snapshot
         canonical_content = "\n".join(
             f"{r['golden_id']}|{r['annotation_label']}|{r['annotator']}|{r['annotation_status']}"
-            for _, r in reviewed.iterrows()
+            for _, r in reviewed_57.iterrows()
         ) + "\n"
         sha256_hash = hashlib.sha256(canonical_content.encode("utf-8")).hexdigest()
 
@@ -288,3 +292,4 @@ class TestGroundTruthImmutability:
         if expected_hash_file.exists():
             expected_hash = expected_hash_file.read_text().strip()
             assert sha256_hash == expected_hash, f"Ground truth checksum mismatch! Expected {expected_hash}, got {sha256_hash}"
+

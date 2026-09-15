@@ -1,0 +1,78 @@
+{
+  "total_evaluated_records": 77,
+  "pre_eval_sha256": "1d3e9b3b8bdef3750437e59b17ab7c27167fd1548c2bb29de984151296c5b45a",
+  "post_eval_sha256": "1d3e9b3b8bdef3750437e59b17ab7c27167fd1548c2bb29de984151296c5b45a",
+  "dataset_immutability_pass": true,
+  "primary_intent_accuracy": 0.5584,
+  "top_2_coverage": 0.7013,
+  "top_3_coverage": 0.7273,
+  "macro_f1": 0.4936,
+  "composite_verdict_distribution": {
+    "DIRECT_STRONG_EVIDENCE": 19,
+    "COMPOSITE_STRONG_EVIDENCE": 2,
+    "MODERATE_COMPOSITE_EVIDENCE": 2,
+    "WEAK_COMPOSITE_EVIDENCE": 54,
+    "CONFLICTING_COMPOSITE_EVIDENCE": 0,
+    "INSUFFICIENT_COMPOSITE_EVIDENCE": 0
+  },
+  "direct_strong_evidence_count": 19,
+  "composite_strong_evidence_count": 2,
+  "moderate_composite_count": 2,
+  "weak_composite_count": 54,
+  "conflicting_composite_count": 0,
+  "insufficient_composite_count": 0,
+  "usable_evidence_count": 21,
+  "usable_evidence_coverage_rate": 0.2727,
+  "coverage_expansion_delta": 0.0259,
+  "symptom_coverage_rate": 0.3247,
+  "context_coverage_rate": 0.1429,
+  "device_coverage_rate": 0.2208,
+  "resolution_pattern_coverage_rate": 0.7532,
+  "average_intent_consistency": 0.487,
+  "average_composite_support_score": 0.376,
+  "conflict_detected_count": 2,
+  "intent_conflict_count": 2,
+  "symptom_contradiction_count": 0,
+  "total_excluded_cases_count": 3,
+  "deduplicated_cases_count": 0,
+  "auto_handle_count": 19,
+  "auto_handle_rate": 0.2468,
+  "auto_handle_accuracy": 0.6316,
+  "unsafe_auto_handles_count": 7,
+  "escalation_count": 58,
+  "escalation_rate": 0.7532,
+  "error_interception_rate": 0.7941,
+  "progression_comparison": {
+    "Phase 6 (Uncertainty Routing)": {
+      "auto_handle_rate": 0.3636,
+      "auto_handle_acc": 0.8214,
+      "unsafe_auto_handles": 5,
+      "error_interception_rate": 0.8529
+    },
+    "Phase 7.1 (Ambiguity Gating)": {
+      "auto_handle_rate": 0.3117,
+      "auto_handle_acc": 0.875,
+      "unsafe_auto_handles": 3,
+      "error_interception_rate": 0.9118
+    },
+    "Phase 8 (Evidence Resolution)": {
+      "auto_handle_rate": 0.2338,
+      "auto_handle_acc": 0.6111,
+      "unsafe_auto_handles": 7,
+      "error_interception_rate": 0.7941
+    },
+    "Phase 9 (Escalation Recovery)": {
+      "auto_handle_rate": 0.2338,
+      "auto_handle_acc": 0.6111,
+      "unsafe_auto_handles": 7,
+      "error_interception_rate": 0.7941
+    },
+    "Phase 10 (Composite Evidence)": {
+      "auto_handle_rate": 0.2468,
+      "auto_handle_acc": 0.6316,
+      "unsafe_auto_handles": 7,
+      "error_interception_rate": 0.7941,
+      "usable_evidence_coverage_rate": 0.2727
+    }
+  }
+}

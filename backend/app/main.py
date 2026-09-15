@@ -14,9 +14,31 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 try:
+    from app.api.routes.conversations import router as conversations_router
+    from app.api.routes.feedback import router as feedback_router
+    from app.api.routes.human_review import router as human_review_router
+    from app.api.routes.intent import router as intent_router
+    from app.api.routes.observability import router as observability_router
+    from app.api.routes.support_resolution import router as resolution_router
     from app.core.config import settings
     from app.core.logging import configure_logging, get_logger
 except ModuleNotFoundError:
+    from backend.app.api.routes.conversations import (  # type: ignore[no-redef]
+        router as conversations_router,
+    )
+    from backend.app.api.routes.feedback import (  # type: ignore[no-redef]
+        router as feedback_router,
+    )
+    from backend.app.api.routes.human_review import (  # type: ignore[no-redef]
+        router as human_review_router,
+    )
+    from backend.app.api.routes.intent import router as intent_router  # type: ignore[no-redef]
+    from backend.app.api.routes.observability import (  # type: ignore[no-redef]
+        router as observability_router,
+    )
+    from backend.app.api.routes.support_resolution import (  # type: ignore[no-redef]
+        router as resolution_router,
+    )
     from backend.app.core.config import settings  # type: ignore[no-redef]
     from backend.app.core.logging import configure_logging, get_logger  # type: ignore[no-redef]
 
@@ -77,6 +99,14 @@ app.add_middleware(
 # ---------------------------------------------------------------------------
 # Routes
 # ---------------------------------------------------------------------------
+app.include_router(intent_router, prefix="/api/v1")
+app.include_router(resolution_router, prefix="/api/v1")
+app.include_router(conversations_router, prefix="/api/v1")
+app.include_router(feedback_router, prefix="/api/v1")
+app.include_router(observability_router, prefix="/api/v1")
+app.include_router(human_review_router, prefix="/api/v1")
+
+
 @app.get(
     "/health",
     summary="Health Check",
@@ -95,3 +125,4 @@ async def health() -> dict[str, str]:
         "status": "healthy",
         "service": "supportgraph-ai",
     }
+

@@ -1,0 +1,168 @@
+{
+  "battery_power_issue": {
+    "intent_label": "battery_power_issue",
+    "reviewed_count": 7,
+    "average_pairwise_similarity": 0.0146,
+    "min_pairwise_similarity": 0.0,
+    "max_pairwise_similarity": 0.1246,
+    "semantic_diversity_indicator": 0.9854,
+    "insufficient_sample_flag": false,
+    "sample_size_caveat": "Sufficient preliminary sample (N=7); representative of reviewed subset.",
+    "outlier_records": [
+      {
+        "golden_id": "gold_180",
+        "customer_message": ".@115858 battery and velocity of my iPhone 6 really sucks / bater\u00eda y velocidad de mi iPhone 6 con el iOS 11 realmente apestan #iOS11 #fail",
+        "mean_similarity_to_class": 0.0043
+      },
+      {
+        "golden_id": "gold_154",
+        "customer_message": "I\u2019m so happy the #iPhoneX came out. Now my Fossil of a phone #iPhone7 can start working at an incredibly slow pace and shut off randomly. @115858 at its finest.",
+        "mean_similarity_to_class": 0.007
+      }
+    ]
+  },
+  "billing_purchase_issue": {
+    "intent_label": "billing_purchase_issue",
+    "reviewed_count": 1,
+    "average_pairwise_similarity": 1.0,
+    "min_pairwise_similarity": 1.0,
+    "max_pairwise_similarity": 1.0,
+    "semantic_diversity_indicator": 0.0,
+    "insufficient_sample_flag": true,
+    "sample_size_caveat": "Preliminary sample size (N=1 < 5); findings are descriptive and lack statistical power.",
+    "outlier_records": []
+  },
+  "display_touch_issue": {
+    "intent_label": "display_touch_issue",
+    "reviewed_count": 3,
+    "average_pairwise_similarity": 0.0211,
+    "min_pairwise_similarity": 0.0126,
+    "max_pairwise_similarity": 0.0362,
+    "semantic_diversity_indicator": 0.9789,
+    "insufficient_sample_flag": true,
+    "sample_size_caveat": "Preliminary sample size (N=3 < 5); findings are descriptive and lack statistical power.",
+    "outlier_records": [
+      {
+        "golden_id": "gold_026",
+        "customer_message": "@115858 for the love of #280characters would you please fix this I\ufe0f crap!  It\u2019s annoying AF! Also apps are loading wrong on 6splus, because of X screen size.",
+        "mean_similarity_to_class": 0.0135
+      }
+    ]
+  },
+  "general_device_support": {
+    "intent_label": "general_device_support",
+    "reviewed_count": 26,
+    "average_pairwise_similarity": 0.0118,
+    "min_pairwise_similarity": 0.0,
+    "max_pairwise_similarity": 0.7944,
+    "semantic_diversity_indicator": 0.9882,
+    "insufficient_sample_flag": false,
+    "sample_size_caveat": "Sufficient preliminary sample (N=26); representative of reviewed subset.",
+    "outlier_records": [
+      {
+        "golden_id": "gold_128",
+        "customer_message": "hey @115858 can u fix IOS",
+        "mean_similarity_to_class": 0.0021
+      },
+      {
+        "golden_id": "gold_119",
+        "customer_message": "#Siri. Hate new voice seems to works less well. Sounds like a teenager. @115858 @AppleSupport   Options?  Multiple selection.",
+        "mean_similarity_to_class": 0.0039
+      }
+    ]
+  },
+  "hardware_audio_connection_issue": {
+    "intent_label": "hardware_audio_connection_issue",
+    "reviewed_count": 7,
+    "average_pairwise_similarity": 0.0138,
+    "min_pairwise_similarity": 0.0,
+    "max_pairwise_similarity": 0.142,
+    "semantic_diversity_indicator": 0.9862,
+    "insufficient_sample_flag": false,
+    "sample_size_caveat": "Sufficient preliminary sample (N=7); representative of reviewed subset.",
+    "outlier_records": [
+      {
+        "golden_id": "gold_157",
+        "customer_message": "@AppleSupport where can I find out if my AirPods are still under the warranty?",
+        "mean_similarity_to_class": 0.0
+      },
+      {
+        "golden_id": "gold_198",
+        "customer_message": "@AppleSupport Can I use my wired  printer  having USB on my MacBook pro which has  has c type?..Pls suggest if USB hub and c-type to USB female will work for it?",
+        "mean_similarity_to_class": 0.0019
+      }
+    ]
+  },
+  "keyboard_typing_issue": {
+    "intent_label": "keyboard_typing_issue",
+    "reviewed_count": 10,
+    "average_pairwise_similarity": 0.0242,
+    "min_pairwise_similarity": 0.0,
+    "max_pairwise_similarity": 0.1797,
+    "semantic_diversity_indicator": 0.9758,
+    "insufficient_sample_flag": false,
+    "sample_size_caveat": "Sufficient preliminary sample (N=10); representative of reviewed subset.",
+    "outlier_records": [
+      {
+        "golden_id": "gold_181",
+        "customer_message": ". @115858 my laptop not letting me use my keyboard or mouse.... y\u2019all need to help me out",
+        "mean_similarity_to_class": 0.0
+      },
+      {
+        "golden_id": "gold_001",
+        "customer_message": "@AppleSupport Just updated to latest #ios11. Autocorrect always suggests \"minuet\" when I want \"minute\". Trying to push baroque dances on us?",
+        "mean_similarity_to_class": 0.0035
+      }
+    ]
+  },
+  "mac_software_issue": {
+    "intent_label": "mac_software_issue",
+    "reviewed_count": 5,
+    "average_pairwise_similarity": 0.0465,
+    "min_pairwise_similarity": 0.0,
+    "max_pairwise_similarity": 0.107,
+    "semantic_diversity_indicator": 0.9535,
+    "insufficient_sample_flag": false,
+    "sample_size_caveat": "Sufficient preliminary sample (N=5); representative of reviewed subset.",
+    "outlier_records": [
+      {
+        "golden_id": "gold_086",
+        "customer_message": "@AppleSupport my MacBook Air has the dreaded spinning beach ball. Help please.",
+        "mean_similarity_to_class": 0.0
+      }
+    ]
+  },
+  "software_update_problem": {
+    "intent_label": "software_update_problem",
+    "reviewed_count": 13,
+    "average_pairwise_similarity": 0.0212,
+    "min_pairwise_similarity": 0.0,
+    "max_pairwise_similarity": 0.1305,
+    "semantic_diversity_indicator": 0.9788,
+    "insufficient_sample_flag": false,
+    "sample_size_caveat": "Sufficient preliminary sample (N=13); representative of reviewed subset.",
+    "outlier_records": [
+      {
+        "golden_id": "gold_140",
+        "customer_message": "Looks like its a common problem with the @115858 High Sierra download as there are a number of pics posted on the web. \nThis is the same error message which I got today.\nIt doesn't allow you to quit download unless you know your way around computers. Needs fixing asap @116333 https://t.co/PIbCxNlyoc",
+        "mean_similarity_to_class": 0.0018
+      },
+      {
+        "golden_id": "gold_109",
+        "customer_message": "Can\u2019t turn off WiFi from control center? New @115858 iOS is garbage. Who knows how to roll back to the good one?",
+        "mean_similarity_to_class": 0.0135
+      }
+    ]
+  },
+  "unclear_needs_review": {
+    "intent_label": "unclear_needs_review",
+    "reviewed_count": 5,
+    "average_pairwise_similarity": 0.0,
+    "min_pairwise_similarity": 0.0,
+    "max_pairwise_similarity": 0.0,
+    "semantic_diversity_indicator": 1.0,
+    "insufficient_sample_flag": false,
+    "sample_size_caveat": "Sufficient preliminary sample (N=5); representative of reviewed subset.",
+    "outlier_records": []
+  }
+}

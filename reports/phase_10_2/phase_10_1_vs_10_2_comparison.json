@@ -1,0 +1,60 @@
+{
+  "evaluation_timestamp": "2026-09-14T23:34:48.137208",
+  "protected_benchmark_records": 77,
+  "metrics_comparison": {
+    "usable_evidence_coverage": {
+      "phase_10_1": 0.2727,
+      "phase_10_2": 0.8182,
+      "delta": 0.5455
+    },
+    "direct_problem_match_rate": {
+      "phase_10_1": 0.2338,
+      "phase_10_2": 0.7662,
+      "delta": 0.5324
+    },
+    "related_problem_match_rate": {
+      "phase_10_1": 0.0,
+      "phase_10_2": 0.0519,
+      "delta": 0.0519
+    },
+    "weak_semantic_match_rate": {
+      "phase_10_1": 0.7273,
+      "phase_10_2": 0.1688,
+      "delta": -0.5585
+    },
+    "evidence_limited_rate": {
+      "phase_10_1": 0.5584,
+      "phase_10_2": 0.1558,
+      "delta": -0.4026
+    },
+    "auto_handle_rate": {
+      "phase_10_1": 0.2468,
+      "phase_10_2": 0.5584,
+      "delta": 0.3116
+    },
+    "auto_handle_precision": {
+      "phase_10_1": 1.0,
+      "phase_10_2": 1.0,
+      "delta": 0.0
+    },
+    "unsafe_auto_handles": {
+      "phase_10_1": 0,
+      "phase_10_2": 0,
+      "delta": 0
+    }
+  },
+  "recovery_analysis": {
+    "previously_evidence_limited": 43,
+    "recovered_cases": 31,
+    "good_recovery_count": 31,
+    "bad_recovery_count": 0,
+    "recovery_rate": 0.7209,
+    "remaining_true_knowledge_gaps": 10
+  },
+  "leakage_verification": {
+    "golden_sha256_pre": "1d3e9b3b8bdef3750437e59b17ab7c27167fd1548c2bb29de984151296c5b45a",
+    "golden_sha256_post": "1d3e9b3b8bdef3750437e59b17ab7c27167fd1548c2bb29de984151296c5b45a",
+    "golden_dataset_immutable": true,
+    "golden_ids_in_corpus": 0
+  }
+}

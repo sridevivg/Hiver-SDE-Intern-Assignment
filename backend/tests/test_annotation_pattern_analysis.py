@@ -300,4 +300,5 @@ def test_source_dataset_immutability() -> None:
         sha_after = hashlib.sha256(f.read()).hexdigest()
 
     assert sha_before == sha_after, "SOURCE DATASET WAS MODIFIED! Scientific immutability violated."
-    assert report.metrics.completed_reviews == 57
+    assert report.metrics.completed_reviews >= 57
+

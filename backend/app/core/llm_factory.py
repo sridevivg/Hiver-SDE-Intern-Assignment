@@ -272,11 +272,15 @@ class GroqLLMClient(BaseLLMClient):
                     raise LLMAuthenticationError(f"Groq API authentication failed: {exc_str}")
 
                 is_rate_limit = "rate_limit" in exc_str.lower() or "429" in exc_str
-                if is_rate_limit and attempt < max_retries:
-                    wait_time = 2.0 * (attempt + 1)
-                    logger.warning("Groq rate limit encountered. Backing off for %.1fs...", wait_time)
-                    time.sleep(wait_time)
-                    continue
+                is_tpd = "tokens per day" in exc_str.lower() or "tpd" in exc_str.lower()
+                if is_rate_limit:
+                    if is_tpd:
+                        raise LLMRateLimitError(f"Groq daily token quota exceeded: {exc_str}")
+                    if attempt < max_retries:
+                        wait_time = 2.0 * (attempt + 1)
+                        logger.warning("Groq rate limit encountered. Backing off for %.1fs...", wait_time)
+                        time.sleep(wait_time)
+                        continue
 
                 if attempt == max_retries:
                     raise LLMError(f"Groq completion failed after retries: {exc_str}")

@@ -37,9 +37,9 @@ Derived from empirical human ground truth and observed confusion patterns.
 - Battery drain following an update routes to battery_power_issue.
 
 ### Observed Examples from Ground Truth:
-> *"@115858 there’s been a problem with my sisters iPhone 7 like it won’t turn on or nothing even though it’s  good charged, has not been dropped"*
-> *"Hi @AppleSupport my c3yo iPad Air died. Tried restore as per website, error msg now MacBook can’t detect at all. Any ideas? Take to Store?"*
-> *"@AppleSupport laptop keeps shutting down during startup, tried a bunch of resets but nothing's working PLS HELP."*
+> *"@115858 my charger broke"*
+> *"@AppleSupport should my laptop charger be hot enough to burn me, because it just completely blistered my skin...?"*
+> *"I’m so happy the #iPhoneX came out. Now my Fossil of a phone #iPhone7 can start working at an incredibly slow pace and shut off randomly. @115858 at its finest."*
 
 ---
 
@@ -57,6 +57,9 @@ Derived from empirical human ground truth and observed confusion patterns.
 
 ### Boundary Cases:
 - Inquiry on hardware warranty coverage without financial dispute routes to general_device_support.
+
+### Observed Examples from Ground Truth:
+> *"@AppleSupport if I want to trade in my iPhone which still has AppleCare+ can I get a refund for that or do I have to just give it up?"*
 
 ---
 
@@ -96,9 +99,9 @@ Derived from empirical human ground truth and observed confusion patterns.
 - Use strictly as a fallback when no specific category applies.
 
 ### Observed Examples from Ground Truth:
-> *"If I could turn auto brightness off and also not have my Bluetooth automatically turn on everytime I start my car that would be nice @115858"*
-> *"#Siri. Hate new voice seems to works less well. Sounds like a teenager. @115858 @AppleSupport   Options?  Multiple selection."*
-> *"Dear @115858 Please fix the podcast app. I miss knowing which archived episodes I haven't listened to and when the home screen display was accurate and functioning."*
+> *"@AppleSupport App Store not working for me either"*
+> *"Screen recording is actually useless does anyone have problems with it? @AppleSupport"*
+> *"@AppleSupport my app store’s not working :("*
 
 ---
 
@@ -118,9 +121,11 @@ Derived from empirical human ground truth and observed confusion patterns.
 - MacBook speaker failure routes to hardware_audio_connection_issue, not mac_software_issue.
 
 ### Observed Examples from Ground Truth:
-> *"@AppleSupport i can’t turn on my WiFi on my iPhone 7"*
-> *"My IPhone glitch is that it won’t stay connected to any WiFi. @AppleSupport ?"*
-> *"@AppleSupport Can I use my wired  printer  having USB on my MacBook pro which has  has c type?..Pls suggest if USB hub and c-type to USB female will work for it?"*
+> *"@AppleSupport where can I find out if my AirPods are still under the warranty?"*
+> *"@115858 @AppleSupport the music app is not producing sound. The other apps produce sound. Can play music but no sound comes out. Help. Thx."*
+> *"Und ich dachte mein MacBook bleibt frei von irgendwelchen Problemen.😑
+
+Liebes @AppleSupport Team, my right speaker made weird sounds once and now the overall volume is lower than the other + there are no more heights in the sound itself anymore. Is it a known problem?"*
 
 ---
 
@@ -140,9 +145,9 @@ Derived from empirical human ground truth and observed confusion patterns.
 - Autocorrect bug accompanied by display glitch routes to keyboard_typing_issue.
 
 ### Observed Examples from Ground Truth:
-> *"What is up @115858 @AppleSupport with the letter I looking like this 👉🏼 I️  on my IPhone"*
-> *"@AppleSupport 🗣I am tired of seeing boxes ,with a question mark in the middle , where words are supposed to be. Fix this 💩 NOW !!"*
-> *"@115858 fix this fucking question mark exclamation shit before I️ get a tracfone"*
+> *"Fix this update @AppleSupport @115858 why can’t I️ type the letter “I️” why the hell are these special characters in my predictive text?!?"*
+> *"So, @AppleSupport just isn’t going to fix this “I️” glitch, huh?"*
+> *"@AppleSupport Just updated to latest #ios11. Autocorrect always suggests "minuet" when I want "minute". Trying to push baroque dances on us?"*
 
 ---
 
@@ -162,7 +167,7 @@ Derived from empirical human ground truth and observed confusion patterns.
 - iCloud photo sync between Mac and iOS routes to mac_software_issue if desktop sync fails.
 
 ### Observed Examples from Ground Truth:
-> *"Hey @115858 @AppleSupport we need a lil favour. Safari 11.0.1 &amp; it’s relationship with High Sierra needs to be fixed. Many people are having multiple problems since the High Sierra update, specific sites are not loading. Multiple community posts have not fixed problem. Please help"*
+> *"@AppleSupport What have you guys done with High Sierra? It has completely bugged out a bunch of programs?! Go back! :) Just needing some help. Thanks"*
 > *"@AppleSupport since updating to high sierra I'm seeing lots of notifications from Time Machine, which I don't use. How do I turn off?"*
 > *"@AppleSupport photos not syncing properly between OSX high Sierra and iOS.  Same problem in several versions  d was hoping would get fixed. Say an album with 172 pics but only 33 transfer.  Have rebuilt library. Wiped iPhone. Closed and reopened apps. Reset devices. Etc."*
 
@@ -184,9 +189,9 @@ Derived from empirical human ground truth and observed confusion patterns.
 - If battery drains rapidly after update, battery_power_issue takes precedence unless the user only complains about update bugs.
 
 ### Observed Examples from Ground Truth:
-> *"@AppleSupport hey guys just curious - why aren’t iOS app updates automatic? Seems pretty clear here, no? Yet I manually have to check and click Update All daily... https://t.co/jFgs9KRl9U"*
-> *"Can’t turn off WiFi from control center? New @115858 iOS is garbage. Who knows how to roll back to the good one?"*
-> *"@AppleSupport Please for heaven sake, since newest update the voice to text is horrible and texting is horrible"*
+> *"@AppleSupport Come on @115858 can’t believe all the issues with .3! Drops WiFi and BT randomly, Battery life sucks &amp; locks up landscape! 7+"*
+> *"The latest iOS update has shrunk my screen, made my WiFi connection go slower, reduced my battery life and memory space. Cheers @115858"*
+> *"This update is ruining my life!! @115858"*
 
 ---
 
@@ -206,8 +211,8 @@ Derived from empirical human ground truth and observed confusion patterns.
 - Use when the reviewer cannot confidently assign any of the 9 operational intents.
 
 ### Observed Examples from Ground Truth:
+> *"is anyone else’s shit doing this tooo????? https://t.co/AFkraDlPBP"*
+> *"Hey @115858 I️ need you to fix this."*
 > *"@AppleSupport it works on my phone but not my MacBook"*
-> *"pentatonix being made fun of on a popular animated show is on my bucket list"*
-> *"@AppleSupport thank u for a great chat and purchase experience"*
 
 ---

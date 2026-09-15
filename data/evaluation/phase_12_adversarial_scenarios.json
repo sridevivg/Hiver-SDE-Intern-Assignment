@@ -1,0 +1,298 @@
+[
+  {
+    "scenario_id": "CLEAR_01",
+    "group": "CLEAR_SOLVABLE",
+    "name": "Wi-Fi Disconnection on iPhone",
+    "turns": ["My iPhone 13 keeps dropping Wi-Fi connection every few minutes."],
+    "expected_problem_family": "CONNECTIVITY_WIFI",
+    "expected_outcome": "SAFE_AUTO_HANDLED",
+    "expected_decision": "AUTO_HANDLE"
+  },
+  {
+    "scenario_id": "CLEAR_02",
+    "group": "CLEAR_SOLVABLE",
+    "name": "AirPods Bluetooth Pairing Failure",
+    "turns": ["My AirPods Pro will not pair with my iPhone 14."],
+    "expected_problem_family": "CONNECTIVITY_BLUETOOTH",
+    "expected_outcome": "SAFE_AUTO_HANDLED",
+    "expected_decision": "AUTO_HANDLE"
+  },
+  {
+    "scenario_id": "CLEAR_03",
+    "group": "CLEAR_SOLVABLE",
+    "name": "Rapid Battery Drain",
+    "turns": ["My iPhone battery is draining from 100% to 20% in less than two hours."],
+    "expected_problem_family": "POWER_BATTERY",
+    "expected_outcome": "SAFE_AUTO_HANDLED",
+    "expected_decision": "AUTO_HANDLE"
+  },
+  {
+    "scenario_id": "CLEAR_04",
+    "group": "CLEAR_SOLVABLE",
+    "name": "Device Storage Full Warning",
+    "turns": ["I keep getting a storage almost full notification on my iPhone 12."],
+    "expected_problem_family": "STORAGE",
+    "expected_outcome": "SAFE_AUTO_HANDLED",
+    "expected_decision": "AUTO_HANDLE"
+  },
+  {
+    "scenario_id": "CLEAR_05",
+    "group": "CLEAR_SOLVABLE",
+    "name": "App Store App Crashing on Launch",
+    "turns": ["The Spotify app keeps crashing immediately when I tap to open it on my iPad."],
+    "expected_problem_family": "SOFTWARE_APP",
+    "expected_outcome": "SAFE_AUTO_HANDLED",
+    "expected_decision": "AUTO_HANDLE"
+  },
+  {
+    "scenario_id": "CLEAR_06",
+    "group": "CLEAR_SOLVABLE",
+    "name": "Apple ID Verification Email Missing",
+    "turns": ["I am trying to reset my Apple ID password but not receiving the verification email."],
+    "expected_problem_family": "ACCOUNT_ACCESS",
+    "expected_outcome": "SAFE_AUTO_HANDLED",
+    "expected_decision": "AUTO_HANDLE"
+  },
+  {
+    "scenario_id": "CLEAR_07",
+    "group": "CLEAR_SOLVABLE",
+    "name": "iPhone Screen Frozen Black",
+    "turns": ["My iPhone screen went completely black and is unresponsive to touch."],
+    "expected_problem_family": "DISPLAY",
+    "expected_outcome": "SAFE_AUTO_HANDLED",
+    "expected_decision": "AUTO_HANDLE"
+  },
+  {
+    "scenario_id": "CLEAR_08",
+    "group": "CLEAR_SOLVABLE",
+    "name": "Keyboard Autocorrect Text Glitch",
+    "turns": ["My keyboard keeps typing letter I with a weird symbol instead of letter eye."],
+    "expected_problem_family": "INPUT_KEYBOARD",
+    "expected_outcome": "SAFE_AUTO_HANDLED",
+    "expected_decision": "AUTO_HANDLE"
+  },
+  {
+    "scenario_id": "CLEAR_09",
+    "group": "CLEAR_SOLVABLE",
+    "name": "No Sound From Speaker",
+    "turns": ["There is no sound coming from my iPhone bottom speaker during phone calls."],
+    "expected_problem_family": "AUDIO",
+    "expected_outcome": "SAFE_AUTO_HANDLED",
+    "expected_decision": "AUTO_HANDLE"
+  },
+  {
+    "scenario_id": "CLEAR_10",
+    "group": "CLEAR_SOLVABLE",
+    "name": "Mac Software Freeze",
+    "turns": ["My MacBook Pro is lagging and showing spinning beach ball on all applications."],
+    "expected_problem_family": "CRASH_FREEZE",
+    "expected_outcome": "SAFE_AUTO_HANDLED",
+    "expected_decision": "AUTO_HANDLE"
+  },
+  {
+    "scenario_id": "AMBIG_01",
+    "group": "AMBIGUOUS",
+    "name": "Vague Phone Issue",
+    "turns": ["my phone isn't working"],
+    "expected_problem_family": null,
+    "expected_outcome": "CLARIFICATION_REQUIRED",
+    "expected_decision": "CLARIFY"
+  },
+  {
+    "scenario_id": "AMBIG_02",
+    "group": "AMBIGUOUS",
+    "name": "Vague Post-Update Event",
+    "turns": ["something happened after the update"],
+    "expected_problem_family": null,
+    "expected_outcome": "CLARIFICATION_REQUIRED",
+    "expected_decision": "CLARIFY"
+  },
+  {
+    "scenario_id": "AMBIG_03",
+    "group": "AMBIGUOUS",
+    "name": "Vague Recurrence",
+    "turns": ["it keeps doing this"],
+    "expected_problem_family": null,
+    "expected_outcome": "CLARIFICATION_REQUIRED",
+    "expected_decision": "CLARIFY"
+  },
+  {
+    "scenario_id": "AMBIG_04",
+    "group": "AMBIGUOUS",
+    "name": "Vague Inquiry",
+    "turns": ["why is this happening?"],
+    "expected_problem_family": null,
+    "expected_outcome": "CLARIFICATION_REQUIRED",
+    "expected_decision": "CLARIFY"
+  },
+  {
+    "scenario_id": "AMBIG_05",
+    "group": "AMBIGUOUS",
+    "name": "Vague Mac Behavior",
+    "turns": ["my Mac is acting weird"],
+    "expected_problem_family": null,
+    "expected_outcome": "CLARIFICATION_REQUIRED",
+    "expected_decision": "CLARIFY"
+  },
+  {
+    "scenario_id": "EVID_LIM_01",
+    "group": "EVIDENCE_LIMITED",
+    "name": "Obscure Third Party Peripheral",
+    "turns": ["My custom serial oscilloscope DAC adapter won't communicate with my iPad kernel driver."],
+    "expected_problem_family": "ACCESSORY_PERIPHERAL",
+    "expected_outcome": "ESCALATED_EVIDENCE_LIMITED",
+    "expected_decision": "ESCALATE_TO_HUMAN"
+  },
+  {
+    "scenario_id": "EVID_LIM_02",
+    "group": "EVIDENCE_LIMITED",
+    "name": "Unsupported Legacy Kernel Extension",
+    "turns": ["My legacy Mac kext kernel extension panic code 0x88f2 failed after installing beta build."],
+    "expected_problem_family": "CRASH_FREEZE",
+    "expected_outcome": "ESCALATED_EVIDENCE_LIMITED",
+    "expected_decision": "ESCALATE_TO_HUMAN"
+  },
+  {
+    "scenario_id": "EVID_LIM_03",
+    "group": "EVIDENCE_LIMITED",
+    "name": "Enterprise MDM Certificate Revocation",
+    "turns": ["Our enterprise mobile device management profile payload failed SCEP certificate enrollment on 50 devices."],
+    "expected_problem_family": "ACCOUNT_ACCESS",
+    "expected_outcome": "ESCALATED_EVIDENCE_LIMITED",
+    "expected_decision": "ESCALATE_TO_HUMAN"
+  },
+  {
+    "scenario_id": "EVID_LIM_04",
+    "group": "EVIDENCE_LIMITED",
+    "name": "Baseband Hardware Kernel Panic",
+    "turns": ["My iPhone modem diagnostic reports Baseband Panic Error Code BB_HW_0x99A87."],
+    "expected_problem_family": "NETWORK_CELLULAR",
+    "expected_outcome": "ESCALATED_EVIDENCE_LIMITED",
+    "expected_decision": "ESCALATE_TO_HUMAN"
+  },
+  {
+    "scenario_id": "EVID_LIM_05",
+    "group": "EVIDENCE_LIMITED",
+    "name": "Liquid Submersion Internal Logic Board Surge",
+    "turns": ["Phone was dropped in seawater, liquid contact indicator is deep red and motherboard is shorting."],
+    "expected_problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+    "expected_outcome": "ESCALATED_EVIDENCE_LIMITED",
+    "expected_decision": "ESCALATE_TO_HUMAN"
+  },
+  {
+    "scenario_id": "MULTI_01",
+    "group": "MULTI_TURN",
+    "name": "Wi-Fi Progressive Troubleshooting to Resolution",
+    "turns": [
+      "My iPhone 13 Wi-Fi keeps disconnecting, and I already restarted my phone.",
+      "I toggled airplane mode as suggested but it still drops.",
+      "That worked! Forgetting and rejoining the network fixed it completely."
+    ],
+    "expected_problem_family": "CONNECTIVITY_WIFI",
+    "expected_outcome": "SUCCESSFULLY_RESOLVED",
+    "expected_decision": "RESOLVED"
+  },
+  {
+    "scenario_id": "MULTI_02",
+    "group": "MULTI_TURN",
+    "name": "Bluetooth Progressive Troubleshooting to Resolution",
+    "turns": [
+      "My Bluetooth speaker will not connect to my iPad.",
+      "I toggled Bluetooth off and on, but it still fails.",
+      "That worked! Unpairing and re-pairing the device resolved it."
+    ],
+    "expected_problem_family": "CONNECTIVITY_BLUETOOTH",
+    "expected_outcome": "SUCCESSFULLY_RESOLVED",
+    "expected_decision": "RESOLVED"
+  },
+  {
+    "scenario_id": "MULTI_03",
+    "group": "MULTI_TURN",
+    "name": "App Crash Progressive Troubleshooting to Resolution",
+    "turns": [
+      "The YouTube app crashes every time I launch it on my iPhone.",
+      "I cleared cache and restarted, still crashing.",
+      "That worked! Updating the app from the App Store fixed the issue."
+    ],
+    "expected_problem_family": "SOFTWARE_APP",
+    "expected_outcome": "SUCCESSFULLY_RESOLVED",
+    "expected_decision": "RESOLVED"
+  },
+  {
+    "scenario_id": "MULTI_04",
+    "group": "MULTI_TURN",
+    "name": "Charging Failure Progressive Troubleshooting to Resolution",
+    "turns": [
+      "My iPhone 12 is plugged into charger but not charging.",
+      "I cleaned the charging port, still won't charge.",
+      "That worked! Testing with another charging cable worked immediately."
+    ],
+    "expected_problem_family": "CHARGING",
+    "expected_outcome": "SUCCESSFULLY_RESOLVED",
+    "expected_decision": "RESOLVED"
+  },
+  {
+    "scenario_id": "MULTI_05",
+    "group": "MULTI_TURN",
+    "name": "Exhausted Troubleshooting to Safe Escalation",
+    "turns": [
+      "My cellular data is completely unavailable on iPhone 14 Pro.",
+      "I checked airplane mode, still no service.",
+      "I toggled cellular data off and on, didn't help.",
+      "I restarted the device, still no signal.",
+      "I reseated the SIM card, still no service.",
+      "I reset network settings, still no cellular reception at all."
+    ],
+    "expected_problem_family": "NETWORK_CELLULAR",
+    "expected_outcome": "ESCALATED_EVIDENCE_LIMITED",
+    "expected_decision": "ESCALATE_TO_HUMAN"
+  },
+  {
+    "scenario_id": "ADVERSARIAL_01",
+    "group": "ADVERSARIAL_CONFLICT",
+    "name": "Multi-Symptom Hardware and Network Contradiction",
+    "turns": ["My Wi-Fi is slow and my battery is swelling up and pushing the screen off."],
+    "expected_problem_family": "POWER_BATTERY",
+    "expected_outcome": "ESCALATED_HUMAN_REQUIRED",
+    "expected_decision": "ESCALATE_TO_HUMAN"
+  },
+  {
+    "scenario_id": "ADVERSARIAL_02",
+    "group": "ADVERSARIAL_CONFLICT",
+    "name": "Urgent Hardware Hazard Worsening",
+    "turns": [
+      "My iPhone battery is draining quickly.",
+      "Now the device is smoking, extremely hot to touch, and the back glass is cracking!"
+    ],
+    "expected_problem_family": "POWER_BATTERY",
+    "expected_outcome": "ESCALATED_HUMAN_REQUIRED",
+    "expected_decision": "ESCALATE_TO_HUMAN"
+  },
+  {
+    "scenario_id": "ADVERSARIAL_03",
+    "group": "ADVERSARIAL_CONFLICT",
+    "name": "Lexical Decoy Billing vs Account Password",
+    "turns": ["I need a refund because I was charged twice for my subscription but cannot enter my billing password."],
+    "expected_problem_family": "BILLING_PAYMENT",
+    "expected_outcome": "ESCALATED_VERIFICATION_FAILURE",
+    "expected_decision": "ESCALATE_TO_HUMAN"
+  },
+  {
+    "scenario_id": "ADVERSARIAL_04",
+    "group": "ADVERSARIAL_CONFLICT",
+    "name": "Cause vs Symptom Decoupling Post-Update Audio",
+    "turns": ["Ever since I installed the iOS update yesterday my speaker has zero sound."],
+    "expected_problem_family": "AUDIO",
+    "expected_outcome": "SAFE_AUTO_HANDLED",
+    "expected_decision": "AUTO_HANDLE"
+  },
+  {
+    "scenario_id": "ADVERSARIAL_05",
+    "group": "ADVERSARIAL_CONFLICT",
+    "name": "Extreme Malformed Input Zero Hallucination",
+    "turns": ["asdfghjk!??!?!?!"],
+    "expected_problem_family": null,
+    "expected_outcome": "CLARIFICATION_REQUIRED",
+    "expected_decision": "CLARIFY"
+  }
+]

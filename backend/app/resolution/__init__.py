@@ -1,20 +1,19 @@
 """
-SupportGraph AI — Resolution Package (Phase 8 + Phase 9)
+SupportGraph AI — Resolution Package (Phase 8 + Phase 9 + Phase 10)
 
 Exposes:
-- SupportResolutionEngine: End-to-end evidence-grounded resolution pipeline
-- SupportResolutionResult: Complete resolution response model
-- HumanEscalationPackage: Ambiguous case review packet
-- ResolutionEvidenceValidator: Multi-dimensional operational evidence validator
-- EvidenceValidationResult, EvidenceVerdict, EvidenceDimensionMatch
-- EvidenceGroundedResponseGenerator: Grounded AppleSupport response generator
-- GroundedResponseCandidate
-- ResponseGroundingVerifier: Response safety and grounding verifier
-- ResponseGroundingResult, VerificationStatus
+- SupportResolutionEngine, SupportResolutionResult, HumanEscalationPackage
+- ResolutionEvidenceValidator, EvidenceValidationResult, EvidenceVerdict, EvidenceDimensionMatch
+- CompositeEvidenceVerdict                                                  (Phase 10)
+- EvidenceGroundedResponseGenerator, GroundedResponseCandidate
+- ResponseGroundingVerifier, ResponseGroundingResult, VerificationStatus
 - ResolutionAuditor, ResolutionAuditRecord
-- BRAND_RESOLUTION_STRATEGIES: Grounded AppleSupport troubleshooting patterns
-- EscalationQualityAnalyzer, EscalationCategory, EscalationQualityResult  (Phase 9)
-- EscalationRecoveryEngine, EscalationRecoveryResult, RecoveryOutcome      (Phase 9)
+- BRAND_RESOLUTION_STRATEGIES
+- EscalationQualityAnalyzer, EscalationCategory, EscalationQualityResult   (Phase 9)
+- EscalationRecoveryEngine, EscalationRecoveryResult, RecoveryOutcome       (Phase 9)
+- MultiCaseEvidenceSynthesizer, CompositeEvidencePackage                    (Phase 10)
+- CaseEvidenceContribution, ContributionStrength, DimensionCoverage         (Phase 10)
+- EvidenceConflictDetector, ConflictDetectionResult, ConflictType           (Phase 10)
 """
 from __future__ import annotations
 
@@ -29,7 +28,20 @@ try:
         EscalationRecoveryResult,
         RecoveryOutcome,
     )
+    from app.resolution.evidence_conflict_detector import (
+        ConflictDetectionResult,
+        ConflictType,
+        EvidenceConflictDetector,
+    )
+    from app.resolution.evidence_synthesizer import (
+        CaseEvidenceContribution,
+        CompositeEvidencePackage,
+        ContributionStrength,
+        DimensionCoverage,
+        MultiCaseEvidenceSynthesizer,
+    )
     from app.resolution.evidence_validator import (
+        CompositeEvidenceVerdict,
         EvidenceDimensionMatch,
         EvidenceValidationResult,
         EvidenceVerdict,
@@ -65,7 +77,20 @@ except ModuleNotFoundError:
         EscalationRecoveryResult,
         RecoveryOutcome,
     )
+    from backend.app.resolution.evidence_conflict_detector import (  # type: ignore[no-redef]
+        ConflictDetectionResult,
+        ConflictType,
+        EvidenceConflictDetector,
+    )
+    from backend.app.resolution.evidence_synthesizer import (  # type: ignore[no-redef]
+        CaseEvidenceContribution,
+        CompositeEvidencePackage,
+        ContributionStrength,
+        DimensionCoverage,
+        MultiCaseEvidenceSynthesizer,
+    )
     from backend.app.resolution.evidence_validator import (  # type: ignore[no-redef]
+        CompositeEvidenceVerdict,
         EvidenceDimensionMatch,
         EvidenceValidationResult,
         EvidenceVerdict,
@@ -92,6 +117,7 @@ except ModuleNotFoundError:
     )
 
 __all__ = [
+    # Phase 8 core
     "SupportResolutionEngine",
     "SupportResolutionResult",
     "HumanEscalationPackage",
@@ -114,4 +140,14 @@ __all__ = [
     "EscalationRecoveryEngine",
     "EscalationRecoveryResult",
     "RecoveryOutcome",
+    # Phase 10
+    "CompositeEvidenceVerdict",
+    "MultiCaseEvidenceSynthesizer",
+    "CompositeEvidencePackage",
+    "CaseEvidenceContribution",
+    "ContributionStrength",
+    "DimensionCoverage",
+    "EvidenceConflictDetector",
+    "ConflictDetectionResult",
+    "ConflictType",
 ]

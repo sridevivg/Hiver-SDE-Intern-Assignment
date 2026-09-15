@@ -1,0 +1,226 @@
+{
+  "total_records": 77,
+  "strategy_a_confidence_only": {
+    "strategy_name": "Strategy A (Confidence-Only)",
+    "total_records": 77,
+    "auto_handle_count": 64,
+    "auto_handle_rate": 0.8312,
+    "auto_handle_accuracy": 0.5781,
+    "unsafe_auto_handles": 27,
+    "escalation_count": 13,
+    "escalation_rate": 0.1688,
+    "error_interception_rate": 0.2059,
+    "correct_cases_escalated": 6,
+    "human_assistance_top2": 0.6923,
+    "human_assistance_top3": 0.7692
+  },
+  "strategy_b_phase_7_ambiguity": {
+    "strategy_name": "Strategy B (Phase 7 Ambiguity)",
+    "total_records": 77,
+    "auto_handle_count": 65,
+    "auto_handle_rate": 0.8442,
+    "auto_handle_accuracy": 0.5692,
+    "unsafe_auto_handles": 28,
+    "escalation_count": 12,
+    "escalation_rate": 0.1558,
+    "error_interception_rate": 0.1765,
+    "correct_cases_escalated": 6,
+    "human_assistance_top2": 0.6667,
+    "human_assistance_top3": 0.75
+  },
+  "strategy_c_phase_7_1_gate": {
+    "strategy_name": "Strategy C (Phase 7.1 Gate)",
+    "total_records": 77,
+    "auto_handle_count": 41,
+    "auto_handle_rate": 0.5325,
+    "auto_handle_accuracy": 0.6341,
+    "unsafe_auto_handles": 15,
+    "escalation_count": 36,
+    "escalation_rate": 0.4675,
+    "error_interception_rate": 0.5588,
+    "correct_cases_escalated": 17,
+    "human_assistance_top2": 0.6667,
+    "human_assistance_top3": 0.6944
+  },
+  "signal_interception_analysis": [
+    {
+      "signal_name": "SIGNAL_A_INSUFFICIENT_INFO",
+      "records_triggered": 31,
+      "errors_intercepted": 15,
+      "correct_escalated": 16,
+      "interception_precision": 0.4839
+    },
+    {
+      "signal_name": "SIGNAL_B_WEAK_PROBLEM",
+      "records_triggered": 29,
+      "errors_intercepted": 15,
+      "correct_escalated": 14,
+      "interception_precision": 0.5172
+    },
+    {
+      "signal_name": "SIGNAL_C_GENUINE_CONFLICT",
+      "records_triggered": 4,
+      "errors_intercepted": 3,
+      "correct_escalated": 1,
+      "interception_precision": 0.75
+    },
+    {
+      "signal_name": "SIGNAL_D_EVIDENCE_DISAGREEMENT",
+      "records_triggered": 14,
+      "errors_intercepted": 7,
+      "correct_escalated": 7,
+      "interception_precision": 0.5
+    },
+    {
+      "signal_name": "SIGNAL_F_MULTI_SYMPTOM_COMPLEXITY",
+      "records_triggered": 1,
+      "errors_intercepted": 1,
+      "correct_escalated": 0,
+      "interception_precision": 1.0
+    },
+    {
+      "signal_name": "SAFETY_VETO_COMBINED",
+      "records_triggered": 32,
+      "errors_intercepted": 17,
+      "correct_escalated": 15,
+      "interception_precision": 0.5312
+    }
+  ],
+  "unsafe_auto_handles_analysis": [
+    {
+      "golden_id": "gold_068",
+      "customer_message": "Screen recording is actually useless does anyone have problems with it? @AppleSupport",
+      "ground_truth_intent": "general_device_support",
+      "predicted_intent": "display_touch_issue",
+      "confidence": 0.8737,
+      "error_category": "FALSE_CLARITY_DECISION",
+      "explanation": "Multi-signal gate passed with high confidence but model misclassified 'general_device_support' as 'display_touch_issue'."
+    },
+    {
+      "golden_id": "gold_137",
+      "customer_message": "Ok so face recognition isn't always working AND.... maybe something going on with the display.  @115858 here I come !",
+      "ground_truth_intent": "general_device_support",
+      "predicted_intent": "display_touch_issue",
+      "confidence": 0.8737,
+      "error_category": "FALSE_CLARITY_DECISION",
+      "explanation": "Multi-signal gate passed with high confidence but model misclassified 'general_device_support' as 'display_touch_issue'."
+    },
+    {
+      "golden_id": "gold_144",
+      "customer_message": "Whenever I log into @127550 on Safari, here's what I get: A blank screen. \n@AppleSupport https://t.co/ocpYFMNu4R",
+      "ground_truth_intent": "general_device_support",
+      "predicted_intent": "display_touch_issue",
+      "confidence": 0.8737,
+      "error_category": "MODEL_CLASSIFICATION_ERROR",
+      "explanation": "Device/service was Mac/Safari, but classifier predicted general iOS/device support."
+    },
+    {
+      "golden_id": "gold_154",
+      "customer_message": "I\u2019m so happy the #iPhoneX came out. Now my Fossil of a phone #iPhone7 can start working at an incredibly slow pace and shut off randomly. @115858 at its finest.",
+      "ground_truth_intent": "battery_power_issue",
+      "predicted_intent": "general_device_support",
+      "confidence": 0.9804,
+      "error_category": "RETRIEVAL_MISMATCH",
+      "explanation": "Historical evidence cases did not contain an operational match to support the prediction."
+    },
+    {
+      "golden_id": "gold_005",
+      "customer_message": "@115858 can you explain why the system still records my location when the switch is off, and never shows purple even if icon on screen !!! https://t.co/yWIEtfYens",
+      "ground_truth_intent": "general_device_support",
+      "predicted_intent": "display_touch_issue",
+      "confidence": 0.8737,
+      "error_category": "FALSE_CLARITY_DECISION",
+      "explanation": "Multi-signal gate passed with high confidence but model misclassified 'general_device_support' as 'display_touch_issue'."
+    },
+    {
+      "golden_id": "gold_014",
+      "customer_message": "Restored this fucking phone &amp; I STILL can\u2019t type to group texts with droid users \ud83d\ude11\ud83d\ude11 wtf @115858",
+      "ground_truth_intent": "general_device_support",
+      "predicted_intent": "keyboard_typing_issue",
+      "confidence": 0.8737,
+      "error_category": "FALSE_CLARITY_DECISION",
+      "explanation": "Multi-signal gate passed with high confidence but model misclassified 'general_device_support' as 'keyboard_typing_issue'."
+    },
+    {
+      "golden_id": "gold_082",
+      "customer_message": "@AppleSupport ever since the new update my i7 has been EXTREMELY laggy, when I type the keyboard lags and opening or switching apps, everything lags. Please fix this in a new patch. \nI\u2019m also seeing the question mark box on twitter.",
+      "ground_truth_intent": "software_update_problem",
+      "predicted_intent": "keyboard_typing_issue",
+      "confidence": 0.7258,
+      "error_category": "MULTIPLE_VALID_INTERPRETATIONS",
+      "explanation": "Inquiry mentions software update trigger while primary ground truth intent is 'software_update_problem'."
+    },
+    {
+      "golden_id": "gold_098",
+      "customer_message": "@AppleSupport Hey! What does this mean? It's a new screen for me. https://t.co/0w1NPRJpJc",
+      "ground_truth_intent": "general_device_support",
+      "predicted_intent": "display_touch_issue",
+      "confidence": 0.8737,
+      "error_category": "FALSE_CLARITY_DECISION",
+      "explanation": "Multi-signal gate passed with high confidence but model misclassified 'general_device_support' as 'display_touch_issue'."
+    },
+    {
+      "golden_id": "gold_103",
+      "customer_message": "@AppleSupport so my iPhone crashes touch seems to stop working altho I can access wifi menu etc Ask apple the issue they tell me my phone screen needs replaced - get new phone and same issue happens is this a problem with iOS or the 8?",
+      "ground_truth_intent": "display_touch_issue",
+      "predicted_intent": "general_device_support",
+      "confidence": 0.6383,
+      "error_category": "FALSE_CLARITY_DECISION",
+      "explanation": "Multi-signal gate passed with high confidence but model misclassified 'display_touch_issue' as 'general_device_support'."
+    },
+    {
+      "golden_id": "gold_106",
+      "customer_message": "@AppleSupport i can\u2019t turn on my WiFi on my iPhone 7",
+      "ground_truth_intent": "hardware_audio_connection_issue",
+      "predicted_intent": "general_device_support",
+      "confidence": 0.8737,
+      "error_category": "RETRIEVAL_MISMATCH",
+      "explanation": "Historical evidence cases did not contain an operational match to support the prediction."
+    },
+    {
+      "golden_id": "gold_109",
+      "customer_message": "Can\u2019t turn off WiFi from control center? New @115858 iOS is garbage. Who knows how to roll back to the good one?",
+      "ground_truth_intent": "software_update_problem",
+      "predicted_intent": "general_device_support",
+      "confidence": 0.8737,
+      "error_category": "RETRIEVAL_MISMATCH",
+      "explanation": "Historical evidence cases did not contain an operational match to support the prediction."
+    },
+    {
+      "golden_id": "gold_125",
+      "customer_message": "Dear @115858 Please fix the podcast app. I miss knowing which archived episodes I haven't listened to and when the home screen display was accurate and functioning.",
+      "ground_truth_intent": "general_device_support",
+      "predicted_intent": "display_touch_issue",
+      "confidence": 0.9282,
+      "error_category": "FALSE_CLARITY_DECISION",
+      "explanation": "Multi-signal gate passed with high confidence but model misclassified 'general_device_support' as 'display_touch_issue'."
+    },
+    {
+      "golden_id": "gold_177",
+      "customer_message": "My IPhone glitch is that it won\u2019t stay connected to any WiFi. @AppleSupport ?",
+      "ground_truth_intent": "hardware_audio_connection_issue",
+      "predicted_intent": "general_device_support",
+      "confidence": 0.8737,
+      "error_category": "RETRIEVAL_MISMATCH",
+      "explanation": "Historical evidence cases did not contain an operational match to support the prediction."
+    },
+    {
+      "golden_id": "gold_190",
+      "customer_message": "@115858 there\u2019s been a problem with my sisters iPhone 7 like it won\u2019t turn on or nothing even though it\u2019s  good charged, has not been dropped",
+      "ground_truth_intent": "battery_power_issue",
+      "predicted_intent": "billing_purchase_issue",
+      "confidence": 0.8737,
+      "error_category": "RETRIEVAL_MISMATCH",
+      "explanation": "Historical evidence cases did not contain an operational match to support the prediction."
+    },
+    {
+      "golden_id": "gold_198",
+      "customer_message": "@AppleSupport Can I use my wired  printer  having USB on my MacBook pro which has  has c type?..Pls suggest if USB hub and c-type to USB female will work for it?",
+      "ground_truth_intent": "hardware_audio_connection_issue",
+      "predicted_intent": "keyboard_typing_issue",
+      "confidence": 0.6383,
+      "error_category": "MODEL_CLASSIFICATION_ERROR",
+      "explanation": "Device/service was Mac/Safari, but classifier predicted general iOS/device support."
+    }
+  ]
+}

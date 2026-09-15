@@ -1,0 +1,626 @@
+{
+  "total_benchmark_records": 77,
+  "family_breakdown": {
+    "POWER_BATTERY": {
+      "count": 5,
+      "percentage": 6.49
+    },
+    "CHARGING": {
+      "count": 2,
+      "percentage": 2.6
+    },
+    "AUDIO": {
+      "count": 5,
+      "percentage": 6.49
+    },
+    "DISPLAY": {
+      "count": 10,
+      "percentage": 12.99
+    },
+    "INPUT_KEYBOARD": {
+      "count": 10,
+      "percentage": 12.99
+    },
+    "CONNECTIVITY_WIFI": {
+      "count": 9,
+      "percentage": 11.69
+    },
+    "CONNECTIVITY_BLUETOOTH": {
+      "count": 1,
+      "percentage": 1.3
+    },
+    "NETWORK_CELLULAR": {
+      "count": 1,
+      "percentage": 1.3
+    },
+    "SOFTWARE_APP": {
+      "count": 2,
+      "percentage": 2.6
+    },
+    "SYSTEM_UPDATE": {
+      "count": 15,
+      "percentage": 19.48
+    },
+    "CRASH_FREEZE": {
+      "count": 1,
+      "percentage": 1.3
+    },
+    "PERFORMANCE": {
+      "count": 1,
+      "percentage": 1.3
+    },
+    "ACCOUNT_ACCESS": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "BILLING_PAYMENT": {
+      "count": 3,
+      "percentage": 3.9
+    },
+    "SYNC_BACKUP": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "STORAGE": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "CAMERA_MEDIA": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "ACCESSORY_PERIPHERAL": {
+      "count": 0,
+      "percentage": 0.0
+    },
+    "NOTIFICATION_ALERTS": {
+      "count": 1,
+      "percentage": 1.3
+    },
+    "GENERAL_DEVICE_FUNCTIONALITY": {
+      "count": 11,
+      "percentage": 14.29
+    }
+  },
+  "records": [
+    {
+      "golden_id": "gold_035",
+      "annotation_label": "keyboard_typing_issue",
+      "primary_problem_family": "INPUT_KEYBOARD",
+      "family_confidence": 0.67,
+      "customer_message": "Fix this update @AppleSupport @115858 why can\u2019t I\ufe0f type the letter \u201cI\ufe0f\u201d why the hell are these speci"
+    },
+    {
+      "golden_id": "gold_079",
+      "annotation_label": "mac_software_issue",
+      "primary_problem_family": "SYSTEM_UPDATE",
+      "family_confidence": 0.56,
+      "customer_message": "@AppleSupport What have you guys done with High Sierra? It has completely bugged out a bunch of prog"
+    },
+    {
+      "golden_id": "gold_083",
+      "annotation_label": "battery_power_issue",
+      "primary_problem_family": "CHARGING",
+      "family_confidence": 0.56,
+      "customer_message": "@115858 my charger broke"
+    },
+    {
+      "golden_id": "gold_107",
+      "annotation_label": "software_update_problem",
+      "primary_problem_family": "POWER_BATTERY",
+      "family_confidence": 0.56,
+      "customer_message": "@AppleSupport Come on @115858 can\u2019t believe all the issues with .3! Drops WiFi and BT randomly, Batt"
+    },
+    {
+      "golden_id": "gold_112",
+      "annotation_label": "billing_purchase_issue",
+      "primary_problem_family": "BILLING_PAYMENT",
+      "family_confidence": 0.64,
+      "customer_message": "@AppleSupport if I want to trade in my iPhone which still has AppleCare+ can I get a refund for that"
+    },
+    {
+      "golden_id": "gold_157",
+      "annotation_label": "hardware_audio_connection_issue",
+      "primary_problem_family": "AUDIO",
+      "family_confidence": 0.5,
+      "customer_message": "@AppleSupport where can I find out if my AirPods are still under the warranty?"
+    },
+    {
+      "golden_id": "gold_158",
+      "annotation_label": "battery_power_issue",
+      "primary_problem_family": "CHARGING",
+      "family_confidence": 0.56,
+      "customer_message": "@AppleSupport should my laptop charger be hot enough to burn me, because it just completely blistere"
+    },
+    {
+      "golden_id": "gold_174",
+      "annotation_label": "software_update_problem",
+      "primary_problem_family": "POWER_BATTERY",
+      "family_confidence": 0.56,
+      "customer_message": "The latest iOS update has shrunk my screen, made my WiFi connection go slower, reduced my battery li"
+    },
+    {
+      "golden_id": "gold_063",
+      "annotation_label": "general_device_support",
+      "primary_problem_family": "SOFTWARE_APP",
+      "family_confidence": 0.6,
+      "customer_message": "@AppleSupport App Store not working for me either"
+    },
+    {
+      "golden_id": "gold_066",
+      "annotation_label": "unclear_needs_review",
+      "primary_problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+      "family_confidence": 0.3,
+      "customer_message": "is anyone else\u2019s shit doing this tooo????? https://t.co/AFkraDlPBP"
+    },
+    {
+      "golden_id": "gold_067",
+      "annotation_label": "unclear_needs_review",
+      "primary_problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+      "family_confidence": 0.3,
+      "customer_message": "Hey @115858 I\ufe0f need you to fix this."
+    },
+    {
+      "golden_id": "gold_068",
+      "annotation_label": "general_device_support",
+      "primary_problem_family": "DISPLAY",
+      "family_confidence": 0.56,
+      "customer_message": "Screen recording is actually useless does anyone have problems with it? @AppleSupport"
+    },
+    {
+      "golden_id": "gold_075",
+      "annotation_label": "general_device_support",
+      "primary_problem_family": "SOFTWARE_APP",
+      "family_confidence": 0.6,
+      "customer_message": "@AppleSupport my app store\u2019s not working :("
+    },
+    {
+      "golden_id": "gold_085",
+      "annotation_label": "general_device_support",
+      "primary_problem_family": "CONNECTIVITY_WIFI",
+      "family_confidence": 0.56,
+      "customer_message": "why does WiFi turn on by itself when I turn it off manually it\u2019s annoying @AppleSupport"
+    },
+    {
+      "golden_id": "gold_137",
+      "annotation_label": "general_device_support",
+      "primary_problem_family": "DISPLAY",
+      "family_confidence": 0.56,
+      "customer_message": "Ok so face recognition isn't always working AND.... maybe something going on with the display.  @115"
+    },
+    {
+      "golden_id": "gold_144",
+      "annotation_label": "general_device_support",
+      "primary_problem_family": "DISPLAY",
+      "family_confidence": 0.56,
+      "customer_message": "Whenever I log into @127550 on Safari, here's what I get: A blank screen. \n@AppleSupport https://t.c"
+    },
+    {
+      "golden_id": "gold_154",
+      "annotation_label": "battery_power_issue",
+      "primary_problem_family": "POWER_BATTERY",
+      "family_confidence": 0.5,
+      "customer_message": "I\u2019m so happy the #iPhoneX came out. Now my Fossil of a phone #iPhone7 can start working at an incred"
+    },
+    {
+      "golden_id": "gold_167",
+      "annotation_label": "general_device_support",
+      "primary_problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+      "family_confidence": 0.3,
+      "customer_message": "Neat. My @AppleSupport phone call ended abruptly"
+    },
+    {
+      "golden_id": "gold_184",
+      "annotation_label": "keyboard_typing_issue",
+      "primary_problem_family": "INPUT_KEYBOARD",
+      "family_confidence": 0.5,
+      "customer_message": "So, @AppleSupport just isn\u2019t going to fix this \u201cI\ufe0f\u201d glitch, huh?"
+    },
+    {
+      "golden_id": "gold_034",
+      "annotation_label": "general_device_support",
+      "primary_problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+      "family_confidence": 0.3,
+      "customer_message": "my laptop says 6:40 but my PHONE says 7:40 and is not changing or letting me send tweets snaps texts"
+    },
+    {
+      "golden_id": "gold_001",
+      "annotation_label": "keyboard_typing_issue",
+      "primary_problem_family": "INPUT_KEYBOARD",
+      "family_confidence": 0.64,
+      "customer_message": "@AppleSupport Just updated to latest #ios11. Autocorrect always suggests \"minuet\" when I want \"minut"
+    },
+    {
+      "golden_id": "gold_002",
+      "annotation_label": "software_update_problem",
+      "primary_problem_family": "SYSTEM_UPDATE",
+      "family_confidence": 0.5,
+      "customer_message": "This update is ruining my life!! @115858"
+    },
+    {
+      "golden_id": "gold_003",
+      "annotation_label": "unclear_needs_review",
+      "primary_problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+      "family_confidence": 0.3,
+      "customer_message": "@AppleSupport it works on my phone but not my MacBook"
+    },
+    {
+      "golden_id": "gold_004",
+      "annotation_label": "software_update_problem",
+      "primary_problem_family": "PERFORMANCE",
+      "family_confidence": 0.69,
+      "customer_message": "@AppleSupport my phone slow as hell after this update cmon now \ud83e\udd26\ud83c\udffb\u200d\u2642\ufe0f lagging like it\u2019s a iPhone 3"
+    },
+    {
+      "golden_id": "gold_005",
+      "annotation_label": "general_device_support",
+      "primary_problem_family": "DISPLAY",
+      "family_confidence": 0.56,
+      "customer_message": "@115858 can you explain why the system still records my location when the switch is off, and never s"
+    },
+    {
+      "golden_id": "gold_011",
+      "annotation_label": "unclear_needs_review",
+      "primary_problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+      "family_confidence": 0.3,
+      "customer_message": "pentatonix being made fun of on a popular animated show is on my bucket list"
+    },
+    {
+      "golden_id": "gold_014",
+      "annotation_label": "general_device_support",
+      "primary_problem_family": "NETWORK_CELLULAR",
+      "family_confidence": 0.5,
+      "customer_message": "Restored this fucking phone &amp; I STILL can\u2019t type to group texts with droid users \ud83d\ude11\ud83d\ude11 wtf @115858"
+    },
+    {
+      "golden_id": "gold_025",
+      "annotation_label": "software_update_problem",
+      "primary_problem_family": "SYSTEM_UPDATE",
+      "family_confidence": 0.64,
+      "customer_message": "Espero que con la actualizacion de correcci\u00f3n de errores y dem\u00e1s mi iPhone mejore... por que el iOs "
+    },
+    {
+      "golden_id": "gold_026",
+      "annotation_label": "display_touch_issue",
+      "primary_problem_family": "DISPLAY",
+      "family_confidence": 0.64,
+      "customer_message": "@115858 for the love of #280characters would you please fix this I\ufe0f crap!  It\u2019s annoying AF! Also ap"
+    },
+    {
+      "golden_id": "gold_027",
+      "annotation_label": "mac_software_issue",
+      "primary_problem_family": "SYSTEM_UPDATE",
+      "family_confidence": 0.6,
+      "customer_message": "@AppleSupport since updating to high sierra I'm seeing lots of notifications from Time Machine, whic"
+    },
+    {
+      "golden_id": "gold_029",
+      "annotation_label": "general_device_support",
+      "primary_problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+      "family_confidence": 0.3,
+      "customer_message": "@115858 sort your shit out!!! I\u2019m switching to Samsung if my phone doesn\u2019t stop going slower than a "
+    },
+    {
+      "golden_id": "gold_031",
+      "annotation_label": "software_update_problem",
+      "primary_problem_family": "SYSTEM_UPDATE",
+      "family_confidence": 0.64,
+      "customer_message": "@AppleSupport @115858 iOS 11 is a glitched out mess. Not the quality I expect from Apple."
+    },
+    {
+      "golden_id": "gold_032",
+      "annotation_label": "keyboard_typing_issue",
+      "primary_problem_family": "INPUT_KEYBOARD",
+      "family_confidence": 0.64,
+      "customer_message": "@115858 what are you doing to the letter I pls help"
+    },
+    {
+      "golden_id": "gold_040",
+      "annotation_label": "software_update_problem",
+      "primary_problem_family": "SYSTEM_UPDATE",
+      "family_confidence": 0.64,
+      "customer_message": "Dear @115858 \nPlease fix all your fucking issues with iOS 11. I\u2019m sick and tired of all these bugs. "
+    },
+    {
+      "golden_id": "gold_041",
+      "annotation_label": "unclear_needs_review",
+      "primary_problem_family": "BILLING_PAYMENT",
+      "family_confidence": 0.5,
+      "customer_message": "@AppleSupport thank u for a great chat and purchase experience"
+    },
+    {
+      "golden_id": "gold_046",
+      "annotation_label": "hardware_audio_connection_issue",
+      "primary_problem_family": "AUDIO",
+      "family_confidence": 0.79,
+      "customer_message": "@115858 @AppleSupport the music app is not producing sound. The other apps produce sound. Can play m"
+    },
+    {
+      "golden_id": "gold_047",
+      "annotation_label": "mac_software_issue",
+      "primary_problem_family": "SYSTEM_UPDATE",
+      "family_confidence": 0.6,
+      "customer_message": "@AppleSupport photos not syncing properly between OSX high Sierra and iOS.  Same problem in several "
+    },
+    {
+      "golden_id": "gold_048",
+      "annotation_label": "general_device_support",
+      "primary_problem_family": "DISPLAY",
+      "family_confidence": 0.56,
+      "customer_message": "@115858 if my screen say poor connection does that mean my wifi is messed up or theres? cause i tire"
+    },
+    {
+      "golden_id": "gold_052",
+      "annotation_label": "general_device_support",
+      "primary_problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+      "family_confidence": 0.3,
+      "customer_message": "@AppleSupport \ud83d\udc4b, What is the best antivirus for MacBook Pro ?"
+    },
+    {
+      "golden_id": "gold_056",
+      "annotation_label": "hardware_audio_connection_issue",
+      "primary_problem_family": "AUDIO",
+      "family_confidence": 0.81,
+      "customer_message": "Und ich dachte mein MacBook bleibt frei von irgendwelchen Problemen.\ud83d\ude11\n\nLiebes @AppleSupport Team, my"
+    },
+    {
+      "golden_id": "gold_061",
+      "annotation_label": "hardware_audio_connection_issue",
+      "primary_problem_family": "AUDIO",
+      "family_confidence": 0.64,
+      "customer_message": "@AppleSupport I don\u2019t want to have to manually lower the volume"
+    },
+    {
+      "golden_id": "gold_064",
+      "annotation_label": "keyboard_typing_issue",
+      "primary_problem_family": "INPUT_KEYBOARD",
+      "family_confidence": 0.5,
+      "customer_message": "@AppleSupport please fix this letter \u201ceye\u201d problem!! I\ufe0f paid all this money for this phone &amp; I\u2019m"
+    },
+    {
+      "golden_id": "gold_073",
+      "annotation_label": "display_touch_issue",
+      "primary_problem_family": "DISPLAY",
+      "family_confidence": 0.64,
+      "customer_message": "@AppleSupport how much is it for an iPhone 7 glass screen? Struggling to find anything and I\u2019m not w"
+    },
+    {
+      "golden_id": "gold_074",
+      "annotation_label": "battery_power_issue",
+      "primary_problem_family": "POWER_BATTERY",
+      "family_confidence": 0.5,
+      "customer_message": "@AppleSupport laptop keeps shutting down during startup, tried a bunch of resets but nothing's worki"
+    },
+    {
+      "golden_id": "gold_082",
+      "annotation_label": "software_update_problem",
+      "primary_problem_family": "INPUT_KEYBOARD",
+      "family_confidence": 0.71,
+      "customer_message": "@AppleSupport ever since the new update my i7 has been EXTREMELY laggy, when I type the keyboard lag"
+    },
+    {
+      "golden_id": "gold_084",
+      "annotation_label": "keyboard_typing_issue",
+      "primary_problem_family": "SYSTEM_UPDATE",
+      "family_confidence": 0.6,
+      "customer_message": "Formated and reinstalled MacOS High Sierra by Genius Bar member at Apple Shop but still problem of r"
+    },
+    {
+      "golden_id": "gold_086",
+      "annotation_label": "mac_software_issue",
+      "primary_problem_family": "CRASH_FREEZE",
+      "family_confidence": 0.56,
+      "customer_message": "@AppleSupport my MacBook Air has the dreaded spinning beach ball. Help please."
+    },
+    {
+      "golden_id": "gold_087",
+      "annotation_label": "general_device_support",
+      "primary_problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+      "family_confidence": 0.3,
+      "customer_message": "@115858 bought a MacBook Pro 6 weeks ago. It was faulty straight out of the box. Just had it exchang"
+    },
+    {
+      "golden_id": "gold_088",
+      "annotation_label": "general_device_support",
+      "primary_problem_family": "CONNECTIVITY_WIFI",
+      "family_confidence": 0.6,
+      "customer_message": "@AppleSupport my  2 iPhones  will not connect to the internet via WiFi yet my iPad will??"
+    },
+    {
+      "golden_id": "gold_089",
+      "annotation_label": "general_device_support",
+      "primary_problem_family": "CONNECTIVITY_WIFI",
+      "family_confidence": 0.56,
+      "customer_message": "@115858 why the fuck is my wifi on AGAIN ?"
+    },
+    {
+      "golden_id": "gold_093",
+      "annotation_label": "general_device_support",
+      "primary_problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+      "family_confidence": 0.3,
+      "customer_message": "Out of the blue my 2016 MacBook won\u2019t turn on and this is really an unexpected roadblock @115858"
+    },
+    {
+      "golden_id": "gold_097",
+      "annotation_label": "general_device_support",
+      "primary_problem_family": "NOTIFICATION_ALERTS",
+      "family_confidence": 0.56,
+      "customer_message": "My phone is malfunctioning. My texts are coming in, but I\u2019m not getting the notification and it\u2019s go"
+    },
+    {
+      "golden_id": "gold_098",
+      "annotation_label": "general_device_support",
+      "primary_problem_family": "DISPLAY",
+      "family_confidence": 0.56,
+      "customer_message": "@AppleSupport Hey! What does this mean? It's a new screen for me. https://t.co/0w1NPRJpJc"
+    },
+    {
+      "golden_id": "gold_102",
+      "annotation_label": "software_update_problem",
+      "primary_problem_family": "SYSTEM_UPDATE",
+      "family_confidence": 0.64,
+      "customer_message": "Can @115948 or @115858 please fix the music app ...ever since the update .. I can\u2019t pause music with"
+    },
+    {
+      "golden_id": "gold_103",
+      "annotation_label": "display_touch_issue",
+      "primary_problem_family": "DISPLAY",
+      "family_confidence": 0.67,
+      "customer_message": "@AppleSupport so my iPhone crashes touch seems to stop working altho I can access wifi menu etc Ask "
+    },
+    {
+      "golden_id": "gold_104",
+      "annotation_label": "general_device_support",
+      "primary_problem_family": "CONNECTIVITY_WIFI",
+      "family_confidence": 0.56,
+      "customer_message": "@AppleSupport why aren\u2019t my apps downloading??? I\u2019ve tried with and without WiFi..."
+    },
+    {
+      "golden_id": "gold_105",
+      "annotation_label": "software_update_problem",
+      "primary_problem_family": "SYSTEM_UPDATE",
+      "family_confidence": 0.5,
+      "customer_message": "@AppleSupport hey guys just curious - why aren\u2019t iOS app updates automatic? Seems pretty clear here,"
+    },
+    {
+      "golden_id": "gold_106",
+      "annotation_label": "hardware_audio_connection_issue",
+      "primary_problem_family": "CONNECTIVITY_WIFI",
+      "family_confidence": 0.56,
+      "customer_message": "@AppleSupport i can\u2019t turn on my WiFi on my iPhone 7"
+    },
+    {
+      "golden_id": "gold_109",
+      "annotation_label": "software_update_problem",
+      "primary_problem_family": "CONNECTIVITY_WIFI",
+      "family_confidence": 0.56,
+      "customer_message": "Can\u2019t turn off WiFi from control center? New @115858 iOS is garbage. Who knows how to roll back to t"
+    },
+    {
+      "golden_id": "gold_115",
+      "annotation_label": "software_update_problem",
+      "primary_problem_family": "SYSTEM_UPDATE",
+      "family_confidence": 0.5,
+      "customer_message": "@AppleSupport Please for heaven sake, since newest update the voice to text is horrible and texting "
+    },
+    {
+      "golden_id": "gold_117",
+      "annotation_label": "general_device_support",
+      "primary_problem_family": "CONNECTIVITY_BLUETOOTH",
+      "family_confidence": 0.56,
+      "customer_message": "If I could turn auto brightness off and also not have my Bluetooth automatically turn on everytime I"
+    },
+    {
+      "golden_id": "gold_119",
+      "annotation_label": "general_device_support",
+      "primary_problem_family": "GENERAL_DEVICE_FUNCTIONALITY",
+      "family_confidence": 0.3,
+      "customer_message": "#Siri. Hate new voice seems to works less well. Sounds like a teenager. @115858 @AppleSupport   Opti"
+    },
+    {
+      "golden_id": "gold_124",
+      "annotation_label": "keyboard_typing_issue",
+      "primary_problem_family": "INPUT_KEYBOARD",
+      "family_confidence": 0.64,
+      "customer_message": "What is up @115858 @AppleSupport with the letter I looking like this \ud83d\udc49\ud83c\udffc I\ufe0f  on my IPhone"
+    },
+    {
+      "golden_id": "gold_125",
+      "annotation_label": "general_device_support",
+      "primary_problem_family": "DISPLAY",
+      "family_confidence": 0.71,
+      "customer_message": "Dear @115858 Please fix the podcast app. I miss knowing which archived episodes I haven't listened t"
+    },
+    {
+      "golden_id": "gold_128",
+      "annotation_label": "general_device_support",
+      "primary_problem_family": "SYSTEM_UPDATE",
+      "family_confidence": 0.5,
+      "customer_message": "hey @115858 can u fix IOS"
+    },
+    {
+      "golden_id": "gold_132",
+      "annotation_label": "general_device_support",
+      "primary_problem_family": "CONNECTIVITY_WIFI",
+      "family_confidence": 0.5,
+      "customer_message": "So I have my shiny brand new @115858 MacBook and I can\u2019t use it because it refuses to connect to my "
+    },
+    {
+      "golden_id": "gold_135",
+      "annotation_label": "keyboard_typing_issue",
+      "primary_problem_family": "INPUT_KEYBOARD",
+      "family_confidence": 0.5,
+      "customer_message": "@AppleSupport \ud83d\udde3I am tired of seeing boxes ,with a question mark in the middle , where words are supp"
+    },
+    {
+      "golden_id": "gold_140",
+      "annotation_label": "software_update_problem",
+      "primary_problem_family": "SYSTEM_UPDATE",
+      "family_confidence": 0.64,
+      "customer_message": "Looks like its a common problem with the @115858 High Sierra download as there are a number of pics "
+    },
+    {
+      "golden_id": "gold_165",
+      "annotation_label": "general_device_support",
+      "primary_problem_family": "CONNECTIVITY_WIFI",
+      "family_confidence": 0.5,
+      "customer_message": "@AppleSupport i FaceTimed my mate everyday and now when I go to ft him it won\u2019t connect but it conne"
+    },
+    {
+      "golden_id": "gold_169",
+      "annotation_label": "keyboard_typing_issue",
+      "primary_problem_family": "INPUT_KEYBOARD",
+      "family_confidence": 0.5,
+      "customer_message": "@115858 fix this fucking question mark exclamation shit before I\ufe0f get a tracfone"
+    },
+    {
+      "golden_id": "gold_173",
+      "annotation_label": "mac_software_issue",
+      "primary_problem_family": "SYSTEM_UPDATE",
+      "family_confidence": 0.71,
+      "customer_message": "Hey @115858 @AppleSupport we need a lil favour. Safari 11.0.1 &amp; it\u2019s relationship with High Sier"
+    },
+    {
+      "golden_id": "gold_177",
+      "annotation_label": "hardware_audio_connection_issue",
+      "primary_problem_family": "CONNECTIVITY_WIFI",
+      "family_confidence": 0.56,
+      "customer_message": "My IPhone glitch is that it won\u2019t stay connected to any WiFi. @AppleSupport ?"
+    },
+    {
+      "golden_id": "gold_180",
+      "annotation_label": "battery_power_issue",
+      "primary_problem_family": "SYSTEM_UPDATE",
+      "family_confidence": 0.69,
+      "customer_message": ".@115858 battery and velocity of my iPhone 6 really sucks / bater\u00eda y velocidad de mi iPhone 6 con e"
+    },
+    {
+      "golden_id": "gold_181",
+      "annotation_label": "keyboard_typing_issue",
+      "primary_problem_family": "INPUT_KEYBOARD",
+      "family_confidence": 0.64,
+      "customer_message": ". @115858 my laptop not letting me use my keyboard or mouse.... y\u2019all need to help me out"
+    },
+    {
+      "golden_id": "gold_190",
+      "annotation_label": "battery_power_issue",
+      "primary_problem_family": "BILLING_PAYMENT",
+      "family_confidence": 0.56,
+      "customer_message": "@115858 there\u2019s been a problem with my sisters iPhone 7 like it won\u2019t turn on or nothing even though"
+    },
+    {
+      "golden_id": "gold_191",
+      "annotation_label": "battery_power_issue",
+      "primary_problem_family": "POWER_BATTERY",
+      "family_confidence": 0.5,
+      "customer_message": "Hi @AppleSupport my c3yo iPad Air died. Tried restore as per website, error msg now MacBook can\u2019t de"
+    },
+    {
+      "golden_id": "gold_198",
+      "annotation_label": "hardware_audio_connection_issue",
+      "primary_problem_family": "AUDIO",
+      "family_confidence": 0.5,
+      "customer_message": "@AppleSupport Can I use my wired  printer  having USB on my MacBook pro which has  has c type?..Pls "
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "problem_family_match_rate": 0.8182,
+  "top_1_operational_relevance_rate": 0.8182,
+  "top_3_usable_evidence_coverage": 0.8182,
+  "usable_evidence_coverage": 0.8182,
+  "direct_problem_match_rate": 0.7662,
+  "related_problem_match_rate": 0.0519,
+  "weak_semantic_match_rate": 0.1688
+}

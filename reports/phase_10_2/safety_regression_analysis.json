@@ -1,0 +1,7 @@
+{
+  "auto_handle_rate": 0.5584,
+  "auto_handle_precision": 1.0,
+  "unsafe_auto_handles": 0,
+  "error_interception_rate": 1.0,
+  "safety_regression_detected": false
+}

@@ -1,0 +1,8 @@
+{
+  "total_model_errors": 38,
+  "baseline_unsafe_auto_handles": 30,
+  "baseline_error_interception_rate": 0.2105,
+  "calibrated_unsafe_auto_handles": 5,
+  "calibrated_error_interception_rate": 0.8684,
+  "unsafe_configurations_share": 1.0
+}

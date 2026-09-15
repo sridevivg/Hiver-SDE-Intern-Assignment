@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-09-15T03:37:34.593385",
+  "release_status": "READY_FOR_PRODUCTION",
+  "overall_pass": true,
+  "checks": {
+    "golden_dataset_integrity": {
+      "status": "PASS",
+      "expected_sha256": "1d3e9b3b8bdef3750437e59b17ab7c27167fd1548c2bb29de984151296c5b45a",
+      "actual_sha256": "1d3e9b3b8bdef3750437e59b17ab7c27167fd1548c2bb29de984151296c5b45a",
+      "file_exists": true
+    },
+    "zero_retrieval_leakage": {
+      "status": "PASS",
+      "overlapping_records_count": 0,
+      "overlapping_case_ids": []
+    },
+    "zero_unsafe_auto_handles": {
+      "status": "PASS",
+      "unsafe_count": 0,
+      "safe_auto_handle_rate": 0.615,
+      "auto_handle_precision": 1.0
+    },
+    "adversarial_generalization": {
+      "status": "PASS",
+      "total_scenarios": 30,
+      "passed_scenarios": 30,
+      "pass_rate": 1.0
+    },
+    "decision_explanation_completeness": {
+      "status": "PASS",
+      "evaluated_records": 230,
+      "records_with_structured_explanation": 230
+    },
+    "latency_sla": {
+      "status": "PASS",
+      "p50_latency_ms": 111.36,
+      "p95_latency_ms": 480.75,
+      "p99_latency_ms": 1272.8,
+      "sla_threshold_p95_ms": 1000.0
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "total_evaluated_records": 77,
+  "completed_human_ground_truth_records": 77,
+  "pre_eval_sha256": "1d3e9b3b8bdef3750437e59b17ab7c27167fd1548c2bb29de984151296c5b45a",
+  "post_eval_sha256": "1d3e9b3b8bdef3750437e59b17ab7c27167fd1548c2bb29de984151296c5b45a",
+  "dataset_immutability_pass": true,
+  "primary_intent_accuracy": 0.5584,
+  "top_2_coverage": 0.7922,
+  "top_3_coverage": 0.8182,
+  "macro_f1": 0.4936,
+  "direct_evidence_availability_rate": 0.4935,
+  "average_intent_agreement": 0.4848,
+  "average_symptom_agreement": 0.2771,
+  "average_evidence_consistency": 0.7355,
+  "verdict_distribution": {
+    "STRONG_EVIDENCE": 19,
+    "WEAK_EVIDENCE": 50,
+    "MODERATE_EVIDENCE": 6,
+    "CONFLICTING_EVIDENCE": 2
+  },
+  "match_tier_counts": {
+    "DIRECT_PROBLEM_MATCH": 60,
+    "RELATED_SYMPTOM": 22,
+    "RELATED_CONTEXT": 22,
+    "WEAK_SEMANTIC_MATCH": 127
+  },
+  "auto_handle_count": 18,
+  "auto_handle_rate": 0.2338,
+  "auto_handle_accuracy": 0.6111,
+  "unsafe_auto_handles_count": 7,
+  "escalation_count": 59,
+  "escalation_rate": 0.7662,
+  "error_interception_rate": 0.7941,
+  "human_assistance_top_2_rate": 0.7288,
+  "response_verification_pass_count": 74,
+  "response_verification_pass_rate": 0.961,
+  "evidence_grounded_response_rate": 0.1429,
+  "unsupported_response_rate": 0.0909,
+  "average_grounding_score": 0.874,
+  "progression_comparison": {
+    "Phase_6_Uncertainty_Baseline": {
+      "auto_handle_rate": 0.831,
+      "auto_handle_precision": 0.531,
+      "unsafe_auto_handles": 30,
+      "error_interception_rate": 0.211
+    },
+    "Phase_6_1_Calibrated_Ranking": {
+      "auto_handle_rate": 0.156,
+      "auto_handle_precision": 0.75,
+      "unsafe_auto_handles": 5,
+      "error_interception_rate": 0.868
+    },
+    "Phase_7_Evidence_Aware": {
+      "auto_handle_rate": 0.844,
+      "auto_handle_precision": 0.569,
+      "unsafe_auto_handles": 28,
+      "error_interception_rate": 0.176
+    },
+    "Phase_7_1_Safe_Gate": {
+      "auto_handle_rate": 0.532,
+      "auto_handle_precision": 0.634,
+      "unsafe_auto_handles": 15,
+      "error_interception_rate": 0.559
+    },
+    "Phase_8_Evidence_Grounded_Resolution": {
+      "auto_handle_rate": 0.2338,
+      "auto_handle_precision": 0.6111,
+      "unsafe_auto_handles": 7,
+      "error_interception_rate": 0.7941,
+      "human_assistance_top_2": 0.7288,
+      "grounding_pass_rate": 0.961
+    }
+  }
+}

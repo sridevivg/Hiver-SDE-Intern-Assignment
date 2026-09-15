@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-09-15T03:35:13Z",
+  "golden_dataset_path": "data/golden/golden_set_human_review.csv",
+  "expected_sha256": "1d3e9b3b8bdef3750437e59b17ab7c27167fd1548c2bb29de984151296c5b45a",
+  "pre_evaluation_sha256": "1d3e9b3b8bdef3750437e59b17ab7c27167fd1548c2bb29de984151296c5b45a",
+  "post_evaluation_sha256": "1d3e9b3b8bdef3750437e59b17ab7c27167fd1548c2bb29de984151296c5b45a",
+  "sha256_match": true,
+  "total_golden_records": 200,
+  "total_historical_indexed_cases": 80487,
+  "overlapping_leakage_cases": [],
+  "leakage_count": 0,
+  "leakage_status": "ZERO_LEAKAGE_VERIFIED"
+}

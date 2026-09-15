@@ -1,0 +1,14 @@
+{
+  "total_golden_records": 200,
+  "completed_reviews": 77,
+  "pending_reviews": 123,
+  "total_pairs_evaluated": 2926,
+  "same_label_pairs": 513,
+  "cross_label_pairs": 2413,
+  "high_priority_candidates": 11,
+  "medium_priority_candidates": 20,
+  "low_priority_candidates": 106,
+  "total_candidates_flagged": 137,
+  "source_sha256": "1d3e9b3b8bdef3750437e59b17ab7c27167fd1548c2bb29de984151296c5b45a",
+  "scientific_disclaimer": "OBSERVED ANNOTATION CONSISTENCY on N=77 completed human reviews. Flagged pairs represent 'Possible boundary inconsistencies' for human validation, NOT definitive annotation errors. Observed findings reflect a preliminary subset and must NOT be converted into hard deterministic classifier rules."
+}

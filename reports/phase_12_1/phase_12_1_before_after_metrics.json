@@ -1,0 +1,56 @@
+{
+  "metrics_comparison": {
+    "adversarial_pass_rate": {
+      "phase_12": "90.0% (27/30)",
+      "phase_12_1": "100.0% (30/30)"
+    },
+    "generalization_pass_rate": {
+      "phase_12": "N/A",
+      "phase_12_1": "100.0% (20/20)"
+    },
+    "unsafe_auto_handles": {
+      "phase_12": 0,
+      "phase_12_1": 0
+    },
+    "auto_handle_precision": {
+      "phase_12": "100.0%",
+      "phase_12_1": "100.0%"
+    },
+    "golden_usable_evidence_coverage": {
+      "phase_12": "81.8%",
+      "phase_12_1": "89.0%"
+    },
+    "golden_direct_problem_match_rate": {
+      "phase_12": "80.5%",
+      "phase_12_1": "84.0%"
+    },
+    "golden_auto_handle_rate": {
+      "phase_12": "75.3%",
+      "phase_12_1": "61.5%"
+    },
+    "p50_latency_ms": {
+      "phase_12": 1.2,
+      "phase_12_1": 127.63
+    },
+    "p95_latency_ms": {
+      "phase_12": 3.8,
+      "phase_12_1": 1039.67
+    },
+    "p99_latency_ms": {
+      "phase_12": 5.4,
+      "phase_12_1": 20203.36
+    },
+    "benchmark_leakage": {
+      "phase_12": 0,
+      "phase_12_1": 0
+    },
+    "golden_sha256_status": {
+      "phase_12": "IMMUTABLE",
+      "phase_12_1": "IMMUTABLE"
+    },
+    "test_suite_passed": {
+      "phase_12": 464,
+      "phase_12_1": 471
+    }
+  }
+}
